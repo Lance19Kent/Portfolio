@@ -1,4 +1,4 @@
-import SwitchDemo from "./SwitchDemo";
+import { Switch } from "./ui/switch"
 
 function Sidebar(){
     return(
@@ -63,7 +63,9 @@ function Sidebar(){
                     </ul>
                 </div>
                 <div className="border border-[#D9D9D950] mt-3"></div>
-                <div>
+                <div className="flex flex-row-reverse gap-5 bg-amber-300">
+                    <span className="text-black text-[16px] font-medium">Dark Mode</span>
+                    <Switch />
                 </div>
             </div>
         </nav>
