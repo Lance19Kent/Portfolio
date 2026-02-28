@@ -8,7 +8,7 @@ function App() {
   return (
     <div className='flex bg-[#ECECEC] p-3 h-screen w-screen'>
     <Sidebar/>
-     <h1>Hello World</h1>
+     {/* <h1>Hello World</h1> */}
     </div>
   )
 }
