@@ -1,8 +1,9 @@
 function Sidebar(){
     return(
-        <div className="text-red">
-            <h1 className="text-red-500">Sidebar Component Here!</h1>
-        </div>
+        <nav className= "h-full bg-red-10 w-full max-w-60 bg-white rounded-[10px] p-4">
+            
+        </nav>
+
     )
 }
 
