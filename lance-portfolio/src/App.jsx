@@ -1,14 +1,15 @@
 import { useState } from 'react'
 import Sidebar  from './components/Sidebar'
+import Content from './components/Content'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='flex bg-[#ECECEC] p-3 h-screen w-screen'>
+    <div className='flex bg-[#ECECEC] p-3 h-screen w-screen gap-3'>
     <Sidebar/>
-     {/* <h1>Hello World</h1> */}
+    <Content/>
     </div>
   )
 }
