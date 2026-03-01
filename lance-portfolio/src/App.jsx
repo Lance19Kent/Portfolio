@@ -3,7 +3,7 @@ import Sidebar  from './components/Sidebar'
 import Content from './components/Content'
 import './App.css'
 
-function App() {
+function App() { 
   const [count, setCount] = useState(0)
 
   return (
