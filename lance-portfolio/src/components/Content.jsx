@@ -2,6 +2,7 @@ import { Button } from "./ui/button"
 
 function Content(){
     return (
+    <div>
         <div className="w-full flex flex-col max-w-175 h-full max-h-82.5 overflow-hidden bg-white rounded-[10px] relative">
                 <img src="./bg-header.png" className="w-full object-cover h-[70%]"></img>
                 <img src="./profile.png" alt="Lance Profile" className="absolute bottom-3 h-42.5 left-3" />
@@ -27,6 +28,11 @@ function Content(){
                 </div>
 
         </div>
+        <div >
+
+        </div>
+    </div>
+
     )
 }
 
