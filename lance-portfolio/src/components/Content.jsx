@@ -41,9 +41,9 @@ function Content(){
                 <span className="font-medium text-[20px]">Stats</span>
             </div>
             <div className="flex justify-between">
-                <div className="w-full max-w-[155px] h-[110px] bg-[#D9D9D940] rounded-[10px] p-3 flex justify-evenly flex-col">
+                <div className="w-full max-w-[155px] h-[110px] bg-[#D9D9D940] rounded-[10px] p-4 flex justify-evenly flex-col">
                     <div className="flex items-center gap-3">
-                        <svg width="45" height="43" viewBox="0 0 45 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="40" height="43" viewBox="0 0 45 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="45" height="42.5" rx="10" fill="url(#paint0_linear_19_201)"/>
                                 <path d="M27.5 15V12.5C27.5 11.837 27.2366 11.2011 26.7678 10.7322C26.2989 10.2634 25.663 10 25 10H20C19.337 10 18.7011 10.2634 18.2322 10.7322C17.7634 11.2011 17.5 11.837 17.5 12.5V15" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M32.5 15H12.5C11.1193 15 10 16.1193 10 17.5V30C10 31.3807 11.1193 32.5 12.5 32.5H32.5C33.8807 32.5 35 31.3807 35 30V17.5C35 16.1193 33.8807 15 32.5 15Z" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
@@ -57,15 +57,15 @@ function Content(){
                                 </defs>
                         </svg>
                         <div className="flex items-center flex-1 justify-between">
-                            <span className="font-semibold text-[32px]">2</span>
+                            <span className="font-semibold text-[30px]">2</span>
                             <span className="font-light">Years</span>
                         </div>
                     </div>
-                    <span className="font-medium text-[16px]">Experience</span>
+                    <span className="font-medium text-[14px]">Experience</span>
                 </div>
-                <div className="w-full max-w-[155px] h-[110px] bg-[#D9D9D940] rounded-[10px] p-3 flex justify-evenly flex-col">
+                <div className="w-full max-w-[155px] h-[110px] bg-[#D9D9D940] rounded-[10px] p-4 flex justify-evenly flex-col">
                     <div className="flex items-center gap-3">
-                      <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg width="40" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="45" height="45" rx="10" fill="url(#paint0_linear_20_78)"/>
                         <path d="M27.5706 23.798L29.78 36.2317C29.8048 36.3781 29.7842 36.5286 29.7211 36.663C29.658 36.7974 29.5554 36.9094 29.427 36.9839C29.2986 37.0584 29.1504 37.092 29.0024 37.08C28.8544 37.0681 28.7136 37.0113 28.5988 36.9171L23.3779 32.9986C23.1259 32.8103 22.8197 32.7086 22.5051 32.7086C22.1905 32.7086 21.8843 32.8103 21.6323 32.9986L16.4027 36.9157C16.288 37.0096 16.1473 37.0664 15.9995 37.0783C15.8516 37.0903 15.7037 37.0569 15.5753 36.9826C15.447 36.9083 15.3444 36.7966 15.2811 36.6624C15.2179 36.5283 15.1971 36.378 15.2215 36.2317L17.4294 23.798" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M22.5 25.4166C27.3325 25.4166 31.25 21.4991 31.25 16.6666C31.25 11.8341 27.3325 7.91663 22.5 7.91663C17.6675 7.91663 13.75 11.8341 13.75 16.6666C13.75 21.4991 17.6675 25.4166 22.5 25.4166Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -78,36 +78,36 @@ function Content(){
                     </svg>
 
                         <div className="flex items-center flex-1 justify-between">
-                            <span className="font-semibold text-[32px]">5</span>
+                            <span className="font-semibold text-[30px]">5</span>
                         </div>
                     </div>
-                    <span className="font-medium text-[16px]">Certificates</span>
+                    <span className="font-medium text-[14px]">Certificates</span>
                 </div>
-                <div className="w-full max-w-[155px] h-[110px] bg-[#D9D9D940] rounded-[10px] p-3 flex justify-evenly flex-col">
+                <div className="w-full max-w-[155px] h-[110px] bg-[#D9D9D940] rounded-[10px] p-4 flex justify-evenly flex-col">
                     <div className="flex items-center gap-3">
-                        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="45" height="45" rx="10" fill="url(#paint0_linear_20_63)"/>
-<path d="M31.25 32.7083C29.3161 32.7083 27.4615 31.9401 26.094 30.5726C24.7266 29.2052 23.9583 27.3505 23.9583 25.4166V37.0833" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M18.125 34.1667H10.8333C10.0598 34.1667 9.31791 33.8594 8.77093 33.3124C8.22395 32.7654 7.91666 32.0236 7.91666 31.25V12.2917C7.91666 11.5181 8.22395 10.7763 8.77093 10.2293C9.31791 9.68231 10.0598 9.37502 10.8333 9.37502H16.5208C17.0086 9.37024 17.4898 9.48788 17.9204 9.71717C18.351 9.94647 18.7171 10.2801 18.9854 10.6875L20.1667 12.4375C20.4322 12.8408 20.7938 13.1718 21.2188 13.4009C21.6439 13.63 22.1192 13.7499 22.6021 13.75H34.1667C34.9402 13.75 35.6821 14.0573 36.229 14.6043C36.776 15.1513 37.0833 15.8931 37.0833 16.6667V23.9584" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M23.9583 25.4167C25.5692 25.4167 26.875 24.1109 26.875 22.5C26.875 20.8892 25.5692 19.5834 23.9583 19.5834C22.3475 19.5834 21.0417 20.8892 21.0417 22.5C21.0417 24.1109 22.3475 25.4167 23.9583 25.4167Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M34.1667 35.625C35.7775 35.625 37.0833 34.3191 37.0833 32.7083C37.0833 31.0975 35.7775 29.7916 34.1667 29.7916C32.5558 29.7916 31.25 31.0975 31.25 32.7083C31.25 34.3191 32.5558 35.625 34.1667 35.625Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<defs>
-<linearGradient id="paint0_linear_20_63" x1="22.5" y1="0" x2="22.5" y2="45" gradientUnits="userSpaceOnUse">
-<stop offset="0.201923" stop-color="#90CAF8"/>
-<stop offset="0.778846" stop-color="#1396ED"/>
-</linearGradient>
-</defs>
+                        <svg width="40" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="45" height="45" rx="10" fill="url(#paint0_linear_20_63)"/>
+                            <path d="M31.25 32.7083C29.3161 32.7083 27.4615 31.9401 26.094 30.5726C24.7266 29.2052 23.9583 27.3505 23.9583 25.4166V37.0833" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18.125 34.1667H10.8333C10.0598 34.1667 9.31791 33.8594 8.77093 33.3124C8.22395 32.7654 7.91666 32.0236 7.91666 31.25V12.2917C7.91666 11.5181 8.22395 10.7763 8.77093 10.2293C9.31791 9.68231 10.0598 9.37502 10.8333 9.37502H16.5208C17.0086 9.37024 17.4898 9.48788 17.9204 9.71717C18.351 9.94647 18.7171 10.2801 18.9854 10.6875L20.1667 12.4375C20.4322 12.8408 20.7938 13.1718 21.2188 13.4009C21.6439 13.63 22.1192 13.7499 22.6021 13.75H34.1667C34.9402 13.75 35.6821 14.0573 36.229 14.6043C36.776 15.1513 37.0833 15.8931 37.0833 16.6667V23.9584" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M23.9583 25.4167C25.5692 25.4167 26.875 24.1109 26.875 22.5C26.875 20.8892 25.5692 19.5834 23.9583 19.5834C22.3475 19.5834 21.0417 20.8892 21.0417 22.5C21.0417 24.1109 22.3475 25.4167 23.9583 25.4167Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M34.1667 35.625C35.7775 35.625 37.0833 34.3191 37.0833 32.7083C37.0833 31.0975 35.7775 29.7916 34.1667 29.7916C32.5558 29.7916 31.25 31.0975 31.25 32.7083C31.25 34.3191 32.5558 35.625 34.1667 35.625Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                            <linearGradient id="paint0_linear_20_63" x1="22.5" y1="0" x2="22.5" y2="45" gradientUnits="userSpaceOnUse">
+                            <stop offset="0.201923" stop-color="#90CAF8"/>
+                            <stop offset="0.778846" stop-color="#1396ED"/>
+                            </linearGradient>
+                            </defs>
                         </svg>
                         <div className="flex items-center flex-1 justify-between">
-                            <span className="font-semibold text-[32px]">20</span>
+                            <span className="font-semibold text-[30px]">20</span>
 
                         </div>
                     </div>
-                    <span className="font-medium text-[16px]">Projects</span>
+                    <span className="font-medium text-[14px]">Projects</span>
                 </div>
-                <div className="w-full max-w-[155px] h-[110px] bg-[#D9D9D940] rounded-[10px] p-3 flex justify-evenly flex-col">
+                <div className="w-full max-w-[155px] h-[110px] bg-[#D9D9D940] rounded-[10px] p-4 flex justify-evenly flex-col">
                     <div className="flex items-center gap-3">
-                      <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg width="40" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="45" height="45" rx="10" fill="url(#paint0_linear_20_88)"/>
                         <g clip-path="url(#clip0_20_88)">
                         <path d="M22.5 34.6666V37.5833" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
@@ -137,10 +137,10 @@ function Content(){
                     </svg>
 
                         <div className="flex items-center flex-1 justify-between">
-                            <span className="font-semibold text-[32px]">16</span>
+                            <span className="font-semibold text-[30px]">16</span>
                         </div>
                     </div>
-                    <span className="font-medium text-[16px]">Technologies</span>
+                    <span className="font-medium text-[14px]">Technologies</span>
                 </div>
             </div>
         </div>
