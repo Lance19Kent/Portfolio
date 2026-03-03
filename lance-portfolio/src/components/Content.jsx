@@ -153,8 +153,8 @@ function Content(){
 
                 <span className="font-medium text-[20px]">Highlights</span>
             </div>
-            <div className="flex justify-between bg-amber-600">
-                <div className="w-[200px] h-[250px] bg-amber-300">
+            <div className="flex justify-between ">
+                <div className="w-[200px] h-[250px] ">
                     <div></div>
                     <div></div>
                 </div>
