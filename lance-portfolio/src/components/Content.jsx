@@ -3,7 +3,7 @@ import { Button } from "./ui/button"
 function Content(){
     return (
     <div className="flex flex-col gap-3 flex-1 h-full overflow-y-auto no-scrollbar py-3">
-        <div className="w-full flex flex-col max-w-175 h-full max-h-82.5 overflow-hidden bg-white rounded-[10px] relative shrink-0">
+        <div className="w-[50%] flex flex-col min-w-175 h-[30%] min-h-82.5 overflow-hidden bg-white rounded-[10px] relative shrink-0">
                 <img src="./bg-header.png" className="w-full object-cover h-[70%]"></img>
                 <img src="./profile.png" alt="Lance Profile" className="absolute bottom-3 h-42.5 left-3" />
                 <div className="w-full gap-5 flex flex-1 items-center justify-end pr-6">
@@ -28,7 +28,7 @@ function Content(){
                 </div>
 
         </div>
-        <div className="w-full flex flex-col max-w-175 h-full max-h-50 overflow-hidden bg-white rounded-[10px] relative p-4 gap-4 shrink-0">
+        <div className="w-[50%] flex flex-col min-w-175 h-[20%] min-h-50 overflow-hidden bg-white rounded-[10px] relative p-4 gap-4 shrink-0">
             <div className="flex gap-2">
                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15 20V26.25" stroke="black" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
@@ -144,7 +144,7 @@ function Content(){
                 </div>
             </div>
         </div>
-        <div className="w-full flex flex-col max-w-175 h-full max-h-80 overflow-hidden bg-white rounded-[10px] relative p-4 gap-4 shrink-0">
+        <div className="w-[50%] flex flex-col min-w-175 flex-1 h-full min-h-80 overflow-hidden bg-white rounded-[10px] relative p-4 gap-4 shrink-0">
             <div className="flex gap-2">
              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15 21.25V27.5" stroke="black" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>

@@ -3,7 +3,7 @@ import { Button } from "./ui/button"
 
 function Sidebar(){
     return(
-        <nav className="max-h-screen bg-red-10 w-full max-w-60 bg-white rounded-[10px] p-4 m-3">
+        <nav className="max-h-screen bg-red-10 w-[20%] min-w-[250px] bg-white rounded-[10px] p-4 m-3">
             <div className="w-full flex flex-col">
                 <div className="w-full flex justify-center">
                     <img src="/me-daytime.png" className="h-15 w-15"></img>
