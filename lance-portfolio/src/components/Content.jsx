@@ -152,7 +152,7 @@ function Content(){
             </svg>
                 <span className="font-medium text-[20px]">Highlights</span>
             </div>
-            <div className="flex justify-between ">
+            <div className="flex justify-between bg-amber-300">
                 <div className="w-[210px] h-[270px] ">
                     <div id="img" className="w-full h-[160px] bg-[#DEDEDE] rounded-tl-[10px] rounded-tr-[10px]"></div> 
                     <div className="w-full h-[80px] bg-[#ECECEC60] rounded-bl-[10px] rounded-br-[10px]"></div>
