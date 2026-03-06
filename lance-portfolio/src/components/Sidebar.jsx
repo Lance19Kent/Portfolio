@@ -4,7 +4,7 @@ import { Button } from "./ui/button"
 function Sidebar(){
     return(
         <nav className="max-h-screen bg-red-10 w-[20%] min-w-62.5 bg-white rounded-[10px] p-4 m-3">
-            <div className="w-full flex flex-col gap-">
+            <div className="w-full flex flex-col h-full justify-between">
                 <div className="w-full flex flex-col">
                     <div className="w-full flex justify-center">
                         <img src="/me-daytime.png" className="h-15 w-15"></img>
