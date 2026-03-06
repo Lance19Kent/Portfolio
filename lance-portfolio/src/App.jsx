@@ -7,7 +7,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='flex bg-[#ECECEC] p-3 h-screen overflow-hidden w-screen gap-3'>
+    <div className='flex bg-[#ECECEC] h-screen overflow-hidden w-screen'>
     <Sidebar/>
     <Content/>
     </div>
