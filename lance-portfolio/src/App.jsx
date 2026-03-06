@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Sidebar  from './components/Sidebar'
 import Content from './components/Content'
+import SubContent from './components/SubContent'
 import './App.css'
 
 function App() { 
@@ -10,6 +11,7 @@ function App() {
     <div className='flex bg-[#ECECEC] h-screen overflow-hidden w-screen'>
     <Sidebar/>
     <Content/>
+    <SubContent/>
     </div>
   )
 }
