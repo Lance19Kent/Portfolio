@@ -1,16 +1,53 @@
 import { Button } from "./ui/button"
 import { TypeAnimation } from "react-type-animation";
-
+import { useState, useEffect } from "react";
 
 function Content(){
+
+    const [currentDate, setCurrrentDate] = useState("");
+
+    useEffect(() =>{
+        const getDate = () =>{
+            const today = new Date();
+
+            const dayName = today.toLocaleDateString("en-US",{weekday:"long"});
+            const monthName = today.toLocaleDateString("en-US",{month:"long"});
+            const day = today.getDate();
+            const year = today.getFullYear();
+
+            const timePart = today.toLocaleTimeString("en-US",{
+                hour:'numeric',
+                minute:'2-digit',
+                hour12: true
+            }).toUpperCase();
+
+            setCurrrentDate(`${dayName}, ${year} ${monthName} ${day}, ${timePart}`)
+        };
+ 
+        getDate();
+
+        const intervalId = setInterval(getDate, 1000);
+
+        return () => clearInterval(intervalId);
+    })
+
     return (
     <div className="w-full flex flex-col min-w-175 gap-3 flex-1 h-full overflow-y-auto no-scrollbar py-3">
         <div className="w-full flex flex-col h-[30%] min-h-82.5 overflow-hidden bg-white rounded-[10px] relative shrink-0">
             <div className="w-full relative">
                  <img src="./bg-header.png" className="w-full object-cover "></img>
                 <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-0 rounded-t-[10px]"></div>
-                 <div className="absolute text-white font-medium bottom-3 right-4 drop-shadow-amber-100 text-[30px] z-10">
-                    <TypeAnimation sequence={[`Hello there Everyone!`, 5000,`Welcome to my Project Space`,5000,`Want to collaborate a Project?`,5000,`We can talk about it!`, 5000,`Have a nice day! :)`, 5000]}
+                <div className="flex z-99 absolute top-5 right-5 gap-3">
+                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.66669 1.66669V5.00002" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.3333 1.66669V5.00002" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15.8333 3.33331H4.16667C3.24619 3.33331 2.5 4.07951 2.5 4.99998V16.6666C2.5 17.5871 3.24619 18.3333 4.16667 18.3333H15.8333C16.7538 18.3333 17.5 17.5871 17.5 16.6666V4.99998C17.5 4.07951 16.7538 3.33331 15.8333 3.33331Z" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.5 8.33331H17.5" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span className="font-medium text-white">{currentDate}</span>
+                </div>
+                 <div className="absolute text-white font-medium bottom-3 right-4 text-[30px] z-10">
+                    <TypeAnimation sequence={[`Hello there Everyone, I'm Lance!`, 5000,`Welcome to My Project Space.`,5000,`Want to collaborate a Project?`,5000,`We can discuss about it!`, 5000,`Have a nice day Everyone! :)`, 5000]}
                     
                     wrapper="span"
                     speed={5}
