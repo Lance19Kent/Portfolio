@@ -32,7 +32,7 @@ function SubContent() {
 
 
     return (
-        <div className="w-[24.4%] min-w-[250px] max-w-[350px] flex flex-col gap-3 h-full overflow-y-auto no-scrollbar py-3 pr-3">
+        <div className="w-full min-w-[20px] max-w-[350px] overflow-hidden flex flex-col gap-3 h-full overflow-y-auto no-scrollbar py-3 pr-3">
             
             <BentoCard title="Technologies" icon={techIcon} className="min-h-[250px]">
                 <p className="text-gray-500">Dito mo ilalagay yung mga HTML, CSS, React logos mo mamaya!</p>
