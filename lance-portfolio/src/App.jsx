@@ -1,18 +1,23 @@
 import { useState } from 'react'
 import Sidebar  from './components/Sidebar'
-import Content from './components/Content'
-import SubContent from './components/SubContent'
 import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home'
 
 function App() { 
   const [count, setCount] = useState(0)
 
   return (
-    <div className='flex bg-[#ECECEC] h-screen overflow-hidden gap-3 w-full'>
-    <Sidebar/>
-    <Content/>
-    <SubContent/>
-    </div>
+    <Router>
+      <div className='flex bg-[#ECECEC] h-screen overflow-hidden gap-3 w-full'>
+      <Sidebar/>
+
+      <Routes>
+        <Route path="/" element={<Home/>} />
+      </Routes>
+      </div>
+    </Router>
+
   )
 }
 

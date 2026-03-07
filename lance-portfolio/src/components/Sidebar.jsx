@@ -1,9 +1,10 @@
 import { Switch } from "./ui/switch"
 import { Button } from "./ui/button"
+import { NavLink } from "react-router-dom"
 
 function Sidebar(){
     return(
-        <nav className="max-h-screen bg-red-10 w-[20%] min-w-62.5 bg-white rounded-[10px] p-4 my-3 ml-3">
+        <nav className="max-h-screen bg-red-10 w-[18%] bg-white rounded-[10px] p-4 my-3 ml-3">
             <div className="w-full flex flex-col h-full justify-between">
                 <div className="w-full flex flex-col">
                     <div className="w-full flex justify-center">
@@ -23,13 +24,19 @@ function Sidebar(){
                 <div className="border border-[#D9D9D950] mt-6 mb-3"></div>
                 <div>
                     <ul>
-                        <li className="flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#3FA6F4] ease-in stroke-black transition duration-75 hover:stroke-[#3FA6F4] bg-white hover:bg-[#00000009]">
+                        <NavLink to="/" className={({isActive}) =>` 
+                        ${isActive 
+                                    ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-[#00000009]" 
+                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#3FA6F4] ease-in stroke-black transition duration-75 hover:stroke-[#3FA6F4] bg-white hover:bg-[#00000009]"
+                                }`
+                                }
+                                >
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M15 20.5V12.5C15 12.2348 14.8946 11.9804 14.7071 11.7929C14.5196 11.6054 14.2652 11.5 14 11.5H10C9.73478 11.5 9.48043 11.6054 9.29289 11.7929C9.10536 11.9804 9 12.2348 9 12.5V20.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M3 9.49999C2.99993 9.20906 3.06333 8.92161 3.18579 8.65771C3.30824 8.3938 3.4868 8.15979 3.709 7.97199L10.709 1.97199C11.07 1.6669 11.5274 1.49951 12 1.49951C12.4726 1.49951 12.93 1.6669 13.291 1.97199L20.291 7.97199C20.5132 8.15979 20.6918 8.3938 20.8142 8.65771C20.9367 8.92161 21.0001 9.20906 21 9.49999V18.5C21 19.0304 20.7893 19.5391 20.4142 19.9142C20.0391 20.2893 19.5304 20.5 19 20.5H5C4.46957 20.5 3.96086 20.2893 3.58579 19.9142C3.21071 19.5391 3 19.0304 3 18.5V9.49999Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                                 <p>Home</p>
-                        </li>
+                        </NavLink>
                         <li className="flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#3FA6F4] ease-in stroke-black transition duration-75 hover:stroke-[#3FA6F4] bg-white hover:bg-[#00000009]">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M19 20.5V18.5C19 17.4391 18.5786 16.4217 17.8284 15.6716C17.0783 14.9214 16.0609 14.5 15 14.5H9C7.93913 14.5 6.92172 14.9214 6.17157 15.6716C5.42143 16.4217 5 17.4391 5 18.5V20.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
