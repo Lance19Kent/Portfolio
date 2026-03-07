@@ -1,11 +1,26 @@
 import { Button } from "./ui/button"
+import { TypeAnimation } from "react-type-animation";
+
 
 function Content(){
     return (
     <div className="w-full flex flex-col min-w-175 gap-3 flex-1 h-full overflow-y-auto no-scrollbar py-3">
-        <div className="w-full flex flex-col  h-[30%] min-h-82.5 overflow-hidden bg-white rounded-[10px] relative shrink-0">
-                <img src="./bg-header.png" className="w-full object-cover h-[70%]"></img>
-                <img src="./profile.png" alt="Lance Profile" className="absolute bottom-3 h-42.5 left-3" />
+        <div className="w-full flex flex-col h-[30%] min-h-82.5 overflow-hidden bg-white rounded-[10px] relative shrink-0">
+            <div className="w-full relative">
+                 <img src="./bg-header.png" className="w-full object-cover "></img>
+                <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-0 rounded-t-[10px]"></div>
+                 <div className="absolute text-white font-medium bottom-3 right-4 drop-shadow-amber-100 text-[30px] z-10">
+                    <TypeAnimation sequence={[`Hello there Everyone!`, 5000,`Welcome to my Project Space`,5000,`Want to collaborate a Project?`,5000,`We can talk about it!`, 5000,`Have a nice day! :)`, 5000]}
+                    
+                    wrapper="span"
+                    speed={5}
+                    repeat={Infinity}
+                    />
+
+                </div>
+            </div>
+               <img src="./profile.png" alt="Lance Profile" className="absolute bottom-3 h-42.5 left-3" />
+            
                 <div className="w-full gap-5 flex flex-1 items-center justify-end pr-6">
                     <div className="flex">
                         <Button variant="outline" className={"cursor-pointer text-[#00000080] text-[16px] font-light hover:text-[#00000080] p-6"}>
