@@ -1,4 +1,10 @@
 import BentoCard from "./BentoCard";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 
 function SubContent() {
 
@@ -35,15 +41,113 @@ function SubContent() {
         <div className="w-full min-w-[20px] max-w-[350px] overflow-hidden flex flex-col gap-3 h-full overflow-y-auto no-scrollbar py-3 pr-3">
             
             <BentoCard title="Technologies" icon={techIcon} className="min-h-[250px]">
-                <p className="text-gray-500">Dito mo ilalagay yung mga HTML, CSS, React logos mo mamaya!</p>
+               
             </BentoCard>
 
             <BentoCard title="Skills" icon={skillsIcon} className="min-h-[300px]">
-                <ul className="text-gray-500 flex flex-col gap-2">
-                    <li>💻 Web Development</li>
-                    <li>🎨 UI/UX Design</li>
-                    <li>🤖 Machine Learning</li>
-                </ul>
+               <Accordion type="single" collapsible defaultValue="item-1">
+                    <AccordionItem value="item-5">
+                        <AccordionTrigger className={"w-full flex items-center"}>
+                            <div className="w-full flex items-center gap-3">
+                                <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="45" height="45" rx="10" fill="url(#paint0_linear_32_167)"/>
+                                    <path d="M26.5 28.5L32.5 22.5L26.5 16.5" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18.5 16.5L12.5 22.5L18.5 28.5" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_32_167" x1="22.5" y1="0" x2="22.5" y2="45" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0.25" stop-color="#AFB5F5"/>
+                                    <stop offset="0.610577" stop-color="#7783FD"/>
+                                    </linearGradient>
+                                    </defs>
+                                </svg>
+                                <span className="font-medium text-[16px]">
+                                Web Development
+                            </span>
+                            </div>
+                            
+
+                            
+                        </AccordionTrigger>
+                        <AccordionContent>
+                        Yes. It adheres to the WAI-ARIA design pattern.
+                        </AccordionContent>
+                    </AccordionItem>
+                   <AccordionItem value="item-2">
+                        <AccordionTrigger className={"w-full flex items-center"}>
+                            <div className="w-full flex items-center gap-3">
+                                <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="45" height="45" rx="10" fill="url(#paint0_linear_32_167)"/>
+                                    <path d="M26.5 28.5L32.5 22.5L26.5 16.5" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18.5 16.5L12.5 22.5L18.5 28.5" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_32_167" x1="22.5" y1="0" x2="22.5" y2="45" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0.25" stop-color="#AFB5F5"/>
+                                    <stop offset="0.610577" stop-color="#7783FD"/>
+                                    </linearGradient>
+                                    </defs>
+                                </svg>
+                                <span className="font-medium text-[16px]">
+                                Web Development
+                            </span>
+                            </div>
+                            
+
+                            
+                        </AccordionTrigger>
+                        <AccordionContent>
+                        Yes. It adheres to the WAI-ARIA design pattern.
+                        </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="item-3">
+                        <AccordionTrigger className={"w-full flex items-center"}>
+                            <div className="w-full flex items-center gap-3">
+                                <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="45" height="45" rx="10" fill="url(#paint0_linear_32_167)"/>
+                                    <path d="M26.5 28.5L32.5 22.5L26.5 16.5" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18.5 16.5L12.5 22.5L18.5 28.5" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_32_167" x1="22.5" y1="0" x2="22.5" y2="45" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0.25" stop-color="#AFB5F5"/>
+                                    <stop offset="0.610577" stop-color="#7783FD"/>
+                                    </linearGradient>
+                                    </defs>
+                                </svg>
+                                <span className="font-medium text-[16px]">
+                                Web Development
+                            </span>
+                            </div>
+                            
+
+                            
+                        </AccordionTrigger>
+                        <AccordionContent>
+                        Yes. It adheres to the WAI-ARIA design pattern.
+                        </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="item-4">
+                        <AccordionTrigger className={"w-full flex items-center"}>
+                            <div className="w-full flex items-center gap-3">
+                                <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="45" height="45" rx="10" fill="url(#paint0_linear_32_167)"/>
+                                    <path d="M26.5 28.5L32.5 22.5L26.5 16.5" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18.5 16.5L12.5 22.5L18.5 28.5" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_32_167" x1="22.5" y1="0" x2="22.5" y2="45" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0.25" stop-color="#AFB5F5"/>
+                                    <stop offset="0.610577" stop-color="#7783FD"/>
+                                    </linearGradient>
+                                    </defs>
+                                </svg>
+                                <span className="font-medium text-[16px]">
+                                Web Development
+                            </span>
+                            </div>
+                        </AccordionTrigger>
+                        <AccordionContent>
+                        Yes. It adheres to the WAI-ARIA design pattern.
+                        </AccordionContent>
+                    </AccordionItem>
+                </Accordion>
             </BentoCard>
 
             <BentoCard title="Contact Me" icon={contactIcon} className="min-h-[200px]">

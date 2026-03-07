@@ -47,10 +47,10 @@ function Content(){
                     <span className="font-medium text-white">{currentDate}</span>
                 </div>
                  <div className="absolute text-white font-medium bottom-3 right-4 text-[30px] z-10">
-                    <TypeAnimation sequence={[`Hello there Everyone, I'm Lance!`, 5000,`Welcome to My Project Space.`,5000,`Want to collaborate a Project?`,5000,`We can discuss about it!`, 5000,`Have a nice day Everyone! :)`, 5000]}
+                    <TypeAnimation sequence={[`Hello there Everyone!`, 5000,`Welcome to My Project Space.`,5000,`Want to collaborate a Project?`,5000,`We can discuss about it!`, 5000,`Have a nice day Everyone! :)`, 5000]}
                     
                     wrapper="span"
-                    speed={5}
+                    speed={20}
                     repeat={Infinity}
                     />
 
