@@ -23,8 +23,7 @@ function Sidebar(){
                 </div>
                 <div className="border border-[#D9D9D950] mt-6 mb-3"></div>
                 <div>
-                    <ul>
-                        <NavLink to="/" className={({isActive}) =>` 
+                    <NavLink to="/" className={({isActive}) =>` 
                         ${isActive 
                                     ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-[#00000009]" 
                                     : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#3FA6F4] ease-in stroke-black transition duration-75 hover:stroke-[#3FA6F4] bg-white hover:bg-[#00000009]"
@@ -36,15 +35,27 @@ function Sidebar(){
                                 <path d="M3 9.49999C2.99993 9.20906 3.06333 8.92161 3.18579 8.65771C3.30824 8.3938 3.4868 8.15979 3.709 7.97199L10.709 1.97199C11.07 1.6669 11.5274 1.49951 12 1.49951C12.4726 1.49951 12.93 1.6669 13.291 1.97199L20.291 7.97199C20.5132 8.15979 20.6918 8.3938 20.8142 8.65771C20.9367 8.92161 21.0001 9.20906 21 9.49999V18.5C21 19.0304 20.7893 19.5391 20.4142 19.9142C20.0391 20.2893 19.5304 20.5 19 20.5H5C4.46957 20.5 3.96086 20.2893 3.58579 19.9142C3.21071 19.5391 3 19.0304 3 18.5V9.49999Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                                 <p>Home</p>
-                        </NavLink>
-                        <li className="flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#3FA6F4] ease-in stroke-black transition duration-75 hover:stroke-[#3FA6F4] bg-white hover:bg-[#00000009]">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    </NavLink>
+                    <NavLink to="/about" className={({isActive}) =>` 
+                        ${isActive 
+                                    ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-[#00000009]" 
+                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#3FA6F4] ease-in stroke-black transition duration-75 hover:stroke-[#3FA6F4] bg-white hover:bg-[#00000009]"
+                                }`
+                                }
+                                >
+                           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M19 20.5V18.5C19 17.4391 18.5786 16.4217 17.8284 15.6716C17.0783 14.9214 16.0609 14.5 15 14.5H9C7.93913 14.5 6.92172 14.9214 6.17157 15.6716C5.42143 16.4217 5 17.4391 5 18.5V20.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M12 10.5C14.2091 10.5 16 8.70914 16 6.5C16 4.29086 14.2091 2.5 12 2.5C9.79086 2.5 8 4.29086 8 6.5C8 8.70914 9.79086 10.5 12 10.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                                 <p>About</p>
-                        </li>
-                        <li className="flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#3FA6F4] ease-in stroke-black transition duration-75 hover:stroke-[#3FA6F4] bg-white hover:bg-[#00000009]">
+                    </NavLink>
+                    <NavLink to="/projects" className={({isActive}) =>` 
+                        ${isActive 
+                                    ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-[#00000009]" 
+                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#3FA6F4] ease-in stroke-black transition duration-75 hover:stroke-[#3FA6F4] bg-white hover:bg-[#00000009]"
+                                }`
+                                }
+                                >
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18 18.5C16.6739 18.5 15.4021 17.9732 14.4645 17.0355C13.5268 16.0979 13 14.8261 13 13.5V21.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M9 19.5H4C3.46957 19.5 2.96086 19.2893 2.58579 18.9142C2.21071 18.5391 2 18.0304 2 17.5V4.49997C2 3.96954 2.21071 3.46083 2.58579 3.08576C2.96086 2.71069 3.46957 2.49997 4 2.49997H7.9C8.23449 2.49669 8.56445 2.57736 8.8597 2.73459C9.15495 2.89183 9.40604 3.1206 9.59 3.39997L10.4 4.59997C10.5821 4.8765 10.83 5.10349 11.1215 5.26058C11.413 5.41766 11.7389 5.49992 12.07 5.49997H20C20.5304 5.49997 21.0391 5.71069 21.4142 6.08576C21.7893 6.46083 22 6.96954 22 7.49997V12.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -52,14 +63,20 @@ function Sidebar(){
                                 <path d="M20 20.5C21.1046 20.5 22 19.6046 22 18.5C22 17.3954 21.1046 16.5 20 16.5C18.8954 16.5 18 17.3954 18 18.5C18 19.6046 18.8954 20.5 20 20.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <p>Projects</p>
-                        </li>
-                        <li className="flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#3FA6F4] ease-in stroke-black transition duration-75 hover:stroke-[#3FA6F4] bg-white hover:bg-[#00000009]">
-                           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    </NavLink>
+                    <NavLink to="/achievements" className={({isActive}) =>` 
+                        ${isActive 
+                                    ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-[#00000009]" 
+                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#3FA6F4] ease-in stroke-black transition duration-75 hover:stroke-[#3FA6F4] bg-white hover:bg-[#00000009]"
+                                }`
+                                }
+                                >
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M15.477 12.39L16.992 20.916C17.009 21.0164 16.9949 21.1196 16.9516 21.2118C16.9084 21.3039 16.838 21.3807 16.7499 21.4318C16.6619 21.4829 16.5603 21.5059 16.4588 21.4977C16.3573 21.4895 16.2607 21.4506 16.182 21.386L12.602 18.699C12.4292 18.5699 12.2192 18.5001 12.0035 18.5001C11.7878 18.5001 11.5778 18.5699 11.405 18.699L7.819 21.385C7.74032 21.4494 7.64386 21.4884 7.54249 21.4966C7.44112 21.5048 7.33967 21.4818 7.25166 21.4309C7.16365 21.3799 7.09327 21.3033 7.04991 21.2113C7.00656 21.1194 6.99228 21.0163 7.009 20.916L8.523 12.39" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M12 13.5C15.3137 13.5 18 10.8137 18 7.5C18 4.18629 15.3137 1.5 12 1.5C8.68629 1.5 6 4.18629 6 7.5C6 10.8137 8.68629 13.5 12 13.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <p>Achievements</p>
-                        </li>
+                    </NavLink>
                         <li className="flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#3FA6F4] ease-in stroke-black transition duration-75 hover:stroke-[#3FA6F4] bg-white hover:bg-[#00000009]">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 6.5V20.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -67,7 +84,7 @@ function Sidebar(){
                             </svg>
                             <p>Blog</p>
                         </li>
-                    </ul>
+                    
                 </div>
                 <div className="border border-[#D9D9D950] my-3"></div>
                 <div className="w-full flex flex-col">
