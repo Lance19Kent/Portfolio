@@ -28,8 +28,30 @@ const reviews = [
     img: "/technology-icons/java.svg",
   },
   {
-    img: "/technology-icons/mysql.svg",
+    img: "/technology-icons/canva.svg",
   },
+  {
+    img: "/technology-icons/trello.svg",
+  },
+  {
+    img: "/technology-icons/react.svg",
+  },
+  {
+    img: "/technology-icons/vite.svg",
+  },
+  {
+    img: "/technology-icons/bootstrap.svg",
+  },
+  {
+    img: "/technology-icons/git.svg",
+  },
+  {
+    img: "/technology-icons/python.svg",
+  },
+  {
+    img: "/technology-icons/node.svg",
+  },
+  
 ]
 
 const firstRow = reviews.slice(0, reviews.length / 2)
@@ -45,7 +67,7 @@ const ReviewCard = ({
       )}
     >
       <div className="flex flex-row items-center">
-        <img width="36" height="36" alt="" src={img} />
+        <img width="38" height="36" alt="" src={img} />
       </div>
     </figure>
   )

@@ -49,7 +49,7 @@ function SubContent() {
                     <AccordionItem value="item-5">
                         <AccordionTrigger className={"w-full flex items-center"}>
                             <div className="w-full flex items-center gap-3">
-                                <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="40" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="45" height="45" rx="10" fill="url(#paint0_linear_32_167)"/>
                                     <path d="M26.5 28.5L32.5 22.5L26.5 16.5" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M18.5 16.5L12.5 22.5L18.5 28.5" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
@@ -75,7 +75,7 @@ function SubContent() {
                    <AccordionItem value="item-2">
                         <AccordionTrigger className={"w-full flex items-center"}>
                             <div className="w-full flex items-center gap-3">
-                               <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                               <svg width="40" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="45" height="45" rx="10" fill="url(#paint0_linear_33_12)"/>
                                     <path d="M21.0417 19.5833L25.4167 23.9583" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M14.4792 35.625C15.4887 35.625 16.4755 35.3257 17.3149 34.7648C18.1543 34.204 18.8085 33.4068 19.1948 32.4741C19.5811 31.5415 19.6822 30.5152 19.4853 29.5251C19.2883 28.535 18.8022 27.6255 18.0884 26.9117C17.3745 26.1978 16.4651 25.7117 15.4749 25.5148C14.4848 25.3178 13.4586 25.4189 12.5259 25.8052C11.5932 26.1915 10.7961 26.8458 10.2352 27.6851C9.67436 28.5245 9.37501 29.5113 9.37501 30.5209C9.37528 31.4915 9.00612 32.4258 8.34251 33.1342C8.13803 33.3382 7.99871 33.5982 7.94223 33.8815C7.88574 34.1647 7.91463 34.4583 8.02522 34.7251C8.13581 34.9919 8.32313 35.2199 8.56343 35.3801C8.80374 35.5403 9.0862 35.6255 9.37501 35.625H14.4792Z" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
@@ -99,7 +99,7 @@ function SubContent() {
                     <AccordionItem value="item-3">
                         <AccordionTrigger className={"w-full flex items-center"}>
                             <div className="w-full flex items-center gap-3">
-                                <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="40" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="45" height="45" rx="10" fill="url(#paint0_linear_33_39)"/>
 <path d="M22.5 16.6667V10.8334H16.6667" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M31.25 16.6666H13.75C12.1391 16.6666 10.8333 17.9725 10.8333 19.5833V31.25C10.8333 32.8608 12.1391 34.1666 13.75 34.1666H31.25C32.8608 34.1666 34.1666 32.8608 34.1666 31.25V19.5833C34.1666 17.9725 32.8608 16.6666 31.25 16.6666Z" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
@@ -126,7 +126,7 @@ function SubContent() {
                     <AccordionItem value="item-4">
                         <AccordionTrigger className={"w-full flex items-center"}>
                             <div className="w-full flex items-center gap-3">
-                                <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="40" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="45" height="45" rx="10" fill="url(#paint0_linear_33_48)"/>
 <path d="M34.4583 13.75L9.37497 21.0416L8.06247 17.5416C7.62497 15.9375 8.49997 14.3333 9.95831 13.8958L29.6458 8.06247C31.25 7.62497 32.8541 8.49997 33.2916 9.95831L34.4583 13.75Z" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M14.0417 12.7291L18.5625 18.4166" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
