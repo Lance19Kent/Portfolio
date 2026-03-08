@@ -32,7 +32,7 @@ function Content(){
     })
 
     return (
-    <div className="w-full flex flex-col min-w-175 gap-3 flex-1 h-full overflow-y-auto no-scrollbar py-3">
+    <div className="w-full flex flex-col min-w-175 gap-3 flex-1 h-full overflow-y-auto no-scrollbar py-3 select-none">
         <div className="w-full flex flex-col h-[30%] min-h-82.5 overflow-hidden bg-white rounded-[10px] relative shrink-0">
             <div className="w-full relative">
                  <img src="./bg-header.png" className="w-full object-cover "></img>

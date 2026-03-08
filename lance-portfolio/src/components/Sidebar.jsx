@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom"
 
 function Sidebar(){
     return(
-        <nav className="max-h-screen bg-red-10 w-[18%] bg-white rounded-[10px] p-4 my-3 ml-3">
+        <nav className="max-h-screen bg-red-10 w-[18%] bg-white rounded-[10px] p-4 my-3 ml-3 select-none">
             <div className="w-full flex flex-col h-full justify-between">
                 <div className="w-full flex flex-col">
                     <div className="w-full flex justify-center">

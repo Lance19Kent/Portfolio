@@ -6,6 +6,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import TechMarquee from "./TechMarquee";
+import { Link } from "react-router-dom";
 
 function SubContent() {
 
@@ -38,7 +39,7 @@ function SubContent() {
                     </svg>;
 
     return (
-        <div className="w-full  max-w-[350px] overflow-hidden flex flex-col gap-3 h-full overflow-y-auto no-scrollbar py-3 pr-3">
+        <div className="w-full  max-w-[350px] overflow-hidden flex flex-col gap-3 h-full overflow-y-auto no-scrollbar py-3 pr-3 select-none">
             
             <BentoCard title="Technologies" icon={techIcon} className="min-h-[250px]">
                <TechMarquee/>
@@ -150,27 +151,27 @@ function SubContent() {
 
             <BentoCard title="Contact Me" icon={contactIcon} className="min-h-[280px] flex-1">
                 <div className="flex flex-col justify-between h-full">
-                    <ul className="flex gap-4 w-full flex-wrap">
-                        <li className="w-10">
-                            <img src="./contact-icons/github.svg"></img>
-                        </li>
-                        <li className="w-10">
-                            <img src="./contact-icons/facebook.svg"></img>
-                        </li>
-                        <li className="w-10">
-                            <img src="./contact-icons/email.svg"></img>
-                        </li>
-                        <li className="w-10">
-                            <img src="./contact-icons/whatsapp.svg"></img>
-                        </li>
-                        <li className="w-10">
-                            <img src="./contact-icons/instagram.svg"></img>
-                        </li>
-                        <li className="w-10">
-                            <img src="./contact-icons/linkedin.svg"></img>
-                        </li>
-                    </ul>
-                    <span className="text-black/50">If you have any concerns, just contact me in with these social medias.</span>
+                    <div className="flex gap-4 w-full flex-wrap">
+                        <Link to={"https://github.com/Lance19Kent"} target="_blank" className="w-10">
+                            <img src="./contact-icons/github.svg" alt="Github Logo"/>
+                        </Link>
+                        <Link to={"https://www.facebook.com/Lance19Kent/"} target="_blank" className="w-10">
+                             <img src="./contact-icons/facebook.svg" alt="Facebook Logo"/>
+                        </Link>
+                        <Link to={"https://mail.google.com/mail/u/0/"} target="_blank" className="w-10">
+                             <img src="./contact-icons/email.svg" alt="Email Logo"/>
+                        </Link>
+                        <Link to={""} target="_blank" className="w-10">
+                             <img src="./contact-icons/whatsapp.svg" alt="WhatsApp Logo"/>
+                        </Link>
+                        <Link to={"https://www.instagram.com/ikent_lance/"} target="_blank" className="w-10">
+                             <img src="./contact-icons/instagram.svg" alt="Instagram Logo"/>
+                        </Link>
+                        <Link to={"https://www.linkedin.com/in/lancemagollado/"} target="_blank" className="w-10">
+                             <img src="./contact-icons/linkedin.svg" alt="LinkedIn Logo"/>
+                        </Link>
+                    </div>
+                    <span className="text-black/50 text-[14px]">If you have any concerns, just contact me in with these social medias.</span>
                 </div>
 
             </BentoCard>
