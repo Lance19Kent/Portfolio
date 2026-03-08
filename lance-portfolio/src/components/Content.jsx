@@ -73,7 +73,7 @@ function Content(){
                     </div>
                     <div className="flex">
                         <Button variant="outline" className={"cursor-pointer text-[#00000080] text-[16px] font-light hover:text-[#00000070] p-6"} asChild>
-                            <NavLink to={"https://github.com/Lance19Kent"} target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/Lance19Kent" target="_blank" rel="noopener noreferrer">
                             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M16.6666 21.875V19.7917C16.6666 18.6866 16.2277 17.6268 15.4463 16.8454C14.6649 16.064 13.605 15.625 12.5 15.625H6.24998C5.14491 15.625 4.0851 16.064 3.3037 16.8454C2.5223 17.6268 2.08331 18.6866 2.08331 19.7917V21.875" stroke="black" stroke-opacity="0.4" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M9.37498 11.4583C11.6762 11.4583 13.5416 9.59285 13.5416 7.29167C13.5416 4.99048 11.6762 3.125 9.37498 3.125C7.07379 3.125 5.20831 4.99048 5.20831 7.29167C5.20831 9.59285 7.07379 11.4583 9.37498 11.4583Z" stroke="black" stroke-opacity="0.4" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
@@ -81,7 +81,7 @@ function Content(){
                             <path d="M22.9167 11.4583H16.6667" stroke="black" stroke-opacity="0.4" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             Follow on Github
-                            </NavLink>
+                            </a>
                         </Button>
                     </div>
                 </div>
