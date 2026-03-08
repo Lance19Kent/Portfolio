@@ -11,7 +11,8 @@ function Sidebar(){
                         <img src="/me-daytime.png" className="h-15 w-15"></img>
                     </div>
                     <h3 className="text-left text-black text-[18px] font-semibold text-nowrap whitespace-nowrap text-ellipsis overflow-hidden w-full pt-4">Magollado, Lance Kent Geoffrey B.</h3>
-                                    <h2 className="text-black text-[14px] pb-6.25">Full-Stack Developer</h2>
+                    <h2 className="text-black text-[14px] pb-6.25">Full-Stack Developer</h2>
+                    
                     <Button variant="outline" className={"py-5 font-light rounded-[10px] flex gap-2.5 justify-center cursor-pointer text-[#00000080] hover:text-[#3FA6F4] text-[16px] hover:bg-white hover:border-[#3FA6F4] hover:stroke-[#3FA6F4] stroke-[#00000060] ease-out "}>
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 15V3"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -77,14 +78,19 @@ function Sidebar(){
                             </svg>
                             <p>Achievements</p>
                     </NavLink>
-                        <li className="flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#3FA6F4] ease-in stroke-black transition duration-75 hover:stroke-[#3FA6F4] bg-white hover:bg-[#00000009]">
+                    <NavLink to="/blog" className={({isActive}) =>` 
+                        ${isActive 
+                                    ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-[#00000009]" 
+                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#3FA6F4] ease-in stroke-black transition duration-75 hover:stroke-[#3FA6F4] bg-white hover:bg-[#00000009]"
+                                }`
+                                }
+                                >
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 6.5V20.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M3 17.5C2.73478 17.5 2.48043 17.3946 2.29289 17.2071C2.10536 17.0196 2 16.7652 2 16.5V3.5C2 3.23478 2.10536 2.98043 2.29289 2.79289C2.48043 2.60536 2.73478 2.5 3 2.5H8C9.06087 2.5 10.0783 2.92143 10.8284 3.67157C11.5786 4.42172 12 5.43913 12 6.5C12 5.43913 12.4214 4.42172 13.1716 3.67157C13.9217 2.92143 14.9391 2.5 16 2.5H21C21.2652 2.5 21.5196 2.60536 21.7071 2.79289C21.8946 2.98043 22 3.23478 22 3.5V16.5C22 16.7652 21.8946 17.0196 21.7071 17.2071C21.5196 17.3946 21.2652 17.5 21 17.5H15C14.2044 17.5 13.4413 17.8161 12.8787 18.3787C12.3161 18.9413 12 19.7044 12 20.5C12 19.7044 11.6839 18.9413 11.1213 18.3787C10.5587 17.8161 9.79565 17.5 9 17.5H3Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <p>Blog</p>
-                        </li>
-                    
+                    </NavLink>
                 </div>
                 <div className="border border-[#D9D9D950] my-3"></div>
                 <div className="w-full flex flex-col">

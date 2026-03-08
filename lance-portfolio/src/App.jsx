@@ -5,6 +5,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home'
 import About from './pages/About'
 import Projects from './pages/Projects'
+import Achievements from './pages/Achievements'
+import Blog from './pages/Blog'
+import Resume from './pages/Resume'
 
 function App() { 
   const [count, setCount] = useState(0)
@@ -21,6 +24,15 @@ function App() {
       </Routes>
       <Routes>
         <Route path="/projects" element={<Projects/>} />
+      </Routes>
+      <Routes>
+        <Route path="/achievements" element={<Achievements/>} />
+      </Routes>
+      <Routes>
+        <Route path="/blog" element={<Blog/>} />
+      </Routes>
+      <Routes>
+        <Route path="/resume" element={<Resume/>} />
       </Routes>
       </div>
     </Router>
