@@ -34,7 +34,7 @@ function Content(){
 
     return (
     <div className="w-full flex flex-col min-w-175 gap-3 flex-1 h-full overflow-y-auto no-scrollbar py-3 select-none">
-        <div className="w-full flex flex-col h-[30%] min-h-82.5 overflow-hidden bg-white rounded-[10px] relative shrink-0">
+        <div className="w-full flex flex-col overflow-hidden bg-white rounded-[10px] relative shrink-0">
             <div className="w-full relative">
                  <img src="./bg-header.png" className="w-full object-cover "></img>
                 <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-0 rounded-t-[10px]"></div>
@@ -59,7 +59,7 @@ function Content(){
             </div>
                <img src="./profile.png" alt="Lance Profile" className="absolute bottom-3 h-42.5 left-3" />
             
-                <div className="w-full gap-5 flex flex-1 items-center justify-end pr-6">
+                <div className="w-full py-5 gap-5 flex flex-1 items-center justify-end pr-6">
                     <div className="flex">
                         <Button variant="outline" className={"cursor-pointer text-[#00000080] text-[16px] font-light hover:text-[rgba(0,0,0,0.5)] p-6"} asChild>
                             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lancemagollado46@gmail.com&su=Hi,%20Let%20us%20connect!" target="_blank" rel="noopener noreferrer">
