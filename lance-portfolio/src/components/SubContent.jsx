@@ -63,10 +63,7 @@ function SubContent() {
                                 <span className="font-medium text-[16px]">
                                 Web Development
                             </span>
-                            </div>
-                            
-
-                            
+                            </div>                
                         </AccordionTrigger>
                         <AccordionContent className={"text-black/60"}>
                         Aspiring full-stack developer with a strong focus on crafting responsive, user-centric front-end interfaces.
@@ -151,12 +148,31 @@ function SubContent() {
                 </Accordion>
             </BentoCard>
 
-            <BentoCard title="Contact Me" icon={contactIcon} className="min-h-[200px]">
-                <ul>
-                    <li>
-                        <img src="./contact-icons/github.png"></img>
-                    </li>
-                </ul>
+            <BentoCard title="Contact Me" icon={contactIcon} className="min-h-[280px] flex-1">
+                <div className="flex flex-col justify-between h-full">
+                    <ul className="flex gap-4 w-full flex-wrap">
+                        <li className="w-10">
+                            <img src="./contact-icons/github.svg"></img>
+                        </li>
+                        <li className="w-10">
+                            <img src="./contact-icons/facebook.svg"></img>
+                        </li>
+                        <li className="w-10">
+                            <img src="./contact-icons/email.svg"></img>
+                        </li>
+                        <li className="w-10">
+                            <img src="./contact-icons/whatsapp.svg"></img>
+                        </li>
+                        <li className="w-10">
+                            <img src="./contact-icons/instagram.svg"></img>
+                        </li>
+                        <li className="w-10">
+                            <img src="./contact-icons/linkedin.svg"></img>
+                        </li>
+                    </ul>
+                    <span className="text-black/50">If you have any concerns, just contact me in with these social medias.</span>
+                </div>
+
             </BentoCard>
 
         </div>
