@@ -151,29 +151,43 @@ function SubContent() {
 
             <BentoCard title="Contact Me" icon={contactIcon} className="min-h-[280px] flex-1">
                 <div className="flex flex-col justify-between h-full">
-                    <div className="flex gap-4 w-full flex-wrap">
-                        <a href="https://github.com/Lance19Kent" target="_blank" className="w-10">
-                            <img src="./contact-icons/github.svg" alt="Github Logo"/>
-                        </a>
-                        <a href="https://www.facebook.com/Lance19Kent/" target="_blank" className="w-10">
-                             <img src="./contact-icons/facebook.svg" alt="Facebook Logo"/>
-                        </a>
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lancemagollado46@gmail.com&su=Hi,%20Let%20us%20connect!" target="_blank" className="w-10">
+                    <ul className="flex gap-4 w-full flex-wrap">
+                        <li>
+                            <a href="https://github.com/Lance19Kent" target="_blank" rel="noopener noreferrer" className="w-10">
+                                <img src="./contact-icons/github.svg" alt="Github Logo"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/Lance19Kent/" target="_blank" rel="noopener noreferrer" className="w-10">
+                                <img src="./contact-icons/facebook.svg" alt="Facebook Logo"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lancemagollado46@gmail.com&su=Hi,%20Let%20us%20connect!" target="_blank" rel="noopener noreferrer" className="w-10">
                              <img src="./contact-icons/email.svg" alt="Email Logo"/>
-                        </a>
-                        <a href="viber://chat?number=%2B639263226163" target="_blank" className="w-10">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="viber://chat?number=%2B639263226163" target="_blank" rel="noopener noreferrer" className="w-10">
                              <img src="./contact-icons/viber.svg" alt="WhatsApp Logo"/>
-                        </a>
-                        <a href="https://www.instagram.com/ikent_lance/" target="_blank" className="w-10">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/ikent_lance/" target="_blank"  rel="noopener noreferrer" className="w-10">
                              <img src="./contact-icons/instagram.svg" alt="Instagram Logo"/>
-                        </a>
-                        <a href="https://www.linkedin.com/in/lancemagollado/" target="_blank" className="w-10">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/lancemagollado/" target="_blank"  rel="noopener noreferrer" className="w-10">
                              <img src="./contact-icons/linkedin.svg" alt="LinkedIn Logo"/>
-                        </a>
-                        <a href="https://api.whatsapp.com/send?phone=639263226163&text=Hi%20Lance!%20I%20saw%20your%20portfolio" target="_blank" className="w-10">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://api.whatsapp.com/send?phone=639263226163&text=Hi%20Lance!%20I%20saw%20your%20portfolio" target="_blank" rel="noopener noreferrer" className="w-10">
                              <img src="./contact-icons/whatsapp.svg" alt="LinkedIn Logo"/>
-                        </a>
-                    </div>
+                            </a>
+                        </li>
+                    </ul>
                     <span className="text-black/50 text-[14px]">If you have any concerns, just contact me in with these social medias.</span>
                 </div>
 
