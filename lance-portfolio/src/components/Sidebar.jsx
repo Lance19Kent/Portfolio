@@ -16,10 +16,9 @@ function Sidebar(){
                     
                     <NavLink to={"/resume"} className={({isActive}) =>cn(buttonVariants({variant:"outline"}),
                         "py-5 font-light rounded-[10px] flex gap-2.5 justify-center cursor-pointer text-[16px] ease-in transition-all duration-75",
-
                         isActive
                                 ? "text-[#3FA6F4] hover:text-[#3FA6F4] border-[#3FA6F4] stroke-[#3FA6F4] hover:bg-white " 
-                                : "text-[#00000080] bg-white border-gray-200 stroke-[#00000060] hover:text-[#3FA6F4] hover:border-[#3FA6F4] hover:bg-white hover:stroke-[#3FA6F4]" // 
+                                : "text-[#00000080] bg-white border-gray-200 stroke-[#00000060] hover:text-[#7abdf0] hover:border-[#7abdf0] hover:bg-white hover:stroke-[#7abdf0]" 
                         )}>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 15V3"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -35,7 +34,7 @@ function Sidebar(){
                     <NavLink to="/" className={({isActive}) =>` 
                         ${isActive 
                                     ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-[#00000009]" 
-                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#3FA6F4] ease-in stroke-black transition duration-75 hover:stroke-[#3FA6F4] bg-white hover:bg-[#00000009]"
+                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#7abdf0] ease-in stroke-black transition duration-75 hover:stroke-[#7abdf0] bg-white hover:bg-[#00000004]"
                                 }`
                                 }
                                 >
@@ -48,7 +47,7 @@ function Sidebar(){
                     <NavLink to="/about" className={({isActive}) =>` 
                         ${isActive 
                                     ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-[#00000009]" 
-                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#3FA6F4] ease-in stroke-black transition duration-75 hover:stroke-[#3FA6F4] bg-white hover:bg-[#00000009]"
+                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#7abdf0] ease-in stroke-black transition duration-75 hover:stroke-[#7abdf0] bg-white hover:bg-[#00000004]"
                                 }`
                                 }
                                 >
@@ -61,7 +60,7 @@ function Sidebar(){
                     <NavLink to="/projects" className={({isActive}) =>` 
                         ${isActive 
                                     ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-[#00000009]" 
-                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#3FA6F4] ease-in stroke-black transition duration-75 hover:stroke-[#3FA6F4] bg-white hover:bg-[#00000009]"
+                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#7abdf0] ease-in stroke-black transition duration-75 hover:stroke-[#7abdf0] bg-white hover:bg-[#00000004]"
                                 }`
                                 }
                                 >
@@ -76,7 +75,7 @@ function Sidebar(){
                     <NavLink to="/achievements" className={({isActive}) =>` 
                         ${isActive 
                                     ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-[#00000009]" 
-                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#3FA6F4] ease-in stroke-black transition duration-75 hover:stroke-[#3FA6F4] bg-white hover:bg-[#00000009]"
+                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#7abdf0] ease-in stroke-black transition duration-75 hover:stroke-[#7abdf0] bg-white hover:bg-[#00000004]"
                                 }`
                                 }
                                 >
@@ -89,7 +88,7 @@ function Sidebar(){
                     <NavLink to="/blog" className={({isActive}) =>` 
                         ${isActive 
                                     ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-[#00000009]" 
-                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#3FA6F4] ease-in stroke-black transition duration-75 hover:stroke-[#3FA6F4] bg-white hover:bg-[#00000009]"
+                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#7abdf0] ease-in stroke-black transition duration-75 hover:stroke-[#7abdf0] bg-white hover:bg-[#00000004]"
                                 }`
                                 }
                                 >
