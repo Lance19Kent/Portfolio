@@ -1,4 +1,4 @@
-import { Button } from "./ui/button"
+import { Button } from "../ui/button"
 import { TypeAnimation } from "react-type-animation";
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";

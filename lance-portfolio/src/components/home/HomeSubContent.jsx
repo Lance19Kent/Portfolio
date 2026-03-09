@@ -1,4 +1,4 @@
-import BentoCard from "./BentoCard";
+import BentoCard from "../BentoCard";
 import {
   Accordion,
   AccordionContent,
@@ -39,7 +39,7 @@ function SubContent() {
                     </svg>;
 
     return (
-        <div className="w-full  max-w-[350px] overflow-hidden flex flex-col gap-3 h-full overflow-y-auto no-scrollbar py-3 pr-3 select-none">
+        <div className="w-full max-w-[350px] overflow-hidden flex flex-col gap-3 h-full overflow-y-auto no-scrollbar py-3 pr-3 select-none">
             
             <BentoCard title="Technologies" icon={techIcon} className="min-h-[250px]">
                <TechMarquee/>
@@ -152,37 +152,37 @@ function SubContent() {
             <BentoCard title="Contact Me" icon={contactIcon} className="min-h-[280px] flex-1">
                 <div className="flex flex-col justify-between h-full">
                     <ul className="flex gap-4 w-full flex-wrap">
-                        <li>
+                        <li className="w-10">
                             <a href="https://github.com/Lance19Kent" target="_blank" rel="noopener noreferrer" className="w-10">
                                 <img src="./contact-icons/github.svg" alt="Github Logo"/>
                             </a>
                         </li>
-                        <li>
-                            <a href="https://www.facebook.com/Lance19Kent/" target="_blank" rel="noopener noreferrer" className="w-10">
+                        <li  className="w-10">
+                            <a href="https://www.facebook.com/Lance19Kent/" target="_blank" rel="noopener noreferrer">
                                 <img src="./contact-icons/facebook.svg" alt="Facebook Logo"/>
                             </a>
                         </li>
-                        <li>
+                        <li className="w-10">
                             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lancemagollado46@gmail.com&su=Hi,%20Let%20us%20connect!" target="_blank" rel="noopener noreferrer" className="w-10">
                              <img src="./contact-icons/email.svg" alt="Email Logo"/>
                             </a>
                         </li>
-                        <li>
+                        <li className="w-10">
                             <a href="viber://chat?number=%2B639263226163" target="_blank" rel="noopener noreferrer" className="w-10">
                              <img src="./contact-icons/viber.svg" alt="WhatsApp Logo"/>
                             </a>
                         </li>
-                        <li>
+                        <li className="w-10">
                             <a href="https://www.instagram.com/ikent_lance/" target="_blank"  rel="noopener noreferrer" className="w-10">
                              <img src="./contact-icons/instagram.svg" alt="Instagram Logo"/>
                             </a>
                         </li>
-                        <li>
+                        <li className="w-10">
                             <a href="https://www.linkedin.com/in/lancemagollado/" target="_blank"  rel="noopener noreferrer" className="w-10">
                              <img src="./contact-icons/linkedin.svg" alt="LinkedIn Logo"/>
                             </a>
                         </li>
-                        <li>
+                        <li className="w-10">
                             <a href="https://api.whatsapp.com/send?phone=639263226163&text=Hi%20Lance!%20I%20saw%20your%20portfolio" target="_blank" rel="noopener noreferrer" className="w-10">
                              <img src="./contact-icons/whatsapp.svg" alt="LinkedIn Logo"/>
                             </a>

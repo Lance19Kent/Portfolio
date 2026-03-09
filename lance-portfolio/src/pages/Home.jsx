@@ -1,5 +1,5 @@
-import SubContent from "@/components/SubContent";
-import Content from "@/components/Content";
+import SubContent from "@/components/home/HomeSubContent";
+import Content from "@/components/home/HomeContent";
 
 function Home(){
     return (
