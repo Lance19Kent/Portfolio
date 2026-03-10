@@ -47,7 +47,7 @@ function Content(){
                     </svg>
                     <span className="font-medium text-white">{currentDate}</span>
                 </div>
-                 <div className="absolute text-white font-medium bottom-3 right-4 text-[30px] z-10">
+                 <div className="absolute text-white font-medium bottom-3  right-4 text-[30px] z-10">
                     <TypeAnimation sequence={[`Hello there Everyone!`, 5000,`Welcome to My Project Space.`,5000,`Want to collaborate a Project?`,5000,`We can discuss about it!`, 5000,`Have a Nice Day Everyone!`, 5000]}
                     
                     wrapper="span"
