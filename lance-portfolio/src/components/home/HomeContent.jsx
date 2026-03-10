@@ -60,8 +60,11 @@ function Content(){
                <img src="./profile.png" alt="Lance Profile" className="absolute bottom-3 h-42.5 left-3" />
             
                 <div className="w-full py-5 gap-5 flex flex-1 items-center justify-end pr-6">
-                    <div className="flex">
-                        
+                    <div className="flex w-full justify-between pl-48 items-center">
+                        <div className="">
+                            <h1 className="font-semibold leading-5 text-[20px]">Lance Kent Geoffrey B. Magollado</h1>
+                            <span className="text-[14px] text-black/70">Aspiring Full-Stack Developer</span>
+                        </div>
                         <Button variant="outline" className={"cursor-pointer text-[#00000080] text-[16px] font-light hover:text-[rgba(0,0,0,0.5)] p-6"} asChild>
                             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lancemagollado46@gmail.com&su=Hi,%20Let%20us%20connect!" target="_blank" rel="noopener noreferrer">
                             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
