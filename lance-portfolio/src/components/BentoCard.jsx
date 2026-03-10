@@ -1,6 +1,6 @@
 function BentoCard({title, icon, children, className=""}){
     return (
-       <div className={`w-full flex flex-col overflow-hidden bg-white rounded-[10px] p-4 gap-4 shrink-0 ${className}`}>
+       <div className={`w-full flex flex-col overflow-hidden select-none bg-white rounded-[10px] p-4 gap-4 shrink-0 ${className}`}>
             
             {/* Card Header (Icon + Title) */}
             <div className="flex items-center gap-2">
