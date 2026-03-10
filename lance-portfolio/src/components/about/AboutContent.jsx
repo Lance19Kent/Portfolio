@@ -1,6 +1,15 @@
 import BentoCard from "../BentoCard";
-import { Button } from "../ui/button";
 
+import { Button } from "../ui/button";
+import * as React from "react"
+import { Card, CardContent } from "/src/components/ui/card"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "/src/components/ui/carousel"
 const aboutIcon = <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M25.3334 28V25.3333C25.3334 23.9188 24.7715 22.5623 23.7713 21.5621C22.7711 20.5619 21.4146 20 20.0001 20H12.0001C10.5856 20 9.22904 20.5619 8.22884 21.5621C7.22865 22.5623 6.66675 23.9188 6.66675 25.3333V28" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M16.0001 14.6667C18.9456 14.6667 21.3334 12.2789 21.3334 9.33333C21.3334 6.38781 18.9456 4 16.0001 4C13.0546 4 10.6667 6.38781 10.6667 9.33333C10.6667 12.2789 13.0546 14.6667 16.0001 14.6667Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -47,21 +56,29 @@ function AboutContent(){
                     Front-End Development is my current playground where logic meets creativity. I love building intuitive user interfaces and crafting smooth digital experiences. Being a Full-Stack Developer is my goal so that I can create an innovative web app of my own.
                 </span>
             </BentoCard>
-            <BentoCard title={"Highlights"} icon={highlightsIcon}>
-                <div className="flex w-full h-full justify-between items-center">
-                <div className="w-[210px] h-[270px] ">
-                    <div id="img" className="w-full h-[160px] bg-[#DEDEDE] rounded-tl-[10px] rounded-tr-[10px]"></div> 
-                    <div className="w-full h-[80px] bg-[#ECECEC60] rounded-bl-[10px] rounded-br-[10px]"></div>
-                </div>
-                <div className="w-[210px] h-[270px] ">
-                    <div id="img" className="w-full h-[160px] bg-[#DEDEDE] rounded-tl-[10px] rounded-tr-[10px]"></div> 
-                    <div className="w-full h-[80px] bg-[#ECECEC60] rounded-bl-[10px] rounded-br-[10px]"></div>
-                </div>
-                <div className="w-[210px] h-[270px] ">
-                    <div id="img" className="w-full h-[160px] bg-[#DEDEDE] rounded-tl-[10px] rounded-tr-[10px]"></div> 
-                    <div className="w-full h-[80px] bg-[#ECECEC60] rounded-bl-[10px] rounded-br-[10px]"></div>
-                </div>
+            <BentoCard title={"Highlights"} icon={highlightsIcon} className="min-h-100">
+                <Carousel
+      opts={{
+        align: "start",
+      }}
+      className="w-full max-w-[12rem] sm:max-w-xs md:max-w-sm"
+    >
+      <CarouselContent>
+        {Array.from({ length: 5 }).map((_, index) => (
+          <CarouselItem key={index} className="basis-1/2 lg:basis-1/3">
+            <div className="p-1">
+              <Card>
+                <CardContent className="flex aspect-square items-center justify-center p-6">
+                  <span className="text-3xl font-semibold">{index + 1}</span>
+                </CardContent>
+              </Card>
             </div>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+    </Carousel>
             </BentoCard>
         </div>
     )
