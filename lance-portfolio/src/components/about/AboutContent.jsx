@@ -33,8 +33,8 @@ function AboutContent(){
                <img src="./profile.png" alt="Lance Profile" className="absolute bottom-15 h-35.5 left-3" />
             
                 <div className="w-full py-5 gap-5 flex flex-1 items-center justify-end pr-4">
-                    <div className="flex flex-col w-full justify-between pl-42 gap-2">
-                        <div>
+                    <div className="flex flex-col w-full justify-between pl-42 gap-3">
+                        <div className="leading-5">
                             <h1 className="font-semibold leading-6 text-[20px]">Lance Kent Geoffrey B. Magollado</h1>
                             <span className="text-[14px] text-black/70">Aspiring Full-Stack Developer</span>
                         </div>
