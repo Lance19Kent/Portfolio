@@ -29,7 +29,7 @@ const certificateIcon = <svg width="30" height="30" viewBox="0 0 40 40" fill="no
 function AboutContent(){
     return(
         <div className="overflow-y-auto py-3 w-full gap-3 flex flex-col no-scrollbar">
-            <div className="w-full flex flex-col overflow-hidden bg-white rounded-[10px] relative shrink-0">
+            <div className="w-full select-none flex flex-col overflow-hidden bg-white rounded-[10px] relative shrink-0">
             <div className="w-full relative">
                  <img src="./bg-header.png" className="w-full object-cover "></img>
                 <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-0 rounded-t-[10px]"></div>
