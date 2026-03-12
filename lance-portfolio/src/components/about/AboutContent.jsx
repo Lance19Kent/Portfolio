@@ -64,30 +64,30 @@ function AboutContent(){
             </BentoCard>
             <BentoCard title={"Highlights"} icon={highlightsIcon} className="">
                 <Carousel
-                  opts={{
-                    align: "start",
-                  }}
-                  className="w-full max-w-[12rem] sm:max-w-xs md:max-w-sm"
-                  >
-                <CarouselContent>
-                  {Array.from({ length: 5 }).map((_, index) => (
-                    <CarouselItem key={index} className="basis-1/2 lg:basis-1/3">
-                      <div className="p-1">
-                        <Card>
-                          <CardContent className="flex aspect-square items-center justify-center p-6">
-                            <span className="text-3xl font-semibold">{index + 1}</span>
-                          </CardContent>
-                        </Card>
-                      </div>
-                    </CarouselItem>
-                  ))}
-                </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
-              </Carousel>
+                opts={{
+                  align: "start",
+                }}
+                className="w-full relative"
+                >
+                  <CarouselContent>
+                    {Array.from({ length: 5 }).map((_, index) => (
+                      <CarouselItem key={index} className="pl-4 basis-[85%] sm:basis-[60%] md:basis-[45%] lg:basis-[35%]">
+                        <div className="p-1">
+                          <Card>
+                            <CardContent className="flex aspect-square items-center justify-center p-6">
+                              <span className="text-3xl font-semibold">{index + 1}</span>
+                            </CardContent>
+                          </Card>
+                        </div>
+                      </CarouselItem>
+                    ))}
+                  </CarouselContent>
+                  <CarouselPrevious className="absolute left-0"/>
+                  <CarouselNext className="absolute z-1 right-0"/>
+                </Carousel>
             </BentoCard>
             <BentoCard title={"Certificates"} icon={certificateIcon} className="">
-              <div className="flex flex-col gap-4 items-center">
+              <div className="flex flex-col gap-8 items-center">
                 <Carousel
                 opts={{
                   align: "start",
