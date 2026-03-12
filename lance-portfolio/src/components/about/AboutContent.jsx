@@ -87,16 +87,16 @@ function AboutContent(){
               </Carousel>
             </BentoCard>
             <BentoCard title={"Certificates"} icon={certificateIcon} className="">
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-4 items-center">
                 <Carousel
                 opts={{
                   align: "start",
                 }}
-                className="w-full max-w-[12rem] sm:max-w-xs md:max-w-sm"
+                className="w-full relative"
                 >
                   <CarouselContent>
                     {Array.from({ length: 5 }).map((_, index) => (
-                      <CarouselItem key={index} className="basis-1/2 lg:basis-1/3">
+                      <CarouselItem key={index} className="pl-4 basis-[85%] sm:basis-[60%] md:basis-[45%] lg:basis-[35%]">
                         <div className="p-1">
                           <Card>
                             <CardContent className="flex aspect-square items-center justify-center p-6">
@@ -107,8 +107,8 @@ function AboutContent(){
                       </CarouselItem>
                     ))}
                   </CarouselContent>
-                  <CarouselPrevious />
-                  <CarouselNext />
+                  <CarouselPrevious className="absolute left-0"/>
+                  <CarouselNext className="absolute z-1 right-0"/>
                 </Carousel>
                 <Link to={"/achievements"} className="text-center block text-[#3FA6F4] hover:underline">See More</Link>
               </div>
