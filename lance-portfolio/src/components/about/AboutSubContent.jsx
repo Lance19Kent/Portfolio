@@ -21,7 +21,53 @@ function AboutSubContent(){
     return(
         <div className="w-full max-w-[470px] py-3 pr-3 flex flex-col gap-3 overflow-y-auto no-scrollbar">
             <BentoCard title={"Education"} icon={educationIcon} className="min-h-70">
-
+                <div className="flex flex-col gap-5">
+                    <div className="flex w-full gap-5">
+                        <img src="/about-png/QCU-Logo.png" className="w-15 h-15"></img>
+                        <div className="flex flex-col gap-1">
+                            <div>
+                                <span className="font-medium">BS in Information Technology</span>
+                                <p className="font-light text-[14px]">Quezon City University</p>
+                                <p className="font-light text-[14px]">GWA: <span className="text-[#25B243]">In Progress</span> / 1.0</p>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.66675 1.16669V3.50002" stroke="#9D9D9D" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.33325 1.16669V3.50002" stroke="#9D9D9D" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.0833 2.33331H2.91667C2.27233 2.33331 1.75 2.85565 1.75 3.49998V11.6666C1.75 12.311 2.27233 12.8333 2.91667 12.8333H11.0833C11.7277 12.8333 12.25 12.311 12.25 11.6666V3.49998C12.25 2.85565 11.7277 2.33331 11.0833 2.33331Z" stroke="#9D9D9D" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M1.75 5.83331H12.25" stroke="#9D9D9D" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p className="text-[12px] text-[#9D9D9D]">August 2023 - Present</p>
+                            </div>
+                            <p className="text-[14px] font-light">
+                                Currently taking a Bachelor of Science in Information and Technology in Quezon City University. Focusing in Web Technologies that can create innovative and sustainable solutions not only academically, but for the community. 
+                            </p>
+                        </div>
+                    </div>
+                    <div className="flex w-full gap-5">
+                        <img src="/about-png/QCU-Logo.png" className="w-15 h-15"></img>
+                        <div className="flex flex-col gap-1">
+                            <div>
+                                <span className="font-medium">BS in Information Technology</span>
+                                <p className="font-light text-[14px]">Quezon City University</p>
+                                <p className="font-light text-[14px]">GWA: <span className="text-[#25B243]">In Progress</span> / 1.0</p>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.66675 1.16669V3.50002" stroke="#9D9D9D" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.33325 1.16669V3.50002" stroke="#9D9D9D" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.0833 2.33331H2.91667C2.27233 2.33331 1.75 2.85565 1.75 3.49998V11.6666C1.75 12.311 2.27233 12.8333 2.91667 12.8333H11.0833C11.7277 12.8333 12.25 12.311 12.25 11.6666V3.49998C12.25 2.85565 11.7277 2.33331 11.0833 2.33331Z" stroke="#9D9D9D" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M1.75 5.83331H12.25" stroke="#9D9D9D" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p className="text-[12px] text-[#9D9D9D]">August 2023 - Present</p>
+                            </div>
+                            <p className="text-[14px] font-light">
+                                Currently taking a Bachelor of Science in Information and Technology in Quezon City University. Focusing in Web Technologies that can create innovative and sustainable solutions not only academically, but for the community. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
             </BentoCard>
             <BentoCard title={"Experience"} icon={experienceIcon} className="min-h-70">
 
