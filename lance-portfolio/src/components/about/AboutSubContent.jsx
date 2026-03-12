@@ -45,7 +45,7 @@ function AboutSubContent(){
                         </div>
                     </div>
                     <div className="flex w-full gap-5">
-                        <img src="/about-png/QCU-Logo.png" className="w-15 h-15"></img>
+                        <img src="/about-png/ROSARIO-INSTITUTE-LOGO.png" className="w-15 h-15"></img>
                         <div className="flex flex-col gap-1">
                             <div>
                                 <span className="font-medium">BS in Information Technology</span>
