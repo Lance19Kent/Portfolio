@@ -58,7 +58,7 @@ function AboutContent(){
 
             </div>
             <BentoCard title={"About"} icon={aboutIcon} className="leading-5">
-                <span className="text-[14px] text-black/60">
+                <span className="text-[14px] font-light text-black">
                     Front-End Development is my current playground where logic meets creativity. I love building intuitive user interfaces and crafting smooth digital experiences. Being a Full-Stack Developer is my goal so that I can create an innovative web app of my own.
                 </span>
             </BentoCard>
