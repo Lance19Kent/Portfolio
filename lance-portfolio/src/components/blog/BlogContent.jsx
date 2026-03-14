@@ -14,7 +14,7 @@ function BlogContent(){
                         <div className="aspect-4/2 bg-[#DEDEDE] w-full rounded-t-[10px]">
 
                         </div>
-                        <div className="w-full p-3">
+                        <div className="w-full p-3 bg-[#ECECEC50] rounded-b-[10px]">
                             <h1 className="font-semibold text-[28px]">Apollo 2026: Blueprint of Insights</h1>
                             <div className="flex items-center gap-2">
                                 <svg width="20" height="20" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -32,6 +32,14 @@ function BlogContent(){
                             </div>
                         </div>
                     </div>
+                    {/* <div className="w-full grid-cols-2">
+                        <div className="flex flex-col">
+                            <div className="aspect-square bg-amber-300"></div>
+                        </div>
+                        <div className="flex flex-col">
+                            <div className="aspect-square bg-amber-300"></div>
+                        </div>
+                    </div> */}
                     <div>
 
                     </div>
