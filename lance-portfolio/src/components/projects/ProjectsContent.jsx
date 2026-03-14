@@ -17,10 +17,10 @@ const projectsIcon = <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 function ProjectsContent(){
     return(
         <div className="w-full h-full pr-3 py-3 overflow-y-auto no-scrollbar overflow-hidden flex flex-col gap-3"> 
-            <BentoCard title={"Featured"} icon={featuredIcon} className="w-full min-h-[400px] relative gap-8"> 
-                <div className="flex items-center justify-between">
-                    <div className="w-[320px] h-[400px] flex flex-col">
-                        <div className="w-full h-[220px] bg-[#ECECEC50] flex flex-col gap-3 rounded-t-[10px] p-5">
+            <BentoCard title={"Featured"} icon={featuredIcon} className="w-full relative gap-8"> 
+                <div className="grid grid-cols-3 gap-5">
+                    <div className="w-full aspect-5/3 flex flex-col">
+                        <div className="w-full bg-[#ECECEC50] flex flex-col gap-3 rounded-t-[10px] p-5">
                             <div>
                                 <h1 className="font-semibold text-[24px]">Okay lang</h1>
                                 <div className="flex items-center gap-1">
@@ -37,8 +37,8 @@ function ProjectsContent(){
 
                         </div>
                     </div>
-                     <div className="w-[320px] h-[400px] flex flex-col">
-                        <div className="w-full h-[220px] bg-[#ECECEC50] flex flex-col gap-3 rounded-t-[10px] p-5">
+                     <div className="w-full aspect-5/3 flex flex-col">
+                        <div className="w-full bg-[#ECECEC50] flex flex-col gap-3 rounded-t-[10px] p-5">
                             <div>
                                 <h1 className="font-semibold text-[24px]">Okay lang</h1>
                                 <div className="flex items-center gap-1">
@@ -52,11 +52,10 @@ function ProjectsContent(){
                             <p className="text-[12px]">A gentle space where people can check in with themselves without pressure, explanation, or judgment.</p>
                         </div>
                         <div className="w-full h-full bg-[#DEDEDE] rounded-b-[10px]">
-
                         </div>
                     </div>
-                 <div className="w-[320px] h-[400px] flex flex-col">
-                        <div className="w-full h-[220px] bg-[#ECECEC50] flex flex-col gap-3 rounded-t-[10px] p-5">
+                 <div className="w-full aspect-5/3 flex flex-col">
+                        <div className="w-full bg-[#ECECEC50] flex flex-col gap-3 rounded-t-[10px] p-5">
                             <div>
                                 <h1 className="font-semibold text-[24px]">Okay lang</h1>
                                 <div className="flex items-center gap-1">
@@ -75,9 +74,9 @@ function ProjectsContent(){
                     </div>
                 </div>
             </BentoCard>  
-            <BentoCard title={"Projects"} icon={projectsIcon} className="w-full min-h-[300px] relative gap-8"> 
-                <div className="w-full flex gap-x-10 gap-y-5 flex-wrap">
-                    <Link className="px-3 w-fit rounded-[10px] py-4 flex items-center border-[.50px] border-[#00000050] cursor-pointer flex-col">
+            <BentoCard title={"Projects"} icon={projectsIcon} className="w-full relative gap-8"> 
+                <div className="grid grid-cols-4 w-full gap-5">
+                    <Link className="px-3 w-full rounded-[10px] py-4 flex items-center border border-[#00000030] cursor-pointer flex-col">
                         <div className="flex gap-2">
                             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.00016 16.3333L8.69183 12.95C8.88662 12.5634 9.18511 12.2387 9.55391 12.012C9.92271 11.7854 10.3473 11.6658 10.7802 11.6667H23.3335M23.3335 11.6667C23.69 11.666 24.0418 11.7471 24.3621 11.9036C24.6823 12.0601 24.9625 12.2879 25.181 12.5695C25.3995 12.8511 25.5506 13.1791 25.6227 13.5281C25.6948 13.8772 25.6859 14.2382 25.5968 14.5833L23.7885 21.5833C23.659 22.0849 23.3663 22.5291 22.9565 22.8459C22.5467 23.1628 22.0432 23.3342 21.5252 23.3333H4.66683C4.04799 23.3333 3.4545 23.0875 3.01691 22.6499C2.57933 22.2123 2.3335 21.6188 2.3335 21V5.83333C2.3335 4.55 3.3835 3.5 4.66683 3.5H9.25183C9.63615 3.50199 10.014 3.59888 10.3519 3.78205C10.6897 3.96523 10.9771 4.22902 11.1885 4.55L12.1452 5.95C12.3565 6.27098 12.6439 6.53477 12.9818 6.71795C13.3196 6.90112 13.6975 6.99801 14.0818 7H21.0002C21.619 7 22.2125 7.24583 22.6501 7.68342C23.0877 8.121 23.3335 8.71449 23.3335 9.33333V11.6667Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -95,7 +94,7 @@ function ProjectsContent(){
                         </div>
                         
                     </Link>
-                   <Link className="px-3 w-fit rounded-[10px] py-4 flex items-center border-[.50px] border-[#00000050] cursor-pointer flex-col">
+                   <Link className="px-3 w-full rounded-[10px] py-4 flex items-center border-[.50px] border-[#00000030] cursor-pointer flex-col">
                         <div className="flex gap-2">
                             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.00016 16.3333L8.69183 12.95C8.88662 12.5634 9.18511 12.2387 9.55391 12.012C9.92271 11.7854 10.3473 11.6658 10.7802 11.6667H23.3335M23.3335 11.6667C23.69 11.666 24.0418 11.7471 24.3621 11.9036C24.6823 12.0601 24.9625 12.2879 25.181 12.5695C25.3995 12.8511 25.5506 13.1791 25.6227 13.5281C25.6948 13.8772 25.6859 14.2382 25.5968 14.5833L23.7885 21.5833C23.659 22.0849 23.3663 22.5291 22.9565 22.8459C22.5467 23.1628 22.0432 23.3342 21.5252 23.3333H4.66683C4.04799 23.3333 3.4545 23.0875 3.01691 22.6499C2.57933 22.2123 2.3335 21.6188 2.3335 21V5.83333C2.3335 4.55 3.3835 3.5 4.66683 3.5H9.25183C9.63615 3.50199 10.014 3.59888 10.3519 3.78205C10.6897 3.96523 10.9771 4.22902 11.1885 4.55L12.1452 5.95C12.3565 6.27098 12.6439 6.53477 12.9818 6.71795C13.3196 6.90112 13.6975 6.99801 14.0818 7H21.0002C21.619 7 22.2125 7.24583 22.6501 7.68342C23.0877 8.121 23.3335 8.71449 23.3335 9.33333V11.6667Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -113,7 +112,7 @@ function ProjectsContent(){
                         </div>
                         
                     </Link>
-                   <Link className="px-3 w-fit rounded-[10px] py-4 flex items-center border-[.50px] border-[#00000050] cursor-pointer flex-col">
+                   <Link className="px-3 w-full rounded-[10px] py-4 flex items-center border-[.50px] border-[#00000030] cursor-pointer flex-col">
                         <div className="flex gap-2">
                             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.00016 16.3333L8.69183 12.95C8.88662 12.5634 9.18511 12.2387 9.55391 12.012C9.92271 11.7854 10.3473 11.6658 10.7802 11.6667H23.3335M23.3335 11.6667C23.69 11.666 24.0418 11.7471 24.3621 11.9036C24.6823 12.0601 24.9625 12.2879 25.181 12.5695C25.3995 12.8511 25.5506 13.1791 25.6227 13.5281C25.6948 13.8772 25.6859 14.2382 25.5968 14.5833L23.7885 21.5833C23.659 22.0849 23.3663 22.5291 22.9565 22.8459C22.5467 23.1628 22.0432 23.3342 21.5252 23.3333H4.66683C4.04799 23.3333 3.4545 23.0875 3.01691 22.6499C2.57933 22.2123 2.3335 21.6188 2.3335 21V5.83333C2.3335 4.55 3.3835 3.5 4.66683 3.5H9.25183C9.63615 3.50199 10.014 3.59888 10.3519 3.78205C10.6897 3.96523 10.9771 4.22902 11.1885 4.55L12.1452 5.95C12.3565 6.27098 12.6439 6.53477 12.9818 6.71795C13.3196 6.90112 13.6975 6.99801 14.0818 7H21.0002C21.619 7 22.2125 7.24583 22.6501 7.68342C23.0877 8.121 23.3335 8.71449 23.3335 9.33333V11.6667Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -131,7 +130,7 @@ function ProjectsContent(){
                         </div>
                         
                     </Link>
-                  <Link className="px-3 w-fit rounded-[10px] py-4 flex items-center border-[.50px] border-[#00000050] cursor-pointer flex-col">
+                  <Link className="px-3 w-full rounded-[10px] py-4 flex items-center border-[.50px] border-[#00000030] cursor-pointer flex-col">
                         <div className="flex gap-2">
                             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.00016 16.3333L8.69183 12.95C8.88662 12.5634 9.18511 12.2387 9.55391 12.012C9.92271 11.7854 10.3473 11.6658 10.7802 11.6667H23.3335M23.3335 11.6667C23.69 11.666 24.0418 11.7471 24.3621 11.9036C24.6823 12.0601 24.9625 12.2879 25.181 12.5695C25.3995 12.8511 25.5506 13.1791 25.6227 13.5281C25.6948 13.8772 25.6859 14.2382 25.5968 14.5833L23.7885 21.5833C23.659 22.0849 23.3663 22.5291 22.9565 22.8459C22.5467 23.1628 22.0432 23.3342 21.5252 23.3333H4.66683C4.04799 23.3333 3.4545 23.0875 3.01691 22.6499C2.57933 22.2123 2.3335 21.6188 2.3335 21V5.83333C2.3335 4.55 3.3835 3.5 4.66683 3.5H9.25183C9.63615 3.50199 10.014 3.59888 10.3519 3.78205C10.6897 3.96523 10.9771 4.22902 11.1885 4.55L12.1452 5.95C12.3565 6.27098 12.6439 6.53477 12.9818 6.71795C13.3196 6.90112 13.6975 6.99801 14.0818 7H21.0002C21.619 7 22.2125 7.24583 22.6501 7.68342C23.0877 8.121 23.3335 8.71449 23.3335 9.33333V11.6667Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -149,7 +148,7 @@ function ProjectsContent(){
                         </div>
                         
                     </Link>
-                   <Link className="px-3 w-fit rounded-[10px] py-4 flex items-center border-[.50px] border-[#00000050] cursor-pointer flex-col">
+                   <Link className="px-3 w-full rounded-[10px] py-4 flex items-center border-[.50px] border-[#00000030] cursor-pointer flex-col">
                         <div className="flex gap-2">
                             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.00016 16.3333L8.69183 12.95C8.88662 12.5634 9.18511 12.2387 9.55391 12.012C9.92271 11.7854 10.3473 11.6658 10.7802 11.6667H23.3335M23.3335 11.6667C23.69 11.666 24.0418 11.7471 24.3621 11.9036C24.6823 12.0601 24.9625 12.2879 25.181 12.5695C25.3995 12.8511 25.5506 13.1791 25.6227 13.5281C25.6948 13.8772 25.6859 14.2382 25.5968 14.5833L23.7885 21.5833C23.659 22.0849 23.3663 22.5291 22.9565 22.8459C22.5467 23.1628 22.0432 23.3342 21.5252 23.3333H4.66683C4.04799 23.3333 3.4545 23.0875 3.01691 22.6499C2.57933 22.2123 2.3335 21.6188 2.3335 21V5.83333C2.3335 4.55 3.3835 3.5 4.66683 3.5H9.25183C9.63615 3.50199 10.014 3.59888 10.3519 3.78205C10.6897 3.96523 10.9771 4.22902 11.1885 4.55L12.1452 5.95C12.3565 6.27098 12.6439 6.53477 12.9818 6.71795C13.3196 6.90112 13.6975 6.99801 14.0818 7H21.0002C21.619 7 22.2125 7.24583 22.6501 7.68342C23.0877 8.121 23.3335 8.71449 23.3335 9.33333V11.6667Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -167,7 +166,7 @@ function ProjectsContent(){
                         </div>
                         
                     </Link>
-                    <Link className="px-3 w-fit rounded-[10px] py-4 flex items-center border-[.50px] border-[#00000050] cursor-pointer flex-col">
+                    <Link className="px-3 w-full rounded-[10px] py-4 flex items-center border-[.50px] border-[#00000030] cursor-pointer flex-col">
                         <div className="flex gap-2">
                             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.00016 16.3333L8.69183 12.95C8.88662 12.5634 9.18511 12.2387 9.55391 12.012C9.92271 11.7854 10.3473 11.6658 10.7802 11.6667H23.3335M23.3335 11.6667C23.69 11.666 24.0418 11.7471 24.3621 11.9036C24.6823 12.0601 24.9625 12.2879 25.181 12.5695C25.3995 12.8511 25.5506 13.1791 25.6227 13.5281C25.6948 13.8772 25.6859 14.2382 25.5968 14.5833L23.7885 21.5833C23.659 22.0849 23.3663 22.5291 22.9565 22.8459C22.5467 23.1628 22.0432 23.3342 21.5252 23.3333H4.66683C4.04799 23.3333 3.4545 23.0875 3.01691 22.6499C2.57933 22.2123 2.3335 21.6188 2.3335 21V5.83333C2.3335 4.55 3.3835 3.5 4.66683 3.5H9.25183C9.63615 3.50199 10.014 3.59888 10.3519 3.78205C10.6897 3.96523 10.9771 4.22902 11.1885 4.55L12.1452 5.95C12.3565 6.27098 12.6439 6.53477 12.9818 6.71795C13.3196 6.90112 13.6975 6.99801 14.0818 7H21.0002C21.619 7 22.2125 7.24583 22.6501 7.68342C23.0877 8.121 23.3335 8.71449 23.3335 9.33333V11.6667Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -185,7 +184,7 @@ function ProjectsContent(){
                         </div>
                         
                     </Link>
-                    <Link className="px-3 w-fit rounded-[10px] py-4 flex items-center border-[.50px] border-[#00000050] cursor-pointer flex-col">
+                    <Link className="px-3 w-full rounded-[10px] py-4 flex items-center border-[.50px] border-[#00000030] cursor-pointer flex-col">
                         <div className="flex gap-2">
                             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.00016 16.3333L8.69183 12.95C8.88662 12.5634 9.18511 12.2387 9.55391 12.012C9.92271 11.7854 10.3473 11.6658 10.7802 11.6667H23.3335M23.3335 11.6667C23.69 11.666 24.0418 11.7471 24.3621 11.9036C24.6823 12.0601 24.9625 12.2879 25.181 12.5695C25.3995 12.8511 25.5506 13.1791 25.6227 13.5281C25.6948 13.8772 25.6859 14.2382 25.5968 14.5833L23.7885 21.5833C23.659 22.0849 23.3663 22.5291 22.9565 22.8459C22.5467 23.1628 22.0432 23.3342 21.5252 23.3333H4.66683C4.04799 23.3333 3.4545 23.0875 3.01691 22.6499C2.57933 22.2123 2.3335 21.6188 2.3335 21V5.83333C2.3335 4.55 3.3835 3.5 4.66683 3.5H9.25183C9.63615 3.50199 10.014 3.59888 10.3519 3.78205C10.6897 3.96523 10.9771 4.22902 11.1885 4.55L12.1452 5.95C12.3565 6.27098 12.6439 6.53477 12.9818 6.71795C13.3196 6.90112 13.6975 6.99801 14.0818 7H21.0002C21.619 7 22.2125 7.24583 22.6501 7.68342C23.0877 8.121 23.3335 8.71449 23.3335 9.33333V11.6667Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -203,7 +202,7 @@ function ProjectsContent(){
                         </div>
                         
                     </Link>
-                    <Link className="px-3 w-fit rounded-[10px] py-4 flex items-center border-[.50px] border-[#00000050] cursor-pointer flex-col">
+                    <Link className="px-3 w-full rounded-[10px] py-4 flex items-center border-[.50px] border-[#00000030] cursor-pointer flex-col">
                         <div className="flex gap-2">
                             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.00016 16.3333L8.69183 12.95C8.88662 12.5634 9.18511 12.2387 9.55391 12.012C9.92271 11.7854 10.3473 11.6658 10.7802 11.6667H23.3335M23.3335 11.6667C23.69 11.666 24.0418 11.7471 24.3621 11.9036C24.6823 12.0601 24.9625 12.2879 25.181 12.5695C25.3995 12.8511 25.5506 13.1791 25.6227 13.5281C25.6948 13.8772 25.6859 14.2382 25.5968 14.5833L23.7885 21.5833C23.659 22.0849 23.3663 22.5291 22.9565 22.8459C22.5467 23.1628 22.0432 23.3342 21.5252 23.3333H4.66683C4.04799 23.3333 3.4545 23.0875 3.01691 22.6499C2.57933 22.2123 2.3335 21.6188 2.3335 21V5.83333C2.3335 4.55 3.3835 3.5 4.66683 3.5H9.25183C9.63615 3.50199 10.014 3.59888 10.3519 3.78205C10.6897 3.96523 10.9771 4.22902 11.1885 4.55L12.1452 5.95C12.3565 6.27098 12.6439 6.53477 12.9818 6.71795C13.3196 6.90112 13.6975 6.99801 14.0818 7H21.0002C21.619 7 22.2125 7.24583 22.6501 7.68342C23.0877 8.121 23.3335 8.71449 23.3335 9.33333V11.6667Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -224,7 +223,7 @@ function ProjectsContent(){
                     
                 </div>
             </BentoCard>          
-           <ContactMe className="min-h-[200px]"/>
+           <ContactMe/>
         </div>
     )
 }
