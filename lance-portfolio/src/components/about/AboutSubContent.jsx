@@ -46,9 +46,9 @@ function AboutSubContent(){
                     </div>
                     <div className="flex w-full gap-5">
                         <img src="/about-png/ROSARIO-INSTITUTE-LOGO.png" className="w-15 h-15"></img>
-                        <div className="flex flex-col gap-1"> 
-                            <div>
-                                <span className="font-medium">BS in Information Technology</span>
+                        <div className="flex flex-col gap-1 w-full overflow-hidden"> 
+                            <div className="w-full">
+                                <h1 className="font-medium truncate">Track-Information and Communications Technology with Specialization in Computer Programming</h1>
                                 <p className="font-light text-[14px] text-black/70">Rosario Institute</p>
                                 <p className="font-light text-[14px] text-black/70">GWA: 96 / 100</p>
                             </div>
