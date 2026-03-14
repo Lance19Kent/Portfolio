@@ -76,7 +76,7 @@ function ProjectsContent(){
                 </div>
             </BentoCard>  
             <BentoCard title={"Projects"} icon={projectsIcon} className="w-full min-h-[300px] relative gap-8"> 
-                <div className="w-full  flex gap-x-10 gap-y-5 flex-wrap">
+                <div className="w-full flex gap-x-10 gap-y-5 flex-wrap">
                     <Link className="px-3 w-fit rounded-[10px] py-4 flex items-center border-[.50px] border-[#00000050] cursor-pointer flex-col">
                         <div className="flex gap-2">
                             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
