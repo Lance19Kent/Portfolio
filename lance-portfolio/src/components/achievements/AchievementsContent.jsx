@@ -16,9 +16,30 @@ const educationCertification = <svg width="32" height="32" viewBox="0 0 32 32" f
 
 function AchievementsContent(){
     return (
-        <div className="p-3 overflow-y-auto flex-col gap-3 no-scrollbar w-full flex ">
+        <div className="p-3 overflow-y-auto flex-col gap-3 no-scrollbar overflow-hidden w-full flex ">
             <BentoCard title={"Certifications"} icon={certificationIcon}>
-                
+                <div className="grid grid-cols-4 gap-6">
+                    <div className="flex flex-col gap-3 group cursor-pointer">
+                        <div className="w-full aspect-5/3 bg-gray-200 rounder-[10px]">
+                            <img src="" alt="" />
+                        </div>
+                        <div className="w-full flex gap-3">
+                            <div className="w-fit ">
+                                <img src="./achievements-logo/freecodecamp-circle.png" alt="FreeCodeCamp's Logo" />
+                            </div>
+                            <div className="flex flex-col w-full overflow-hidden">
+                                <div className="leading-5">
+                                    <h1 className="font-semibold whitespace-nowrap overflow-hidden text-ellipsis text-[16px]">Responsive Web Design</h1>
+                                    <p className=" text-[14px]">freeCodeCamp</p>
+                                </div>
+
+                                <p className="font-light text-[12px] text-black/50">Issued on November 24, 2025</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
             </BentoCard>
 
              <BentoCard title={"Education"} icon={educationCertification}>
