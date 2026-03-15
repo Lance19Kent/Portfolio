@@ -91,13 +91,13 @@ function AboutContent(){
                 </span>
             </BentoCard>
             <BentoCard title={"Highlights"} icon={highlightsIcon} className=" relative">
-                <div className={`absolute right-5 z-10 top-37.5 bg-[#00000020] p-2 rounded-[100px] stroke-black transition duration-75 ease-in ${canScrollRight ? "cursor-pointer hover:stroke-white hover:bg-[#3FA6F4]":"cursor-not-allowed opacity-30 "}`} onClick={scrollRight}>
+                <div className={`absolute right-5 z-10 top-37.5 bg-[#00000020] p-2 rounded-[100px] stroke-black transition duration-75 ease-in ${canScrollRight ? "cursor-pointer hover:stroke-white hover:bg-[#3FA6F4]":"cursor-not-allowed opacity-30 "}`} onClick={() => canScrollRight && scrollRight()}>
                       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 24L20 16L12 8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
 
                   </div>
-                  <div className={`absolute left-5 rotate-180 top-37.5 bg-[#00000020] p-2 rounded-[100px] stroke-black transition duration-75 ease-in ${canScrollLeft ?"cursor-pointer hover:stroke-white hover:bg-[#3FA6F4]":"cursor-not-allowed opacity-30"}`} onClick={scrollLeft}>
+                  <div className={`absolute left-5 rotate-180 top-37.5 bg-[#00000020] p-2 rounded-[100px] stroke-black transition duration-75 ease-in ${canScrollLeft ?"cursor-pointer hover:stroke-white hover:bg-[#3FA6F4]":"cursor-not-allowed opacity-30"}`} onClick={() => canScrollLeft && scrollLeft()}>
                       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 24L20 16L12 8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
@@ -208,30 +208,98 @@ function AboutContent(){
                 </div>
                 
             </BentoCard>
-            <BentoCard title={"Certificates"} icon={certificateIcon} className="">
+            <BentoCard title={"Certificates"} icon={certificateIcon} className="relative">
+                         <div className={`absolute right-5 z-10 top-37.5 bg-[#00000020] p-2 rounded-[100px] stroke-black transition duration-75 ease-in ${canScrollRight ? "cursor-pointer hover:stroke-white hover:bg-[#3FA6F4]":"cursor-not-allowed opacity-30 "}`} onClick={() => canScrollRight && scrollRight()}>
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 24L20 16L12 8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+
+                  </div>
+                  <div className={`absolute left-5 rotate-180 top-37.5 bg-[#00000020] p-2 rounded-[100px] stroke-black transition duration-75 ease-in ${canScrollLeft ?"cursor-pointer hover:stroke-white hover:bg-[#3FA6F4]":"cursor-not-allowed opacity-30"}`} onClick={() => canScrollLeft && scrollLeft()}>
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 24L20 16L12 8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+
+                  </div>
               <div className="flex flex-col gap-8 items-center">
-                <Carousel
-                opts={{
-                  align: "start",
-                }}
-                className="w-full relative"
-                >
-                  <CarouselContent>
-                    {Array.from({ length: 5 }).map((_, index) => (
-                      <CarouselItem key={index} className="pl-4 basis-[85%] sm:basis-[60%] md:basis-[45%] lg:basis-[35%]">
-                        <div className="p-1">
-                          <Card>
-                            <CardContent className="flex aspect-square items-center justify-center p-6">
-                              <span className="text-3xl font-semibold">{index + 1}</span>
-                            </CardContent>
-                          </Card>
-                        </div>
-                      </CarouselItem>
-                    ))}
-                  </CarouselContent>
-                  <CarouselPrevious className="absolute left-0"/>
-                  <CarouselNext className="absolute z-1 right-0"/>
-                </Carousel>
+                <div className="w-full flex gap-3 overflow-x-auto no-scrollbar justify-between">
+                  <div className="flex flex-col shrink-0 gap-1 transition ease-in duration-100 cursor-pointer">
+                          <div className="w-full aspect-5/3 bg-gray-200 rounder-[10px]">
+                              <img src="" alt="" />
+                          </div>
+                          <div className="w-full flex gap-3 p-2">
+                              <div className="w-fit ">
+                                  <img src="./achievements-logo/freecodecamp-circle.png" alt="FreeCodeCamp's Logo" />
+                              </div>
+                              <div className="flex flex-col w-full overflow-hidden">
+                                  <div className="leading-5">
+                                      <h1 className="font-semibold whitespace-nowrap overflow-hidden text-ellipsis text-[16px]">Responsive Web Design</h1>
+                                      <p className=" text-[14px]">freeCodeCamp</p>
+                                  </div>
+
+                                  <p className="font-light text-[12px] text-black/50">Issued on November 24, 2025</p>
+                              </div>
+
+                          </div>
+                    </div>
+                    <div className="flex flex-col shrink-0 gap-1 transition ease-in duration-100 cursor-pointer">
+                          <div className="w-full aspect-5/3 bg-gray-200 rounder-[10px]">
+                              <img src="" alt="" />
+                          </div>
+                          <div className="w-full flex gap-3 p-2">
+                              <div className="w-fit ">
+                                  <img src="./achievements-logo/freecodecamp-circle.png" alt="FreeCodeCamp's Logo" />
+                              </div>
+                              <div className="flex flex-col w-full overflow-hidden">
+                                  <div className="leading-5">
+                                      <h1 className="font-semibold whitespace-nowrap overflow-hidden text-ellipsis text-[16px]">Responsive Web Design</h1>
+                                      <p className=" text-[14px]">freeCodeCamp</p>
+                                  </div>
+
+                                  <p className="font-light text-[12px] text-black/50">Issued on November 24, 2025</p>
+                              </div>
+
+                          </div>
+                    </div>
+                    <div className="flex flex-col shrink-0 gap-1 transition ease-in duration-100 cursor-pointer">
+                          <div className="w-full aspect-5/3 bg-gray-200 rounder-[10px]">
+                              <img src="" alt="" />
+                          </div>
+                          <div className="w-full flex gap-3 p-2">
+                              <div className="w-fit ">
+                                  <img src="./achievements-logo/freecodecamp-circle.png" alt="FreeCodeCamp's Logo" />
+                              </div>
+                              <div className="flex flex-col w-full overflow-hidden">
+                                  <div className="leading-5">
+                                      <h1 className="font-semibold whitespace-nowrap overflow-hidden text-ellipsis text-[16px]">Responsive Web Design</h1>
+                                      <p className=" text-[14px]">freeCodeCamp</p>
+                                  </div>
+
+                                  <p className="font-light text-[12px] text-black/50">Issued on November 24, 2025</p>
+                              </div>
+
+                          </div>
+                    </div>
+                    <div className="flex flex-col shrink-0 gap-1 transition ease-in duration-100 cursor-pointer">
+                          <div className="w-full aspect-5/3 bg-gray-200 rounder-[10px]">
+                              <img src="" alt="" />
+                          </div>
+                          <div className="w-full flex gap-3 p-2">
+                              <div className="w-fit ">
+                                  <img src="./achievements-logo/freecodecamp-circle.png" alt="FreeCodeCamp's Logo" />
+                              </div>
+                              <div className="flex flex-col w-full overflow-hidden">
+                                  <div className="leading-5">
+                                      <h1 className="font-semibold whitespace-nowrap overflow-hidden text-ellipsis text-[16px]">Responsive Web Design</h1>
+                                      <p className=" text-[14px]">freeCodeCamp</p>
+                                  </div>
+
+                                  <p className="font-light text-[12px] text-black/50">Issued on November 24, 2025</p>
+                              </div>
+
+                          </div>
+                    </div>
+                </div>
                 <Link to={"/achievements"} className="text-center block text-[#3FA6F4] hover:underline">See More</Link>
               </div>
                
