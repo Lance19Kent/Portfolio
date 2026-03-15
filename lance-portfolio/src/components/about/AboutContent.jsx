@@ -10,7 +10,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "/src/components/ui/carousel"
-import React, {useRef} from "react";
+import React, {useRef, useState} from "react";
 const aboutIcon = <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M25.3334 28V25.3333C25.3334 23.9188 24.7715 22.5623 23.7713 21.5621C22.7711 20.5619 21.4146 20 20.0001 20H12.0001C10.5856 20 9.22904 20.5619 8.22884 21.5621C7.22865 22.5623 6.66675 23.9188 6.66675 25.3333V28" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M16.0001 14.6667C18.9456 14.6667 21.3334 12.2789 21.3334 9.33333C21.3334 6.38781 18.9456 4 16.0001 4C13.0546 4 10.6667 6.38781 10.6667 9.33333C10.6667 12.2789 13.0546 14.6667 16.0001 14.6667Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -29,6 +29,19 @@ const certificateIcon = <svg width="30" height="30" viewBox="0 0 40 40" fill="no
 function AboutContent(){
     
     const scrollContainerRef = useRef(null);
+
+    const [canScrollLeft, setCanScrollLeft] = useState(false);
+    const [canScrollRight, setCanScrollRight] = useState(true);
+
+    const handleScroll = () =>{
+      if(scrollContainerRef.current){
+        const {scrollLeft, scrollWidth, clientWidth} = scrollContainerRef.current;
+
+        setCanScrollLeft(scrollLeft > 0);
+
+        setCanScrollRight(scrollLeft + clientWidth < scrollWidth - 1);
+      }
+    }
 
     const scrollRight = () => {
       if(scrollContainerRef.current){
@@ -78,19 +91,19 @@ function AboutContent(){
                 </span>
             </BentoCard>
             <BentoCard title={"Highlights"} icon={highlightsIcon} className=" relative">
-                <div className="absolute cursor-pointer right-5 top-37.5 bg-[#00000020] p-2 rounded-[100px]" onClick={scrollRight}>
+                <div className={`absolute right-5 z-10 top-37.5 bg-[#00000020] p-2 rounded-[100px] stroke-black transition duration-75 ease-in ${canScrollRight ? "cursor-pointer hover:stroke-white hover:bg-[#3FA6F4]":"cursor-not-allowed opacity-30 "}`} onClick={scrollRight}>
                       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 24L20 16L12 8" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 24L20 16L12 8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
 
                   </div>
-                  <div className="absolute cursor-pointer left-5 rotate-180 top-37.5 bg-[#00000020] p-2 rounded-[100px]" onClick={scrollLeft}>
+                  <div className={`absolute left-5 rotate-180 top-37.5 bg-[#00000020] p-2 rounded-[100px] stroke-black transition duration-75 ease-in ${canScrollLeft ?"cursor-pointer hover:stroke-white hover:bg-[#3FA6F4]":"cursor-not-allowed opacity-30"}`} onClick={scrollLeft}>
                       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 24L20 16L12 8" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 24L20 16L12 8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
 
                   </div>
-                <div className="flex gap-3 overflow-x-auto no-scrollbar w-full justify-between" ref={scrollContainerRef}>
+                <div className="flex gap-3 overflow-x-auto no-scrollbar w-full justify-between" ref={scrollContainerRef} onScroll={handleScroll}>
                 
                    <div className="flex flex-col w-57.5 shrink-0 transition ease-in duration-100 cursor-pointer">
                         <div className="w-full aspect-5/3.5 bg-gray-200 rounded-t-[10px]">
