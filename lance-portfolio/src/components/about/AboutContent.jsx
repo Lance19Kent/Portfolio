@@ -28,32 +28,32 @@ const certificateIcon = <svg width="30" height="30" viewBox="0 0 40 40" fill="no
 
 function AboutContent(){
     
-    const scrollContainerRef = useRef(null);
+    // For Highlight Section
+    const highlightsRef = useRef(null);
+    const [canHighlightsLeft, setcanHighlightsLeft] = useState(false);
+    const [canHighlightsRight, setcanHighlightsRight] = useState(true);
 
-    const [canScrollLeft, setCanScrollLeft] = useState(false);
-    const [canScrollRight, setCanScrollRight] = useState(true);
+     // For Certificates Section
+    const certificatesRef = useRef(null);
+    const [canCertificatesLeft, setcanCertificatesLeft] = useState(false);
+    const [canCertificatesRight, setcanCertificatesRight] = useState(true);
 
-    const handleScroll = () =>{
-      if(scrollContainerRef.current){
-        const {scrollLeft, scrollWidth, clientWidth} = scrollContainerRef.current;
 
-        setCanScrollLeft(scrollLeft > 0);
-
-        setCanScrollRight(scrollLeft + clientWidth < scrollWidth - 1);
+    const scrollCarousel = (ref, direction) =>{
+      if(ref.current){
+        const scrollAmount = direction === "left" ? -300 : 300;
+        ref.current.scrollBy({left:scrollAmount, behavior:'smooth'});
       }
     }
 
-    const scrollRight = () => {
-      if(scrollContainerRef.current){
-        scrollContainerRef.current.scrollBy({left:300,behavior:'smooth'});
+    const handleScroll = (ref, setLeft, setRight) =>{
+      if(ref.current){
+        const {scrollLeft, scrollWidth, clientWidth} = ref.current;
+        setLeft(scrollLeft >0);
+        setRight(scrollLeft + clientWidth < scrollWidth - 1);
       }
     }
 
-    const scrollLeft = () => {
-      if(scrollContainerRef.current){
-        scrollContainerRef.current.scrollBy({left:-300,behavior:'smooth'});
-      }
-    }
 
     return(
         <div className="overflow-y-auto py-3 w-full gap-3 flex flex-col no-scrollbar">
@@ -91,19 +91,19 @@ function AboutContent(){
                 </span>
             </BentoCard>
             <BentoCard title={"Highlights"} icon={highlightsIcon} className=" relative">
-                <div className={`absolute right-5 z-10 top-37.5 bg-[#00000020] p-2 rounded-[100px] stroke-black transition duration-75 ease-in ${canScrollRight ? "cursor-pointer hover:stroke-white hover:bg-[#3FA6F4]":"cursor-not-allowed opacity-30 "}`} onClick={() => canScrollRight && scrollRight()}>
+                <div className={`absolute right-5 z-10 top-37.5 bg-[#00000020] p-2 rounded-[100px] stroke-black transition duration-75 ease-in ${canHighlightsRight ? "cursor-pointer hover:stroke-white hover:bg-[#3FA6F4]":"cursor-not-allowed opacity-30 "}`} onClick={() => canHighlightsRight && scrollCarousel(highlightsRef,"right")}>
                       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 24L20 16L12 8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
 
                   </div>
-                  <div className={`absolute left-5 rotate-180 top-37.5 bg-[#00000020] p-2 rounded-[100px] stroke-black transition duration-75 ease-in ${canScrollLeft ?"cursor-pointer hover:stroke-white hover:bg-[#3FA6F4]":"cursor-not-allowed opacity-30"}`} onClick={() => canScrollLeft && scrollLeft()}>
+                  <div className={`absolute left-5 rotate-180 top-37.5 bg-[#00000020] p-2 rounded-[100px] stroke-black transition duration-75 ease-in ${canHighlightsLeft ?"cursor-pointer hover:stroke-white hover:bg-[#3FA6F4]":"cursor-not-allowed opacity-30"}`} onClick={() => canHighlightsLeft && scrollCarousel(highlightsRef, "left")}>
                       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 24L20 16L12 8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
 
                   </div>
-                <div className="flex gap-3 overflow-x-auto no-scrollbar w-full justify-between" ref={scrollContainerRef} onScroll={handleScroll}>
+                <div className="flex gap-3 overflow-x-auto no-scrollbar w-full justify-between" ref={highlightsRef} onScroll={()=> handleScroll(highlightsRef, setcanHighlightsLeft,setcanHighlightsRight)}>
                 
                    <div className="flex flex-col w-57.5 shrink-0 transition ease-in duration-100 cursor-pointer">
                         <div className="w-full aspect-5/3.5 bg-gray-200 rounded-t-[10px]">
@@ -209,22 +209,21 @@ function AboutContent(){
                 
             </BentoCard>
             <BentoCard title={"Certificates"} icon={certificateIcon} className="relative">
-                         <div className={`absolute right-5 z-10 top-37.5 bg-[#00000020] p-2 rounded-[100px] stroke-black transition duration-75 ease-in ${canScrollRight ? "cursor-pointer hover:stroke-white hover:bg-[#3FA6F4]":"cursor-not-allowed opacity-30 "}`} onClick={() => canScrollRight && scrollRight()}>
+                         <div className={`absolute right-5 z-10 top-37.5 bg-[#00000020] p-2 rounded-[100px] stroke-black transition duration-75 ease-in ${canCertificatesRight ? "cursor-pointer hover:stroke-white hover:bg-[#3FA6F4]":"cursor-not-allowed opacity-30 "}`} onClick={() => canCertificatesRight && scrollCarousel(certificatesRef, "right")}>
                       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 24L20 16L12 8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
 
                   </div>
-                  <div className={`absolute left-5 rotate-180 top-37.5 bg-[#00000020] p-2 rounded-[100px] stroke-black transition duration-75 ease-in ${canScrollLeft ?"cursor-pointer hover:stroke-white hover:bg-[#3FA6F4]":"cursor-not-allowed opacity-30"}`} onClick={() => canScrollLeft && scrollLeft()}>
+                  <div className={`absolute left-5 rotate-180 top-37.5 bg-[#00000020] p-2 rounded-[100px] stroke-black transition duration-75 ease-in ${canCertificatesLeft ?"cursor-pointer hover:stroke-white hover:bg-[#3FA6F4]":"cursor-not-allowed opacity-30"}`} onClick={() => canCertificatesLeft && scrollCarousel(certificatesRef, "left")}>
                       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 24L20 16L12 8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
-
                   </div>
               <div className="flex flex-col gap-8 items-center">
-                <div className="w-full flex gap-3 overflow-x-auto no-scrollbar justify-between">
+                <div className="w-full flex gap-3 overflow-x-auto no-scrollbar justify-between" ref={certificatesRef} onScroll={()=> handleScroll(certificatesRef, setcanCertificatesLeft, setcanCertificatesRight)}>
                   <div className="flex flex-col shrink-0 gap-1 transition ease-in duration-100 cursor-pointer">
-                          <div className="w-full aspect-5/3 bg-gray-200 rounder-[10px]">
+                          <div className="w-full aspect-5/3 bg-gray-200">
                               <img src="" alt="" />
                           </div>
                           <div className="w-full flex gap-3 p-2">
@@ -243,7 +242,7 @@ function AboutContent(){
                           </div>
                     </div>
                     <div className="flex flex-col shrink-0 gap-1 transition ease-in duration-100 cursor-pointer">
-                          <div className="w-full aspect-5/3 bg-gray-200 rounder-[10px]">
+                          <div className="w-full aspect-5/3 bg-gray-200">
                               <img src="" alt="" />
                           </div>
                           <div className="w-full flex gap-3 p-2">
@@ -262,7 +261,7 @@ function AboutContent(){
                           </div>
                     </div>
                     <div className="flex flex-col shrink-0 gap-1 transition ease-in duration-100 cursor-pointer">
-                          <div className="w-full aspect-5/3 bg-gray-200 rounder-[10px]">
+                          <div className="w-full aspect-5/3 bg-gray-200">
                               <img src="" alt="" />
                           </div>
                           <div className="w-full flex gap-3 p-2">
@@ -281,7 +280,7 @@ function AboutContent(){
                           </div>
                     </div>
                     <div className="flex flex-col shrink-0 gap-1 transition ease-in duration-100 cursor-pointer">
-                          <div className="w-full aspect-5/3 bg-gray-200 rounder-[10px]">
+                          <div className="w-full aspect-5/3 bg-gray-200">
                               <img src="" alt="" />
                           </div>
                           <div className="w-full flex gap-3 p-2">
