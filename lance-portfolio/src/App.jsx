@@ -8,7 +8,7 @@ import Projects from './pages/Projects'
 import Achievements from './pages/Achievements'
 import Blog from './pages/Blog'
 import Resume from './pages/Resume'
-import BlogSelected from './components/blog/BlogSelected';
+import BlogSelected from './pages/BlogSelected';
 
 function App() { 
   const [count, setCount] = useState(0)

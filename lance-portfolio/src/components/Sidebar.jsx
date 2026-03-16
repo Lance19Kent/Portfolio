@@ -1,9 +1,14 @@
 import { Switch } from "./ui/switch"
 import { Button, buttonVariants } from "./ui/button"
-import { NavLink } from "react-router-dom"
+import { NavLink, useLocation } from "react-router-dom"
 import {cn} from "@/lib/utils"
 
 function Sidebar(){
+
+    const location = useLocation();
+
+    const isBlogActive = location.pathname.includes("/blog");
+
     return(
         <nav className="max-h-screen bg-red-10 w-[18%] bg-white rounded-[10px] p-4 my-3 ml-3 select-none">
             <div className="w-full flex flex-col h-full justify-between">
@@ -86,7 +91,7 @@ function Sidebar(){
                             <p>Achievements</p>
                     </NavLink>
                     <NavLink to="/blog" className={({isActive}) =>` 
-                        ${isActive 
+                        ${isBlogActive 
                                     ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-[#00000009]" 
                                     : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#7abdf0] ease-in stroke-black transition duration-75 hover:stroke-[#7abdf0] bg-white hover:bg-[#00000004]"
                                 }`
