@@ -8,6 +8,7 @@ import Projects from './pages/Projects'
 import Achievements from './pages/Achievements'
 import Blog from './pages/Blog'
 import Resume from './pages/Resume'
+import BlogSelected from './components/blog/BlogSelected';
 
 function App() { 
   const [count, setCount] = useState(0)
@@ -33,6 +34,9 @@ function App() {
       </Routes>
       <Routes>
         <Route path="/resume" element={<Resume/>} />
+      </Routes>
+      <Routes>
+        <Route path="/blog-selected" element={<BlogSelected/>} />
       </Routes>
       </div>
     </Router>
