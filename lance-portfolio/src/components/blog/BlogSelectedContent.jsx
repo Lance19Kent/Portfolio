@@ -35,7 +35,19 @@ function BlogSelectedContent(){
                     <div className="w-full pt-10">
                         <img src="./blog-assets/blog-example.jpg" alt="" className="w-full rounded-[10px]" />
                     </div>
-                    <div>
+                    <div className="leading-7">
+                        <p className="font-light text-[16px] pt-8">
+                            Consistent Honor and Achievements - 90 above grades everyday year, and masters java and sql. Accumulated with High Honor with the average of 96. I learned what is truly my goal, my career path and created mindset that will help me achieve my goals.
+                            
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+
+                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                        </p>
+                    </div>
+                    <div className="pt-5">
+                        <img src="./blog-assets/blog-example2.jpg" alt="" className="rounded-[10px] " />
+                    </div>
+                                       <div className="leading-7">
                         <p className="font-light text-[16px] pt-8">
                             Consistent Honor and Achievements - 90 above grades everyday year, and masters java and sql. Accumulated with High Honor with the average of 96. I learned what is truly my goal, my career path and created mindset that will help me achieve my goals.
                             
