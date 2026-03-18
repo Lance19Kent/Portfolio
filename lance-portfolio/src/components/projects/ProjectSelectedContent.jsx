@@ -19,7 +19,7 @@ function ProjectSelectedContent(){
                                 <h1 className="font-medium text-[32px]">Okay Lang App</h1>
                                 <p className="text-[#35BF46] text-[14px] px-3 border py-1 rounded-4xl border-[#C2F49E] bg-[#F6FFDD]">Public</p>
                             </div>
-                            <div className="flex flex-wrap gap-[8px]">
+                            <div className="flex flex-wrap gap-2">
                                 <p className="text-[#838383] text-[12px] w-fit px-2 border py-0.5 rounded-[5px] border-[#b3b3b3]">REACT JS</p>
                                 <p className="text-[#838383] text-[12px] w-fit px-2 border py-0.5 rounded-[5px] border-[#b3b3b3]">CSS3</p>
                                 <p className="text-[#838383] text-[12px] w-fit px-2 border py-0.5 rounded-[5px] border-[#b3b3b3]">TAILWIND CSS</p>

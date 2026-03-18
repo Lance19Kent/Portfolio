@@ -3,7 +3,7 @@ import ProjectSelectedSubContent from "@/components/projects/ProjectSelectedSubC
 
 function ProjectSelected(){
     return(
-        <div className="grid grid-cols-[2fr_1fr]">
+        <div className="grid grid-cols-[2.5fr_1fr] gap-3">
             <ProjectSelectedContent/>
             <ProjectSelectedSubContent/>
         </div>
