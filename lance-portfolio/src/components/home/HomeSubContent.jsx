@@ -40,13 +40,13 @@ function SubContent() {
                     </svg>;
 
     return (
-        <div className="w-full max-w-[350px] overflow-hidden flex flex-col gap-3 h-full overflow-y-auto no-scrollbar py-3 pr-3 select-none">
+        <div className="w-full flex flex-col gap-3 lg:overflow-y-auto lg:no-scrollbar py-3 pr-3 select-none">
             
-            <BentoCard title="Technologies" icon={techIcon} className="min-h-[250px]">
-               <TechMarquee/>
+            {/* <BentoCard title="Technologies" icon={techIcon}>
+            <TechMarquee/>
             </BentoCard>
 
-            <BentoCard title="Skills" icon={skillsIcon} className="min-h-[300px]">
+            <BentoCard title="Skills" icon={skillsIcon} >
                <Accordion type="single" collapsible defaultValue="item-1">
                     <AccordionItem value="item-5">
                         <AccordionTrigger className={"w-full flex items-center"}>
@@ -150,7 +150,7 @@ function SubContent() {
                 </Accordion>
             </BentoCard>
 
-            <ContactMe className="min-h-[280px]"/>
+            <ContactMe/> */}
         </div>
     )
 }

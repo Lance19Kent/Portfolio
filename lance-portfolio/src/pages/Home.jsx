@@ -3,10 +3,10 @@ import Content from "@/components/home/HomeContent";
 
 function Home(){
     return (
-        <>
-        <Content/>
-        <SubContent/>
-        </>
+        <div className="w-full grid lg:grid-cols-[2fr_1fr] gap-3 grid-cols-1 overflow-y-auto h-full">
+            <Content/>
+            <SubContent/>
+        </div>
     )
 }
 

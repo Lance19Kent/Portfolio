@@ -47,21 +47,23 @@ function Content(){
     })
 
     return (
-    <div className="w-full flex flex-col min-w-175 gap-3 flex-1 h-full overflow-y-auto no-scrollbar py-3 select-none">
-        <div className="w-full flex flex-col overflow-hidden bg-white rounded-[10px] relative shrink-0">
-            <div className="w-full relative">
-                 <img src="./bg-header.png" className="w-full object-cover "></img>
-                <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-0 rounded-t-[10px]"></div>
-                <div className="flex z-99 absolute top-5 right-5 gap-3">
-                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.66669 1.66669V5.00002" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M13.3333 1.66669V5.00002" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M15.8333 3.33331H4.16667C3.24619 3.33331 2.5 4.07951 2.5 4.99998V16.6666C2.5 17.5871 3.24619 18.3333 4.16667 18.3333H15.8333C16.7538 18.3333 17.5 17.5871 17.5 16.6666V4.99998C17.5 4.07951 16.7538 3.33331 15.8333 3.33331Z" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M2.5 8.33331H17.5" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span className="font-medium text-white">{currentDate}</span>
+    <div className="w-full flex flex-col gap-3  lg:overflow-y-auto lg:no-scrollbar lg:py-3 select-none">
+        <div className="w-full flex flex-col overflow-hidden bg-white lg:*:rounded-[10px] relative shrink-0">
+            <div className="w-full relative ">
+                <img src="./bg-homehead.png" className="w-full object-cover lg:h-55 h-48.5"></img>
+                <div className="flex z-99 absolute top-5 right-5 lg:gap-3 gap-2 items-center">
+                    <div className="lg:w-5 w-3">
+                        <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.66669 1.66669V5.00002" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13.3333 1.66669V5.00002" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15.8333 3.33331H4.16667C3.24619 3.33331 2.5 4.07951 2.5 4.99998V16.6666C2.5 17.5871 3.24619 18.3333 4.16667 18.3333H15.8333C16.7538 18.3333 17.5 17.5871 17.5 16.6666V4.99998C17.5 4.07951 16.7538 3.33331 15.8333 3.33331Z" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2.5 8.33331H17.5" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                   
+                    <span className="font-medium text-white lg:text-[16px] text-[12px]">{currentDate}</span>
                 </div>
-                 <div className="absolute text-white font-medium bottom-3  right-4 text-[30px] z-10">
+                 <div className="absolute text-white top-1/2 lg:top-auto font-medium bottom-3 right-4 lg:text-[30px] text-[22px] z-10">
                     <TypeAnimation sequence={[`Hello there Everyone!`, 5000,`Welcome to My Project Space.`,5000,`Want to collaborate a Project?`,5000,`We can discuss about it!`, 5000,`Have a Nice Day Everyone!`, 5000]}
                     
                     wrapper="span"
@@ -71,11 +73,11 @@ function Content(){
 
                 </div>
             </div>
-               <img src="./profile.png" alt="Lance Profile" className="absolute bottom-3 h-42.5 left-3" />
+               <img src="./profile.png" alt="Lance Profile" className="absolute z-20 h-40 bottom-3 lg:h-38.5 lg:left-3 left-1/2 -translate-x-1/2 lg:top-auto top-35.5 lg:translate-x-0" />
             
-                <div className="w-full py-5 gap-5 flex flex-1 items-center justify-end pr-4">
-                    <div className="flex w-full justify-between pl-48 items-center">
-                        <div className="">
+                <div className="w-full py-5 gap-5 flex items-center lg:mt-0 justify-end lg:pr-4 mt-25">
+                    <div className="flex w-full lg:flex-row flex-col gap-4  justify-between lg:pl-48 items-center">
+                        <div className="flex flex-col items-center lg:items-start">
                             <h1 className="font-semibold leading-5 text-[20px]">Lance Kent Geoffrey B. Magollado</h1>
                             <span className="text-[14px] text-black/70">Aspiring Full-Stack Developer</span>
                         </div>
@@ -92,9 +94,9 @@ function Content(){
                 </div>
 
         </div>
-        <BentoCard title={"Stats"} icon={statsIcon}>
-            <div className="flex justify-between">
-                <div className="w-full max-w-[155px] h-[110px] bg-[#D9D9D940] rounded-[10px] p-4 flex justify-evenly flex-col">
+        <BentoCard title={"Stats"} icon={statsIcon} >
+            <div className="flex lg:flex-row flex-col gap-3">
+                <div className="w-full bg-[#D9D9D940] rounded-[10px] p-4 flex justify-evenly flex-col">
                     <div className="flex items-center gap-3">
                         <svg width="40" height="43" viewBox="0 0 45 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="45" height="42.5" rx="10" fill="url(#paint0_linear_19_201)"/>
@@ -116,7 +118,7 @@ function Content(){
                     </div>
                     <span className="font-medium text-[14px]">Experience</span>
                 </div>
-                <div className="w-full max-w-[155px] h-[110px] bg-[#D9D9D940] rounded-[10px] p-4 flex justify-evenly flex-col">
+                <div className="w-full bg-[#D9D9D940] rounded-[10px] p-4 flex justify-evenly flex-col">
                     <div className="flex items-center gap-3">
                       <svg width="40" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="45" height="45" rx="10" fill="url(#paint0_linear_20_78)"/>
@@ -136,7 +138,7 @@ function Content(){
                     </div>
                     <span className="font-medium text-[14px]">Certificates</span>
                 </div>
-                <div className="w-full max-w-[155px] h-[110px] bg-[#D9D9D940] rounded-[10px] p-4 flex justify-evenly flex-col">
+                <div className="w-full bg-[#D9D9D940] rounded-[10px] p-4 flex justify-evenly flex-col">
                     <div className="flex items-center gap-3">
                         <svg width="40" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="45" height="45" rx="10" fill="url(#paint0_linear_20_63)"/>
@@ -158,7 +160,7 @@ function Content(){
                     </div>
                     <span className="font-medium text-[14px]">Projects</span>
                 </div>
-                <div className="w-full max-w-[155px] h-[110px] bg-[#D9D9D940] rounded-[10px] p-4 flex justify-evenly flex-col">
+                <div className="w-full  bg-[#D9D9D940] rounded-[10px] p-4 flex justify-evenly flex-col">
                     <div className="flex items-center gap-3">
                       <svg width="40" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="45" height="45" rx="10" fill="url(#paint0_linear_20_88)"/>
@@ -197,7 +199,7 @@ function Content(){
                 </div>
             </div>
         </BentoCard>
-        <BentoCard icon={highlightsIcon} title={"Highlights"}>
+        {/* <BentoCard icon={highlightsIcon} title={"Highlights"}>
             <div className="grid grid-cols-3 w-full gap-3">
                 <div className="flex flex-col transition ease-in duration-100 cursor-pointer w-full">
                         <div className="w-full aspect-5/3.5 bg-gray-200 rounded-t-[10px]">
@@ -275,7 +277,7 @@ function Content(){
                         </div>
                     </div>
             </div>
-        </BentoCard>
+        </BentoCard> */}
     </div>
 
     )
