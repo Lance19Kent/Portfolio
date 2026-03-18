@@ -14,24 +14,27 @@ function ProjectSelectedContent(){
                                 </svg>
                             </div>
                         </Link>
-                        <div>
+                        <div className="flex flex-col gap-3">
                             <div className="flex items-center gap-3">
                                 <h1 className="font-medium text-[32px]">Okay Lang App</h1>
-                                <p className="text-[#35BF46] text-[16px] px-3 border py-1 rounded-[10px] border-[#C2F49E] bg-[#F6FFDD]">Public</p>
+                                <p className="text-[#35BF46] text-[14px] px-3 border py-1 rounded-4xl border-[#C2F49E] bg-[#F6FFDD]">Public</p>
+                            </div>
+                            <div className="flex flex-wrap gap-[8px]">
+                                <p className="text-[#838383] text-[12px] w-fit px-2 border py-0.5 rounded-[5px] border-[#b3b3b3]">REACT JS</p>
+                                <p className="text-[#838383] text-[12px] w-fit px-2 border py-0.5 rounded-[5px] border-[#b3b3b3]">CSS3</p>
+                                <p className="text-[#838383] text-[12px] w-fit px-2 border py-0.5 rounded-[5px] border-[#b3b3b3]">TAILWIND CSS</p>
+                                <p className="text-[#838383] text-[12px] w-fit px-2 border py-0.5 rounded-[5px] border-[#b3b3b3]">NEXT JS</p>
+                                <p className="text-[#838383] text-[12px] w-fit px-2 border py-0.5 rounded-[5px] border-[#b3b3b3]">HTML</p>
+                                <p className="text-[#838383] text-[12px] w-fit px-2 border py-0.5 rounded-[5px] border-[#b3b3b3]">JAVASCRIPT</p>
+                                <p className="text-[#838383] text-[12px] w-fit px-2 border py-0.5 rounded-[5px] border-[#b3b3b3]">SQL</p>
+                                <p className="text-[#838383] text-[12px] w-fit px-2 border py-0.5 rounded-[5px] border-[#b3b3b3]">GIT</p>
+                                <p className="text-[#838383] text-[12px] w-fit px-2 border py-0.5 rounded-[5px] border-[#b3b3b3]">ZUSTAND</p>
+                                <p className="text-[#838383] text-[12px] w-fit px-2 border py-0.5 rounded-[5px] border-[#b3b3b3]">SUPABASE</p>
                             </div>
                             <div className="flex items-center gap-2">
-                                <svg width="20" height="20" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_125_209)">
-                                    <path d="M11.4129 20.9234C16.6654 20.9234 20.9235 16.6653 20.9235 11.4127C20.9235 6.16016 16.6654 1.9021 11.4129 1.9021C6.16028 1.9021 1.90222 6.16016 1.90222 11.4127C1.90222 16.6653 6.16028 20.9234 11.4129 20.9234Z" stroke="black" stroke-opacity="0.3" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M11.4127 5.7063V11.4127L9.51062 15.2169" stroke="black" stroke-opacity="0.3" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_125_209">
-                                    <rect width="22.8255" height="22.8255" fill="white"/>
-                                    </clipPath>
-                                    </defs>
-                                </svg>
-                                <p className="font-light text-[16px] text-black/50">September 09, 2026</p>
+                            </div>
+                            <div>
+                                
                             </div>
                         </div>
                     </div>
