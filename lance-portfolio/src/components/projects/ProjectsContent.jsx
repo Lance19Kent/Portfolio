@@ -83,9 +83,9 @@ function ProjectsContent(){
                             <path d="M16.3332 18.6667C16.9775 18.6667 17.4998 18.1444 17.4998 17.5C17.4998 16.8557 16.9775 16.3334 16.3332 16.3334C15.6888 16.3334 15.1665 16.8557 15.1665 17.5C15.1665 18.1444 15.6888 18.6667 16.3332 18.6667Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <div className="flex flex-col gap-0.5">
-                                <div className="flex gap-2">
+                                <div className="flex gap-2 items-center">
                                     <span className="font-medium text-[18px]">Bakehub</span>
-                                    <p className="text-[#35BF46] text-[12px] px-2 border py-0.5 rounded-[10px] border-[#C2F49E]">Public</p>
+                                    <p className="text-[#35BF46] text-[12px] px-2 border py-0.5 rounded-[10px] border-[#C2F49E] bg-[#F6FFDD]">Public</p>
                                 </div>
                                 <p className="font-medium text-[10px] text-[#B9B9B9]">Created on February 19, 2026</p>
                             </div>
@@ -101,9 +101,9 @@ function ProjectsContent(){
                             <path d="M16.3332 18.6667C16.9775 18.6667 17.4998 18.1444 17.4998 17.5C17.4998 16.8557 16.9775 16.3334 16.3332 16.3334C15.6888 16.3334 15.1665 16.8557 15.1665 17.5C15.1665 18.1444 15.6888 18.6667 16.3332 18.6667Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <div className="flex flex-col gap-0.5">
-                                <div className="flex gap-2">
+                                <div className="flex gap-2 items-center">
                                     <span className="font-medium text-[18px]">Bakehub</span>
-                                    <p className="text-[#35BF46] text-[12px] px-2 border py-0.5 rounded-[10px] border-[#C2F49E]">Public</p>
+                                    <p className="text-[#35BF46] text-[12px] px-2 border py-0.5 rounded-[10px] border-[#C2F49E] bg-[#F6FFDD]">Public</p>
                                 </div>
                                 <p className="font-medium text-[10px] text-[#B9B9B9]">Created on February 19, 2026</p>
                             </div>
@@ -119,9 +119,9 @@ function ProjectsContent(){
                             <path d="M16.3332 18.6667C16.9775 18.6667 17.4998 18.1444 17.4998 17.5C17.4998 16.8557 16.9775 16.3334 16.3332 16.3334C15.6888 16.3334 15.1665 16.8557 15.1665 17.5C15.1665 18.1444 15.6888 18.6667 16.3332 18.6667Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <div className="flex flex-col gap-0.5">
-                                <div className="flex gap-2">
+                                <div className="flex gap-2 items-center">
                                     <span className="font-medium text-[18px]">Bakehub</span>
-                                    <p className="text-[#35BF46] text-[12px] px-2 border py-0.5 rounded-[10px] border-[#C2F49E]">Public</p>
+                                    <p className="text-[#35BF46] text-[12px] px-2 border py-0.5 rounded-[10px] border-[#C2F49E] bg-[#F6FFDD]">Public</p>
                                 </div>
                                 <p className="font-medium text-[10px] text-[#B9B9B9]">Created on February 19, 2026</p>
                             </div>
@@ -137,9 +137,9 @@ function ProjectsContent(){
                             <path d="M16.3332 18.6667C16.9775 18.6667 17.4998 18.1444 17.4998 17.5C17.4998 16.8557 16.9775 16.3334 16.3332 16.3334C15.6888 16.3334 15.1665 16.8557 15.1665 17.5C15.1665 18.1444 15.6888 18.6667 16.3332 18.6667Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <div className="flex flex-col gap-0.5">
-                                <div className="flex gap-2">
+                                <div className="flex gap-2 items-center">
                                     <span className="font-medium text-[18px]">Bakehub</span>
-                                    <p className="text-[#35BF46] text-[12px] px-2 border py-0.5 rounded-[10px] border-[#C2F49E]">Public</p>
+                                    <p className="text-[#35BF46] text-[12px] px-2 border py-0.5 rounded-[10px] border-[#C2F49E] bg-[#F6FFDD]">Public</p>
                                 </div>
                                 <p className="font-medium text-[10px] text-[#B9B9B9]">Created on February 19, 2026</p>
                             </div>
@@ -155,9 +155,9 @@ function ProjectsContent(){
                             <path d="M16.3332 18.6667C16.9775 18.6667 17.4998 18.1444 17.4998 17.5C17.4998 16.8557 16.9775 16.3334 16.3332 16.3334C15.6888 16.3334 15.1665 16.8557 15.1665 17.5C15.1665 18.1444 15.6888 18.6667 16.3332 18.6667Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <div className="flex flex-col gap-0.5">
-                                <div className="flex gap-2">
+                                <div className="flex gap-2 items-center">
                                     <span className="font-medium text-[18px]">Bakehub</span>
-                                    <p className="text-[#35BF46] text-[12px] px-2 border py-0.5 rounded-[10px] border-[#C2F49E]">Public</p>
+                                    <p className="text-[#35BF46] text-[12px] px-2 border py-0.5 rounded-[10px] border-[#C2F49E] bg-[#F6FFDD]">Public</p>
                                 </div>
                                 <p className="font-medium text-[10px] text-[#B9B9B9]">Created on February 19, 2026</p>
                             </div>
@@ -173,9 +173,9 @@ function ProjectsContent(){
                             <path d="M16.3332 18.6667C16.9775 18.6667 17.4998 18.1444 17.4998 17.5C17.4998 16.8557 16.9775 16.3334 16.3332 16.3334C15.6888 16.3334 15.1665 16.8557 15.1665 17.5C15.1665 18.1444 15.6888 18.6667 16.3332 18.6667Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <div className="flex flex-col gap-0.5">
-                                <div className="flex gap-2">
+                                <div className="flex gap-2 items-center">
                                     <span className="font-medium text-[18px]">Bakehub</span>
-                                    <p className="text-[#35BF46] text-[12px] px-2 border py-0.5 rounded-[10px] border-[#C2F49E]">Public</p>
+                                    <p className="text-[#35BF46] text-[12px] px-2 border py-0.5 rounded-[10px] border-[#C2F49E] bg-[#F6FFDD]">Public</p>
                                 </div>
                                 <p className="font-medium text-[10px] text-[#B9B9B9]">Created on February 19, 2026</p>
                             </div>
@@ -191,9 +191,9 @@ function ProjectsContent(){
                             <path d="M16.3332 18.6667C16.9775 18.6667 17.4998 18.1444 17.4998 17.5C17.4998 16.8557 16.9775 16.3334 16.3332 16.3334C15.6888 16.3334 15.1665 16.8557 15.1665 17.5C15.1665 18.1444 15.6888 18.6667 16.3332 18.6667Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <div className="flex flex-col gap-0.5">
-                                <div className="flex gap-2">
+                                <div className="flex gap-2 items-center">
                                     <span className="font-medium text-[18px]">Bakehub</span>
-                                    <p className="text-[#35BF46] text-[12px] px-2 border py-0.5 rounded-[10px] border-[#C2F49E]">Public</p>
+                                    <p className="text-[#35BF46] text-[12px] px-2 border py-0.5 rounded-[10px] border-[#C2F49E] bg-[#F6FFDD]">Public</p>
                                 </div>
                                 <p className="font-medium text-[10px] text-[#B9B9B9]">Created on February 19, 2026</p>
                             </div>
@@ -209,9 +209,9 @@ function ProjectsContent(){
                             <path d="M16.3332 18.6667C16.9775 18.6667 17.4998 18.1444 17.4998 17.5C17.4998 16.8557 16.9775 16.3334 16.3332 16.3334C15.6888 16.3334 15.1665 16.8557 15.1665 17.5C15.1665 18.1444 15.6888 18.6667 16.3332 18.6667Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <div className="flex flex-col gap-0.5">
-                                <div className="flex gap-2">
+                                <div className="flex gap-2 items-center">
                                     <span className="font-medium text-[18px]">Bakehub</span>
-                                    <p className="text-[#35BF46] text-[12px] px-2 border py-0.5 rounded-[10px] border-[#C2F49E]">Public</p>
+                                    <p className="text-[#35BF46] text-[12px] px-2 border py-0.5 rounded-[10px] border-[#C2F49E] bg-[#F6FFDD]">Public</p>
                                 </div>
                                 <p className="font-medium text-[10px] text-[#B9B9B9]">Created on February 19, 2026</p>
                             </div>
