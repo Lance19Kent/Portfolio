@@ -19,7 +19,7 @@ function ProjectsContent(){
         <div className="w-full h-full pr-3 py-3 overflow-y-auto no-scrollbar overflow-hidden flex flex-col gap-3"> 
             <BentoCard title={"Featured"} icon={featuredIcon} className="w-full relative gap-8"> 
                 <div className="grid grid-cols-3 gap-5">
-                    <div className="w-full aspect-5/3 flex flex-col">
+                    <Link to={"/projects-selected"} className="w-full aspect-5/3 flex flex-col">
                         <div className="w-full bg-[#ECECEC50] flex flex-col gap-3 rounded-t-[10px] p-5">
                             <div>
                                 <h1 className="font-semibold text-[24px]">Okay lang</h1>
@@ -36,7 +36,7 @@ function ProjectsContent(){
                         <div className="w-full h-full bg-[#DEDEDE] rounded-b-[10px]">
 
                         </div>
-                    </div>
+                    </Link>
                      <div className="w-full aspect-5/3 flex flex-col">
                         <div className="w-full bg-[#ECECEC50] flex flex-col gap-3 rounded-t-[10px] p-5">
                             <div>
@@ -54,7 +54,7 @@ function ProjectsContent(){
                         <div className="w-full h-full bg-[#DEDEDE] rounded-b-[10px]">
                         </div>
                     </div>
-                 <div className="w-full aspect-5/3 flex flex-col">
+                    <div className="w-full aspect-5/3 flex flex-col">
                         <div className="w-full bg-[#ECECEC50] flex flex-col gap-3 rounded-t-[10px] p-5">
                             <div>
                                 <h1 className="font-semibold text-[24px]">Okay lang</h1>
