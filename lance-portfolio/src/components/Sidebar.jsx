@@ -2,7 +2,16 @@ import { Switch } from "./ui/switch"
 import { Button, buttonVariants } from "./ui/button"
 import { NavLink, useLocation } from "react-router-dom"
 import {cn} from "@/lib/utils"
-
+// import {
+//   Sheet,
+//   SheetClose,
+//   SheetContent,
+//   SheetDescription,
+//   SheetFooter,
+//   SheetHeader,
+//   SheetTitle,
+//   SheetTrigger,
+// } from "../components/ui/sheet";
 function Sidebar(){
 
     const location = useLocation();
@@ -12,7 +21,37 @@ function Sidebar(){
     const isProjectLocation = location.pathname.includes("/projects");
 
     return(
-        <nav className="hidden lg:block max-h-screen bg-red-10 w-[18%] bg-white rounded-[10px] p-4 my-3 ml-3 select-none">
+        <>
+        {/* <Sheet>
+      <SheetTrigger asChild>
+        <Button variant="outline">Open</Button>
+      </SheetTrigger>
+      <SheetContent>
+        <SheetHeader>
+          <SheetTitle>Edit profile</SheetTitle>
+          <SheetDescription>
+            Make changes to your profile here. Click save when you&apos;re done.
+          </SheetDescription>
+        </SheetHeader>
+        <div className="grid flex-1 auto-rows-min gap-6 px-4">
+          <div className="grid gap-3">
+            <Label htmlFor="sheet-demo-name">Name</Label>
+            <Input id="sheet-demo-name" defaultValue="Pedro Duarte" />
+          </div>
+          <div className="grid gap-3">
+            <Label htmlFor="sheet-demo-username">Username</Label>
+            <Input id="sheet-demo-username" defaultValue="@peduarte" />
+          </div>
+        </div>
+        <SheetFooter>
+          <Button type="submit">Save changes</Button>
+          <SheetClose asChild>
+            <Button variant="outline">Close</Button>
+          </SheetClose>
+        </SheetFooter>
+      </SheetContent>
+    </Sheet> */}
+            <nav className="hidden lg:block max-h-screen bg-red-10 w-[18%] bg-white rounded-[10px] p-4 my-3 ml-3 select-none">
             <div className="w-full flex flex-col h-full justify-between">
                 <div className="w-full flex flex-col">
                     <div className="w-full flex justify-center">
@@ -119,6 +158,8 @@ function Sidebar(){
                 </div>
             </div>
         </nav>
+        </>
+
     )
 }
 
