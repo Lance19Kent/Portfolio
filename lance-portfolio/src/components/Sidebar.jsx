@@ -51,6 +51,9 @@ function Sidebar(){
         </SheetFooter>
       </SheetContent>
     </Sheet> */}
+    <div className="lg:hidden block w-full h-12 bg-white">
+
+    </div>
             <nav className="hidden lg:block max-h-screen bg-red-10 w-[18%] bg-white rounded-[10px] p-4 my-3 ml-3 select-none">
             <div className="w-full flex flex-col h-full justify-between">
                 <div className="w-full flex flex-col">
