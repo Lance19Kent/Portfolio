@@ -52,7 +52,7 @@ function Content(){
         <div className="w-full flex flex-col overflow-hidden bg-white rounded-[10px] relative shrink-0">
             <div className="w-full relative ">
                 <img src="./bg-homehead.png" className="w-full object-cover lg:h-55 h-48.5"></img>
-                <div className="flex z-99 absolute top-5 right-5 lg:gap-3 gap-2 items-center">
+                <div className="flex z-20 absolute top-5 right-5 lg:gap-3 gap-2 items-center">
                     <div className="lg:w-5 w-3">
                         <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.66669 1.66669V5.00002" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
