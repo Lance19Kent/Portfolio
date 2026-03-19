@@ -2,7 +2,7 @@ import { Switch } from "./ui/switch"
 import { Button, buttonVariants } from "./ui/button"
 import { NavLink, useLocation } from "react-router-dom"
 import {cn} from "@/lib/utils"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 function Sidebar(){
 
@@ -13,6 +13,18 @@ function Sidebar(){
     const isProjectLocation = location.pathname.includes("/projects");
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    useEffect(() =>{
+        if(isMenuOpen){
+            document.body.style.overflow = "hidden";
+        }else{
+            document.body.style.overflow = "auto";
+        }
+
+        return () =>{
+            document.body.style.overflow = "auto";
+        };
+    }, [isMenuOpen])
 
     return(
         <>
