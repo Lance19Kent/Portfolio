@@ -3,7 +3,7 @@ import BlogSelectedContent from "@/components/blog/BlogSelectedContent";
 
 function BlogSelected(){
     return(
-        <div className="w-full grid grid-cols-[2fr_1fr] gap-3">
+        <div className="w-full grid lg:grid-cols-[2fr_1fr] grid-cols-1 lg:px-0 px-3 gap-3">
             <BlogSelectedContent/>
             <BlogSubContent/>
         </div>
