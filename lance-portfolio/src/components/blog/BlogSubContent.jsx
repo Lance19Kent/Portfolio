@@ -9,7 +9,7 @@ const recentPostIcon = <svg width="30" height="30" viewBox="0 0 30 30" fill="non
 
 function BlogSubContent(){
     return(
-        <div className="w-full overflow-y-auto no-scrollbar overflow-hidden flex flex-col gap-3 pr-3 py-3">
+        <div className="w-full overflow-y-auto no-scrollbar overflow-hidden flex flex-col gap-3 lg:pr-3 lg:py-3">
             <BentoCard title={"Recent Posts"} icon={recentPostIcon}>
                 <div className="flex flex-col w-full gap-3">
                     <div className="w-full flex">
