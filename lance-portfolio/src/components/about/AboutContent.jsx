@@ -59,16 +59,16 @@ function AboutContent(){
         <div className="overflow-y-auto py-3 w-full gap-3 flex flex-col no-scrollbar">
             <div className="w-full select-none flex flex-col overflow-hidden bg-white rounded-[10px] relative shrink-0">
             <div className="w-full relative">
-                 <img src="./bg-header.png" className="w-full object-cover "></img>
+                 <img src="./bg-header.png" className="w-full object-cover h-40 lg:h-auto"></img>
                 <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-0 rounded-t-[10px]"></div>
                  <div className="absolute text-white font-medium bottom-3  right-4 text-[30px] z-10">
                 </div>
             </div>
-               <img src="./profile.png" alt="Lance Profile" className="absolute bottom-15 h-35.5 left-3" />
+               <img src="./profile.png" alt="Lance Profile" className="absolute lg:bottom-15 h-35.5 lg:left-3 left-1/2 -translate-x-1/2 top-[100px]" />
             
-                <div className="w-full py-5 gap-5 flex flex-1 items-center justify-end pr-4">
-                    <div className="flex flex-col w-full justify-between pl-42 gap-3">
-                        <div className="leading-5">
+                <div className="w-full py-5 gap-5 flex flex-1 items-center justify-end lg:pr-4 mt-20">
+                    <div className="flex flex-col w-full justify-between lg:pl-42 gap-3 items-center lg:items-end">
+                        <div className="leading-5 flex flex-col items-center lg:items-end">
                             <h1 className="font-semibold leading-6 text-[20px]">Lance Kent Geoffrey B. Magollado</h1>
                             <span className="text-[14px] text-black/70">Aspiring Full-Stack Developer</span>
                         </div>
