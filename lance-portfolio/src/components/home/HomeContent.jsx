@@ -96,7 +96,7 @@ function Content(){
 
         </div>
         <BentoCard title={"Stats"} icon={statsIcon} >
-            <div className="flex lg:flex-row flex-col gap-3">
+            <div className="grid lg:grid-cols-4 gap-3 grid-cols-2">
                 <div className="w-full bg-[#D9D9D940] rounded-[10px] p-4 flex justify-evenly flex-col">
                     <div className="flex items-center gap-3">
                         <svg width="40" height="43" viewBox="0 0 45 43" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -200,10 +200,10 @@ function Content(){
                 </div>
             </div>
         </BentoCard>
-        {/* <BentoCard icon={highlightsIcon} title={"Highlights"}>
-            <div className="grid grid-cols-3 w-full gap-3">
+        <BentoCard icon={highlightsIcon} title={"Highlights"}>
+            <div className="grid lg:grid-cols-3 grid-cols-1 w-full gap-3">
                 <div className="flex flex-col transition ease-in duration-100 cursor-pointer w-full">
-                        <div className="w-full aspect-5/3.5 bg-gray-200 rounded-t-[10px]">
+                        <div className="w-full lg:aspect-5/3.5 aspect-5/3 bg-gray-200 rounded-t-[10px]">
                             <img src="" alt="" />
                         </div>
                         <div className="w-full flex gap-3 p-3 bg-[#ECECEC60] rounded-b-[10px]">
@@ -228,7 +228,7 @@ function Content(){
                         </div>
                     </div>
                     <div className="flex flex-col transition ease-in duration-100 cursor-pointer">
-                        <div className="w-full aspect-5/3.5 bg-gray-200 rounded-t-[10px]">
+                        <div className="w-full lg:aspect-5/3.5 aspect-5/3 bg-gray-200 rounded-t-[10px]">
                             <img src="" alt="" />
                         </div>
                         <div className="w-full flex gap-3 p-3 bg-[#ECECEC60] rounded-b-[10px]">
@@ -253,7 +253,7 @@ function Content(){
                         </div>
                     </div>
                     <div className="flex flex-col transition ease-in duration-100 cursor-pointer">
-                        <div className="w-full aspect-5/3.5 bg-gray-200 rounded-t-[10px]">
+                        <div className="w-full lg:aspect-5/3.5 aspect-5/3 bg-gray-200 rounded-t-[10px]">
                             <img src="" alt="" />
                         </div>
                         <div className="w-full flex gap-3 p-3 bg-[#ECECEC60] rounded-b-[10px]">
@@ -278,7 +278,7 @@ function Content(){
                         </div>
                     </div>
             </div>
-        </BentoCard> */}
+        </BentoCard>
     </div>
 
     )

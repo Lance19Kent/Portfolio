@@ -42,7 +42,7 @@ function SubContent() {
     return (
         <div className="w-full flex flex-col gap-3 lg:overflow-y-auto lg:no-scrollbar py-3 pr-3 select-none">
             
-            {/* <BentoCard title="Technologies" icon={techIcon}>
+            <BentoCard title="Technologies" icon={techIcon}>
             <TechMarquee/>
             </BentoCard>
 
@@ -150,7 +150,7 @@ function SubContent() {
                 </Accordion>
             </BentoCard>
 
-            <ContactMe/> */}
+            <ContactMe/>
         </div>
     )
 }

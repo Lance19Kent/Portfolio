@@ -44,10 +44,10 @@ function Sidebar(){
             </div>
         </div>
 
-        <div className={`fixed h-screen inset-0 bg-black/20 z-40 transition-opacity duration-300 lg:hidden ${isMenuOpen ? "opacity-100 pointer-events-auto":"opacity-0 pointer-events-none"}`} onClick={() => setIsMenuOpen(false)}>
+        <div className={`fixed  inset-0 bg-black/20 z-40 transition-opacity duration-300 lg:hidden ${isMenuOpen ? "opacity-100 pointer-events-auto":"opacity-0 pointer-events-none"}`} onClick={() => setIsMenuOpen(false)}>
         </div>
 
-        <div className={`fixed top-0 left-0 h-screen w-[75%] bg-white z-50 transition-transform duration-300 ease-in-out lg:hidden overflow-y-auto no-scrollbar ${isMenuOpen ? "translate-x-0":"-translate-x-full"}`}>
+        <div className={`fixed top-0 left-0 h-full w-[75%] bg-white z-50 transition-transform duration-300 ease-in-out lg:hidden overflow-y-auto no-scrollbar ${isMenuOpen ? "translate-x-0":"-translate-x-full"}`}>
             <div className="p-4 flex flex-col h-full justify-between">
             <div className="flex flex-col">
                 <div className="w-full flex justify-end mb-4">
