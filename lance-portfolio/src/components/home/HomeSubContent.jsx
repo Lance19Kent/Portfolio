@@ -40,7 +40,7 @@ function SubContent() {
                     </svg>;
 
     return (
-        <div className="w-full flex flex-col gap-3 lg:overflow-y-auto lg:no-scrollbar py-3 pr-3 select-none">
+        <div className="w-full flex flex-col gap-3 lg:overflow-y-auto lg:no-scrollbar lg:py-3 lg:pr-3 select-none px-3 lg:px-0">
             
             <BentoCard title="Technologies" icon={techIcon}>
             <TechMarquee/>
