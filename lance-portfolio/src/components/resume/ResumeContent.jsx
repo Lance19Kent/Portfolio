@@ -1,7 +1,7 @@
 import BentoCard from "../BentoCard";
 import ContactMe from "../ContactMe";
 import { Button } from "../ui/button";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { Document, Page, pdfjs } from "react-pdf";
 import 'react-pdf/dist/Page/AnnotationLayer.css';
@@ -22,17 +22,29 @@ const contactIcon = <svg width="30" height="30" viewBox="0 0 30 30" fill="none" 
 
 function ResumeContent(){
 
-    const [scale, setScale] = useState(1.0);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(()=>{
+        const handleResize = () => setWindowWidth(window.innerWidth);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    const initialScale = windowWidth < 1024 ? 0.45 : 1.0;
+
+    const [scale, setScale] = useState(initialScale);
+
+    useEffect(()=>{
+        setScale(initialScale);
+    }, [initialScale]);
 
     const zoomIn = () => setScale(prev => Math.min(prev + 0.2, 2.5));
-    const zoomOut = () => setScale(prev => Math.max(prev - 0.2, 0.5));
+    const zoomOut = () => setScale(prev => Math.max(prev - 0.2, 0.4));
 
     return (
-        <div className="w-full h-full pr-3 py-3 overflow-y-auto no-scrollbar overflow-hidden flex flex-col gap-3"> 
-            <BentoCard title={"Resume"} icon={resumeIcon} className="w-full min-h-[200px] relative gap-8"> 
-                
-                
-                <Button variant="outline" className={"absolute top-5 right-6 hover:text-black/50 cursor-pointer p-6 text-[16px] text-black/50 z-10"} asChild>
+        <div className="w-full h-full lg:pr-3 px-3 plg:x-0 py-3 overflow-y-auto no-scrollbar overflow-hidden flex flex-col gap-3"> 
+            <BentoCard title={"Resume"} icon={resumeIcon} className="w-full relative gap-4 lg:gap-8"> 
+                <Button variant="outline" className={"absolute top-5 right-4.5 hover:text-black/50 cursor-pointer lg:p-6 text-[16px] text-black/50 z-10"} asChild>
                     <a href="/Magollado-Lance-Kent-Geoffrey-Resume.pdf" download={"Lance_Kent_Geoffrey_B_Magollado_Resume.pdf"}>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 15V3" stroke="black" strokeOpacity="0.5" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -44,9 +56,7 @@ function ResumeContent(){
                 </Button>
 
                 {/* --- MAIN VIEWER WRAPPER (Ito yung bintana) --- */}
-                <div className="relative w-full h-[800px] rounded-[10px] border border-gray-200 overflow-hidden bg-[#1a1a1a]">
-                    
-                    
+                <div className="relative w-full h-125 lg:h-auto rounded-[10px] border border-gray-200 overflow-hidden bg-[#1a1a1a]">
                     <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-20">
                         <Button variant="secondary" onClick={zoomOut} className="w-10 h-10 p-0 rounded-full text-lg shadow-md cursor-pointer hover:bg-gray-200">-</Button>
                         <Button variant="secondary" onClick={zoomIn} className="w-10 h-10 p-0 rounded-full text-lg shadow-md cursor-pointer hover:bg-gray-200">+</Button>
@@ -56,7 +66,7 @@ function ResumeContent(){
                     <div className="w-full h-full overflow-auto no-scrollbar">
                         
                         {/* INNER WRAPPER (Ito yung pipilit sa browser na laging gitna at may p-10) */}
-                        <div className="min-w-full min-h-full w-fit flex justify-center items-center p-10 mx-auto transition-all duration-300">
+                        <div className="min-w-full min-h-full w-fit flex justify-center items-center lg:p-10 mx-auto p-2 transition-all duration-300">
                             
                             {/* ANG MISMONG PDF */}
                             <div className="shadow-2xl bg-white">
@@ -75,7 +85,7 @@ function ResumeContent(){
                 </div>
             </BentoCard>
            
-           <ContactMe className="min-h-[200px]"/>
+           <ContactMe />
         </div>
     )
 }
