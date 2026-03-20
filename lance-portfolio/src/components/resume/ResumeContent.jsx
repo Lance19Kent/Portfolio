@@ -42,9 +42,9 @@ function ResumeContent(){
     const zoomOut = () => setScale(prev => Math.max(prev - 0.2, 0.4));
 
     return (
-        <div className="w-full h-full lg:pr-3 px-3 plg:x-0 py-3 overflow-y-auto no-scrollbar overflow-hidden flex flex-col gap-3"> 
+        <div className="w-full h-full lg:pr-3 px-3 lg:px-0 py-3 overflow-y-auto no-scrollbar overflow-hidden flex flex-col gap-3"> 
             <BentoCard title={"Resume"} icon={resumeIcon} className="w-full relative gap-4 lg:gap-8"> 
-                <Button variant="outline" className={"absolute top-5 right-4.5 hover:text-black/50 cursor-pointer lg:p-6 text-[16px] text-black/50 z-10"} asChild>
+                <Button variant="outline" className={"absolute top-5 right-4.5 hover:text-black/50 cursor-pointer lg:p-6 lg:text-[16px] text-sm text-black/50 z-10"} asChild>
                     <a href="/Magollado-Lance-Kent-Geoffrey-Resume.pdf" download={"Lance_Kent_Geoffrey_B_Magollado_Resume.pdf"}>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 15V3" stroke="black" strokeOpacity="0.5" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>

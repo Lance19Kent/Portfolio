@@ -79,7 +79,7 @@ function Content(){
                 <div className="w-full py-5 gap-5 flex items-center lg:mt-0 justify-end lg:pr-4 mt-25">
                     <div className="flex w-full lg:flex-row flex-col gap-4  justify-between lg:pl-48 items-center">
                         <div className="flex flex-col items-center lg:items-start">
-                            <h1 className="font-semibold leading-5 lg:text-[20px] text-lg">Lance Kent Geoffrey B. Magollado</h1>
+                            <h1 className="font-semibold leading-6 lg:text-[20px] text-lg">Lance Kent Geoffrey B. Magollado</h1>
                             <span className="lg:text-[14px] text-sm text-black/70">Aspiring Full-Stack Developer</span>
                         </div>
                         <Button variant="outline" className={"cursor-pointer text-[#00000080] lg:text-[16px] text-sm font-light hover:text-[rgba(0,0,0,0.5)] p-5"} asChild>
@@ -99,7 +99,7 @@ function Content(){
         </div>
         <BentoCard title={"Stats"} icon={statsIcon} >
             <div className="grid lg:grid-cols-4 gap-3 grid-cols-2">
-                <div className="w-full bg-[#D9D9D940] rounded-[10px] p-4 flex justify-evenly flex-col">
+                <div className="w-full gap-1 bg-[#D9D9D940] rounded-[10px] p-4 flex justify-evenly flex-col">
                     <div className="flex items-center gap-3">
                         <svg width="40" height="43" viewBox="0 0 45 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="45" height="42.5" rx="10" fill="url(#paint0_linear_19_201)"/>
@@ -121,7 +121,7 @@ function Content(){
                     </div>
                     <span className="font-medium lg:text-base text-sm">Experience</span>
                 </div>
-                <div className="w-full bg-[#D9D9D940] rounded-[10px] p-4 flex justify-evenly flex-col">
+                <div className="w-full gap-1 bg-[#D9D9D940] rounded-[10px] p-4 flex justify-evenly flex-col">
                     <div className="flex items-center gap-3">
                       <svg width="40" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="45" height="45" rx="10" fill="url(#paint0_linear_20_78)"/>
@@ -141,7 +141,7 @@ function Content(){
                     </div>
                     <span className="font-medium lg:text-base text-sm">Certificates</span>
                 </div>
-                <div className="w-full bg-[#D9D9D940] rounded-[10px] p-4 flex justify-evenly flex-col">
+                <div className="w-full gap-1 bg-[#D9D9D940] rounded-[10px] p-4 flex justify-evenly flex-col">
                     <div className="flex items-center gap-3">
                         <svg width="40" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="45" height="45" rx="10" fill="url(#paint0_linear_20_63)"/>
@@ -161,9 +161,9 @@ function Content(){
 
                         </div>
                     </div>
-                    <span className="font-medium tlg:text-base text-sm">Projects</span>
+                    <span className="font-medium lg:text-base text-sm">Projects</span>
                 </div>
-                <div className="w-full  bg-[#D9D9D940] rounded-[10px] p-4 flex justify-evenly flex-col">
+                <div className="w-full gap-1 bg-[#D9D9D940] rounded-[10px] p-4 flex justify-evenly flex-col">
                     <div className="flex items-center gap-3">
                       <svg width="40" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="45" height="45" rx="10" fill="url(#paint0_linear_20_88)"/>

@@ -1,6 +1,6 @@
 import { Switch } from "./ui/switch"
 import { Button, buttonVariants } from "./ui/button"
-import { NavLink, useLocation } from "react-router-dom"
+import { Link, NavLink, useLocation } from "react-router-dom"
 import {cn} from "@/lib/utils"
 import { useState, useEffect } from "react"
 
@@ -30,14 +30,14 @@ function Sidebar(){
         <>
         <div className="lg:hidden block w-full bg-transparent px-3 pt-3 ">
             <div className="lg:hidden w-full h-14 bg-white rounded-[10px] px-3 flex justify-between items-center">
-                <div className="w-full h-full items-center flex gap-2">
+                <Link to={"/"} className="w-fit h-full items-center flex gap-2">
                     <img src="/me-daytime.png" alt="" className="h-8" />
                     <div className="flex flex-col">
                         <h3 className=" text-black text-[16px] font-semibold">Lance Kent</h3>
                         <h2 className="text-black/70 text-center text-[10px]">Current 3rd Year IT Student</h2>
                     </div>
                   
-                </div>
+                </Link>
                 <button onClick={() =>setIsMenuOpen(!isMenuOpen)} className="cursor-pointer focus:outline-none">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
                 </button>

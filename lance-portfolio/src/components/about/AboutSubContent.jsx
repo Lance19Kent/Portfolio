@@ -19,14 +19,14 @@ const experienceIcon = <svg width="32" height="32" viewBox="0 0 32 32" fill="non
 
 function AboutSubContent(){
     return(
-        <div className="w-full lg:py-3 lg:pr-3 pb-3 lg:pb-0 flex flex-col gap-3 overflow-y-auto no-scrollbar">
+        <div className="w-full lg:py-3 lg:pr-3 pb-3 flex flex-col gap-3 overflow-y-auto no-scrollbar">
             <BentoCard title={"Education"} icon={educationIcon} className="min-h-70">
                 <div className="flex flex-col gap-5">
                     <div className="flex w-full gap-5">
                         <img src="/about-png/QCU-Logo.png" className="w-15 h-15"></img>
-                        <div className="flex flex-col gap-1">
-                            <div>
-                                <span className="font-medium">BS in Information Technology</span>
+                        <div className="flex flex-col gap-1 w-full overflow-hidden">
+                            <div className="w-full ">
+                                <p className="font-medium truncate">BS in Information Techsssnology</p>
                                 <p className="font-light text-black/70 text-[14px]">Quezon City University</p>
                                 <p className="font-light text-[14px] text-black/70">GWA: <span className="text-[#25B243]">In Progress</span> / 1.0</p>
                             </div>
