@@ -19,7 +19,7 @@ const experienceIcon = <svg width="32" height="32" viewBox="0 0 32 32" fill="non
 
 function AboutSubContent(){
     return(
-        <div className="w-full max-w-[470px] py-3 pr-3 flex flex-col gap-3 overflow-y-auto no-scrollbar">
+        <div className="w-full py-3 pr-3 flex flex-col gap-3 overflow-y-auto no-scrollbar">
             <BentoCard title={"Education"} icon={educationIcon} className="min-h-70">
                 <div className="flex flex-col gap-5">
                     <div className="flex w-full gap-5">

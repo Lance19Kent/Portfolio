@@ -3,10 +3,10 @@ import AboutSubContent from "@/components/about/AboutSubContent";
 
 function About(){
     return(
-        <>
-        <AboutContent/>
-        <AboutSubContent/>
-        </>
+        <div className="px-3 lg:px-0 grid lg:grid-cols-[2fr_2fr] grid-cols-1 lg:gap-3">
+            <AboutContent/>
+            <AboutSubContent/>
+        </div>
     )
 }
 
