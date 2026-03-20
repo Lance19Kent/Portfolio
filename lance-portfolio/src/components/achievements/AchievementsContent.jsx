@@ -16,9 +16,9 @@ const educationCertification = <svg width="32" height="32" viewBox="0 0 32 32" f
 
 function AchievementsContent(){
     return (
-        <div className="py-3 pr-3 overflow-y-auto flex-col gap-3 no-scrollbar overflow-hidden w-full flex ">
+        <div className="py-3 px-3 lg:px-0 lg:pr-3 overflow-y-auto flex-col gap-3 no-scrollbar overflow-hidden w-full flex ">
             <BentoCard title={"Certifications"} icon={certificationIcon}>
-                <div className="grid grid-cols-4 gap-6">
+                <div className="grid lg:grid-cols-4 grid-cols-1 gap-6">
                     <div className="flex flex-col gap-1 transition ease-in duration-100 cursor-pointer">
                         <div className="w-full aspect-5/3 bg-gray-200 rounder-[10px]">
                             <img src="" alt="" />
@@ -175,7 +175,7 @@ function AchievementsContent(){
             </BentoCard>
 
              <BentoCard title={"Education"} icon={educationCertification}>
-                <div className="grid grid-cols-4 gap-6">
+                <div className="grid lg:grid-cols-4 grid-cols-1 gap-6">
                     <div className="flex flex-col gap-1 transition ease-in duration-100 cursor-pointer">
                         <div className="w-full aspect-5/3 bg-gray-200 rounder-[10px]">
                             <img src="" alt="" />
