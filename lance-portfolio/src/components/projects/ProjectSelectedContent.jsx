@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function ProjectSelectedContent(){
     return(
-        <div className="py-4 overflow-y-auto no-scrollbar">
+        <div className="lg:py-3 pt-3 overflow-y-auto no-scrollbar">
             <BentoCard>
                 <div>
                     <div className="flex flex-col gap-5">
@@ -16,7 +16,7 @@ function ProjectSelectedContent(){
                         </Link>
                         <div className="flex flex-col gap-3">
                             <div className="flex items-center gap-3">
-                                <h1 className="font-medium text-[32px]">Okay Lang App</h1>
+                                <h1 className="font-medium lg:text-[32px] text-[28px]">Okay Lang App</h1>
                                 <p className="text-[#35BF46] text-[14px] px-3 border py-1 rounded-4xl border-[#C2F49E] bg-[#F6FFDD]">Public</p>
                             </div>
                             <div className="flex flex-wrap gap-2">
