@@ -64,11 +64,11 @@ function AboutContent(){
                  <div className="absolute text-white font-medium bottom-3  right-4 text-[30px] z-10">
                 </div>
             </div>
-               <img src="./profile.png" alt="Lance Profile" className="absolute lg:bottom-15 h-35.5 lg:left-3 left-1/2 -translate-x-1/2 top-[100px]" />
+               <img src="./profile.png" alt="Lance Profile" className="absolute lg:bottom-15 h-35.5 lg:left-3 left-1/2 -translate-x-1/2 lg:translate-x-0 lg:top-auto top-25" />
             
-                <div className="w-full py-5 gap-5 flex flex-1 items-center justify-end lg:pr-4 mt-20">
-                    <div className="flex flex-col w-full justify-between lg:pl-42 gap-3 items-center lg:items-end">
-                        <div className="leading-5 flex flex-col items-center lg:items-end">
+                <div className="w-full py-5 gap-5 flex flex-1 items-center justify-end lg:pr-4 mt-20 lg:mt-0">
+                    <div className="flex flex-col w-full justify-between lg:pl-42 gap-3 items-center lg:items-start">
+                        <div className="leading-5 flex flex-col items-center lg:items-start">
                             <h1 className="font-semibold leading-6 text-[20px]">Lance Kent Geoffrey B. Magollado</h1>
                             <span className="text-[14px] text-black/70">Aspiring Full-Stack Developer</span>
                         </div>
