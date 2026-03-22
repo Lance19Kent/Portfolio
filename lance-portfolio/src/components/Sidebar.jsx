@@ -6,6 +6,17 @@ import { useState, useEffect } from "react"
 
 function Sidebar(){
 
+    // State for Dark Mode
+    const [isDarkMode, setIsDarkMode] = useState(false);
+
+    useEffect(()=>{
+        if(isDarkMode){
+            document.documentElement.classList.add("dark");
+        }else{
+            document.documentElement.classList.remove("dark");
+        }
+    }, [isDarkMode]);
+
     const location = useLocation();
 
     const isBlogActive = location.pathname.includes("/blog");
@@ -153,8 +164,8 @@ function Sidebar(){
             <div className="w-full flex flex-col">
                 <div className="border border-[#D9D9D950] my-3"></div>
                     <div className="flex flex-row gap-2.5 items-center justify-center my-3">
-                        <Switch className={"cursor-pointer"}/>
-                        <span className="text-black text-sm">Dark Mode</span>
+                        <Switch className={"cursor-pointer"} checked={isDarkMode} onCheckedChange={setIsDarkMode}/>
+                        <span className="text-black text-sm dark:text-red-100">Dark Mode</span>
                     </div>
                     <div className="mt-4">
                         <p className="text-[#00000050] text-xs text-nowrap overflow-hidden text-ellipsis">Designed and Built By Lance Kent Geoffrey B. Magollado</p>
@@ -165,14 +176,14 @@ function Sidebar(){
 
         </div>
 
-        <nav className="hidden lg:block max-h-screen bg-red-10 w-[18%] bg-white rounded-[10px] p-4 my-3 ml-3 select-none">
+        <nav className="hidden lg:block max-h-screen w-[18%] bg-white dark:bg-black/50 rounded-[10px] p-4 my-3 ml-3 select-none">
             <div className="w-full flex flex-col h-full justify-between">
                 <div className="w-full flex flex-col">
                     <div className="w-full flex justify-center">
                         <img src="/me-daytime.png" className="h-15 w-15"></img>
                     </div>
-                    <h3 className="text-center text-black text-[18px] font-semibold text-nowrap whitespace-nowrap text-ellipsis overflow-hidden w-full pt-2">Lance Kent</h3>
-                    <h2 className="text-black/70 text-center text-[14px] pb-6.25">Current 3rd Year IT Student</h2>
+                    <h3 className="text-center text-black dark:text-white  text-[18px] font-semibold text-nowrap whitespace-nowrap text-ellipsis overflow-hidden w-full pt-2">Lance Kent</h3>
+                    <h2 className="text-black/70 dark:text-white/70 text-center text-[14px] pb-6.25">Current 3rd Year IT Student</h2>
                     
                     <NavLink to={"/resume"} className={({isActive}) =>cn(buttonVariants({variant:"outline"}),
                         "py-5 font-light rounded-[10px] flex gap-2.5 justify-center cursor-pointer text-[16px] ease-in transition-all duration-75",
@@ -262,12 +273,12 @@ function Sidebar(){
                 <div className="border border-[#D9D9D950] my-3"></div>
                 <div className="w-full flex flex-col">
                     <div className="flex flex-row gap-2.5 items-center justify-center my-3">
-                        <Switch className={"cursor-pointer"}/>
-                        <span className="text-black text-[16px]">Dark Mode</span>
+                        <Switch className={"cursor-pointer"} checked={isDarkMode} onCheckedChange={setIsDarkMode}/>
+                        <span className="text-black dark:text-white text-[16px]">Dark Mode</span>
                     </div>
                     <div className="mt-4">
-                        <p className="text-[#00000050] text-xs text-nowrap overflow-hidden text-ellipsis">Designed and Built By Lance Kent Geoffrey B. Magollado</p>
-                        <p className="text-[#00000050] text-xs text-nowrap overflow-hidden text-ellipsis">@2025 All Rights Reserved.</p>
+                        <p className="text-[#00000050] dark:text-white/50 text-xs text-nowrap overflow-hidden text-ellipsis">Designed and Built By Lance Kent Geoffrey B. Magollado</p>
+                        <p className="text-[#00000050] dark:text-white/50  text-xs text-nowrap overflow-hidden text-ellipsis">@2025 All Rights Reserved.</p>
                     </div>
                 </div>
             </div>

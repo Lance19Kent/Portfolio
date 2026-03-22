@@ -49,7 +49,7 @@ function Content(){
 
     return (
     <div className="w-full flex flex-col gap-3 lg:p-0 p-3 lg:overflow-y-auto lg:no-scrollbar lg:py-3 select-none">
-        <div className="w-full flex flex-col overflow-hidden bg-white rounded-[10px] relative shrink-0">
+        <div className="w-full flex flex-col overflow-hidden bg-white dark:bg-black/50 rounded-[10px] relative shrink-0">
             <div className="w-full relative ">
                 <img src="./bg-homehead.png" className="w-full object-cover lg:h-55 h-48.5"></img>
                 <div className="flex z-20 absolute top-5 right-5 lg:gap-3 gap-2 items-center">
