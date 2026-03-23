@@ -3,7 +3,7 @@ function BentoCard({title, icon, children, className=""}){
        <div className={`w-full flex flex-col overflow-hidden select-none bg-card rounded-[10px] p-4 gap-4 shrink-0 ${className}`}>
             
             {/* Card Header (Icon + Title) */}
-            <div className="flex items-center gap-2 ">
+            <div className="flex items-center gap-2 stroke-foreground">
                 {icon}
                 <span className="font-medium text-[20px]">{title}</span>
             </div>

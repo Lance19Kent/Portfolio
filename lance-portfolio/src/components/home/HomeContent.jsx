@@ -4,18 +4,18 @@ import { useState, useEffect } from "react";
 import BentoCard from "../BentoCard";
 
 
-const highlightsIcon =  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15 21.25V27.5" stroke="black" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M11.25 13.45C11.2498 13.9151 11.1198 14.3709 10.8747 14.7662C10.6295 15.1615 10.279 15.4805 9.8625 15.6875L7.6375 16.8125C7.22098 17.0195 6.87046 17.3385 6.62535 17.7338C6.38024 18.1291 6.25025 18.5849 6.25 19.05V20C6.25 20.3315 6.3817 20.6495 6.61612 20.8839C6.85054 21.1183 7.16848 21.25 7.5 21.25H22.5C22.8315 21.25 23.1495 21.1183 23.3839 20.8839C23.6183 20.6495 23.75 20.3315 23.75 20V19.05C23.7498 18.5849 23.6198 18.1291 23.3747 17.7338C23.1295 17.3385 22.779 17.0195 22.3625 16.8125L20.1375 15.6875C19.721 15.4805 19.3705 15.1615 19.1253 14.7662C18.8802 14.3709 18.7502 13.9151 18.75 13.45V8.75C18.75 8.41848 18.8817 8.10054 19.1161 7.86612C19.3505 7.6317 19.6685 7.5 20 7.5C20.663 7.5 21.2989 7.23661 21.7678 6.76777C22.2366 6.29893 22.5 5.66304 22.5 5C22.5 4.33696 22.2366 3.70107 21.7678 3.23223C21.2989 2.76339 20.663 2.5 20 2.5H10C9.33696 2.5 8.70107 2.76339 8.23223 3.23223C7.76339 3.70107 7.5 4.33696 7.5 5C7.5 5.66304 7.76339 6.29893 8.23223 6.76777C8.70107 7.23661 9.33696 7.5 10 7.5C10.3315 7.5 10.6495 7.6317 10.8839 7.86612C11.1183 8.10054 11.25 8.41848 11.25 8.75V13.45Z" stroke="black" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+const highlightsIcon =  <svg width="30" height="30" className="stroke-card-foreground" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 21.25V27.5" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M11.25 13.45C11.2498 13.9151 11.1198 14.3709 10.8747 14.7662C10.6295 15.1615 10.279 15.4805 9.8625 15.6875L7.6375 16.8125C7.22098 17.0195 6.87046 17.3385 6.62535 17.7338C6.38024 18.1291 6.25025 18.5849 6.25 19.05V20C6.25 20.3315 6.3817 20.6495 6.61612 20.8839C6.85054 21.1183 7.16848 21.25 7.5 21.25H22.5C22.8315 21.25 23.1495 21.1183 23.3839 20.8839C23.6183 20.6495 23.75 20.3315 23.75 20V19.05C23.7498 18.5849 23.6198 18.1291 23.3747 17.7338C23.1295 17.3385 22.779 17.0195 22.3625 16.8125L20.1375 15.6875C19.721 15.4805 19.3705 15.1615 19.1253 14.7662C18.8802 14.3709 18.7502 13.9151 18.75 13.45V8.75C18.75 8.41848 18.8817 8.10054 19.1161 7.86612C19.3505 7.6317 19.6685 7.5 20 7.5C20.663 7.5 21.2989 7.23661 21.7678 6.76777C22.2366 6.29893 22.5 5.66304 22.5 5C22.5 4.33696 22.2366 3.70107 21.7678 3.23223C21.2989 2.76339 20.663 2.5 20 2.5H10C9.33696 2.5 8.70107 2.76339 8.23223 3.23223C7.76339 3.70107 7.5 4.33696 7.5 5C7.5 5.66304 7.76339 6.29893 8.23223 6.76777C8.70107 7.23661 9.33696 7.5 10 7.5C10.3315 7.5 10.6495 7.6317 10.8839 7.86612C11.1183 8.10054 11.25 8.41848 11.25 8.75V13.45Z"  stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>;
 
 const statsIcon = <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15 20V26.25" stroke="black" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M20 17.5V26.25" stroke="black" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M25 12.5V26.25" stroke="black" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M27.5 3.75L16.6925 14.5575C16.6344 14.6157 16.5655 14.6619 16.4895 14.6934C16.4136 14.7249 16.3322 14.7411 16.25 14.7411C16.1678 14.7411 16.0864 14.7249 16.0105 14.6934C15.9345 14.6619 15.8656 14.6157 15.8075 14.5575L11.6925 10.4425C11.5753 10.3253 11.4164 10.2595 11.2506 10.2595C11.0849 10.2595 10.926 10.3253 10.8088 10.4425L2.5 18.75" stroke="black" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M5 22.5V26.25" stroke="black" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M10 17.5V26.25" stroke="black" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 20V26.25"  stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 17.5V26.25"  stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25 12.5V26.25"  stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M27.5 3.75L16.6925 14.5575C16.6344 14.6157 16.5655 14.6619 16.4895 14.6934C16.4136 14.7249 16.3322 14.7411 16.25 14.7411C16.1678 14.7411 16.0864 14.7249 16.0105 14.6934C15.9345 14.6619 15.8656 14.6157 15.8075 14.5575L11.6925 10.4425C11.5753 10.3253 11.4164 10.2595 11.2506 10.2595C11.0849 10.2595 10.926 10.3253 10.8088 10.4425L2.5 18.75" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M5 22.5V26.25"  stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 17.5V26.25"  stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>;
 
 function Content(){
@@ -80,14 +80,14 @@ function Content(){
                     <div className="flex w-full lg:flex-row flex-col gap-4  justify-between lg:pl-48 items-center">
                         <div className="flex flex-col items-center lg:items-start">
                             <h1 className="font-semibold leading-6 lg:text-[20px] text-lg">Lance Kent Geoffrey B. Magollado</h1>
-                            <span className="lg:text-[14px] text-sm text-black/70">Aspiring Full-Stack Developer</span>
+                            <span className="lg:text-[14px] text-sm text-black/70 dark:text-muted-foreground">Aspiring Full-Stack Developer</span>
                         </div>
-                        <Button variant="outline" className={"cursor-pointer text-[#00000080] lg:text-[16px] text-sm font-light hover:text-[rgba(0,0,0,0.5)] p-5"} asChild>
+                        <Button variant="outline" className={"cursor-pointer text-foreground lg:text-[16px] text-sm font-light p-5 stroke-foreground"} asChild>
                             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lancemagollado46@gmail.com&su=Hi,%20Let%20us%20connect!" target="_blank" rel="noopener noreferrer">
                             <div className="lg:w-4 w-3">
                                 <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M15.1417 22.5896C15.1812 22.6882 15.25 22.7724 15.3388 22.8308C15.4276 22.8892 15.5321 22.919 15.6384 22.9163C15.7446 22.9136 15.8475 22.8784 15.9331 22.8156C16.0188 22.7527 16.0832 22.6651 16.1177 22.5646L22.8885 2.77293C22.9219 2.68064 22.9282 2.58075 22.9069 2.48497C22.8855 2.38919 22.8373 2.30147 22.7679 2.23208C22.6985 2.16269 22.6108 2.11449 22.515 2.09313C22.4193 2.07178 22.3194 2.07814 22.2271 2.11148L2.43541 8.88231C2.33488 8.91678 2.24731 8.98118 2.18444 9.06686C2.12157 9.15254 2.08642 9.2554 2.0837 9.36164C2.08098 9.46788 2.11082 9.5724 2.16922 9.66119C2.22762 9.74998 2.31178 9.81878 2.41041 9.85835L10.6708 13.1709C10.932 13.2754 11.1692 13.4317 11.3683 13.6305C11.5674 13.8292 11.7241 14.0662 11.8292 14.3271L15.1417 22.5896Z" stroke="black" stroke-opacity="0.4" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M22.7646 2.23645L11.3687 13.6312" stroke="black" stroke-opacity="0.4" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.1417 22.5896C15.1812 22.6882 15.25 22.7724 15.3388 22.8308C15.4276 22.8892 15.5321 22.919 15.6384 22.9163C15.7446 22.9136 15.8475 22.8784 15.9331 22.8156C16.0188 22.7527 16.0832 22.6651 16.1177 22.5646L22.8885 2.77293C22.9219 2.68064 22.9282 2.58075 22.9069 2.48497C22.8855 2.38919 22.8373 2.30147 22.7679 2.23208C22.6985 2.16269 22.6108 2.11449 22.515 2.09313C22.4193 2.07178 22.3194 2.07814 22.2271 2.11148L2.43541 8.88231C2.33488 8.91678 2.24731 8.98118 2.18444 9.06686C2.12157 9.15254 2.08642 9.2554 2.0837 9.36164C2.08098 9.46788 2.11082 9.5724 2.16922 9.66119C2.22762 9.74998 2.31178 9.81878 2.41041 9.85835L10.6708 13.1709C10.932 13.2754 11.1692 13.4317 11.3683 13.6305C11.5674 13.8292 11.7241 14.0662 11.8292 14.3271L15.1417 22.5896Z" stroke-opacity="0.4" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22.7646 2.23645L11.3687 13.6312" stroke-opacity="0.4" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             </div>
                             Message
@@ -99,7 +99,7 @@ function Content(){
         </div>
         <BentoCard title={"Stats"} icon={statsIcon} >
             <div className="grid lg:grid-cols-4 gap-3 grid-cols-2">
-                <div className="w-full gap-1 bg-[#D9D9D940] rounded-[10px] p-4 flex justify-evenly flex-col">
+                <div className="w-full gap-1 bg-secondary rounded-[10px] p-4 flex justify-evenly flex-col">
                     <div className="flex items-center gap-3">
                         <svg width="40" height="43" viewBox="0 0 45 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="45" height="42.5" rx="10" fill="url(#paint0_linear_19_201)"/>
@@ -121,7 +121,7 @@ function Content(){
                     </div>
                     <span className="font-medium lg:text-base text-sm">Experience</span>
                 </div>
-                <div className="w-full gap-1 bg-[#D9D9D940] rounded-[10px] p-4 flex justify-evenly flex-col">
+                <div className="w-full gap-1 bg-secondary rounded-[10px] p-4 flex justify-evenly flex-col">
                     <div className="flex items-center gap-3">
                       <svg width="40" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="45" height="45" rx="10" fill="url(#paint0_linear_20_78)"/>
@@ -141,7 +141,7 @@ function Content(){
                     </div>
                     <span className="font-medium lg:text-base text-sm">Certificates</span>
                 </div>
-                <div className="w-full gap-1 bg-[#D9D9D940] rounded-[10px] p-4 flex justify-evenly flex-col">
+                <div className="w-full gap-1 bg-secondary rounded-[10px] p-4 flex justify-evenly flex-col">
                     <div className="flex items-center gap-3">
                         <svg width="40" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="45" height="45" rx="10" fill="url(#paint0_linear_20_63)"/>
@@ -163,7 +163,7 @@ function Content(){
                     </div>
                     <span className="font-medium lg:text-base text-sm">Projects</span>
                 </div>
-                <div className="w-full gap-1 bg-[#D9D9D940] rounded-[10px] p-4 flex justify-evenly flex-col">
+                <div className="w-full gap-1 bg-secondary rounded-[10px] p-4 flex justify-evenly flex-col">
                     <div className="flex items-center gap-3">
                       <svg width="40" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="45" height="45" rx="10" fill="url(#paint0_linear_20_88)"/>
@@ -208,7 +208,7 @@ function Content(){
                         <div className="w-full lg:aspect-5/3.5 aspect-5/3 bg-gray-200 rounded-t-[10px]">
                             <img src="" alt="" />
                         </div>
-                        <div className="w-full flex gap-3 p-3 bg-[#ECECEC60] rounded-b-[10px]">
+                        <div className="w-full flex gap-3 p-3 bg-secondary rounded-b-[10px]">
                             <div className="flex flex-col w-full overflow-hidden gap-1">
                                     <h1 className="font-semibold text-[16px]">Apollo 2026: Blueprint of Insights</h1>
                                     <div className="flex items-center gap-1">
@@ -233,7 +233,7 @@ function Content(){
                         <div className="w-full lg:aspect-5/3.5 aspect-5/3 bg-gray-200 rounded-t-[10px]">
                             <img src="" alt="" />
                         </div>
-                        <div className="w-full flex gap-3 p-3 bg-[#ECECEC60] rounded-b-[10px]">
+                        <div className="w-full flex gap-3 p-3 bg-secondary rounded-b-[10px]">
                             <div className="flex flex-col w-full overflow-hidden gap-1">
                                     <h1 className="font-semibold text-[16px]">Apollo 2026: Blueprint of Insights</h1>
                                     <div className="flex items-center gap-1">
@@ -258,7 +258,7 @@ function Content(){
                         <div className="w-full lg:aspect-5/3.5 aspect-5/3 bg-gray-200 rounded-t-[10px]">
                             <img src="" alt="" />
                         </div>
-                        <div className="w-full flex gap-3 p-3 bg-[#ECECEC60] rounded-b-[10px]">
+                        <div className="w-full flex gap-3 p-3 bg-secondary rounded-b-[10px]">
                             <div className="flex flex-col w-full overflow-hidden gap-1">
                                     <h1 className="font-semibold text-[16px]">Apollo 2026: Blueprint of Insights</h1>
                                     <div className="flex items-center gap-1">

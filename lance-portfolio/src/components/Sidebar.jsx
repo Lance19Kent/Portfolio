@@ -45,7 +45,7 @@ function Sidebar(){
                     <img src="/me-daytime.png" alt="" className="h-8" />
                     <div className="flex flex-col">
                         <h3 className=" text-black text-[16px] font-semibold">Lance Kent</h3>
-                        <h2 className="text-black/70 text-center text-[10px]">Current 3rd Year IT Student</h2>
+                        <h2 className="text-muted-foreground text-center text-[10px]">Current 3rd Year IT Student</h2>
                     </div>
                   
                 </Link>
@@ -72,7 +72,7 @@ function Sidebar(){
                         <img src="/me-daytime.png" className="h-15 w-15 z-30 relative"></img>
                     </div>
                     <h3 className="text-center text-black text-base font-semibold text-nowrap whitespace-nowrap text-ellipsis overflow-hidden w-full pt-2">Lance Kent</h3>
-                    <h2 className="text-black/70 text-center text-[14px] pb-6.25">Current 3rd Year IT Student</h2>
+                    <h2 className="text-muted-foreground text-center text-[14px] pb-6.25">Current 3rd Year IT Student</h2>
                     
                     <NavLink to={"/resume"} className={({isActive}) =>cn(buttonVariants({variant:"outline"}),
                         "py-5 font-light rounded-[10px] flex gap-2.5 justify-center cursor-pointer text-[16px] ease-in transition-all duration-75",
@@ -107,7 +107,7 @@ function Sidebar(){
                     <NavLink to="/about" onClick={()=>setIsMenuOpen(false)} className={({isActive}) =>` 
                         ${isActive 
                                     ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-[#00000009]" 
-                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#7abdf0] ease-in stroke-black transition duration-75 hover:stroke-[#7abdf0] bg-white hover:bg-[#00000004]"
+                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#7abdf0] ease-in stroke-black transition duration-75 hover:stroke-[#7abdf0] bg-white hover:bg-secondary"
                                 }`
                                 }
                                 >
@@ -186,10 +186,10 @@ function Sidebar(){
                     <h2 className="text-black/70 dark:text-muted-foreground text-center text-[14px] pb-6.25">Current 3rd Year IT Student</h2>
                     
                     <NavLink to={"/resume"} className={({isActive}) =>cn(buttonVariants({variant:"outline"}),
-                        "py-5 font-light rounded-[10px] flex gap-2.5 justify-center cursor-pointer text-[16px] ease-in transition-all duration-75",
+                        "py-5 font-light rounded-[10px] flex gap-2.5 justify-center cursor-pointer text-[16px] ease-in transition-all duration-75 dark:text-white",
                         isActive
-                                ? "text-[#3FA6F4] hover:text-[#3FA6F4] border-[#3FA6F4] stroke-[#3FA6F4] hover:bg-white " 
-                                : "text-[#00000080] bg-white border-gray-200 stroke-[#00000060] hover:text-[#7abdf0] hover:border-[#7abdf0] hover:bg-white hover:stroke-[#7abdf0]" 
+                                ? "text-[#3FA6F4] hover:text-[#3FA6F4] dark:border-[#3FA6F4] border-[#3FA6F4] stroke-[#3FA6F4] hover:bg-white dark:text-[#3FA6F4]" 
+                                : "text-[#00000080] bg-white border-gray-200 stroke-[#00000060] hover:text-[#7abdf0] hover:border-[#7abdf0] dark:stroke-white  hover:bg-white hover:stroke-[#7abdf0]" 
                         )}>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 15V3"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -200,12 +200,12 @@ function Sidebar(){
                         </NavLink>
                    
                 </div>
-                <div className="border border-[#D9D9D950] mt-6 mb-3"></div>
+                <div className="border border-border mt-6 mb-3"></div>
                 <div>
                     <NavLink to="/" className={({isActive}) =>` 
                         ${isActive 
-                                    ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-[#00000009]" 
-                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#7abdf0] ease-in stroke-black transition duration-75 hover:stroke-[#7abdf0] bg-white hover:bg-[#00000004]"
+                                    ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-secondary" 
+                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-foreground hover:text-[#7abdf0] ease-in stroke-foreground transition duration-75 hover:stroke-[#7abdf0] bg-card hover:bg-secondary"
                                 }`
                                 }
                                 >
@@ -217,8 +217,8 @@ function Sidebar(){
                     </NavLink>
                     <NavLink to="/about" className={({isActive}) =>` 
                         ${isActive 
-                                    ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-[#00000009]" 
-                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#7abdf0] ease-in stroke-black transition duration-75 hover:stroke-[#7abdf0] bg-white hover:bg-[#00000004]"
+                                    ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-secondary" 
+                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-foreground hover:text-[#7abdf0] ease-in stroke-foreground transition duration-75 hover:stroke-[#7abdf0] bg-card hover:bg-secondary"
                                 }`
                                 }
                                 >
@@ -230,8 +230,8 @@ function Sidebar(){
                     </NavLink>
                     <NavLink to="/projects" className={({isActive}) =>` 
                         ${isProjectLocation 
-                                    ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-[#00000009]" 
-                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#7abdf0] ease-in stroke-black transition duration-75 hover:stroke-[#7abdf0] bg-white hover:bg-[#00000004]"
+                                    ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-secondary" 
+                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-foreground hover:text-[#7abdf0] ease-in stroke-foreground transition duration-75 hover:stroke-[#7abdf0] bg-card hover:bg-secondary"
                                 }`
                                 }
                                 >
@@ -245,8 +245,8 @@ function Sidebar(){
                     </NavLink>
                     <NavLink to="/achievements" className={({isActive}) =>` 
                         ${isActive 
-                                    ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-[#00000009]" 
-                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#7abdf0] ease-in stroke-black transition duration-75 hover:stroke-[#7abdf0] bg-white hover:bg-[#00000004]"
+                                    ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-secondary" 
+                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-foreground hover:text-[#7abdf0] ease-in stroke-foreground transition duration-75 hover:stroke-[#7abdf0] bg-card hover:bg-secondary"
                                 }`
                                 }
                                 >
@@ -258,8 +258,8 @@ function Sidebar(){
                     </NavLink>
                     <NavLink to="/blog" className={({isActive}) =>` 
                         ${isBlogActive 
-                                    ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-[#00000009]" 
-                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#7abdf0] ease-in stroke-black transition duration-75 hover:stroke-[#7abdf0] bg-white hover:bg-[#00000004]"
+                                    ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-secondary" 
+                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-foreground hover:text-[#7abdf0] ease-in stroke-foreground transition duration-75 hover:stroke-[#7abdf0] bg-card hover:bg-secondary"
                                 }`
                                 }
                                 >
@@ -270,15 +270,15 @@ function Sidebar(){
                             <p>Blog</p>
                     </NavLink>
                 </div>
-                <div className="border border-[#D9D9D950] my-3"></div>
+                <div className="border border-border my-3"></div>
                 <div className="w-full flex flex-col">
                     <div className="flex flex-row gap-2.5 items-center justify-center my-3">
                         <Switch className={"cursor-pointer"} checked={isDarkMode} onCheckedChange={setIsDarkMode}/>
                         <span className="text-black dark:text-white text-[16px]">Dark Mode</span>
                     </div>
                     <div className="mt-4">
-                        <p className="text-[#00000050] dark:text-white/50 text-xs text-nowrap overflow-hidden text-ellipsis">Designed and Built By Lance Kent Geoffrey B. Magollado</p>
-                        <p className="text-[#00000050] dark:text-white/50  text-xs text-nowrap overflow-hidden text-ellipsis">@2025 All Rights Reserved.</p>
+                        <p className="text-muted-foreground text-xs text-nowrap overflow-hidden text-ellipsis">Designed and Built By Lance Kent Geoffrey B. Magollado</p>
+                        <p className="text-muted-foreground text-xs text-nowrap overflow-hidden text-ellipsis">@2025 All Rights Reserved.</p>
                     </div>
                 </div>
             </div>

@@ -16,7 +16,7 @@ function App() {
 
   return (
     <Router>
-      <div className='flex bg-[#ECECEC] dark:bg-[#525252] flex-col lg:flex-row lg:h-screen overflow-hidden lg:gap-3 w-full'>
+      <div className='flex bg-[#ECECEC] dark:bg-[#2e2e2e] flex-col lg:flex-row lg:h-screen overflow-hidden lg:gap-3 w-full'>
       <Sidebar/>
       <Routes>
         <Route path="/" element={<Home/>} />
