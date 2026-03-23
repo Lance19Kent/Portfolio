@@ -74,7 +74,9 @@ function Content(){
 
                 </div>
             </div>
-               <img src="./profile.png" alt="Lance Profile" className="absolute z-20 h-40 bottom-3 lg:h-38.5 lg:left-3 left-1/2 -translate-x-1/2 lg:top-auto top-35.5 lg:translate-x-0" />
+            <div  className="absolute z-20 h-40 w-40 bottom-3 lg:h-38.5 lg:left-3 left-1/2 -translate-x-1/2 lg:top-auto top-35.5 lg:translate-x-0 rounded-full overflow-hidden border-3 border-card">
+                <img src="./profile_githu.jpeg" alt="Lance Profile" className="w-full h-full object-cover" />
+            </div>               
             
                 <div className="w-full py-5 gap-5 flex items-center lg:mt-0 justify-end lg:pr-4 mt-25">
                     <div className="flex w-full lg:flex-row flex-col gap-4  justify-between lg:pl-48 items-center">
@@ -212,10 +214,10 @@ function Content(){
                             <div className="flex flex-col w-full overflow-hidden gap-1">
                                     <h1 className="font-semibold text-[16px]">Apollo 2026: Blueprint of Insights</h1>
                                     <div className="flex items-center gap-1">
-                                        <svg width="16" height="16" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg width="16" height="16" className="stroke-ring" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_125_209)">
-                                        <path d="M11.4129 20.9234C16.6654 20.9234 20.9235 16.6653 20.9235 11.4127C20.9235 6.16016 16.6654 1.9021 11.4129 1.9021C6.16028 1.9021 1.90222 6.16016 1.90222 11.4127C1.90222 16.6653 6.16028 20.9234 11.4129 20.9234Z" stroke="black" stroke-opacity="0.3" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M11.4127 5.7063V11.4127L9.51062 15.2169" stroke="black" stroke-opacity="0.3" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M11.4129 20.9234C16.6654 20.9234 20.9235 16.6653 20.9235 11.4127C20.9235 6.16016 16.6654 1.9021 11.4129 1.9021C6.16028 1.9021 1.90222 6.16016 1.90222 11.4127C1.90222 16.6653 6.16028 20.9234 11.4129 20.9234Z" stroke-opacity="0.7" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M11.4127 5.7063V11.4127L9.51062 15.2169" stroke-opacity="0.7" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
                                         </g>
                                         <defs>
                                         <clipPath id="clip0_125_209">
@@ -223,7 +225,7 @@ function Content(){
                                         </clipPath>
                                         </defs>
                                         </svg>
-                                        <p className="font-light text-[12px] text-black/50">September 09, 2026</p>
+                                        <p className="font-light text-[12px] text-ring">September 09, 2026</p>
                                     </div>
                             </div>
 
@@ -237,10 +239,10 @@ function Content(){
                             <div className="flex flex-col w-full overflow-hidden gap-1">
                                     <h1 className="font-semibold text-[16px]">Apollo 2026: Blueprint of Insights</h1>
                                     <div className="flex items-center gap-1">
-                                        <svg width="16" height="16" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg width="16" height="16" className="stroke-ring" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_125_209)">
-                                        <path d="M11.4129 20.9234C16.6654 20.9234 20.9235 16.6653 20.9235 11.4127C20.9235 6.16016 16.6654 1.9021 11.4129 1.9021C6.16028 1.9021 1.90222 6.16016 1.90222 11.4127C1.90222 16.6653 6.16028 20.9234 11.4129 20.9234Z" stroke="black" stroke-opacity="0.3" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M11.4127 5.7063V11.4127L9.51062 15.2169" stroke="black" stroke-opacity="0.3" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M11.4129 20.9234C16.6654 20.9234 20.9235 16.6653 20.9235 11.4127C20.9235 6.16016 16.6654 1.9021 11.4129 1.9021C6.16028 1.9021 1.90222 6.16016 1.90222 11.4127C1.90222 16.6653 6.16028 20.9234 11.4129 20.9234Z" stroke-opacity="0.7" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M11.4127 5.7063V11.4127L9.51062 15.2169" stroke-opacity="0.7" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
                                         </g>
                                         <defs>
                                         <clipPath id="clip0_125_209">
@@ -248,7 +250,7 @@ function Content(){
                                         </clipPath>
                                         </defs>
                                         </svg>
-                                        <p className="font-light text-[12px] text-black/50">September 09, 2026</p>
+                                        <p className="font-light text-[12px] text-ring">September 09, 2026</p>
                                     </div>
                             </div>
 
@@ -262,10 +264,10 @@ function Content(){
                             <div className="flex flex-col w-full overflow-hidden gap-1">
                                     <h1 className="font-semibold text-[16px]">Apollo 2026: Blueprint of Insights</h1>
                                     <div className="flex items-center gap-1">
-                                        <svg width="16" height="16" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg width="16" height="16" className="stroke-ring" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_125_209)">
-                                        <path d="M11.4129 20.9234C16.6654 20.9234 20.9235 16.6653 20.9235 11.4127C20.9235 6.16016 16.6654 1.9021 11.4129 1.9021C6.16028 1.9021 1.90222 6.16016 1.90222 11.4127C1.90222 16.6653 6.16028 20.9234 11.4129 20.9234Z" stroke="black" stroke-opacity="0.3" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M11.4127 5.7063V11.4127L9.51062 15.2169" stroke="black" stroke-opacity="0.3" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M11.4129 20.9234C16.6654 20.9234 20.9235 16.6653 20.9235 11.4127C20.9235 6.16016 16.6654 1.9021 11.4129 1.9021C6.16028 1.9021 1.90222 6.16016 1.90222 11.4127C1.90222 16.6653 6.16028 20.9234 11.4129 20.9234Z"  stroke-opacity="0.7" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M11.4127 5.7063V11.4127L9.51062 15.2169"  stroke-opacity="0.7" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
                                         </g>
                                         <defs>
                                         <clipPath id="clip0_125_209">
@@ -273,7 +275,7 @@ function Content(){
                                         </clipPath>
                                         </defs>
                                         </svg>
-                                        <p className="font-light text-[12px] text-black/50">September 09, 2026</p>
+                                        <p className="font-light text-[12px] text-ring">September 09, 2026</p>
                                     </div>
                             </div>
 
