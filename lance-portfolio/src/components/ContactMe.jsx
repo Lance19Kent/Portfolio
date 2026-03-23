@@ -12,37 +12,37 @@ function ContactMe(){
                     <ul className="flex gap-4 w-full flex-wrap">
                         <li className="w-10">
                             <a href="https://github.com/Lance19Kent" target="_blank" rel="noopener noreferrer" className="w-10">
-                                <img src="./contact-icons/github.svg" alt="Github Logo"/>
+                                <img src="./contact-icons/github.svg" alt="Github Logo" className="dark:invert"/>
                             </a>
                         </li>
                         <li  className="w-10">
                             <a href="https://www.facebook.com/Lance19Kent/" target="_blank" rel="noopener noreferrer">
-                                <img src="./contact-icons/facebook.svg" alt="Facebook Logo"/>
+                                <img src="./contact-icons/facebook.svg" alt="Facebook Logo" className="dark:invert"/>
                             </a>
                         </li>
                         <li className="w-10">
                             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lancemagollado46@gmail.com&su=Hi,%20Let%20us%20connect!" target="_blank" rel="noopener noreferrer" className="w-10">
-                             <img src="./contact-icons/email.svg" alt="Email Logo"/>
+                             <img src="./contact-icons/email.svg" alt="Email Logo" className="dark:invert"/>
                             </a>
                         </li>
                         <li className="w-10">
                             <a href="viber://chat?number=%2B639263226163" target="_blank" rel="noopener noreferrer" className="w-10" >
-                             <img src="./contact-icons/viber.svg" alt="WhatsApp Logo"/>
+                             <img src="./contact-icons/viber.svg" alt="WhatsApp Logo" className="dark:invert"/>
                             </a>
                         </li>
                         <li className="w-10">
                             <a href="https://www.instagram.com/ikent_lance/" target="_blank"  rel="noopener noreferrer" className="w-10">
-                             <img src="./contact-icons/instagram.svg" alt="Instagram Logo"/>
+                             <img src="./contact-icons/instagram.svg" alt="Instagram Logo" className="dark:invert"/>
                             </a>
                         </li>
                         <li className="w-10">
                             <a href="https://www.linkedin.com/in/lancemagollado/" target="_blank"  rel="noopener noreferrer" className="w-10">
-                             <img src="./contact-icons/linkedin.svg" alt="LinkedIn Logo"/>
+                             <img src="./contact-icons/linkedin.svg" alt="LinkedIn Logo" className="dark:invert"/>
                             </a>
                         </li>
                         <li className="w-10">
                             <a href="https://api.whatsapp.com/send?phone=639263226163&text=Hi%20Lance!%20I%20saw%20your%20portfolio" target="_blank" rel="noopener noreferrer" className="w-10">
-                             <img src="./contact-icons/whatsapp.svg" alt="LinkedIn Logo"/>
+                             <img src="./contact-icons/whatsapp.svg" alt="LinkedIn Logo" className="dark:invert"/>
                             </a>
                         </li>
                     </ul>
