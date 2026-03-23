@@ -176,14 +176,14 @@ function Sidebar(){
 
         </div>
 
-        <nav className="hidden lg:block max-h-screen w-[18%] bg-white dark:bg-black/50 rounded-[10px] p-4 my-3 ml-3 select-none">
+        <nav className="hidden lg:block max-h-screen w-[18%] bg-card rounded-[10px] p-4 my-3 ml-3 select-none">
             <div className="w-full flex flex-col h-full justify-between">
                 <div className="w-full flex flex-col">
                     <div className="w-full flex justify-center">
                         <img src="/me-daytime.png" className="h-15 w-15"></img>
                     </div>
-                    <h3 className="text-center text-black dark:text-white  text-[18px] font-semibold text-nowrap whitespace-nowrap text-ellipsis overflow-hidden w-full pt-2">Lance Kent</h3>
-                    <h2 className="text-black/70 dark:text-white/70 text-center text-[14px] pb-6.25">Current 3rd Year IT Student</h2>
+                    <h3 className="text-center text-black dark:text-foreground text-[18px] font-semibold text-nowrap whitespace-nowrap text-ellipsis overflow-hidden w-full pt-2">Lance Kent</h3>
+                    <h2 className="text-black/70 dark:text-muted-foreground text-center text-[14px] pb-6.25">Current 3rd Year IT Student</h2>
                     
                     <NavLink to={"/resume"} className={({isActive}) =>cn(buttonVariants({variant:"outline"}),
                         "py-5 font-light rounded-[10px] flex gap-2.5 justify-center cursor-pointer text-[16px] ease-in transition-all duration-75",
