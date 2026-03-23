@@ -8,6 +8,19 @@ function Sidebar(){
 
     // State for Dark Mode
     const [isDarkMode, setIsDarkMode] = useState(false);
+    const [isChangingTheme, setIsChangingTheme] = useState(false);
+
+    const handleThemeToggle = (checked) =>{
+        setIsChangingTheme(true);
+
+        setTimeout(()=>{
+            setIsDarkMode(checked);
+
+            setTimeout(()=>{
+                setIsChangingTheme(false);
+            }, 1500);
+        }, 1000);
+    }
 
     useEffect(()=>{
         if(isDarkMode){
@@ -39,6 +52,26 @@ function Sidebar(){
 
     return(
         <>
+        {isChangingTheme && (
+            // 1. Transparent background na may malupit na backdrop blur (Frosted Glass)
+            <div className="fixed inset-0 z-[9999] bg-white/70 dark:bg-zinc-950/70 backdrop-blur-2xl flex flex-col items-center justify-center animate-fade-in transition-opacity duration-1000 ease-in-out">
+                
+                {/* 2. Minimalist, Aesthetic pulsing icon (Signature Blue Aura) */}
+                <div className="relative flex items-center justify-center h-24 w-24">
+                    {/* Outermost pulsing ring (Pinakamalaki at pinaka-transparent) */}
+                    <div className="absolute animate-ping rounded-full h-full w-full bg-[#3FA6F4] opacity-10"></div>
+                    
+                    {/* Secondary inner pulse */}
+                    <div className="absolute animate-ping rounded-full h-3/4 w-3/4 bg-[#3FA6F4] opacity-20 [animation-delay:0.3s]"></div>
+                    
+                    {/* Solid center dot (Magbibigay ng color context) */}
+                    <div className="relative rounded-full h-8 w-8 bg-[#3FA6F4] shadow-[0_0_30px_10px_#3FA6F4A0]"></div>
+                </div>
+
+                {/* 3. Tinanggal ko na ang Text para sa minimalist look */}
+            </div>
+        )}
+
         <div className="lg:hidden block w-full bg-transparent px-3 pt-3 ">
             <div className="lg:hidden w-full h-14 bg-white rounded-[10px] px-3 flex justify-between items-center">
                 <Link to={"/"} className="w-fit h-full items-center flex gap-2">
@@ -273,7 +306,7 @@ function Sidebar(){
                 <div className="border border-border my-3"></div>
                 <div className="w-full flex flex-col">
                     <div className="flex flex-row gap-2.5 items-center justify-center my-3">
-                        <Switch className={"cursor-pointer"} checked={isDarkMode} onCheckedChange={setIsDarkMode}/>
+                        <Switch className={"cursor-pointer"} checked={isDarkMode} onCheckedChange={handleThemeToggle}/>
                         <span className="text-black dark:text-white text-[16px]">Dark Mode</span>
                     </div>
                     <div className="mt-4">
