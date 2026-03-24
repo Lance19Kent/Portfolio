@@ -23,7 +23,7 @@ function ProjectsContent(){
                         <div className="w-full bg-secondary/40 dark:bg-secondary flex flex-col gap-3 rounded-t-[10px] p-5">
                             <div>
                                 <h1 className="font-semibold text-[24px]">Okay lang</h1>
-                                             <div className="flex items-center gap-1">
+                                <div className="flex items-center gap-1">
                                     <svg width="12" height="12" viewBox="0 0 12 12" className="stroke-muted-foreground" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z"  stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M6 3V6L5 8"  stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
