@@ -12,7 +12,6 @@ import BlogSelected from './pages/BlogSelected';
 import ProjectSelected from './pages/ProjectSelected';
 
 function App() { 
-  const [count, setCount] = useState(0)
 
   return (
     <Router>

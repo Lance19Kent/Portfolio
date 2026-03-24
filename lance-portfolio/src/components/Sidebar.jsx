@@ -10,6 +10,14 @@ function Sidebar(){
     const [isDarkMode, setIsDarkMode] = useState(false);
     const [isChangingTheme, setIsChangingTheme] = useState(false);
 
+    useEffect(()=>{
+        const faviconLink = document.getElementById('dynamic-favicon');
+        if(faviconLink){
+            faviconLink.type = "image/png";
+            faviconLink.href = isDarkMode ? "./me-nighttime-circle.png" :"./me-daytime-circle.png";
+        }
+    }, [isDarkMode]);
+
     const handleThemeToggle = (checked) =>{
         setIsChangingTheme(true);
 
