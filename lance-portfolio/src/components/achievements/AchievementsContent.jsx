@@ -33,7 +33,7 @@ function AchievementsContent(){
                                     <p className=" text-[14px]">freeCodeCamp</p>
                                 </div>
 
-                                <p className="font-light text-[12px] text-black/50">Issued on November 24, 2025</p>
+                                <p className="font-light text-[12px] text-ring">Issued on November 24, 2025</p>
                             </div>
 
                         </div>
@@ -52,7 +52,7 @@ function AchievementsContent(){
                                     <p className=" text-[14px]">freeCodeCamp</p>
                                 </div>
 
-                                <p className="font-light text-[12px] text-black/50">Issued on November 24, 2025</p>
+                                <p className="font-light text-[12px] text-ring">Issued on November 24, 2025</p>
                             </div>
 
                         </div>
@@ -71,7 +71,7 @@ function AchievementsContent(){
                                     <p className=" text-[14px]">freeCodeCamp</p>
                                 </div>
 
-                                <p className="font-light text-[12px] text-black/50">Issued on November 24, 2025</p>
+                                <p className="font-light text-[12px] text-ring">Issued on November 24, 2025</p>
                             </div>
 
                         </div>
@@ -90,7 +90,7 @@ function AchievementsContent(){
                                     <p className=" text-[14px]">freeCodeCamp</p>
                                 </div>
 
-                                <p className="font-light text-[12px] text-black/50">Issued on November 24, 2025</p>
+                                <p className="font-light text-[12px] text-ring">Issued on November 24, 2025</p>
                             </div>
 
                         </div>
@@ -109,7 +109,7 @@ function AchievementsContent(){
                                     <p className=" text-[14px]">freeCodeCamp</p>
                                 </div>
 
-                                <p className="font-light text-[12px] text-black/50">Issued on November 24, 2025</p>
+                                <p className="font-light text-[12px] text-ring">Issued on November 24, 2025</p>
                             </div>
 
                         </div>
@@ -128,7 +128,7 @@ function AchievementsContent(){
                                     <p className=" text-[14px]">freeCodeCamp</p>
                                 </div>
 
-                                <p className="font-light text-[12px] text-black/50">Issued on November 24, 2025</p>
+                                <p className="font-light text-[12px] text-ring">Issued on November 24, 2025</p>
                             </div>
 
                         </div>
@@ -147,7 +147,7 @@ function AchievementsContent(){
                                     <p className=" text-[14px]">freeCodeCamp</p>
                                 </div>
 
-                                <p className="font-light text-[12px] text-black/50">Issued on November 24, 2025</p>
+                                <p className="font-light text-[12px] text-ring">Issued on November 24, 2025</p>
                             </div>
 
                         </div>
@@ -166,7 +166,7 @@ function AchievementsContent(){
                                     <p className=" text-[14px]">freeCodeCamp</p>
                                 </div>
 
-                                <p className="font-light text-[12px] text-black/50">Issued on November 24, 2025</p>
+                                <p className="font-light text-[12px] text-ring">Issued on November 24, 2025</p>
                             </div>
 
                         </div>
@@ -190,7 +190,7 @@ function AchievementsContent(){
                                     <p className=" text-[14px]">freeCodeCamp</p>
                                 </div>
 
-                                <p className="font-light text-[12px] text-black/50">Issued on November 24, 2025</p>
+                                <p className="font-light text-[12px] text-ring">Issued on November 24, 2025</p>
                             </div>
 
                         </div>
@@ -209,7 +209,7 @@ function AchievementsContent(){
                                     <p className=" text-[14px]">freeCodeCamp</p>
                                 </div>
 
-                                <p className="font-light text-[12px] text-black/50">Issued on November 24, 2025</p>
+                                <p className="font-light text-[12px] text-ring">Issued on November 24, 2025</p>
                             </div>
 
                         </div>
@@ -228,7 +228,7 @@ function AchievementsContent(){
                                     <p className=" text-[14px]">freeCodeCamp</p>
                                 </div>
 
-                                <p className="font-light text-[12px] text-black/50">Issued on November 24, 2025</p>
+                                <p className="font-light text-[12px] text-ring">Issued on November 24, 2025</p>
                             </div>
 
                         </div>
@@ -247,7 +247,7 @@ function AchievementsContent(){
                                     <p className=" text-[14px]">freeCodeCamp</p>
                                 </div>
 
-                                <p className="font-light text-[12px] text-black/50">Issued on November 24, 2025</p>
+                                <p className="font-light text-[12px] text-ring">Issued on November 24, 2025</p>
                             </div>
 
                         </div>
@@ -266,7 +266,7 @@ function AchievementsContent(){
                                     <p className=" text-[14px]">freeCodeCamp</p>
                                 </div>
 
-                                <p className="font-light text-[12px] text-black/50">Issued on November 24, 2025</p>
+                                <p className="font-light text-[12px] text-ring">Issued on November 24, 2025</p>
                             </div>
 
                         </div>
@@ -285,7 +285,7 @@ function AchievementsContent(){
                                     <p className=" text-[14px]">freeCodeCamp</p>
                                 </div>
 
-                                <p className="font-light text-[12px] text-black/50">Issued on November 24, 2025</p>
+                                <p className="font-light text-[12px] text-ring">Issued on November 24, 2025</p>
                             </div>
 
                         </div>
@@ -304,7 +304,7 @@ function AchievementsContent(){
                                     <p className=" text-[14px]">freeCodeCamp</p>
                                 </div>
 
-                                <p className="font-light text-[12px] text-black/50">Issued on November 24, 2025</p>
+                                <p className="font-light text-[12px] text-ring">Issued on November 24, 2025</p>
                             </div>
 
                         </div>
@@ -323,7 +323,7 @@ function AchievementsContent(){
                                     <p className=" text-[14px]">freeCodeCamp</p>
                                 </div>
 
-                                <p className="font-light text-[12px] text-black/50">Issued on November 24, 2025</p>
+                                <p className="font-light text-[12px] text-ring">Issued on November 24, 2025</p>
                             </div>
 
                         </div>
