@@ -11,23 +11,39 @@ import Resume from './pages/Resume'
 import BlogSelected from './pages/BlogSelected';
 import ProjectSelected from './pages/ProjectSelected';
 import OfflineNotice from './components/OfflineNotice';
+import Preloader from './components/Preloader';
+
 function App() { 
 
   const [isOnline, setIsOnline] = useState(navigator.onLine);
-        useEffect(()=>{
-            const handleOnline = () => setIsOnline(true);
-            const handleOffline = () => setIsOnline(false);
+  const [isLoading, setIsLoading] = useState(true);
 
-            window.addEventListener('online', handleOnline);
-            window.addEventListener('offline', handleOffline);
+  useEffect(()=>{
+      const handleOnline = () => setIsOnline(true);
+      const handleOffline = () => setIsOnline(false);
 
-            return()=>{
-                window.removeEventListener('online', handleOnline);
-                window.removeEventListener('offline', handleOffline);
-            };
-        }, []);
+      window.addEventListener('online', handleOnline);
+      window.addEventListener('offline', handleOffline);
 
-        if (!isOnline) {
+      return()=>{
+          window.removeEventListener('online', handleOnline);
+          window.removeEventListener('offline', handleOffline);
+      };
+  }, []);
+
+   useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return <Preloader />;
+  }
+
+  if (!isOnline) {
     return <OfflineNotice />;
   }
 
@@ -48,7 +64,7 @@ function App() {
       </div>
     </Router>
 
-  )
+  );
 }
 
 export default App
