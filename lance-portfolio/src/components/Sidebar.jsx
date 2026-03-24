@@ -7,7 +7,10 @@ import { useState, useEffect } from "react"
 function Sidebar(){
 
     // State for Dark Mode
-    const [isDarkMode, setIsDarkMode] = useState(false);
+    const [isDarkMode, setIsDarkMode] = useState(()=>{
+        const savedTheme = localStorage.getItem("theme");
+        return savedTheme === "dark";
+    });
     const [isChangingTheme, setIsChangingTheme] = useState(false);
 
     useEffect(()=>{
@@ -33,8 +36,10 @@ function Sidebar(){
     useEffect(()=>{
         if(isDarkMode){
             document.documentElement.classList.add("dark");
+            localStorage.setItem("theme", "dark");
         }else{
             document.documentElement.classList.remove("dark");
+            localStorage.setItem("theme","light");
         }
     }, [isDarkMode]);
 
