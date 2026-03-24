@@ -11,7 +11,7 @@ import ContactMe from "../ContactMe";
 
 function SubContent() {
 
-    const techIcon = <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+    const techIcon = <svg width="30" height="30" className="stroke-black" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15 25V27.5"  stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M15 2.5V5" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M21.25 25V27.5"  stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
@@ -29,7 +29,7 @@ function SubContent() {
                     </svg>
 
     
-    const skillsIcon = <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+    const skillsIcon = <svg width="30" height="30" stroke="black" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2.5 26.25C2.49989 24.3254 3.05517 22.4417 4.09918 20.8249C5.1432 19.208 6.63159 17.9268 8.38575 17.135C10.1399 16.3432 12.0853 16.0744 13.9884 16.3609C15.8916 16.6473 17.6717 17.4769 19.115 18.75"  stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M12.5 16.25C15.9518 16.25 18.75 13.4518 18.75 10C18.75 6.54822 15.9518 3.75 12.5 3.75C9.04822 3.75 6.25 6.54822 6.25 10C6.25 13.4518 9.04822 16.25 12.5 16.25Z"  stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M20 23.75L22.5 26.25L27.5 21.25"  stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
