@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Sidebar  from './components/Sidebar'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -10,8 +10,26 @@ import Blog from './pages/Blog'
 import Resume from './pages/Resume'
 import BlogSelected from './pages/BlogSelected';
 import ProjectSelected from './pages/ProjectSelected';
-
+import OfflineNotice from './components/OfflineNotice';
 function App() { 
+
+  const [isOnline, setIsOnline] = useState(navigator.onLine);
+        useEffect(()=>{
+            const handleOnline = () => setIsOnline(true);
+            const handleOffline = () => setIsOnline(false);
+
+            window.addEventListener('online', handleOnline);
+            window.addEventListener('offline', handleOffline);
+
+            return()=>{
+                window.removeEventListener('online', handleOnline);
+                window.removeEventListener('offline', handleOffline);
+            };
+        }, []);
+
+        if (!isOnline) {
+    return <OfflineNotice />;
+  }
 
   return (
     <Router>
@@ -19,26 +37,12 @@ function App() {
       <Sidebar/>
       <Routes>
         <Route path="/" element={<Home/>} />
-      </Routes>
-      <Routes>
         <Route path="/about" element={<About/>} />
-      </Routes>
-      <Routes>
         <Route path="/projects" element={<Projects/>} />
-      </Routes>
-      <Routes>
         <Route path="/achievements" element={<Achievements/>} />
-      </Routes>
-      <Routes>
         <Route path="/blog" element={<Blog/>} />
-      </Routes>
-      <Routes>
         <Route path="/resume" element={<Resume/>} />
-      </Routes>
-      <Routes>
         <Route path="/blog-selected" element={<BlogSelected/>} />
-      </Routes>
-      <Routes>
         <Route path="/projects-selected" element={<ProjectSelected/>} />
       </Routes>
       </div>
