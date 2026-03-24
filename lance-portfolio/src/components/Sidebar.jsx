@@ -255,7 +255,7 @@ function Sidebar(){
                         "py-5 font-light rounded-[10px] flex gap-2.5 justify-center cursor-pointer text-[16px] ease-in transition-all duration-75 dark:text-white",
                         isActive
                                 ? "text-[#3FA6F4] hover:text-[#3FA6F4] dark:border-[#3FA6F4] border-[#3FA6F4] stroke-[#3FA6F4] hover:bg-white dark:text-[#3FA6F4]" 
-                                : "text-[#00000080] bg-white border-gray-200 stroke-[#00000060] hover:text-[#7abdf0] hover:border-[#7abdf0] dark:stroke-white  hover:bg-white hover:stroke-[#7abdf0]" 
+                                : "text-[#00000080] bg-card border-gray-200 stroke-[#00000060] hover:text-[#7abdf0] hover:border-[#7abdf0] dark:stroke-white  hover:bg-white hover:stroke-[#7abdf0]" 
                         )}>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 15V3"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
