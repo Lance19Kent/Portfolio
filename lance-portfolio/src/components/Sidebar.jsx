@@ -53,16 +53,16 @@ function Sidebar(){
     return(
         <>
        
-{isChangingTheme && (
-    <div className="fixed inset-0 z-9999 backdrop-blur-3xl animate-fade-in transition-opacity duration-500">
-        
-        <div className={`inset-0 absolute transition-opacity duration-1000 ${!isDarkMode ? 'opacity-100' : 'opacity-0'}`}>
-            <div className="inset-0 absolute bg-white/70"></div> 
-            <div className="inset-0 absolute flex items-center justify-center">
-                <div className="relative flex items-center justify-center h-24 w-24">
-                    <div className="absolute animate-ping rounded-full h-full w-full bg-[#3FA6F4] opacity-10"></div>
-                    <div className="absolute animate-ping rounded-full h-3/4 w-3/4 bg-[#3FA6F4] opacity-20 [animation-delay:0.3s]"></div>
-                    <img 
+    {isChangingTheme && (
+        <div className="fixed inset-0 z-9999 backdrop-blur-3xl animate-fade-in transition-opacity duration-500">
+            
+            <div className={`inset-0 absolute transition-opacity duration-1000 ${!isDarkMode ? 'opacity-100' : 'opacity-0'}`}>
+                <div className="inset-0 absolute bg-white/70"></div> 
+                <div className="inset-0 absolute flex items-center justify-center">
+                    <div className="relative flex items-center justify-center h-24 w-24">
+                        <div className="absolute animate-ping rounded-full h-full w-full bg-[#3FA6F4] opacity-10"></div>
+                        <div className="absolute animate-ping rounded-full h-3/4 w-3/4 bg-[#3FA6F4] opacity-20 [animation-delay:0.3s]"></div>
+                        <img 
                         src="./me-daytime.png" 
                         alt="Avatar Day" 
                         className="relative rounded-full h-25 w-25 border-2 border-[#3FA6F4] shadow-[0_0_30px_10px_#3FA6F4A0]" 
@@ -71,27 +71,25 @@ function Sidebar(){
             </div>
         </div>
 
-        <div className={`inset-0 absolute transition-opacity duration-1000 ${isDarkMode ? 'opacity-100' : 'opacity-0'}`}>
-            <div className="inset-0 absolute bg-zinc-950/70"></div> 
-            <div className="inset-0 absolute flex items-center justify-center">
-                <div className="relative flex items-center justify-center h-24 w-24">
+            <div className={`inset-0 absolute transition-opacity duration-1000 ${isDarkMode ? 'opacity-100' : 'opacity-0'}`}>
+                <div className="inset-0 absolute bg-zinc-950/70"></div> 
+                <div className="inset-0 absolute flex items-center justify-center">
+                    <div className="relative flex items-center justify-center h-24 w-24">
+        
+                        <div className="absolute animate-ping rounded-full h-full w-full bg-[#3FA6F4] opacity-10"></div>
     
-                    <div className="absolute animate-ping rounded-full h-full w-full bg-[#3FA6F4] opacity-10"></div>
- 
-                    <div className="absolute animate-ping rounded-full h-3/4 w-3/4 bg-[#3FA6F4] opacity-20 [animation-delay:0.3s]"></div>
+                        <div className="absolute animate-ping rounded-full h-3/4 w-3/4 bg-[#3FA6F4] opacity-20 [animation-delay:0.3s]"></div>
 
-                    <img 
-                        src="./me-nighttime.png" 
-                        alt="Avatar Night" 
-                        className="relative rounded-full h-25 w-25 border-2 border-[#3FA6F4] shadow-[0_0_30px_10px_#3FA6F4A0]" 
-                    />
+                        <img 
+                            src="./me-nighttime.png" 
+                            alt="Avatar Night" 
+                            className="relative rounded-full h-25 w-25 border-2 border-[#3FA6F4] shadow-[0_0_30px_10px_#3FA6F4A0]" 
+                        />
+                    </div>
                 </div>
             </div>
         </div>
-        
-    </div>
-)}
-
+    )}
         <div className="lg:hidden block w-full bg-transparent px-3 pt-3 ">
             <div className="lg:hidden w-full h-14 bg-white rounded-[10px] px-3 flex justify-between items-center">
                 <Link to={"/"} className="w-fit h-full items-center flex gap-2">
@@ -233,7 +231,9 @@ function Sidebar(){
             <div className="w-full flex flex-col h-full justify-between">
                 <div className="w-full flex flex-col">
                     <div className="w-full flex justify-center">
-                        <img src="/me-daytime.png" className="h-15 w-15"></img>
+                        <div className="flex h-15 w-15 rounded-full overflow-hidden">
+                            <img src={isDarkMode ? "/me-nighttime.png":"/me-daytime.png"} className="w-full object-cover"></img>
+                        </div>
                     </div>
                     <h3 className="text-center text-black dark:text-foreground text-[18px] font-semibold text-nowrap whitespace-nowrap text-ellipsis overflow-hidden w-full pt-2">Lance Kent</h3>
                     <h2 className="text-black/70 dark:text-muted-foreground text-center text-[14px] pb-6.25">Current 3rd Year IT Student</h2>
