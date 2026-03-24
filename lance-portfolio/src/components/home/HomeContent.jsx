@@ -84,7 +84,7 @@ function Content(){
                             <h1 className="font-semibold leading-6 lg:text-[20px] text-lg">Lance Kent Geoffrey B. Magollado</h1>
                             <span className="lg:text-[14px] text-sm text-semitext-ring">Aspiring Full-Stack Developer</span>
                         </div>
-                        <Button variant="outline" className={"cursor-pointer text-foreground lg:text-[16px] text-sm font-light p-5 stroke-foreground"} asChild>
+                        <Button variant="outline" className={"cursor-pointer text-foreground/70 hover:text-foreground/70 lg:text-[16px] text-sm font-light p-5 stroke-foreground"} asChild>
                             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lancemagollado46@gmail.com&su=Hi,%20Let%20us%20connect!" target="_blank" rel="noopener noreferrer">
                             <div className="lg:w-4 w-3">
                                 <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
