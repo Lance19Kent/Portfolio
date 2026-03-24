@@ -249,7 +249,7 @@ function Sidebar(){
                         </div>
                     </div>
                     <h3 className="text-center text-black dark:text-foreground text-[18px] font-semibold text-nowrap whitespace-nowrap text-ellipsis overflow-hidden w-full pt-2">Lance Kent</h3>
-                    <h2 className="text-black/70 dark:text-muted-foreground text-center text-[14px] pb-6.25">Current 3rd Year IT Student</h2>
+                    <h2 className="text-semitext-ring text-center text-[14px] pb-6.25">Current 3rd Year IT Student</h2>
                     
                     <NavLink to={"/resume"} className={({isActive}) =>cn(buttonVariants({variant:"outline"}),
                         "py-5 font-light rounded-[10px] flex gap-2.5 justify-center cursor-pointer text-[16px] ease-in transition-all duration-75 dark:text-white",

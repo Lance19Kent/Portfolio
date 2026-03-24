@@ -74,7 +74,7 @@ function Content(){
 
                 </div>
             </div>
-            <div  className="absolute z-20 h-40 w-40 bottom-3 lg:h-38.5 lg:left-3 left-1/2 -translate-x-1/2 lg:top-auto top-35.5 lg:translate-x-0 rounded-full overflow-hidden border-3 border-card">
+            <div  className="absolute z-20 h-40 w-40 bottom-3 lg:h-38.5 lg:w-38.5 lg:left-3 left-1/2 -translate-x-1/2 lg:top-auto top-35.5 lg:translate-x-0 rounded-full overflow-hidden border-3 border-card">
                 <img src="./profile_githu.jpeg" alt="Lance Profile" className="w-full h-full object-cover" />
             </div>               
             
@@ -82,7 +82,7 @@ function Content(){
                     <div className="flex w-full lg:flex-row flex-col gap-4  justify-between lg:pl-48 items-center">
                         <div className="flex flex-col items-center lg:items-start">
                             <h1 className="font-semibold leading-6 lg:text-[20px] text-lg">Lance Kent Geoffrey B. Magollado</h1>
-                            <span className="lg:text-[14px] text-sm text-muted-foreground">Aspiring Full-Stack Developer</span>
+                            <span className="lg:text-[14px] text-sm text-semitext-ring">Aspiring Full-Stack Developer</span>
                         </div>
                         <Button variant="outline" className={"cursor-pointer text-foreground lg:text-[16px] text-sm font-light p-5 stroke-foreground"} asChild>
                             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lancemagollado46@gmail.com&su=Hi,%20Let%20us%20connect!" target="_blank" rel="noopener noreferrer">

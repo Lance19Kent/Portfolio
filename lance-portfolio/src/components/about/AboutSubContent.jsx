@@ -27,8 +27,8 @@ function AboutSubContent(){
                         <div className="flex flex-col gap-1 w-full overflow-hidden">
                             <div className="w-full ">
                                 <p className="font-medium truncate">BS in Information Techsssnology</p>
-                                <p className="font-light text-black/70 text-[14px]">Quezon City University</p>
-                                <p className="font-light text-[14px] text-black/70">GWA: <span className="text-[#25B243]">In Progress</span> / 1.0</p>
+                                <p className="font-light text-semitext-ring text-[14px]">Quezon City University</p>
+                                <p className="font-light text-[14px] text-semitext-ring">GWA: <span className="text-[#25B243]">In Progress</span> / 1.0</p>
                             </div>
                             <div className="flex items-center gap-2">
                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,7 +39,7 @@ function AboutSubContent(){
                                 </svg>
                                 <p className="text-[12px] text-[#9D9D9D]">August 2023 - Present</p>
                             </div>
-                            <p className="text-[14px] text-black font-light">
+                            <p className="text-[14px] text-foreground font-light">
                                 Currently taking a Bachelor of Science in Information and Technology in Quezon City University. Focusing in Web Technologies that can create innovative and sustainable solutions not only academically, but for the community. 
                             </p>
                         </div>
@@ -49,8 +49,8 @@ function AboutSubContent(){
                         <div className="flex flex-col gap-1 w-full overflow-hidden"> 
                             <div className="w-full">
                                 <h1 className="font-medium truncate">Track-Information and Communications Technology with Specialization in Computer Programming</h1>
-                                <p className="font-light text-[14px] text-black/70">Rosario Institute</p>
-                                <p className="font-light text-[14px] text-black/70">GWA: 96 / 100</p>
+                                <p className="font-light text-[14px] text-semitext-ring">Rosario Institute</p>
+                                <p className="font-light text-[14px] text-semitext-ring">GWA: 96 / 100</p>
                             </div>
                             <div className="flex items-center gap-2">
                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,7 +61,7 @@ function AboutSubContent(){
                                 </svg>
                                 <p className="text-[12px] text-[#9D9D9D]">June 2019 - May 2021</p>
                             </div>
-                            <p className="text-[14px] text-black font-light">
+                            <p className="text-[14px] text-foreground font-light">
                                 Consistent Honor and Achievements - 90 above grades everyday year, and masters java and sql. Accumulated with High Honor with the average of 96. I learned what is truly my goal, my career path and created mindset that will help me achieve my goals.
                             </p>
                         </div>
@@ -75,8 +75,8 @@ function AboutSubContent(){
                         <div className="flex flex-col gap-1">
                             <div>
                                 <span className="font-medium">StudyPool</span>
-                                <p className="font-light text-black/70 text-[14px]">StudyPool Inc.</p>
-                                <p className="font-light text-[14px] text-black/70">Online Platform</p>
+                                <p className="font-light text-semitext-ring text-[14px]">StudyPool Inc.</p>
+                                <p className="font-light text-[14px] text-semitext-ring">Online Platform</p>
                             </div>
                             <div className="flex items-center gap-2">
                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -87,7 +87,7 @@ function AboutSubContent(){
                                 </svg>
                                 <p className="text-[12px] text-[#9D9D9D]">Jan 2026 - Present</p>
                             </div>
-                            <p className="text-[14px] text-black font-light">
+                            <p className="text-[14px] text-foreground font-light">
                                 Teach and post programming task and activities. Assisting students that having a hard time studying computer programming. 
                             </p>
                         </div>
