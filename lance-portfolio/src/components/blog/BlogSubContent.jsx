@@ -15,161 +15,161 @@ function BlogSubContent(){
                     <div className="w-full flex ">
                         <div className="lg:aspect-4/2 bg-[#DEDEDE] w-full rounded-l-[10px]">
                         </div>
-                        <div className="w-full p-3 bg-[#ECECEC50] rounded-r-[10px] flex flex-col gap-1 ">
+                        <div className="w-full p-3 bg-secondary rounded-r-[10px] flex flex-col gap-1 ">
                             <h1 className="font-semibold lg:text-[16px] text-[14px]">Apollo 2026: Blueprint of Insights</h1>
                             <div className="flex items-center gap-1">
                                 <div className="lg:w-4 w-3">
-                                    <svg  viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_125_209)">
-                                    <path d="M11.4129 20.9234C16.6654 20.9234 20.9235 16.6653 20.9235 11.4127C20.9235 6.16016 16.6654 1.9021 11.4129 1.9021C6.16028 1.9021 1.90222 6.16016 1.90222 11.4127C1.90222 16.6653 6.16028 20.9234 11.4129 20.9234Z" stroke="black" stroke-opacity="0.3" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M11.4127 5.7063V11.4127L9.51062 15.2169" stroke="black" stroke-opacity="0.3" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_125_209">
-                                    <rect width="22.8255" height="22.8255" fill="white"/>
-                                    </clipPath>
-                                    </defs>
+                                      <svg  viewBox="0 0 23 23" fill="none" className="stroke-ring" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_125_209)">
+                                        <path d="M11.4129 20.9234C16.6654 20.9234 20.9235 16.6653 20.9235 11.4127C20.9235 6.16016 16.6654 1.9021 11.4129 1.9021C6.16028 1.9021 1.90222 6.16016 1.90222 11.4127C1.90222 16.6653 6.16028 20.9234 11.4129 20.9234Z"  stroke-opacity="0.7" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M11.4127 5.7063V11.4127L9.51062 15.2169"  stroke-opacity="0.7" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_125_209">
+                                        <rect width="22.8255" height="22.8255" fill="white"/>
+                                        </clipPath>
+                                        </defs>
                                     </svg>
                                 </div>
-                                <p className="font-light lg:text-[12px] text-[10px] text-black/50">September 09, 2026</p>
+                                <p className="font-light lg:text-[12px] text-[10px] text-ring">September 09, 2026</p>
                             </div>
                         </div>
                     </div>
                     <div className="w-full flex ">
                         <div className="lg:aspect-4/2 bg-[#DEDEDE] w-full rounded-l-[10px]">
                         </div>
-                        <div className="w-full p-3 bg-[#ECECEC50] rounded-r-[10px] flex flex-col gap-1 ">
+                        <div className="w-full p-3 bg-secondary rounded-r-[10px] flex flex-col gap-1 ">
                             <h1 className="font-semibold lg:text-[16px] text-[14px]">Apollo 2026: Blueprint of Insights</h1>
                             <div className="flex items-center gap-1">
                                 <div className="lg:w-4 w-3">
-                                    <svg  viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_125_209)">
-                                    <path d="M11.4129 20.9234C16.6654 20.9234 20.9235 16.6653 20.9235 11.4127C20.9235 6.16016 16.6654 1.9021 11.4129 1.9021C6.16028 1.9021 1.90222 6.16016 1.90222 11.4127C1.90222 16.6653 6.16028 20.9234 11.4129 20.9234Z" stroke="black" stroke-opacity="0.3" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M11.4127 5.7063V11.4127L9.51062 15.2169" stroke="black" stroke-opacity="0.3" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_125_209">
-                                    <rect width="22.8255" height="22.8255" fill="white"/>
-                                    </clipPath>
-                                    </defs>
+                                      <svg  viewBox="0 0 23 23" fill="none" className="stroke-ring" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_125_209)">
+                                        <path d="M11.4129 20.9234C16.6654 20.9234 20.9235 16.6653 20.9235 11.4127C20.9235 6.16016 16.6654 1.9021 11.4129 1.9021C6.16028 1.9021 1.90222 6.16016 1.90222 11.4127C1.90222 16.6653 6.16028 20.9234 11.4129 20.9234Z"  stroke-opacity="0.7" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M11.4127 5.7063V11.4127L9.51062 15.2169"  stroke-opacity="0.7" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_125_209">
+                                        <rect width="22.8255" height="22.8255" fill="white"/>
+                                        </clipPath>
+                                        </defs>
                                     </svg>
                                 </div>
-                                <p className="font-light lg:text-[12px] text-[10px] text-black/50">September 09, 2026</p>
+                                <p className="font-light lg:text-[12px] text-[10px] text-ring">September 09, 2026</p>
                             </div>
                         </div>
                     </div>
                     <div className="w-full flex ">
                         <div className="lg:aspect-4/2 bg-[#DEDEDE] w-full rounded-l-[10px]">
                         </div>
-                        <div className="w-full p-3 bg-[#ECECEC50] rounded-r-[10px] flex flex-col gap-1 ">
+                        <div className="w-full p-3 bg-secondary rounded-r-[10px] flex flex-col gap-1 ">
                             <h1 className="font-semibold lg:text-[16px] text-[14px]">Apollo 2026: Blueprint of Insights</h1>
                             <div className="flex items-center gap-1">
                                 <div className="lg:w-4 w-3">
-                                    <svg  viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_125_209)">
-                                    <path d="M11.4129 20.9234C16.6654 20.9234 20.9235 16.6653 20.9235 11.4127C20.9235 6.16016 16.6654 1.9021 11.4129 1.9021C6.16028 1.9021 1.90222 6.16016 1.90222 11.4127C1.90222 16.6653 6.16028 20.9234 11.4129 20.9234Z" stroke="black" stroke-opacity="0.3" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M11.4127 5.7063V11.4127L9.51062 15.2169" stroke="black" stroke-opacity="0.3" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_125_209">
-                                    <rect width="22.8255" height="22.8255" fill="white"/>
-                                    </clipPath>
-                                    </defs>
+                                      <svg  viewBox="0 0 23 23" fill="none" className="stroke-ring" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_125_209)">
+                                        <path d="M11.4129 20.9234C16.6654 20.9234 20.9235 16.6653 20.9235 11.4127C20.9235 6.16016 16.6654 1.9021 11.4129 1.9021C6.16028 1.9021 1.90222 6.16016 1.90222 11.4127C1.90222 16.6653 6.16028 20.9234 11.4129 20.9234Z"  stroke-opacity="0.7" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M11.4127 5.7063V11.4127L9.51062 15.2169"  stroke-opacity="0.7" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_125_209">
+                                        <rect width="22.8255" height="22.8255" fill="white"/>
+                                        </clipPath>
+                                        </defs>
                                     </svg>
                                 </div>
-                                <p className="font-light lg:text-[12px] text-[10px] text-black/50">September 09, 2026</p>
+                                <p className="font-light lg:text-[12px] text-[10px] text-ring">September 09, 2026</p>
                             </div>
                         </div>
                     </div>
                     <div className="w-full flex ">
                         <div className="lg:aspect-4/2 bg-[#DEDEDE] w-full rounded-l-[10px]">
                         </div>
-                        <div className="w-full p-3 bg-[#ECECEC50] rounded-r-[10px] flex flex-col gap-1 ">
+                        <div className="w-full p-3 bg-secondary rounded-r-[10px] flex flex-col gap-1 ">
                             <h1 className="font-semibold lg:text-[16px] text-[14px]">Apollo 2026: Blueprint of Insights</h1>
                             <div className="flex items-center gap-1">
                                 <div className="lg:w-4 w-3">
-                                    <svg  viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_125_209)">
-                                    <path d="M11.4129 20.9234C16.6654 20.9234 20.9235 16.6653 20.9235 11.4127C20.9235 6.16016 16.6654 1.9021 11.4129 1.9021C6.16028 1.9021 1.90222 6.16016 1.90222 11.4127C1.90222 16.6653 6.16028 20.9234 11.4129 20.9234Z" stroke="black" stroke-opacity="0.3" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M11.4127 5.7063V11.4127L9.51062 15.2169" stroke="black" stroke-opacity="0.3" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_125_209">
-                                    <rect width="22.8255" height="22.8255" fill="white"/>
-                                    </clipPath>
-                                    </defs>
+                                      <svg  viewBox="0 0 23 23" fill="none" className="stroke-ring" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_125_209)">
+                                        <path d="M11.4129 20.9234C16.6654 20.9234 20.9235 16.6653 20.9235 11.4127C20.9235 6.16016 16.6654 1.9021 11.4129 1.9021C6.16028 1.9021 1.90222 6.16016 1.90222 11.4127C1.90222 16.6653 6.16028 20.9234 11.4129 20.9234Z"  stroke-opacity="0.7" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M11.4127 5.7063V11.4127L9.51062 15.2169"  stroke-opacity="0.7" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_125_209">
+                                        <rect width="22.8255" height="22.8255" fill="white"/>
+                                        </clipPath>
+                                        </defs>
                                     </svg>
                                 </div>
-                                <p className="font-light lg:text-[12px] text-[10px] text-black/50">September 09, 2026</p>
+                                <p className="font-light lg:text-[12px] text-[10px] text-ring">September 09, 2026</p>
                             </div>
                         </div>
                     </div>
                     <div className="w-full flex ">
                         <div className="lg:aspect-4/2 bg-[#DEDEDE] w-full rounded-l-[10px]">
                         </div>
-                        <div className="w-full p-3 bg-[#ECECEC50] rounded-r-[10px] flex flex-col gap-1 ">
+                        <div className="w-full p-3 bg-secondary rounded-r-[10px] flex flex-col gap-1 ">
                             <h1 className="font-semibold lg:text-[16px] text-[14px]">Apollo 2026: Blueprint of Insights</h1>
                             <div className="flex items-center gap-1">
                                 <div className="lg:w-4 w-3">
-                                    <svg  viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_125_209)">
-                                    <path d="M11.4129 20.9234C16.6654 20.9234 20.9235 16.6653 20.9235 11.4127C20.9235 6.16016 16.6654 1.9021 11.4129 1.9021C6.16028 1.9021 1.90222 6.16016 1.90222 11.4127C1.90222 16.6653 6.16028 20.9234 11.4129 20.9234Z" stroke="black" stroke-opacity="0.3" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M11.4127 5.7063V11.4127L9.51062 15.2169" stroke="black" stroke-opacity="0.3" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_125_209">
-                                    <rect width="22.8255" height="22.8255" fill="white"/>
-                                    </clipPath>
-                                    </defs>
+                                      <svg  viewBox="0 0 23 23" fill="none" className="stroke-ring" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_125_209)">
+                                        <path d="M11.4129 20.9234C16.6654 20.9234 20.9235 16.6653 20.9235 11.4127C20.9235 6.16016 16.6654 1.9021 11.4129 1.9021C6.16028 1.9021 1.90222 6.16016 1.90222 11.4127C1.90222 16.6653 6.16028 20.9234 11.4129 20.9234Z"  stroke-opacity="0.7" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M11.4127 5.7063V11.4127L9.51062 15.2169"  stroke-opacity="0.7" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_125_209">
+                                        <rect width="22.8255" height="22.8255" fill="white"/>
+                                        </clipPath>
+                                        </defs>
                                     </svg>
                                 </div>
-                                <p className="font-light lg:text-[12px] text-[10px] text-black/50">September 09, 2026</p>
+                                <p className="font-light lg:text-[12px] text-[10px] text-ring">September 09, 2026</p>
                             </div>
                         </div>
                     </div>
                     <div className="w-full flex ">
                         <div className="lg:aspect-4/2 bg-[#DEDEDE] w-full rounded-l-[10px]">
                         </div>
-                        <div className="w-full p-3 bg-[#ECECEC50] rounded-r-[10px] flex flex-col gap-1 ">
+                        <div className="w-full p-3 bg-secondary rounded-r-[10px] flex flex-col gap-1 ">
                             <h1 className="font-semibold lg:text-[16px] text-[14px]">Apollo 2026: Blueprint of Insights</h1>
                             <div className="flex items-center gap-1">
                                 <div className="lg:w-4 w-3">
-                                    <svg  viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_125_209)">
-                                    <path d="M11.4129 20.9234C16.6654 20.9234 20.9235 16.6653 20.9235 11.4127C20.9235 6.16016 16.6654 1.9021 11.4129 1.9021C6.16028 1.9021 1.90222 6.16016 1.90222 11.4127C1.90222 16.6653 6.16028 20.9234 11.4129 20.9234Z" stroke="black" stroke-opacity="0.3" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M11.4127 5.7063V11.4127L9.51062 15.2169" stroke="black" stroke-opacity="0.3" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_125_209">
-                                    <rect width="22.8255" height="22.8255" fill="white"/>
-                                    </clipPath>
-                                    </defs>
+                                      <svg  viewBox="0 0 23 23" fill="none" className="stroke-ring" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_125_209)">
+                                        <path d="M11.4129 20.9234C16.6654 20.9234 20.9235 16.6653 20.9235 11.4127C20.9235 6.16016 16.6654 1.9021 11.4129 1.9021C6.16028 1.9021 1.90222 6.16016 1.90222 11.4127C1.90222 16.6653 6.16028 20.9234 11.4129 20.9234Z"  stroke-opacity="0.7" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M11.4127 5.7063V11.4127L9.51062 15.2169"  stroke-opacity="0.7" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_125_209">
+                                        <rect width="22.8255" height="22.8255" fill="white"/>
+                                        </clipPath>
+                                        </defs>
                                     </svg>
                                 </div>
-                                <p className="font-light lg:text-[12px] text-[10px] text-black/50">September 09, 2026</p>
+                                <p className="font-light lg:text-[12px] text-[10px] text-ring">September 09, 2026</p>
                             </div>
                         </div>
                     </div>
                     <div className="w-full flex ">
                         <div className="lg:aspect-4/2 bg-[#DEDEDE] w-full rounded-l-[10px]">
                         </div>
-                        <div className="w-full p-3 bg-[#ECECEC50] rounded-r-[10px] flex flex-col gap-1 ">
+                        <div className="w-full p-3 bg-secondary rounded-r-[10px] flex flex-col gap-1 ">
                             <h1 className="font-semibold lg:text-[16px] text-[14px]">Apollo 2026: Blueprint of Insights</h1>
                             <div className="flex items-center gap-1">
                                 <div className="lg:w-4 w-3">
-                                    <svg  viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_125_209)">
-                                    <path d="M11.4129 20.9234C16.6654 20.9234 20.9235 16.6653 20.9235 11.4127C20.9235 6.16016 16.6654 1.9021 11.4129 1.9021C6.16028 1.9021 1.90222 6.16016 1.90222 11.4127C1.90222 16.6653 6.16028 20.9234 11.4129 20.9234Z" stroke="black" stroke-opacity="0.3" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M11.4127 5.7063V11.4127L9.51062 15.2169" stroke="black" stroke-opacity="0.3" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_125_209">
-                                    <rect width="22.8255" height="22.8255" fill="white"/>
-                                    </clipPath>
-                                    </defs>
+                                      <svg  viewBox="0 0 23 23" fill="none" className="stroke-ring" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_125_209)">
+                                        <path d="M11.4129 20.9234C16.6654 20.9234 20.9235 16.6653 20.9235 11.4127C20.9235 6.16016 16.6654 1.9021 11.4129 1.9021C6.16028 1.9021 1.90222 6.16016 1.90222 11.4127C1.90222 16.6653 6.16028 20.9234 11.4129 20.9234Z"  stroke-opacity="0.7" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M11.4127 5.7063V11.4127L9.51062 15.2169"  stroke-opacity="0.7" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_125_209">
+                                        <rect width="22.8255" height="22.8255" fill="white"/>
+                                        </clipPath>
+                                        </defs>
                                     </svg>
                                 </div>
-                                <p className="font-light lg:text-[12px] text-[10px] text-black/50">September 09, 2026</p>
+                                <p className="font-light lg:text-[12px] text-[10px] text-ring">September 09, 2026</p>
                             </div>
                         </div>
                     </div>
