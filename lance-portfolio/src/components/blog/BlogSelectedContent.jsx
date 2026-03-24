@@ -9,7 +9,7 @@ function BlogSelectedContent(){
                     <div className="flex flex-col gap-5">
                         <Link to={"/blog"} >
                             <div className="p-3 w-fit rounded-[100px] outline">
-                                <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="27" height="28" className="dark:invert" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M16.8571 20.7143L10 13.8572L16.8571 7.00006" stroke="black" stroke-width="1.28571" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </div>
@@ -18,20 +18,20 @@ function BlogSelectedContent(){
                             <h1 className="font-medium lg:text-4xl text-3xl leading-9">Earned JavaScript Certification</h1>
                             <div className="flex items-center gap-2">
                                 <div className="lg:w-5 w-4.5">
-                                    <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_125_209)">
-                                    <path d="M11.4129 20.9234C16.6654 20.9234 20.9235 16.6653 20.9235 11.4127C20.9235 6.16016 16.6654 1.9021 11.4129 1.9021C6.16028 1.9021 1.90222 6.16016 1.90222 11.4127C1.90222 16.6653 6.16028 20.9234 11.4129 20.9234Z" stroke="black" stroke-opacity="0.3" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M11.4127 5.7063V11.4127L9.51062 15.2169" stroke="black" stroke-opacity="0.3" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_125_209">
-                                    <rect width="22.8255" height="22.8255" fill="white"/>
-                                    </clipPath>
-                                    </defs>
-                                </svg>
+                                      <svg  viewBox="0 0 23 23" fill="none" className="stroke-ring" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_125_209)">
+                                        <path d="M11.4129 20.9234C16.6654 20.9234 20.9235 16.6653 20.9235 11.4127C20.9235 6.16016 16.6654 1.9021 11.4129 1.9021C6.16028 1.9021 1.90222 6.16016 1.90222 11.4127C1.90222 16.6653 6.16028 20.9234 11.4129 20.9234Z"  stroke-opacity="0.7" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M11.4127 5.7063V11.4127L9.51062 15.2169"  stroke-opacity="0.7" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_125_209">
+                                        <rect width="22.8255" height="22.8255" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
                                 </div>
                                 
-                                <p className="font-light lg:text-base text-sm  text-black/50">September 09, 2026</p>
+                                <p className="font-light lg:text-base text-sm  text-ring">September 09, 2026</p>
                             </div>
                         </div>
                     </div>
