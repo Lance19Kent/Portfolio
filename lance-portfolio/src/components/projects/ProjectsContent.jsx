@@ -20,15 +20,15 @@ function ProjectsContent(){
             <BentoCard title={"Featured"} icon={featuredIcon} className="w-full relative gap-8"> 
                 <div className="grid lg:grid-cols-3 grid-cols-1 gap-5">
                     <Link to={"/projects-selected"} className="w-full aspect-5/3 flex flex-col">
-                        <div className="w-full bg-[#ECECEC50] flex flex-col gap-3 rounded-t-[10px] p-5">
+                        <div className="w-full bg-secondary/40 dark:bg-secondary flex flex-col gap-3 rounded-t-[10px] p-5">
                             <div>
                                 <h1 className="font-semibold text-[24px]">Okay lang</h1>
-                                <div className="flex items-center gap-1">
-                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z" stroke="black" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M6 3V6L5 8" stroke="black" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                             <div className="flex items-center gap-1">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" className="stroke-muted-foreground" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z"  stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6 3V6L5 8"  stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
-                                    <span className="font-light text-black/50 text-[12px]">September 09, 2026</span>
+                                    <span className="font-light text-muted-foreground text-[12px]">September 09, 2026</span>
                                 </div>
                             </div>
                             <p className="text-[12px]">A gentle space where people can check in with themselves without pressure, explanation, or judgment.</p>
@@ -38,15 +38,15 @@ function ProjectsContent(){
                         </div>
                     </Link>
                      <div className="w-full aspect-5/3 flex flex-col">
-                        <div className="w-full bg-[#ECECEC50] flex flex-col gap-3 rounded-t-[10px] p-5">
+                        <div className="w-full bg-secondary/40 dark:bg-secondary flex flex-col gap-3 rounded-t-[10px] p-5">
                             <div>
                                 <h1 className="font-semibold text-[24px]">Okay lang</h1>
-                                <div className="flex items-center gap-1">
-                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z" stroke="black" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M6 3V6L5 8" stroke="black" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                             <div className="flex items-center gap-1">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" className="stroke-muted-foreground" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z"  stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6 3V6L5 8"  stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
-                                    <span className="font-light text-black/50 text-[12px]">September 09, 2026</span>
+                                    <span className="font-light text-muted-foreground text-[12px]">September 09, 2026</span>
                                 </div>
                             </div>
                             <p className="text-[12px]">A gentle space where people can check in with themselves without pressure, explanation, or judgment.</p>
@@ -55,15 +55,15 @@ function ProjectsContent(){
                         </div>
                     </div>
                     <div className="w-full aspect-5/3 flex flex-col">
-                        <div className="w-full bg-[#ECECEC50] flex flex-col gap-3 rounded-t-[10px] p-5">
+                        <div className="w-full bg-secondary/40 dark:bg-secondary flex flex-col gap-3 rounded-t-[10px] p-5">
                             <div>
                                 <h1 className="font-semibold text-[24px]">Okay lang</h1>
                                 <div className="flex items-center gap-1">
-                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z" stroke="black" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M6 3V6L5 8" stroke="black" stroke-opacity="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" className="stroke-muted-foreground" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z"  stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6 3V6L5 8"  stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
-                                    <span className="font-light text-black/50 text-[12px]">September 09, 2026</span>
+                                    <span className="font-light text-muted-foreground text-[12px]">September 09, 2026</span>
                                 </div>
                             </div>
                             <p className="text-[12px]">A gentle space where people can check in with themselves without pressure, explanation, or judgment.</p>
@@ -76,7 +76,7 @@ function ProjectsContent(){
             </BentoCard>  
             <BentoCard title={"Projects"} icon={projectsIcon} className="w-full relative gap-8"> 
                 <div className="grid lg:grid-cols-4 grid-cols-1 w-full gap-5">
-                    <Link className="lg:px-3 px-6 w-full rounded-[10px] py-4 flex lg:items-center border-[.50px]  border-[#00000030] cursor-pointer flex-col">
+                    <Link className="lg:px-3 px-6 w-full rounded-[10px] py-4 flex lg:items-center border-[.50px] border-border cursor-pointer flex-col">
                         <div className="flex gap-2">
                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-marked-icon lucide-book-marked"><path d="M10 2v8l3-3 3 3V2"/><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></svg>
                             <div className="flex flex-col gap-0.5">
@@ -91,7 +91,7 @@ function ProjectsContent(){
                         </div>
                         
                     </Link>
-                   <Link className="lg:px-3 px-6 w-full rounded-[10px] py-4 flex lg:items-center  border-[.50px] border-[#00000030] cursor-pointer flex-col">
+                   <Link className="lg:px-3 px-6 w-full rounded-[10px] py-4 flex lg:items-center  border-[.50px] border-border cursor-pointer flex-col">
                         <div className="flex gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-marked-icon lucide-book-marked"><path d="M10 2v8l3-3 3 3V2"/><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></svg>
                             <div className="flex flex-col gap-0.5">
@@ -105,22 +105,7 @@ function ProjectsContent(){
                         </div>
                         
                     </Link>
-                   <Link className="lg:px-3 px-6 w-full rounded-[10px] py-4 flex lg:items-center  border-[.50px] border-[#00000030] cursor-pointer flex-col">
-                        <div className="flex gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-marked-icon lucide-book-marked"><path d="M10 2v8l3-3 3 3V2"/><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></svg>
-                            <div className="flex flex-col gap-0.5">
-                                <div className="flex gap-2 items-center">
-                                    <span className="font-medium text-[18px]">Bakehub</span>
-                                    <p className="text-[#35BF46] text-[12px] px-2 border py-0.5 rounded-[10px] border-[#C2F49E] bg-[#F6FFDD]">Public</p>
-                                </div>
-                                <p className="font-medium text-[10px] text-[#B9B9B9]">Created on February 19, 2026</p>
-                            </div>
-                           
-                            
-                        </div>
-                        
-                    </Link>
-                  <Link className="lg:px-3 px-6 w-full rounded-[10px] py-4 flex lg:items-center  border-[.50px] border-[#00000030] cursor-pointer flex-col">
+                   <Link className="lg:px-3 px-6 w-full rounded-[10px] py-4 flex lg:items-center  border-[.50px] border-border cursor-pointer flex-col">
                         <div className="flex gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-marked-icon lucide-book-marked"><path d="M10 2v8l3-3 3 3V2"/><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></svg>
                             <div className="flex flex-col gap-0.5">
@@ -135,7 +120,7 @@ function ProjectsContent(){
                         </div>
                         
                     </Link>
-                   <Link className="lg:px-3 px-6 w-full rounded-[10px] py-4 flex lg:items-center  border-[.50px] border-[#00000030] cursor-pointer flex-col">
+                  <Link className="lg:px-3 px-6 w-full rounded-[10px] py-4 flex lg:items-center  border-[.50px] border-border cursor-pointer flex-col">
                         <div className="flex gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-marked-icon lucide-book-marked"><path d="M10 2v8l3-3 3 3V2"/><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></svg>
                             <div className="flex flex-col gap-0.5">
@@ -150,7 +135,7 @@ function ProjectsContent(){
                         </div>
                         
                     </Link>
-                    <Link className="lg:px-3 px-6 w-full rounded-[10px] py-4 flex lg:items-center  border-[.50px] border-[#00000030] cursor-pointer flex-col">
+                   <Link className="lg:px-3 px-6 w-full rounded-[10px] py-4 flex lg:items-center  border-[.50px] border-border cursor-pointer flex-col">
                         <div className="flex gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-marked-icon lucide-book-marked"><path d="M10 2v8l3-3 3 3V2"/><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></svg>
                             <div className="flex flex-col gap-0.5">
@@ -165,7 +150,7 @@ function ProjectsContent(){
                         </div>
                         
                     </Link>
-                    <Link className="lg:px-3 px-6 w-full rounded-[10px] py-4 flex lg:items-center  border-[.50px] border-[#00000030] cursor-pointer flex-col">
+                    <Link className="lg:px-3 px-6 w-full rounded-[10px] py-4 flex lg:items-center  border-[.50px] border-border cursor-pointer flex-col">
                         <div className="flex gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-marked-icon lucide-book-marked"><path d="M10 2v8l3-3 3 3V2"/><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></svg>
                             <div className="flex flex-col gap-0.5">
@@ -180,7 +165,22 @@ function ProjectsContent(){
                         </div>
                         
                     </Link>
-                    <Link className="lg:px-3 px-6 w-full rounded-[10px] py-4 flex lg:items-center  border-[.50px] border-[#00000030] cursor-pointer flex-col">
+                    <Link className="lg:px-3 px-6 w-full rounded-[10px] py-4 flex lg:items-center  border-[.50px] border-border cursor-pointer flex-col">
+                        <div className="flex gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-marked-icon lucide-book-marked"><path d="M10 2v8l3-3 3 3V2"/><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></svg>
+                            <div className="flex flex-col gap-0.5">
+                                <div className="flex gap-2 items-center">
+                                    <span className="font-medium text-[18px]">Bakehub</span>
+                                    <p className="text-[#35BF46] text-[12px] px-2 border py-0.5 rounded-[10px] border-[#C2F49E] bg-[#F6FFDD]">Public</p>
+                                </div>
+                                <p className="font-medium text-[10px] text-[#B9B9B9]">Created on February 19, 2026</p>
+                            </div>
+                           
+                            
+                        </div>
+                        
+                    </Link>
+                    <Link className="lg:px-3 px-6 w-full rounded-[10px] py-4 flex lg:items-center  border-[.50px] border-border cursor-pointer flex-col">
                         <div className="flex gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-marked-icon lucide-book-marked"><path d="M10 2v8l3-3 3 3V2"/><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></svg>
                             <div className="flex flex-col gap-0.5">
