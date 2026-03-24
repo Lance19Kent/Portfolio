@@ -104,11 +104,14 @@ function Sidebar(){
         </div>
     )}
         <div className="lg:hidden block w-full bg-transparent px-3 pt-3 ">
-            <div className="lg:hidden w-full h-14 bg-white rounded-[10px] px-3 flex justify-between items-center">
+            <div className="lg:hidden w-full h-14 bg-card rounded-[10px] px-3 flex justify-between items-center">
                 <Link to={"/"} className="w-fit h-full items-center flex gap-2">
-                    <img src="/me-daytime.png" alt="" className="h-8" />
+                <div className="h-8 w-8 rounded-full overflow-hidden">
+                    <img src={isDarkMode ? "/me-nighttime.png":"/me-daytime.png"} alt="" className="w-full object-cover" />
+                </div>
+                    
                     <div className="flex flex-col">
-                        <h3 className=" text-black text-[16px] font-semibold">Lance Kent</h3>
+                        <h3 className=" text-foreground text-[16px] font-semibold">Lance Kent</h3>
                         <h2 className="text-muted-foreground text-center text-[10px]">Current 3rd Year IT Student</h2>
                     </div>
                   
@@ -122,7 +125,7 @@ function Sidebar(){
         <div className={`fixed  inset-0 bg-black/20 z-40 transition-opacity duration-300 lg:hidden ${isMenuOpen ? "opacity-100 pointer-events-auto":"opacity-0 pointer-events-none"}`} onClick={() => setIsMenuOpen(false)}>
         </div>
 
-        <div className={`fixed top-0 left-0 h-full w-[75%] bg-white z-50 transition-transform duration-300 ease-in-out lg:hidden overflow-y-auto no-scrollbar ${isMenuOpen ? "translate-x-0":"-translate-x-full"}`}>
+        <div className={`fixed top-0 left-0 h-full w-[75%] bg-card z-50 transition-transform duration-300 ease-in-out lg:hidden overflow-y-auto no-scrollbar ${isMenuOpen ? "translate-x-0":"-translate-x-full"}`}>
             <div className="p-4 flex flex-col h-full justify-between">
             <div className="flex flex-col">
                 <div className="w-full flex justify-end mb-4">
@@ -133,16 +136,19 @@ function Sidebar(){
                 <div className="w-full flex flex-col h-full justify-between">
                 <div className="w-full flex flex-col">
                     <div className="w-full flex justify-center">
-                        <img src="/me-daytime.png" className="h-15 w-15 z-30 relative"></img>
+                        <div className="rounded-full overflow-hidden h-15 w-15 z-30 relative">
+                            <img src={ isDarkMode ? "./me-nighttime.png":"/me-daytime.png"} className=" " alt="Lance's Avatar"></img>
+                        </div>
                     </div>
-                    <h3 className="text-center text-black text-base font-semibold text-nowrap whitespace-nowrap text-ellipsis overflow-hidden w-full pt-2">Lance Kent</h3>
+
+                    <h3 className="text-center text-foreground text-base font-semibold text-nowrap whitespace-nowrap text-ellipsis overflow-hidden w-full pt-2">Lance Kent</h3>
                     <h2 className="text-muted-foreground text-center text-[14px] pb-6.25">Current 3rd Year IT Student</h2>
                     
                     <NavLink to={"/resume"} className={({isActive}) =>cn(buttonVariants({variant:"outline"}),
-                        "py-5 font-light rounded-[10px] flex gap-2.5 justify-center cursor-pointer text-[16px] ease-in transition-all duration-75",
+                        "py-5 font-light rounded-[10px] flex gap-2.5 justify-center cursor-pointer text-[16px] ease-in transition-all duration-75 dark:text-white dark:stroke-white",
                         isActive
                                 ? "text-[#3FA6F4] hover:text-[#3FA6F4] border-[#3FA6F4] stroke-[#3FA6F4] hover:bg-white " 
-                                : "text-[#00000080] bg-white border-gray-200 stroke-[#00000060] hover:text-[#7abdf0] hover:border-[#7abdf0] hover:bg-white hover:stroke-[#7abdf0]" 
+                                : "text-[#00000080] bg-card border-gray-200 stroke-[#00000060] hover:text-[#7abdf0] hover:border-[#7abdf0] hover:bg-white hover:stroke-[#7abdf0]" 
                         )} onClick={()=> setIsMenuOpen(false)}>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 15V3"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -152,12 +158,12 @@ function Sidebar(){
                         <span className="text-sm">Resume</span>
                         </NavLink>
                 </div>
-                <div className="border border-[#D9D9D950] mt-6 mb-3"></div>
+                <div className="border border-border mt-6 mb-3"></div>
                 <div>
                     <NavLink to="/" onClick={()=> setIsMenuOpen(false)} className={({isActive}) =>` 
                         ${isActive 
-                                    ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-[#00000009]" 
-                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#7abdf0] ease-in stroke-black transition duration-75 hover:stroke-[#7abdf0] bg-white hover:bg-[#00000004]"
+                                    ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-secondary" 
+                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-foreground hover:text-[#7abdf0] ease-in stroke-foreground transition duration-75 hover:stroke-[#7abdf0] bg-card hover:bg-secondary"
                                 }`
                                 }
                                 >
@@ -170,8 +176,8 @@ function Sidebar(){
                     </NavLink>
                     <NavLink to="/about" onClick={()=>setIsMenuOpen(false)} className={({isActive}) =>` 
                         ${isActive 
-                                    ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-[#00000009]" 
-                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#7abdf0] ease-in stroke-black transition duration-75 hover:stroke-[#7abdf0] bg-white hover:bg-secondary"
+                                    ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-secondary" 
+                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-foreground hover:text-[#7abdf0] ease-in stroke-foreground transition duration-75 hover:stroke-[#7abdf0] bg-card hover:bg-secondary"
                                 }`
                                 }
                                 >
@@ -183,8 +189,8 @@ function Sidebar(){
                     </NavLink>
                     <NavLink to="/projects" onClick={()=>setIsMenuOpen(false)} className={({isActive}) =>` 
                         ${isProjectLocation 
-                                    ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-[#00000009]" 
-                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#7abdf0] ease-in stroke-black transition duration-75 hover:stroke-[#7abdf0] bg-white hover:bg-[#00000004]"
+                                   ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-secondary" 
+                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-foreground hover:text-[#7abdf0] ease-in stroke-foreground transition duration-75 hover:stroke-[#7abdf0] bg-card hover:bg-secondary"
                                 }`
                                 }
                                 >
@@ -198,8 +204,8 @@ function Sidebar(){
                     </NavLink>
                     <NavLink to="/achievements" onClick={()=>setIsMenuOpen(false)} className={({isActive}) =>` 
                         ${isActive 
-                                    ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-[#00000009]" 
-                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#7abdf0] ease-in stroke-black transition duration-75 hover:stroke-[#7abdf0] bg-white hover:bg-[#00000004]"
+                                    ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-secondary" 
+                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-foreground hover:text-[#7abdf0] ease-in stroke-foreground transition duration-75 hover:stroke-[#7abdf0] bg-card hover:bg-secondary"
                                 }`
                                 }
                                 >
@@ -211,8 +217,8 @@ function Sidebar(){
                     </NavLink>
                     <NavLink to="/blog" onClick={()=> setIsMenuOpen(false)} className={({isActive}) =>` 
                         ${isBlogActive 
-                                    ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-[#00000009]" 
-                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-black hover:text-[#7abdf0] ease-in stroke-black transition duration-75 hover:stroke-[#7abdf0] bg-white hover:bg-[#00000004]"
+                                   ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-secondary" 
+                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-foreground hover:text-[#7abdf0] ease-in stroke-foreground transition duration-75 hover:stroke-[#7abdf0] bg-card hover:bg-secondary"
                                 }`
                                 }
                                 >
@@ -226,15 +232,15 @@ function Sidebar(){
                 </div>
             </div>
             <div className="w-full flex flex-col">
-                <div className="border border-[#D9D9D950] my-3"></div>
+                <div className="border border-border my-3"></div>
                     <div className="flex flex-row gap-2.5 items-center justify-center my-3">
-                        <Switch className={"cursor-pointer"} checked={isDarkMode} onCheckedChange={setIsDarkMode}/>
-                        <span className="text-black text-sm dark:text-red-100">Dark Mode</span>
+                        <Switch className={"cursor-pointer"} checked={isDarkMode} onCheckedChange={handleThemeToggle}/>
+                        <span className=" text-sm text-foreground">Dark Mode</span>
                     </div>
                     <div className="mt-4">
-                        <p className="text-[#00000050] text-xs text-nowrap overflow-hidden text-ellipsis">Designed and Built By Lance Kent Geoffrey B. Magollado</p>
-                        <p className="text-[#00000050] text-xs text-nowrap overflow-hidden text-ellipsis">@2025 All Rights Reserved.</p>
-                    </div>
+                        <p className="text-muted-foreground text-xs text-nowrap overflow-hidden text-ellipsis">Designed and Built By Lance Kent Geoffrey B. Magollado</p>
+                        <p className="text-muted-foreground text-xs text-nowrap overflow-hidden text-ellipsis">@2025 All Rights Reserved.</p>
+                    </div>  
             </div>
             </div>
 
