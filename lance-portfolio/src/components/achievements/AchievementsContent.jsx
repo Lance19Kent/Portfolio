@@ -31,67 +31,84 @@ function AchievementsContent(){
                     <Dialog className={"w-full"}>
                         <DialogTrigger asChild className="flex flex-col gap-1 transition ease-in duration-200 cursor-pointer group">
                             <div className="flex flex-col overflow-hidden">
-                            <div className="w-full aspect-5/3 bg-gray-200 rounder-[10px]">
-                                <img src="./achievements-logo/certificates/responsive-web-design.jpg" alt="Responsive Web Design Certificate" className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"/>
-                            </div>
-                    <div className="w-full flex gap-3 p-2">
-                        <div className="w-fit ">
-                            <img src="./achievements-logo/freecodecamp-circle.png" alt="FreeCodeCamp's Logo" />
-                        </div>
-                        <div className="flex flex-col w-full overflow-hidden">
-                            <div className="leading-5">
-                                <h1 className="font-semibold whitespace-nowrap overflow-hidden text-ellipsis text-[16px]">Responsive Web Design</h1>
-                                <p className=" text-[14px]">freeCodeCamp</p>
-                            </div>
+                                <div className="w-full aspect-5/3.5 bg-gray-200 rounder-[10px] overflow-hidden">
+                                    <img src="./achievements-logo/certificates/responsive-web-design.jpg" alt="Responsive Web Design Certificate" className="w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-110"/>
+                                </div>
+                                <div className="w-full flex gap-3 p-2">
+                                    <div className="w-6 ">
+                                        <img src="./achievements-logo/freecodecamp-circle.png" alt="FreeCodeCamp's Logo" />
+                                    </div>
+                                    <div className="flex flex-col w-full overflow-hidden">
+                                        <div className="leading-5">
+                                            <h1 className="font-semibold whitespace-nowrap overflow-hidden text-ellipsis text-[16px]">Responsive Web Design</h1>
+                                            <p className=" text-[14px]">freeCodeCamp</p>
+                                        </div>
 
-                            <p className="font-light text-[12px] text-ring">Issued on November 24, 2025</p>
-                        </div>
+                                        <p className="font-light text-[12px] text-ring">Issued on November 24, 2025</p>
+                                    </div>
 
-                    </div>
+                                </div>
                             </div>
                         </DialogTrigger>
-                        <DialogContent className={"w-full lg:min-w-160 border-none p-8 shadow-none flex flex-col items-center rounded-3xl "}>
+                        <DialogContent className={"w-full lg:min-w-160 border-none bg-card p-8 shadow-none flex flex-col items-center rounded-3xl "}>
                             <div className="mt-6 border border-zinc-200/50 rounded-xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
                                     <img src="./achievements-logo/certificates/responsive-web-design.jpg" alt="Responsive Web Design Certificate"/>
                             </div>
-                                <div className="mt-3 w-fit">
-            <a 
-                href="https://freecodecamp.org/certification/fcce8b17ee6-8dd5-4c50-b625-61519cd8759e/responsive-web-design" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="group flex items-center gap-2 px-6 py-2.5 bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-sm font-medium rounded-full transition-all duration-200 active:scale-95 hover:bg-zinc-800 dark:hover:bg-white"
-            >
-Verify Credential
-                
-                {/* Minimalist Arrow Right icon na gumagalaw lang pag hinover */}
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-200 group-hover:translate-x-1">
-                    <path d="M5 12h14"></path>
-                    <path d="m12 5 7 7-7 7"></path>
-                </svg>
-            </a>
-        </div>
+                            <div className="mt-3 w-fit">
+                                <a href="https://freecodecamp.org/certification/fcce8b17ee6-8dd5-4c50-b625-61519cd8759e/responsive-web-design" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="group flex items-center gap-2 px-6 py-2.5 bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-sm font-medium rounded-full transition-all duration-200 active:scale-95 hover:bg-zinc-800 dark:hover:bg-white"
+                                > Verify Credential
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-200 group-hover:translate-x-1">
+                                        <path d="M5 12h14"></path>
+                                        <path d="m12 5 7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
                         </DialogContent>
                     </Dialog>
                  
-                      <div className="flex flex-col gap-1 transition ease-in duration-100 cursor-pointer">
-                        <div className="w-full aspect-5/3 bg-gray-200 ">
-                            <img src="" alt="" />
-                        </div>
-                        <div className="w-full flex gap-3 p-2">
-                            <div className="w-fit ">
-                                <img src="./achievements-logo/freecodecamp-circle.png" alt="FreeCodeCamp's Logo" />
-                            </div>
-                            <div className="flex flex-col w-full overflow-hidden">
-                                <div className="leading-5">
-                                    <h1 className="font-semibold whitespace-nowrap overflow-hidden text-ellipsis text-[16px]">Responsive Web Design</h1>
-                                    <p className=" text-[14px]">freeCodeCamp</p>
+                    <Dialog className={"w-full"}>
+                        <DialogTrigger asChild className="flex flex-col gap-1 transition ease-in duration-200 cursor-pointer group">
+                            <div className="flex flex-col overflow-hidden">
+                                <div className="w-full aspect-5/3.5 bg-gray-200 rounder-[10px] overflow-hidden">
+                                    <img src="./achievements-logo/certificates/mob-testing-certificate.png" alt="Exploratory Testing Crash Course + Mob Testing Certificate" className="w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-110"/>
                                 </div>
+                                <div className="w-full flex gap-3 p-2">
+                                    <div className="w-6 bg-white h-fit p-0.5 rounded">
+                                        <img src="./achievements-logo/qe360-logo.png" alt="QE360's Logo" />
+                                    </div>
+                                    <div className="flex flex-col w-full overflow-hidden">
+                                        <div className="leading-5">
+                                            <h1 className="font-semibold whitespace-nowrap overflow-hidden text-ellipsis text-[16px]">Exploratory Testing Crash Course + Mob Testing</h1>
+                                            <p className=" text-[14px]">QE360</p>
+                                        </div>
 
-                                <p className="font-light text-[12px] text-ring">Issued on November 24, 2025</p>
+                                        <p className="font-light text-[12px] text-ring">Issued on October 22, 2025</p>
+                                    </div>
+
+                                </div>
                             </div>
-
-                        </div>
-                    </div>
+                        </DialogTrigger>
+                        <DialogContent className={"w-full lg:min-w-160 border-none bg-card p-8 shadow-none flex flex-col items-center rounded-3xl "}>
+                            <div className="mt-6 border border-zinc-200/50 rounded-xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+                                    <img src="./achievements-logo/certificates/mob-testing-certificate.png" alt="Exploratory Testing Crash Course + Mob Testing Certificate"/>
+                            </div>
+                            <div className="mt-3 w-fit">
+                                <a href="https://www.linkedin.com/posts/lancemagollado_im-truly-thankful-to-qe-360-the-entire-share-7386722480368844800-BPaM?utm_source=share&utm_medium=member_desktop&rcm=ACoAADnUxtoB-fGv6EOvoTcNll4-BG_P7-ncHR4" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="group flex items-center gap-2 px-6 py-2.5 bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-sm font-medium rounded-full transition-all duration-200 active:scale-95 hover:bg-zinc-800 dark:hover:bg-white"
+                                > Verify Credential
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-200 group-hover:translate-x-1">
+                                        <path d="M5 12h14"></path>
+                                        <path d="m12 5 7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </DialogContent>
+                    </Dialog>
                       <div className="flex flex-col gap-1 transition ease-in duration-100 cursor-pointer">
                         <div className="w-full aspect-5/3 bg-gray-200 rounder-[10px]">
                             <img src="" alt="" />
