@@ -31,7 +31,7 @@ function AchievementsContent(){
                     <Dialog className={"w-full"}>
                         <DialogTrigger asChild className="flex flex-col gap-1 transition ease-in duration-200 cursor-pointer group">
                             <div className="flex flex-col overflow-hidden">
-                                <div className="w-full aspect-5/3.5 bg-gray-200 rounder-[10px] overflow-hidden">
+                                <div className="w-full aspect-5/3.5 bg-gray-200 p-1 rounded-[10px] overflow-hidden border-zinc-200 border">
                                     <img src="./achievements-logo/certificates/responsive-web-design.jpg" alt="Responsive Web Design Certificate" className="w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-110"/>
                                 </div>
                                 <div className="w-full flex gap-3 p-2">
@@ -71,8 +71,8 @@ function AchievementsContent(){
                  
                     <Dialog className={"w-full"}>
                         <DialogTrigger asChild className="flex flex-col gap-1 transition ease-in duration-200 cursor-pointer group">
-                            <div className="flex flex-col overflow-hidden">
-                                <div className="w-full aspect-5/3.5 bg-gray-200 rounder-[10px] overflow-hidden">
+                            <div className="flex flex-col overflow-hidden ">
+                                <div className="w-full aspect-5/3.5 bg-gray-200 rounded-[10px] p-1 overflow-hidden border-zinc-200 border">
                                     <img src="./achievements-logo/certificates/mob-testing-certificate.png" alt="Exploratory Testing Crash Course + Mob Testing Certificate" className="w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-110"/>
                                 </div>
                                 <div className="w-full flex gap-3 p-2">
