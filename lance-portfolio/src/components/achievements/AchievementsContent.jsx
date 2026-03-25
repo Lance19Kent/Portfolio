@@ -1,5 +1,14 @@
 import BentoCard from "../BentoCard";
 import ContactMe from "../ContactMe";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
+
 const certificationIcon = <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M25.795 21.4833L28.32 35.6933C28.3483 35.8606 28.3248 36.0326 28.2527 36.1862C28.1806 36.3398 28.0633 36.4678 27.9165 36.5529C27.7698 36.6381 27.6005 36.6764 27.4313 36.6628C27.2622 36.6492 27.1012 36.5842 26.97 36.4766L21.0033 31.9983C20.7153 31.7831 20.3654 31.6668 20.0058 31.6668C19.6463 31.6668 19.2964 31.7831 19.0083 31.9983L13.0317 36.4749C12.9005 36.5823 12.7398 36.6472 12.5708 36.6608C12.4019 36.6745 12.2328 36.6363 12.0861 36.5514C11.9394 36.4665 11.8221 36.3388 11.7499 36.1855C11.6776 36.0322 11.6538 35.8605 11.6817 35.6933L14.205 21.4833" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M20 23.3334C25.5228 23.3334 30 18.8562 30 13.3334C30 7.81053 25.5228 3.33337 20 3.33337C14.4772 3.33337 10 7.81053 10 13.3334C10 18.8562 14.4772 23.3334 20 23.3334Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -19,27 +28,53 @@ function AchievementsContent(){
         <div className="py-3 px-3 lg:px-0 lg:pr-3 overflow-y-auto flex-col gap-3 no-scrollbar overflow-hidden w-full flex ">
             <BentoCard title={"Certifications"} icon={certificationIcon}>
                 <div className="grid lg:grid-cols-4 grid-cols-1 gap-6">
-                    <div className="flex flex-col gap-1 transition ease-in duration-100 cursor-pointer">
-                        <div className="w-full aspect-5/3 bg-gray-200 rounder-[10px]">
-                            <img src="" alt="" />
-                        </div>
-                        <div className="w-full flex gap-3 p-2">
-                            <div className="w-fit ">
-                                <img src="./achievements-logo/freecodecamp-circle.png" alt="FreeCodeCamp's Logo" />
+                    <Dialog className={"w-full"}>
+                        <DialogTrigger asChild className="flex flex-col gap-1 transition ease-in duration-200 cursor-pointer group">
+                            <div className="flex flex-col overflow-hidden">
+                            <div className="w-full aspect-5/3 bg-gray-200 rounder-[10px]">
+                                <img src="./achievements-logo/certificates/responsive-web-design.jpg" alt="Responsive Web Design Certificate" className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"/>
                             </div>
-                            <div className="flex flex-col w-full overflow-hidden">
-                                <div className="leading-5">
-                                    <h1 className="font-semibold whitespace-nowrap overflow-hidden text-ellipsis text-[16px]">Responsive Web Design</h1>
-                                    <p className=" text-[14px]">freeCodeCamp</p>
-                                </div>
-
-                                <p className="font-light text-[12px] text-ring">Issued on November 24, 2025</p>
+                    <div className="w-full flex gap-3 p-2">
+                        <div className="w-fit ">
+                            <img src="./achievements-logo/freecodecamp-circle.png" alt="FreeCodeCamp's Logo" />
+                        </div>
+                        <div className="flex flex-col w-full overflow-hidden">
+                            <div className="leading-5">
+                                <h1 className="font-semibold whitespace-nowrap overflow-hidden text-ellipsis text-[16px]">Responsive Web Design</h1>
+                                <p className=" text-[14px]">freeCodeCamp</p>
                             </div>
 
+                            <p className="font-light text-[12px] text-ring">Issued on November 24, 2025</p>
                         </div>
+
                     </div>
+                            </div>
+                        </DialogTrigger>
+                        <DialogContent className={"w-full lg:min-w-160 border-none p-8 shadow-none flex flex-col items-center rounded-3xl "}>
+                            <div className="mt-6 border border-zinc-200/50 rounded-xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+                                    <img src="./achievements-logo/certificates/responsive-web-design.jpg" alt="Responsive Web Design Certificate"/>
+                            </div>
+                                <div className="mt-3 w-fit">
+            <a 
+                href="https://freecodecamp.org/certification/fcce8b17ee6-8dd5-4c50-b625-61519cd8759e/responsive-web-design" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group flex items-center gap-2 px-6 py-2.5 bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-sm font-medium rounded-full transition-all duration-200 active:scale-95 hover:bg-zinc-800 dark:hover:bg-white"
+            >
+Verify Credential
+                
+                {/* Minimalist Arrow Right icon na gumagalaw lang pag hinover */}
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-200 group-hover:translate-x-1">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                </svg>
+            </a>
+        </div>
+                        </DialogContent>
+                    </Dialog>
+                 
                       <div className="flex flex-col gap-1 transition ease-in duration-100 cursor-pointer">
-                        <div className="w-full aspect-5/3 bg-gray-200 rounder-[10px]">
+                        <div className="w-full aspect-5/3 bg-gray-200 ">
                             <img src="" alt="" />
                         </div>
                         <div className="w-full flex gap-3 p-2">
