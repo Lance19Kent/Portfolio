@@ -35,6 +35,29 @@ export const achievementsData = [
     verifyLink: null, 
     linkText: null,
     description: "Delivered a talk on Logical Mapping in System Designs for Apollo 2026."
-  }
-  // Dito mo na idadagdag yung iba pa nang hindi ginagalaw ang UI code!
+  },
+    {
+    id: 4,
+    category: "education",
+    title: "Volunteer Trainer",
+    issuer: "QCU",
+    issuerLogo: "./about-png/QCU-Logo.png",
+    image: "./achievements-logo/education/Little-KOWders-Certificate.jpg",
+    date: "November 19, 2025",
+    verifyLink: null, 
+    linkText: null,
+    description: "Serving as a Volunteer at Little KOWders:Coding for Early Learners in Barangay Sauyo, Quezon City"
+    },
+    {
+    id: 5,
+    category: "education",
+    title: "Third Place Web Design Figma Contest",
+    issuer: "QCU",
+    issuerLogo: "./about-png/QCU-Logo.png",
+    image: "./achievements-logo/education/nyx-project.jpg",
+    date: "November 18, 2025",
+    verifyLink: null, 
+    linkText: null,
+    description: "Achieving Third Place in Design IT: A Group-Based Web Design Contest Using Figma with my Co-Designer: Ronan M. Sanico and Elizar Ayuyang."
+    },
 ];

@@ -33,12 +33,21 @@ function AchievementCard({data}){
                     </div>
                 </div>
             </DialogTrigger>
-            <DialogContent className={"w-full select-none lg:min-w-160 border-none bg-card p-8 shadow-none flex flex-col items-center rounded-3xl "}>
-                <div className="mt-6 border rounded-xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
-                        <img src={data.image} alt={data.title + " Certificate"}/>
+           <DialogContent className={"w-full max-w-4xl select-none border-none bg-card p-8 shadow-2xl flex flex-col items-center rounded-3xl"}>
+                
+                {/* FIX 2: Binalik ko yung p-1 at bg-color para humiwalay yung cert sa background */}
+                <div className="mt-6 border border-zinc-200/50 dark:border-zinc-800/50 rounded-xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.08)] bg-zinc-50/50 dark:bg-zinc-900/50 p-1 flex justify-center">
+                    
+                    {/* FIX 3: THE MAGIC IMAGE CLASSES */}
+                    {/* w-auto, h-auto, at max-h-[70vh] -> Ito yung pipigil sa portrait image na lumampas sa screen! */}
+                    <img 
+                        src={data.image} 
+                        alt={data.title + " Certificate"}
+                        className="w-auto h-auto max-w-full max-h-[70vh] object-contain rounded-lg mx-auto"
+                    />
                 </div>
 
-                <div className="mt-3 w-fit">
+                <div className="mt-4 w-fit">
                     {data.verifyLink ? (
                         <a href={data.verifyLink}
                         target="_blank" 
@@ -51,9 +60,9 @@ function AchievementCard({data}){
                         </svg>
                     </a>
                     ) : data.description ? (
-                       <div className="flex flex-col items-center text-center px-4">
-                            <h3 className="text-zinc-900 dark:text-white font-medium text-lg">Highlight</h3>
-                            <p className="text-zinc-500 dark:text-zinc-400 text-sm mt-1 max-w-md">{data.description}</p>
+                       <div className="flex flex-col items-center text-center px-4 mb-2">
+                            <h3 className="text-zinc-900 dark:text-zinc-100 font-semibold text-lg tracking-tight">Highlight</h3>
+                            <p className="text-zinc-500 dark:text-zinc-400 text-[15px] mt-2 max-w-md leading-relaxed">{data.description}</p>
                         </div>
                     ) : null }
                 </div>
