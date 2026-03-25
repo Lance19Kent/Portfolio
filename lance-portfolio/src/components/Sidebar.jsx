@@ -162,8 +162,8 @@ function Sidebar(){
                 <div>
                     <NavLink to="/" onClick={()=> setIsMenuOpen(false)} className={({isActive}) =>` 
                         ${isActive 
-                                    ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-secondary" 
-                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-foreground hover:text-[#7abdf0] ease-in stroke-foreground transition duration-75 hover:stroke-[#7abdf0] bg-card hover:bg-secondary"
+                                    ? "flex pl-3 items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-secondary" 
+                                    : "flex pl-3 items-center gap-2.5 py-3 cursor-pointer text-foreground hover:text-[#7abdf0] ease-in stroke-foreground transition duration-75 hover:stroke-[#7abdf0] bg-card hover:bg-secondary"
                                 }`
                                 }
                                 >
@@ -176,8 +176,8 @@ function Sidebar(){
                     </NavLink>
                     <NavLink to="/about" onClick={()=>setIsMenuOpen(false)} className={({isActive}) =>` 
                         ${isActive 
-                                    ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-secondary" 
-                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-foreground hover:text-[#7abdf0] ease-in stroke-foreground transition duration-75 hover:stroke-[#7abdf0] bg-card hover:bg-secondary"
+                                    ? "flex pl-3 items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-secondary" 
+                                    : "flex pl-3 items-center gap-2.5 py-3 cursor-pointer text-foreground hover:text-[#7abdf0] ease-in stroke-foreground transition duration-75 hover:stroke-[#7abdf0] bg-card hover:bg-secondary"
                                 }`
                                 }
                                 >
@@ -189,8 +189,8 @@ function Sidebar(){
                     </NavLink>
                     <NavLink to="/projects" onClick={()=>setIsMenuOpen(false)} className={({isActive}) =>` 
                         ${isProjectLocation 
-                                   ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-secondary" 
-                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-foreground hover:text-[#7abdf0] ease-in stroke-foreground transition duration-75 hover:stroke-[#7abdf0] bg-card hover:bg-secondary"
+                                   ? "flex pl-3 items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-secondary" 
+                                    : "flex pl-3 items-center gap-2.5 py-3 cursor-pointer text-foreground hover:text-[#7abdf0] ease-in stroke-foreground transition duration-75 hover:stroke-[#7abdf0] bg-card hover:bg-secondary"
                                 }`
                                 }
                                 >
@@ -204,8 +204,8 @@ function Sidebar(){
                     </NavLink>
                     <NavLink to="/achievements" onClick={()=>setIsMenuOpen(false)} className={({isActive}) =>` 
                         ${isActive 
-                                    ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-secondary" 
-                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-foreground hover:text-[#7abdf0] ease-in stroke-foreground transition duration-75 hover:stroke-[#7abdf0] bg-card hover:bg-secondary"
+                                    ? "flex pl-3 items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-secondary" 
+                                    : "flex pl-3 items-center gap-2.5 py-3 cursor-pointer text-foreground hover:text-[#7abdf0] ease-in stroke-foreground transition duration-75 hover:stroke-[#7abdf0] bg-card hover:bg-secondary"
                                 }`
                                 }
                                 >
@@ -217,8 +217,8 @@ function Sidebar(){
                     </NavLink>
                     <NavLink to="/blog" onClick={()=> setIsMenuOpen(false)} className={({isActive}) =>` 
                         ${isBlogActive 
-                                   ? "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-secondary" 
-                                    : "flex justify-center items-center gap-2.5 py-3 cursor-pointer text-foreground hover:text-[#7abdf0] ease-in stroke-foreground transition duration-75 hover:stroke-[#7abdf0] bg-card hover:bg-secondary"
+                                   ? "flex pl-3 items-center gap-2.5 py-3 cursor-pointer text-[#3FA6F4] hover:text-[#3FA6F4] ease-in stroke-[#3FA6F4] transition duration-75 bg-secondary" 
+                                    : "flex pl-3 items-center gap-2.5 py-3 cursor-pointer text-foreground hover:text-[#7abdf0] ease-in stroke-foreground transition duration-75 hover:stroke-[#7abdf0] bg-card hover:bg-secondary"
                                 }`
                                 }
                                 >
@@ -233,7 +233,7 @@ function Sidebar(){
             </div>
             <div className="w-full flex flex-col">
                 <div className="border border-border my-3"></div>
-                    <div className="flex flex-row gap-2.5 items-center justify-center my-3">
+                    <div className="flex flex-row gap-2.5 items-center pl-3 my-3">
                         <Switch className={"cursor-pointer"} checked={isDarkMode} onCheckedChange={handleThemeToggle}/>
                         <span className=" text-sm text-foreground">Dark Mode</span>
                     </div>
