@@ -11,8 +11,8 @@ import { achievementsData } from "@/data";
 function AchievementCard({data}){
     return(
         <>
-         <Dialog className={"w-full"}>
-            <DialogTrigger asChild className="flex flex-col gap-1 transition ease-in duration-200 cursor-pointer group">
+         <Dialog className={"w-full "}>
+            <DialogTrigger asChild className="flex select-none flex-col gap-1 transition ease-in duration-200 cursor-pointer group">
                 <div className="flex flex-col overflow-hidden">
                     <div className="w-full aspect-5/3.5 bg-gray-200 dark:bg-[#5252523f]  p-1 rounded-[10px] overflow-hidden border-border">
                         <img src={data.image} alt={data.title} className="w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-110"/>
@@ -33,7 +33,7 @@ function AchievementCard({data}){
                     </div>
                 </div>
             </DialogTrigger>
-            <DialogContent className={"w-full lg:min-w-160 border-none bg-card p-8 shadow-none flex flex-col items-center rounded-3xl "}>
+            <DialogContent className={"w-full select-none lg:min-w-160 border-none bg-card p-8 shadow-none flex flex-col items-center rounded-3xl "}>
                 <div className="mt-6 border rounded-xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
                         <img src={data.image} alt={data.title + " Certificate"}/>
                 </div>
