@@ -60,4 +60,16 @@ export const achievementsData = [
     linkText: null,
     description: "Achieving Third Place in Design IT: A Group-Based Web Design Contest Using Figma with my Co-Designer: Ronan M. Sanico and Elizar Ayuyang."
     },
+    {
+    id: 5,
+    category: "education",
+    title: "SHS Diploma",
+    issuer: "Rosario Institute",
+    issuerLogo: "./about-png/ROSARIO-INSTITUTE-LOGO.png",
+    image: "./achievements-logo/education/shs-diploma.jpg",
+    date: "May 10, 2021",
+    verifyLink: null, 
+    linkText: null,
+    description: "Graduated with High Honors, establishing a strong academic foundation prior to pursuing Information Technology."
+    },
 ];

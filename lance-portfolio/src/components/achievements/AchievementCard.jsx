@@ -35,11 +35,8 @@ function AchievementCard({data}){
             </DialogTrigger>
            <DialogContent className={"w-full max-w-4xl select-none border-none bg-card p-8 shadow-2xl flex flex-col items-center rounded-3xl"}>
                 
-                {/* FIX 2: Binalik ko yung p-1 at bg-color para humiwalay yung cert sa background */}
-                <div className="mt-6 border border-zinc-200/50 dark:border-zinc-800/50 rounded-xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.08)] bg-zinc-50/50 dark:bg-zinc-900/50 p-1 flex justify-center">
+                <div className="mt-6 border border-zinc-200/50 dark:border-zinc-800/50 rounded-xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.08)] bg-zinc-50/50 dark:bg-zinc-900/50 flex justify-center">
                     
-                    {/* FIX 3: THE MAGIC IMAGE CLASSES */}
-                    {/* w-auto, h-auto, at max-h-[70vh] -> Ito yung pipigil sa portrait image na lumampas sa screen! */}
                     <img 
                         src={data.image} 
                         alt={data.title + " Certificate"}
