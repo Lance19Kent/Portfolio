@@ -23,7 +23,7 @@ import { achievementsData } from "@/data";
 function AchievementsContent(){
     return (
         <div className="py-3 px-3 lg:px-0 lg:pr-3 overflow-y-auto flex-col gap-3 no-scrollbar overflow-hidden w-full flex ">
-            <BentoCard title={"Certifications"} icon={certificationIcon}>
+            <BentoCard title={"Technical Certifications"} icon={certificationIcon}>
                 <div className="grid lg:grid-cols-4 grid-cols-1 gap-6">
                     {certifications.map((cert) =>(
                         <AchievementCard key={cert.id} data={cert} />
@@ -31,7 +31,7 @@ function AchievementsContent(){
                 </div>
             </BentoCard>
 
-             <BentoCard title={"Education"} icon={educationCertification}>
+             <BentoCard title={"Leadership & Milestones"} icon={educationCertification}>
                 <div className="grid lg:grid-cols-4 grid-cols-1 gap-6">
                     {education.map((edu)=>(
                         <AchievementCard key={edu.id} data={edu}/>

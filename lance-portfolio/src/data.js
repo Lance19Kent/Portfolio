@@ -71,16 +71,4 @@ export const achievementsData = [
     linkText: null,
     description: "Attended my first Youth Summit Leadership with different schools to promote leadership, security in digital realm, and society."
     },
-    {
-    id: 6,
-    category: "education",
-    title: "SHS Diploma",
-    issuer: "Rosario Institute",
-    issuerLogo: "./about-png/ROSARIO-INSTITUTE-LOGO.png",
-    image: "./achievements-logo/education/shs-diploma.jpg",
-    date: "May 10, 2021",
-    verifyLink: null, 
-    linkText: null,
-    description: "Graduated with High Honors, establishing a strong academic foundation prior to pursuing Information Technology."
-    },
 ];
