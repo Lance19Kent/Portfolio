@@ -45,9 +45,9 @@ function AchievementCard({data, list}){
                     </div>
                 </div>
             </DialogTrigger>
-           <DialogContent className={"w-full lg:max-w-5xl h-[85vh] select-none border-none bg-card p-8 shadow-2xl  rounded-3xl grid grid-cols-[2fr_1fr]"}>
+           <DialogContent className={"w-full lg:max-w-5xl h-[85vh] select-none border-none bg-card p-8 shadow-2xl  rounded-3xl grid lg:grid-cols-[2fr_1fr]"}>
                 
-                <div className="flex flex-col">
+                <div className="flex flex-col overflow-hidden">
                     <div className=" w-full h-full overflow-y-auto border border-zinc-200/50  dark:border-zinc-800/50 rounded-xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.08)] bg-zinc-50/80 dark:bg-zinc-900/50 no-scrollbar relative">
                     <div className="min-h-full flex items-center justify-center">
                         <img 
@@ -75,25 +75,25 @@ function AchievementCard({data, list}){
                 </div>
                
 
-                <div className="w-full lg:w-100 h-full flex flex-col bg-white dark:bg-zinc-950 border-l border-zinc-100 dark:border-zinc-800/50">
+                <div className="w-full lg:w-100 h-full flex flex-col bg-white dark:bg-zinc-950 lg:border-l border-t border-zinc-100 dark:border-zinc-800/50">
                     
-                    <div className="px-8 pt-8 flex flex-col justify-between w-full h-full">
+                    <div className="lg:px-8 pt-8 flex flex-col justify-between w-full h-full">
                         <div className="flex flex-col gap-6">
-                             <div>
-                            <div className="w-14 h-14 bg-zinc-50 dark:bg-zinc-900 rounded-xl p-2 mb-4 border border-zinc-100 dark:border-zinc-800 flex items-center justify-center">
+                             <div className="flex lg:flex-col gap-3 lg:gap-0">
+                            <div className="w-14 h-14 shrink-0 bg-zinc-50 dark:bg-zinc-900 rounded-xl p-2 mb-4 border border-zinc-100 dark:border-zinc-800 flex items-center justify-center">
                                 <img src={currentData.issuerLogo} alt={currentData.issuer + " Logo"} className="w-full h-full object-contain" />
                             </div>
                             <div className="flex flex-col gap-1">
-                                <h1 className="font-bold text-2xl text-zinc-900 dark:text-zinc-100 leading-tight">{currentData.title}</h1>
-                                <p className="font-medium text-[16px] text-zinc-600 dark:text-zinc-400">{currentData.issuer}</p>
-                                {currentData.date && <p className="font-light text-[13px] text-zinc-400 mt-1">Issued on {currentData.date}</p>}
+                                <h1 className="font-bold lg:text-2xl text-xl text-zinc-900 dark:text-zinc-100 leading-tight">{currentData.title}</h1>
+                                <p className="font-medium lg:text-[16px] text-[14px] text-zinc-600 dark:text-zinc-400">{currentData.issuer}</p>
+                                {currentData.date && <p className="font-light lg:text-[13px] text-[12px] text-zinc-400 mt-1">Issued on {currentData.date}</p>}
                             </div>
                         </div>
                         <div>
                             {currentData.description && (
                                 <div className="flex flex-col mb-6">
-                                    <h3 className="text-zinc-900 dark:text-zinc-100 font-semibold text-[16px] tracking-tight mb-2 uppercase text-xs">Highlight</h3>
-                                    <p className="text-zinc-500 dark:text-zinc-400 text-[15px] leading-relaxed">{currentData.description}</p>
+                                    <h3 className="text-zinc-900 dark:text-zinc-100 font-semibold lg:text-[16px] text-[14px] tracking-tight mb-2 uppercase text-xs">Highlight</h3>
+                                    <p className="text-zinc-500 dark:text-zinc-400 lg:text-[15px] text-[14px] leading-relaxed">{currentData.description}</p>
                                 </div>
                             )}
 
@@ -104,7 +104,7 @@ function AchievementCard({data, list}){
 
                         <div>
                         {list && list.length > 1 && (
-                        <div className="p-6 border-t border-zinc-100 dark:border-zinc-800/80 bg-zinc-50/50 dark:bg-zinc-900/20 flex justify-between items-center rounded-2xl">
+                        <div className="lg:p-6 p-3 border-t border-zinc-100 dark:border-zinc-800/80 bg-zinc-50/50 dark:bg-zinc-900/20 flex justify-between items-center rounded-2xl">
                             <button 
                                 onClick={handlePrev} 
                                 disabled={currentIndex === 0}

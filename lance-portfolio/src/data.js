@@ -10,7 +10,7 @@ export const achievementsData = [
     date: "November 24, 2024",
     verifyLink: "https://freecodecamp.org/certification/fcce8b17ee6-8dd5-4c50-b625-61519cd8759e/responsive-web-design", 
     linkText: "Verify Credential",
-    description: "Sasds" 
+    description: "Certificate for completing 300 hours of work in freeCodeCamp that structured my fundamentals in Web Development!" 
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ export const achievementsData = [
     date: "October 22, 2025",
     verifyLink: null, 
     linkText: null,
-    description: "Taken a Crash Course with one of our Mentors Ma'am Michele Chua with the Exploaratory of Testing in Corporate World"
+    description: "Taken a Crash Course with the President of QE360 Ma'am Michele Chua by providing an actual system with testing."
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ export const achievementsData = [
     date: "February 09, 2026",
     verifyLink: null, 
     linkText: null,
-    description: "Delivered a talk on Logical Mapping in System Designs for Apollo 2026."
+    description: "Delivered a great talk and insights on Logical Mapping and the importance of System Designs for Apollo 2026."
   },
     {
     id: 4,
@@ -46,7 +46,7 @@ export const achievementsData = [
     date: "November 19, 2025",
     verifyLink: null, 
     linkText: null,
-    description: "Serving as a Volunteer at Little KOWders:Coding for Early Learners in Barangay Sauyo, Quezon City"
+    description: "A Student Volunteer of the even Little KOWders:Coding for Early Learners in Barangay Sauyo, Quezon City."
     },
     {
     id: 5,
@@ -58,7 +58,7 @@ export const achievementsData = [
     date: "November 18, 2025",
     verifyLink: null, 
     linkText: null,
-    description: "Achieving Third Place in Design IT: A Group-Based Web Design Contest Using Figma with my Co-Designer: Ronan M. Sanico and Elizar Ayuyang."
+    description: "Achieving Third Place in Design IT: A Group-Based Web Design Contest Using Figma without AI Assitant."
     },{
     id: 5,
     category: "education",
