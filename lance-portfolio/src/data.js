@@ -10,7 +10,7 @@ export const achievementsData = [
     date: "November 24, 2024",
     verifyLink: "https://freecodecamp.org/certification/fcce8b17ee6-8dd5-4c50-b625-61519cd8759e/responsive-web-design", 
     linkText: "Verify Credential",
-    description: null 
+    description: "Sasds" 
   },
   {
     id: 2,

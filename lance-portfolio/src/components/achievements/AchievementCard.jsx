@@ -33,19 +33,28 @@ function AchievementCard({data}){
                     </div>
                 </div>
             </DialogTrigger>
-           <DialogContent className={"w-full max-w-4xl select-none border-none bg-card p-8 shadow-2xl flex flex-col items-center rounded-3xl"}>
+           <DialogContent className={"w-full lg:max-w-5xl h-[85vh] select-none border-none bg-card p-8 shadow-2xl  rounded-3xl grid grid-cols-[2fr_1fr]"}>
                 
-                <div className="mt-6 border border-zinc-200/50 dark:border-zinc-800/50 rounded-xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.08)] bg-zinc-50/50 dark:bg-zinc-900/50 flex justify-center">
-                    
-                    <img 
-                        src={data.image} 
-                        alt={data.title + " Certificate"}
-                        className="w-auto h-auto max-w-full max-h-[70vh] object-contain rounded-lg mx-auto"
-                    />
+                <div className=" w-full h-full overflow-y-auto border border-zinc-200/50  dark:border-zinc-800/50 rounded-xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.08)] bg-zinc-50/80 dark:bg-zinc-900/50 no-scrollbar relative">
+                    <div className="min-h-full flex items-center justify-center">
+                        <img 
+                            src={data.image} 
+                            alt={data.title + " Certificate"}
+                            className="w-full h-auto max-h-[150vh] object-contain rounded-lg mx-auto"
+                            />
+                    </div>
                 </div>
 
-                <div className="mt-4 w-fit">
-                    {data.verifyLink ? (
+                <div>
+                    {data.description  && (
+                       <div className="flex flex-col px-4 mb-2">
+                            <h3 className="text-zinc-900 dark:text-zinc-100 font-semibold text-[20px] tracking-tight">Highlight</h3>
+                            <p className="text-zinc-500 dark:text-zinc-400 text-[15px] mt-2 max-w-md leading-relaxed">{data.description}</p>
+                        </div>
+                        
+                )}
+                      <div className="mt-4 w-fit">
+                    {data.verifyLink && (
                         <a href={data.verifyLink}
                         target="_blank" 
                         rel="noopener noreferrer"
@@ -56,13 +65,13 @@ function AchievementCard({data}){
                             <path d="m12 5 7 7-7 7"></path>
                         </svg>
                     </a>
-                    ) : data.description ? (
-                       <div className="flex flex-col items-center text-center px-4 mb-2">
-                            <h3 className="text-zinc-900 dark:text-zinc-100 font-semibold text-lg tracking-tight">Highlight</h3>
-                            <p className="text-zinc-500 dark:text-zinc-400 text-[15px] mt-2 max-w-md leading-relaxed">{data.description}</p>
-                        </div>
-                    ) : null }
+                    )}
                 </div>
+                </div>
+                
+
+              
+                    
             </DialogContent>
         </Dialog>
         </>
