@@ -45,10 +45,10 @@ function AchievementCard({data, list}){
                     </div>
                 </div>
             </DialogTrigger>
-           <DialogContent className={"w-full lg:max-w-5xl h-[85vh] select-none border-none bg-card p-8 shadow-2xl  rounded-3xl grid lg:grid-cols-[2fr_1fr]"}>
+           <DialogContent className={"w-full lg:max-w-5xl max-h-[85vh]  select-none border-none bg-card p-8 shadow-2xl rounded-3xl grid lg:grid-cols-[2fr_1fr] overflow-hidden overflow-y-auto no-scrollbar"}>
                 
-                <div className="flex flex-col overflow-hidden">
-                    <div className=" w-full h-full overflow-y-auto border border-zinc-200/50  dark:border-zinc-800/50 rounded-xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.08)] bg-zinc-50/80 dark:bg-zinc-900/50 no-scrollbar relative">
+                <div className="flex flex-col overflow-hidden pt-4 lg:pt-0">
+                    <div className=" w-full h-full overflow-y-auto border border-zinc-200/50  dark:border-zinc-800/50 rounded-xl overflow-hidden bg-zinc-50/80 dark:bg-zinc-900/50 no-scrollbar relative">
                     <div className="min-h-full flex items-center justify-center">
                         <img 
                             src={currentData.image} 
@@ -62,7 +62,7 @@ function AchievementCard({data, list}){
                                     <a href={currentData.verifyLink}
                                     target="_blank" 
                                     rel="noopener noreferrer"
-                                    className="group flex justify-center items-center gap-2 w-full py-3 bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-sm font-semibold rounded-full transition-all duration-200 active:scale-95 hover:bg-zinc-800 dark:hover:bg-white shadow-md"
+                                    className="group flex justify-center items-center gap-2 w-full py-3 bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-sm font-semibold rounded-full transition-all duration-200 active:scale-95 hover:bg-zinc-800 dark:hover:bg-white shadow-md lg:text-[14px] text-[12px]"
                                     > 
                                         {currentData.linkText || "Verify Credential"}
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-200 group-hover:translate-x-1">
@@ -75,7 +75,7 @@ function AchievementCard({data, list}){
                 </div>
                
 
-                <div className="w-full lg:w-100 h-full flex flex-col bg-white dark:bg-zinc-950 lg:border-l border-t border-zinc-100 dark:border-zinc-800/50">
+                <div className="w-full lg:w-100 h-full flex flex-col bg-white dark:bg-zinc-950 lg:border-l border-t lg:border-t-0 border-zinc-100 dark:border-zinc-800/50">
                     
                     <div className="lg:px-8 pt-8 flex flex-col justify-between w-full h-full">
                         <div className="flex flex-col gap-6">
