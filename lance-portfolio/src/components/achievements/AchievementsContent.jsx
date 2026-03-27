@@ -26,7 +26,7 @@ function AchievementsContent(){
             <BentoCard title={"Technical Certifications"} icon={certificationIcon}>
                 <div className="grid lg:grid-cols-4 grid-cols-1 gap-6">
                     {certifications.map((cert) =>(
-                        <AchievementCard key={cert.id} data={cert} />
+                        <AchievementCard key={cert.id} data={cert} list={certifications}/>
                     ))}
                 </div>
             </BentoCard>
@@ -34,7 +34,7 @@ function AchievementsContent(){
              <BentoCard title={"Leadership & Milestones"} icon={educationCertification}>
                 <div className="grid lg:grid-cols-4 grid-cols-1 gap-6">
                     {education.map((edu)=>(
-                        <AchievementCard key={edu.id} data={edu}/>
+                        <AchievementCard key={edu.id} data={edu}  list={education}/>
                     ))}
                 </div>
             </BentoCard>
