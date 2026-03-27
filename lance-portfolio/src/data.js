@@ -5,7 +5,7 @@ export const achievementsData = [
     category: "certification",
     title: "Responsive Web Design",
     issuer: "freeCodeCamp",
-    issuerLogo: "./achievements-logo/freecodecamp-circle.png",
+    issuerLogo: "./achievements-logo/ffc-logo.png",
     image: "./achievements-logo/certificates/responsive-web-design.jpg",
     date: "November 24, 2024",
     verifyLink: "https://freecodecamp.org/certification/fcce8b17ee6-8dd5-4c50-b625-61519cd8759e/responsive-web-design", 
