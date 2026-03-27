@@ -75,7 +75,7 @@ function AchievementCard({data, list}){
                 </div>
                
 
-                <div className="w-full lg:w-100 h-full flex flex-col bg-white dark:bg-zinc-950 lg:border-l border-t lg:border-t-0 border-zinc-100 dark:border-zinc-800/50">
+                <div className="w-full lg:w-100 h-full flex flex-col bg-card lg:border-l border-t lg:border-t-0 border-border">
                     
                     <div className="lg:px-8 pt-8 flex flex-col justify-between w-full h-full">
                         <div className="flex flex-col gap-6">
