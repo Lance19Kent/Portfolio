@@ -2,15 +2,10 @@ import BentoCard from "../BentoCard";
 import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
 
-import { Card, CardContent } from "/src/components/ui/card"
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "/src/components/ui/carousel"
 import React, {useRef, useState} from "react";
+import AchievementCard from "../achievements/AchievementCard";
+import { achievementsData } from "@/data";
+
 const aboutIcon = <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M25.3334 28V25.3333C25.3334 23.9188 24.7715 22.5623 23.7713 21.5621C22.7711 20.5619 21.4146 20 20.0001 20H12.0001C10.5856 20 9.22904 20.5619 8.22884 21.5621C7.22865 22.5623 6.66675 23.9188 6.66675 25.3333V28" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M16.0001 14.6667C18.9456 14.6667 21.3334 12.2789 21.3334 9.33333C21.3334 6.38781 18.9456 4 16.0001 4C13.0546 4 10.6667 6.38781 10.6667 9.33333C10.6667 12.2789 13.0546 14.6667 16.0001 14.6667Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -27,6 +22,7 @@ const certificateIcon = <svg width="30" height="30" viewBox="0 0 40 40" fill="no
 </svg>;
 
 function AboutContent(){
+    const featuredCertificates = achievementsData.filter(item => [1, 2, 3, 4].includes(item.id));
     
     // For Highlight Section
     const highlightsRef = useRef(null);
@@ -215,95 +211,24 @@ function AboutContent(){
                 
             </BentoCard>
             <BentoCard title={"Certificates"} icon={certificateIcon} className="relative">
-                         <div className={`absolute right-5 z-10 top-37.5 bg-[#00000020] p-2 rounded-[100px] stroke-black transition duration-75 ease-in ${canCertificatesRight ? "cursor-pointer hover:stroke-white hover:bg-[#3FA6F4]":"cursor-not-allowed opacity-30 "}`} onClick={() => canCertificatesRight && scrollCarousel(certificatesRef, "right")}>
+                <div className={`absolute right-5 z-9999 top-37.5 bg-[#00000030] p-2 rounded-[100px] stroke-black transition duration-75 ease-in ${canCertificatesRight ? "cursor-pointer hover:stroke-white hover:bg-[#3FA6F4]":"cursor-not-allowed opacity-30 "}`} onClick={() => canCertificatesRight && scrollCarousel(certificatesRef, "right")}>
                       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 24L20 16L12 8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
 
                   </div>
-                  <div className={`absolute left-5 rotate-180 top-37.5 bg-[#00000020] p-2 rounded-[100px] stroke-black transition duration-75 ease-in ${canCertificatesLeft ?"cursor-pointer hover:stroke-white hover:bg-[#3FA6F4]":"cursor-not-allowed opacity-30"}`} onClick={() => canCertificatesLeft && scrollCarousel(certificatesRef, "left")}>
+                  <div className={`absolute left-5 rotate-180 top-37.5 bg-[#00000030] p-2 rounded-[100px] stroke-black transition duration-75 z-9999 ease-in ${canCertificatesLeft ?"cursor-pointer hover:stroke-white hover:bg-[#3FA6F4]":"cursor-not-allowed opacity-30"}`} onClick={() => canCertificatesLeft && scrollCarousel(certificatesRef, "left")}>
                       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 24L20 16L12 8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
                   </div>
               <div className="flex flex-col gap-8 items-center">
                 <div className="w-full flex gap-3 overflow-x-auto no-scrollbar justify-between" ref={certificatesRef} onScroll={()=> handleScroll(certificatesRef, setcanCertificatesLeft, setcanCertificatesRight)}>
-                  <div className="flex flex-col shrink-0 gap-1 transition ease-in duration-100 cursor-pointer">
-                          <div className="w-full aspect-5/3 bg-gray-200">
-                              <img src="" alt="" />
-                          </div>
-                          <div className="w-full flex gap-3 p-2">
-                              <div className="w-fit ">
-                                  <img src="./achievements-logo/freecodecamp-circle.png" alt="FreeCodeCamp's Logo" />
-                              </div>
-                              <div className="flex flex-col w-full overflow-hidden">
-                                  <div className="leading-5">
-                                      <h1 className="font-semibold whitespace-nowrap overflow-hidden text-ellipsis text-[16px]">Responsive Web Design</h1>
-                                      <p className=" text-[14px]">freeCodeCamp</p>
-                                  </div>
-
-                                  <p className="font-light text-[12px] text-ring">Issued on November 24, 2025</p>
-                              </div>
-
-                          </div>
+                  {featuredCertificates.map((cert)=>(
+                    <div key={cert.id} className="w-65 lg:w-65 shrink-0">
+                        <AchievementCard data={cert} list={featuredCertificates}/>
                     </div>
-                    <div className="flex flex-col shrink-0 gap-1 transition ease-in duration-100 cursor-pointer">
-                          <div className="w-full aspect-5/3 bg-gray-200">
-                              <img src="" alt="" />
-                          </div>
-                          <div className="w-full flex gap-3 p-2">
-                              <div className="w-fit ">
-                                  <img src="./achievements-logo/freecodecamp-circle.png" alt="FreeCodeCamp's Logo" />
-                              </div>
-                              <div className="flex flex-col w-full overflow-hidden">
-                                  <div className="leading-5">
-                                      <h1 className="font-semibold whitespace-nowrap overflow-hidden text-ellipsis text-[16px]">Responsive Web Design</h1>
-                                      <p className=" text-[14px]">freeCodeCamp</p>
-                                  </div>
-
-                                  <p className="font-light text-[12px] text-ring">Issued on November 24, 2025</p>
-                              </div>
-
-                          </div>
-                    </div>
-                    <div className="flex flex-col shrink-0 gap-1 transition ease-in duration-100 cursor-pointer">
-                          <div className="w-full aspect-5/3 bg-gray-200">
-                              <img src="" alt="" />
-                          </div>
-                          <div className="w-full flex gap-3 p-2">
-                              <div className="w-fit ">
-                                  <img src="./achievements-logo/freecodecamp-circle.png" alt="FreeCodeCamp's Logo" />
-                              </div>
-                              <div className="flex flex-col w-full overflow-hidden">
-                                  <div className="leading-5">
-                                      <h1 className="font-semibold whitespace-nowrap overflow-hidden text-ellipsis text-[16px]">Responsive Web Design</h1>
-                                      <p className=" text-[14px]">freeCodeCamp</p>
-                                  </div>
-
-                                  <p className="font-light text-[12px] text-ring">Issued on November 24, 2025</p>
-                              </div>
-
-                          </div>
-                    </div>
-                    <div className="flex flex-col shrink-0 gap-1 transition ease-in duration-100 cursor-pointer">
-                          <div className="w-full aspect-5/3 bg-gray-200">
-                              <img src="" alt="" />
-                          </div>
-                          <div className="w-full flex gap-3 p-2">
-                              <div className="w-fit ">
-                                  <img src="./achievements-logo/freecodecamp-circle.png" alt="FreeCodeCamp's Logo" />
-                              </div>
-                              <div className="flex flex-col w-full overflow-hidden">
-                                  <div className="leading-5">
-                                      <h1 className="font-semibold whitespace-nowrap overflow-hidden text-ellipsis text-[16px]">Responsive Web Design</h1>
-                                      <p className=" text-[14px]">freeCodeCamp</p>
-                                  </div>
-
-                                  <p className="font-light text-[12px] text-ring">Issued on November 24, 2025</p>
-                              </div>
-
-                          </div>
-                    </div>
+                  ))}
                 </div>
                 <Link to={"/achievements"} className="text-center block text-[#3FA6F4] hover:underline lg:text-base text-sm">See More</Link>
               </div>
