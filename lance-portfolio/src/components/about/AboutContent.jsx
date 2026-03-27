@@ -222,7 +222,7 @@ function AboutContent(){
                         <path d="M12 24L20 16L12 8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
                   </div>
-              <div className="flex flex-col gap-8 items-center">
+              <div className="flex flex-col gap-4 items-center">
                 <div className="w-full flex gap-3 overflow-x-auto no-scrollbar justify-between" ref={certificatesRef} onScroll={()=> handleScroll(certificatesRef, setcanCertificatesLeft, setcanCertificatesRight)}>
                   {featuredCertificates.map((cert)=>(
                     <div key={cert.id} className="w-65 lg:w-65 shrink-0">
