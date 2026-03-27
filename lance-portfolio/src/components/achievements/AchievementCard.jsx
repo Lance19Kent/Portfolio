@@ -45,28 +45,47 @@ function AchievementCard({data}){
                     </div>
                 </div>
 
-                <div>
-                    {data.description  && (
-                       <div className="flex flex-col px-4 mb-2">
-                            <h3 className="text-zinc-900 dark:text-zinc-100 font-semibold text-[20px] tracking-tight">Highlight</h3>
-                            <p className="text-zinc-500 dark:text-zinc-400 text-[15px] mt-2 max-w-md leading-relaxed">{data.description}</p>
+                <div className="flex flex-col justify-between">
+                    <div>
+                        <div className="w-full flex-col flex gap-4">
+                        <div className="w-15">
+                            <img src={data.issuerLogo} alt={data.issuer + " Logo"} />
                         </div>
-                        
-                )}
-                      <div className="mt-4 w-fit">
-                    {data.verifyLink && (
-                        <a href={data.verifyLink}
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="group flex items-center gap-2 px-6 py-2.5 bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-sm font-medium rounded-full transition-all duration-200 active:scale-95 hover:bg-zinc-800 dark:hover:bg-white"
-                    > {data.linkText}
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-200 group-hover:translate-x-1">
-                            <path d="M5 12h14"></path>
-                            <path d="m12 5 7 7-7 7"></path>
-                        </svg>
-                    </a>
+                        <div className="flex flex-col w-full overflow-hidden">
+                            <div className="leading-5 flex flex-col gap-2">
+                                <h1 className="font-semibold text-[20px]">{data.title}</h1>
+                                <p className=" text-[16px]">{data.issuer}</p>
+                            </div>
+
+                            <p className="font-light text-[14px] text-ring">Issued on {data.date}</p>
+                        </div>
+                    </div>
+                    {data.description  && (
+                        <div className="flex flex-col mb-2 pt-4">
+                                <h3 className="text-zinc-900 dark:text-zinc-100 font-semibold text-[18px] tracking-tight">Highlight</h3>
+                                <p className="text-zinc-500 dark:text-zinc-400 text-[15px] max-w-md leading-relaxed">{data.description}</p>
+                            </div>
+                            
                     )}
-                </div>
+                        <div className="mt-4 w-fit">
+                        {data.verifyLink && (
+                            <a href={data.verifyLink}
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="group flex items-center gap-2 px-6 py-2.5 bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-sm font-medium rounded-full transition-all duration-200 active:scale-95 hover:bg-zinc-800 dark:hover:bg-white"
+                        > {data.linkText}
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-200 group-hover:translate-x-1">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </a>
+                        )}
+                    </div>
+                    </div>
+                    <div className="w-full justify-between flex px-3">
+                        <button>Previous</button>
+                        <button>Next</button>
+                    </div>
                 </div>
                 
 
