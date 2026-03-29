@@ -2,7 +2,7 @@ import { Button } from "../ui/button"
 import { TypeAnimation } from "react-type-animation";
 import { useState, useEffect } from "react";
 import BentoCard from "../BentoCard";
-import { achievementsData } from "@/data";
+import { achievementsData, skillsData } from "@/data";
 
 const highlightsIcon =  <svg width="30" height="30" className="stroke-black" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15 21.25V27.5" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
@@ -84,7 +84,7 @@ function Content(){
                             <h1 className="font-semibold leading-6 lg:text-[20px] text-lg">Lance Kent Geoffrey B. Magollado</h1>
                             <span className="lg:text-[14px] text-sm text-semitext-ring">Aspiring Full-Stack Developer</span>
                         </div>
-                        <Button className={"cursor-pointer text-white lg:text-[16px] text-sm font-light p-5 stroke-white bg-[#3FA6F4] hover:bg-[#56b1f7] shadow-xs "} asChild>
+                        <Button className={"cursor-pointer text-white lg:text-[16px] text-sm font-light p-5 stroke-white bg-[#0866FF] hover:bg-[#3581fc] shadow-xs "} asChild>
                             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lancemagollado46@gmail.com&su=Hi,%20Let%20us%20connect!" target="_blank" rel="noopener noreferrer">
                             <div className="lg:w-4 w-3">
                                 <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -197,7 +197,7 @@ function Content(){
                     </svg>
 
                         <div className="flex items-center flex-1 justify-between">
-                            <span className="font-semibold text-[30px]">16</span>
+                            <span className="font-semibold text-[30px]">{skillsData.length}</span>
                         </div>
                     </div>
                     <span className="font-medium lg:text-base text-sm">Technologies</span>

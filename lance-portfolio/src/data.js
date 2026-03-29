@@ -72,3 +72,86 @@ export const achievementsData = [
     description: "Attended my first Youth Summit Leadership with different schools to promote leadership, security in digital realm, and society."
     },
 ];
+
+export const skillsData = [
+  {
+    id:1,
+    img: "/technology-icons/html.svg",
+    skillName: "HTML"
+  },
+  {
+    id:2,
+    img: "/technology-icons/css.svg",
+    skillName: "CSS"
+  },
+  {
+    id:3,
+    img: "/technology-icons/javascript.svg",
+    skillName: "Javascript"
+  },
+  {
+    id:4,
+    img:"/technology-icons/tailwind.svg",
+    skillName: "Tailwind"
+  },
+  {
+    id:5,
+    img: "/technology-icons/laravel.svg",
+    skillName: "Laravel"
+  },
+  {
+    id:6,
+    img: "/technology-icons/mysql.svg",
+    skillName: "MySQL"
+  },
+  {
+    id:7,
+    img: "/technology-icons/php.svg",
+    skillName: "PHP"
+  },
+  {
+    id:8,
+    img: "/technology-icons/java.svg",
+    skillName: "Java"
+  },
+  {
+    id:9,
+    img: "/technology-icons/canva.svg",
+    skillName: "Canva"
+  },
+  {
+    id:10,
+    img: "/technology-icons/trello.svg",
+    skillName: "Trello"
+  },
+  {
+    id:11,
+    img: "/technology-icons/react.svg",
+    skillName: "React"
+  },
+  {
+    id:12,
+    img: "/technology-icons/vite.svg",
+    skillName: "Vite"
+  },
+  {
+    id:13,
+    img: "/technology-icons/bootstrap.svg",
+    skillName: "Bootstrap"
+  },
+  {
+    id:14,
+    img: "/technology-icons/git.svg",
+    skillName: "Git"
+  },
+  {
+    id:15,
+    img: "/technology-icons/python.svg",
+    skillName: "Python"
+  },
+  {
+    id:16,
+    img: "/technology-icons/node.svg",
+    skillName: "Node"
+  },
+]
