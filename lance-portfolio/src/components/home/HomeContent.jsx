@@ -52,13 +52,13 @@ function Content(){
         <div className="w-full flex flex-col overflow-hidden bg-card rounded-[10px] relative shrink-0">
             <div className="w-full relative ">
                 <div className="w-full object-cover lg:h-55 h-48.5 dark:hidden relative">
-                    <video src="./cover-vids/cover-light-mode.mp4" autoPlay loop muted className="w-full h-full object-cover" />
+                    <video src="./cover-vids/lightmode-cover.mp4" autoPlay loop muted className="w-full h-full object-cover" />
                     <div className="w-full h-full bg-black/20 absolute inset-0">
 
                     </div>
                 </div>
                 <div className="w-full object-cover lg:h-55 h-48.5 hidden dark:block">
-                    <video src="./cover-vids/cover-dark-mode.mp4" autoPlay loop muted className="w-full h-full object-cover" />
+                    <video src="./cover-vids/darkmode-cover.mp4" autoPlay loop muted className="w-full h-full object-cover" />
                     <div className="w-full h-full bg-black/20 absolute inset-0">
 
                     </div>
@@ -75,7 +75,7 @@ function Content(){
                    
                     <span className="font-medium text-white lg:text-[16px] text-[11px]">{currentDate}</span>
                 </div>
-                 <div className="absolute text-white top-1/2 lg:top-auto font-medium bottom-3 right-4 lg:text-[30px] text-[18px] z-10">
+                 {/* <div className="absolute text-white top-1/2 lg:top-auto font-medium bottom-3 right-4 lg:text-[30px] text-[18px] z-10">
                     <TypeAnimation sequence={[`Welcome to my digital workspace!`, 2500,`I build clean web experiences.`,2500,`Always learning, always building.`, 2500,`Ready for new collaborations.`, 2500]}
                     
                     wrapper="span"
@@ -83,7 +83,7 @@ function Content(){
                     repeat={Infinity}
                     />
 
-                </div>
+                </div> */}
             </div>
             <div  className="absolute z-20 h-40 w-40 bottom-3 lg:h-38.5 lg:w-38.5 lg:left-3 left-1/2 -translate-x-1/2 lg:top-auto top-35.5 lg:translate-x-0 rounded-full overflow-hidden border-3 border-card">
                 <img src="./profile_githu.jpeg" alt="Lance Profile" className="w-full h-full object-cover" />
