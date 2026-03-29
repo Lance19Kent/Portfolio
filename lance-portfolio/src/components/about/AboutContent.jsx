@@ -72,7 +72,7 @@ function AboutContent(){
                             <h1 className="font-semibold leading-6 lg:text-[20px] text-lg">Lance Kent Geoffrey B. Magollado</h1>
                             <span className="lg:text-[14px] text-sm text-semitext-ring">Aspiring Full-Stack Developer</span>
                         </div>
-                        <Button className={"cursor-pointer text-white lg:text-[16px] text-sm font-light w-fit  p-5 stroke-white bg-[#0866FF] hover:bg-[#3581fc] shadow-xs"} asChild>
+                        <Button className={"cursor-pointer text-white lg:text-[16px] text-sm font-light w-fit  p-5 stroke-white bg-[#468cfc] hover:bg-[#629bf8] shadow-xs transition duration-200 ease-in"} asChild>
                             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lancemagollado46@gmail.com&su=Hi,%20Let%20us%20connect!" target="_blank" rel="noopener noreferrer">
                              <div className="lg:w-4 w-3">
                                 <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -211,13 +211,13 @@ function AboutContent(){
                 
             </BentoCard>
             <BentoCard title={"Certificates"} icon={certificateIcon} className="relative">
-                <div className={`absolute right-5 z-999 top-37.5 bg-[#00000040] p-2 rounded-[100px] stroke-black transition duration-75 ease-in ${canCertificatesRight ? "cursor-pointer hover:stroke-[#3FA6F4] hover:bg-card":"cursor-not-allowed opacity-30 "}`} onClick={() => canCertificatesRight && scrollCarousel(certificatesRef, "right")}>
+                <div className={`absolute right-5 z-999 top-37.5 bg-[#00000040] p-2 rounded-[100px] stroke-black transition duration-75 ease-in ${canCertificatesRight ? "cursor-pointer hover:stroke-white hover:bg-[#3FA6F4]":"cursor-not-allowed opacity-30 "}`} onClick={() => canCertificatesRight && scrollCarousel(certificatesRef, "right")}>
                       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 24L20 16L12 8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
 
                   </div>
-                  <div className={`absolute left-5 rotate-180 top-37.5 bg-[#00000040] p-2 rounded-[100px] stroke-black transition duration-75 z-999 ease-in ${canCertificatesLeft ?"cursor-pointer hover:stroke-[#3FA6F4] hover:bg-card":"cursor-not-allowed opacity-30"}`} onClick={() => canCertificatesLeft && scrollCarousel(certificatesRef, "left")}>
+                  <div className={`absolute left-5 rotate-180 top-37.5 bg-[#00000040] p-2 rounded-[100px] stroke-black transition duration-75 z-999 ease-in ${canCertificatesLeft ?"cursor-pointer hover:stroke-white hover:bg-[#3FA6F4]":"cursor-not-allowed opacity-30"}`} onClick={() => canCertificatesLeft && scrollCarousel(certificatesRef, "left")}>
                       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 24L20 16L12 8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>

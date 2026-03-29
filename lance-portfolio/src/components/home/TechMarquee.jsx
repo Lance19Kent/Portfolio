@@ -27,7 +27,7 @@ const SkillsCards = ({
             </div>
           </figure>
           </TooltipTrigger>
-        <TooltipContent className="bg-[#0866FF] text-white dark:bg-zinc-100 dark:text-zinc-900 font-medium text-xs px-3 py-1.5 rounded-md shadow-md border-none ">
+        <TooltipContent className="bg-[#468cfc] text-white font-medium text-xs px-3 py-1.5 rounded-md shadow-md border-none ">
         <p>{skillName}</p>
         </TooltipContent>
     </Tooltip>
