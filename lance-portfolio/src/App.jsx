@@ -12,7 +12,7 @@ import BlogSelected from './pages/BlogSelected';
 import ProjectSelected from './pages/ProjectSelected';
 import OfflineNotice from './components/OfflineNotice';
 import Preloader from './components/Preloader';
-
+import { TooltipProvider } from './components/ui/tooltip';
 function App() { 
 
   const [isOnline, setIsOnline] = useState(navigator.onLine);
@@ -48,22 +48,25 @@ function App() {
   }
 
   return (
-    <Router>
-      <div className='flex bg-[#ECECEC] dark:bg-[#2e2e2e] flex-col lg:flex-row lg:h-screen overflow-hidden lg:gap-3 w-full'>
-      <Sidebar/>
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/projects" element={<Projects/>} />
-        <Route path="/achievements" element={<Achievements/>} />
-        <Route path="/blog" element={<Blog/>} />
-        <Route path="/resume" element={<Resume/>} />
-        <Route path="/blog-selected" element={<BlogSelected/>} />
-        <Route path="/projects-selected" element={<ProjectSelected/>} />
-      </Routes>
-      </div>
-    </Router>
-
+    <TooltipProvider>
+      <Router>
+        
+        <div className='flex bg-[#ECECEC] dark:bg-[#2e2e2e] flex-col lg:flex-row lg:h-screen overflow-hidden lg:gap-3 w-full'>
+        <Sidebar/>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/projects" element={<Projects/>} />
+          <Route path="/achievements" element={<Achievements/>} />
+          <Route path="/blog" element={<Blog/>} />
+          <Route path="/resume" element={<Resume/>} />
+          <Route path="/blog-selected" element={<BlogSelected/>} />
+          <Route path="/projects-selected" element={<ProjectSelected/>} />
+        </Routes>
+        </div>
+      </Router>
+    </TooltipProvider>
+  
   );
 }
 
