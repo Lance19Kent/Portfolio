@@ -51,7 +51,18 @@ function Content(){
     <div className="w-full flex flex-col gap-3 lg:p-0 p-3 lg:overflow-y-auto lg:no-scrollbar lg:py-3 select-none">
         <div className="w-full flex flex-col overflow-hidden bg-card rounded-[10px] relative shrink-0">
             <div className="w-full relative ">
-                <img src="./bg-homehead.png" className="w-full object-cover lg:h-55 h-48.5"></img>
+                <div className="w-full object-cover lg:h-55 h-48.5 dark:hidden relative">
+                    <video src="./cover-vids/cover-light-mode.mp4" autoPlay loop muted className="w-full h-full object-cover" />
+                    <div className="w-full h-full bg-black/20 absolute inset-0">
+
+                    </div>
+                </div>
+                <div className="w-full object-cover lg:h-55 h-48.5 hidden dark:block">
+                    <video src="./cover-vids/cover-dark-mode.mp4" autoPlay loop muted className="w-full h-full object-cover" />
+                    <div className="w-full h-full bg-black/20 absolute inset-0">
+
+                    </div>
+                </div>
                 <div className="flex z-20 absolute top-5 right-5 lg:gap-3 gap-2 items-center">
                     <div className="lg:w-5 w-3">
                         <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
