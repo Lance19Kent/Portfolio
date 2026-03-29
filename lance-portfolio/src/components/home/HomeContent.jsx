@@ -73,10 +73,10 @@ function Content(){
                         </svg>
                     </div>
                    
-                    <span className="font-medium text-white lg:text-[16px] text-[12px]">{currentDate}</span>
+                    <span className="font-medium text-white lg:text-[16px] text-[11px]">{currentDate}</span>
                 </div>
-                 <div className="absolute text-white top-1/2 lg:top-auto font-medium bottom-3 right-4 lg:text-[30px] text-[22px] z-10">
-                    <TypeAnimation sequence={[`Hello there Everyone!`, 5000,`Welcome to My Project Space.`,5000,`Want to collaborate a Project?`,5000,`We can discuss about it!`, 5000,`Have a Nice Day Everyone!`, 5000]}
+                 <div className="absolute text-white top-1/2 lg:top-auto font-medium bottom-3 right-4 lg:text-[30px] text-[18px] z-10">
+                    <TypeAnimation sequence={[`Welcome to my digital workspace!`, 2500,`I build clean web experiences.`,2500,`Always learning, always building.`, 2500,`Ready for new collaborations.`, 2500]}
                     
                     wrapper="span"
                     speed={20}
@@ -90,9 +90,9 @@ function Content(){
             </div>               
             
                 <div className="w-full py-5 gap-5 flex items-center lg:mt-0 justify-end lg:pr-4 mt-25">
-                    <div className="flex w-full lg:flex-row flex-col gap-4  justify-between lg:pl-48 items-center">
+                    <div className="flex w-full lg:flex-row flex-col gap-4  justify-between lg:pl-45 items-center">
                         <div className="flex flex-col items-center lg:items-start">
-                            <h1 className="font-semibold leading-6 lg:text-[20px] text-lg">Lance Kent Geoffrey B. Magollado</h1>
+                            <h1 className="font-semibold leading-6 lg:text-[21px] text-lg">Lance Kent Geoffrey B. Magollado</h1>
                             <span className="lg:text-[14px] text-sm text-semitext-ring">Aspiring Full-Stack Developer</span>
                         </div>
                         <Button className={"cursor-pointer text-white lg:text-[16px] text-sm font-light p-5 stroke-white bg-[#468cfc] hover:bg-[#629bf8] shadow-xs transition duration-200 ease-in"} asChild>

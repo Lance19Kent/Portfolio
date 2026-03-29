@@ -55,10 +55,17 @@ function AboutContent(){
         <div className="overflow-y-auto py-3 w-full gap-3 flex flex-col no-scrollbar">
             <div className="w-full select-none flex flex-col overflow-hidden bg-card rounded-[10px] relative shrink-0">
             <div className="w-full relative">
-                 <img src="./bg-header.png" className="w-full object-cover h-40 lg:h-auto"></img>
-                <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-0 rounded-t-[10px]"></div>
-                 <div className="absolute text-white font-medium bottom-3  right-4 text-[30px] z-10">
+                <div className="w-full object-cover h-40 lg:h-aut dark:hidden relative">
+                    <video src="./cover-vids/cover-light-mode.mp4" autoPlay loop muted className="w-full h-full object-cover" />
+                    <div className="w-full h-full bg-black/20 absolute inset-0">
+                    </div>
                 </div>
+                <div className="w-full object-cover h-40 lg:h-aut hidden dark:block">
+                    <video src="./cover-vids/cover-dark-mode.mp4" autoPlay loop muted className="w-full h-full object-cover" />
+                    <div className="w-full h-full bg-black/20 absolute inset-0">
+                    </div>
+                </div>
+
             </div>
        
 
