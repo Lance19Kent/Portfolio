@@ -1,21 +1,28 @@
-import { Link } from "react-router-dom";
+import { Link, useParams, Navigate } from "react-router-dom";
 import BentoCard from "../BentoCard";
+import { blogsData } from "@/data";
 
 function BlogSelectedContent(){
+    const {slug} = useParams();
+    const post = blogsData.find((b) =>b.slug === slug);
+
+    if(!post) return <Navigate to="/blog" replace/>
+
+    const paragraphs = post.content ? post.content.split("/n").filter(p =>p.trim() !=='') : [];
     return(
         <div className="w-full py-3 overflow-y-auto no-scrollbar">
             <BentoCard>
                 <div>
                     <div className="flex flex-col gap-5">
                         <Link to={"/blog"} >
-                            <div className="p-3 w-fit rounded-[100px] outline">
-                                <svg width="27" height="28" className="dark:invert" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16.8571 20.7143L10 13.8572L16.8571 7.00006" stroke="black" stroke-width="1.28571" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </div>
-                        </Link>
+                        <div className="p-2 w-fit rounded-[100px] outline-1 outline-zinc-200 dark:outline-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+                            <svg width="24" height="24" className="dark:invert" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.8571 20.7143L10 13.8572L16.8571 7.00006" stroke="black" strokeWidth="1.28571" strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
+                        </div>
+                    </Link>
                         <div className="flex flex-col gap-3">
-                            <h1 className="font-medium lg:text-4xl text-3xl leading-9">Earned JavaScript Certification</h1>
+                            <h1 className="font-medium lg:text-4xl text-3xl leading-9">{post.title}</h1>
                             <div className="flex items-center gap-2">
                                 <div className="lg:w-5 w-4.5">
                                       <svg  viewBox="0 0 23 23" fill="none" className="stroke-ring" xmlns="http://www.w3.org/2000/svg">
@@ -31,7 +38,7 @@ function BlogSelectedContent(){
                                     </svg>
                                 </div>
                                 
-                                <p className="font-light lg:text-base text-sm  text-ring">September 09, 2026</p>
+                                <p className="font-light lg:text-base text-sm  text-ring">{post.date}</p>
                             </div>
                         </div>
                     </div>

@@ -60,7 +60,7 @@ function App() {
           <Route path="/achievements" element={<Achievements/>} />
           <Route path="/blog" element={<Blog/>} />
           <Route path="/resume" element={<Resume/>} />
-          <Route path="/blog-selected" element={<BlogSelected/>} />
+          <Route path="/blog-selected/:slug" element={<BlogSelected/>} />
           <Route path="/projects-selected" element={<ProjectSelected/>} />
         </Routes>
         </div>
