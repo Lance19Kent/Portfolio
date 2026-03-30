@@ -156,7 +156,6 @@ export const skillsData = [
   },
 ]
 
-// Sa loob ng data.js
 export const blogsData = [
   {
     id: 1,
@@ -221,12 +220,12 @@ export const blogsData = [
   },
   {
     id: 3,
-    slug: "little-kowders-volunteer", // TWEAK: Inayos ko yung slug para mag-work yung dynamic routing!
+    slug: "little-kowders-volunteer", 
     title: "Little KOWders: My First Experience as a Volunteer Trainer",
     date: "November 19, 2025",
     thumbnail: "/blog-assets/little-kowder/little-kowder-thumbnail.jpg",
     contentImages: [
-      "/blog-assets/little-kowder/little-kowder-image1.jpg", // UX Note: Make sure to update these filenames!
+      "/blog-assets/little-kowder/little-kowder-image1.jpg",
       "/blog-assets/little-kowder/little-kowder-image2.jpg"
     ],
     content: [
@@ -249,4 +248,37 @@ export const blogsData = [
       { type: "quote", text: "Code builds applications, but sharing knowledge builds communities." }
     ]
   },
+  {
+    id: 3,
+    slug: "little-kowders-volunteer", 
+    title: "Little KOWders: My First Experience as a Volunteer Trainer",
+    date: "November 19, 2025",
+    thumbnail: "/blog-assets/little-kowder/little-kowder-thumbnail.jpg",
+    contentImages: [
+      "/blog-assets/little-kowder/little-kowder-image1.jpg",
+      "/blog-assets/little-kowder/little-kowder-image2.jpg"
+    ],
+    content: [
+      { type: "paragraph", text: "Technology is at its best when it is shared. While I spend countless hours staring at IDEs and building system architectures, I recently experienced a different, deeply rewarding side of tech: community building. This realization came during my very first stint as a Volunteer Trainer for 'Little KOWders,' an initiative aimed at teaching early learners in Barangay Sauyo, Quezon City." },
+      
+      { type: "paragraph", text: "This meaningful community engagement was made possible through the Quezon City University (QCU) Extension Management Office. I had the privilege of working alongside Sir Lenard F. Bien, the Acting Director and Head of the Community Engagement Unit, as well as my fellow League of Excellent Students in Information Technology (LESIT) members: Rommel Jose, Abigail Marquez, Meryl Alcantara, and Stefani Vienne Carcer. Together, we formed a solid team with a shared mission." },
+      
+      { type: "subtitle", text: "Empowering the Next Generation:" },
+      { type: "list", items: [
+          { keyword: "The Hour of Code:", text: " We introduced the kids to the fundamentals of programming through interactive, gamified learning to make logic-building fun." },
+          { keyword: "Demystifying AI:", text: " Through engaging videos and discussions, we explained how Artificial Intelligence works and its growing impact on the real world." },
+          { keyword: "Hands-on Mentorship:", text: " We guided the children through practical activities using tablets provided by the barangay, ensuring every kid got to experience the magic of tech firsthand." }
+      ]},
+      
+      { type: "paragraph", text: "Seeing the kids' faces light up as they understood AI concepts and completed their coding challenges was incredibly memorable. It wasn't just about teaching them technology; it was about sparking curiosity and showing them that they, too, can be creators in this digital age. Guiding them through these foundational steps was just as inspiring for me as it was for them." },
+      
+      { type: "paragraph", text: "I am immensely grateful to LESIT and QCU for granting me the opportunity to be part of this initiative. It taught me that being an IT professional isn't just about the software you build, but the community you uplift." },
+      
+      // THE MIC DROP QUOTE:
+      { type: "quote", text: "Code builds applications, but sharing knowledge builds communities." }
+    ]
+  },
+  
+  
+  
 ]

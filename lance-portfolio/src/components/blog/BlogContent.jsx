@@ -9,7 +9,9 @@ const blogIcon = <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xml
 
 function BlogContent(){
     const featuredPost = blogsData[0];
-    const otherPosts = blogsData.slice(1);
+    const otherPosts = blogsData.slice(1,3);
+
+  
 
     return(
         <div className=" w-full overflow-y-auto no-scrollbar overflow-hidden py-3">
