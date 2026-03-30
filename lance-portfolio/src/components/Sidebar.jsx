@@ -17,7 +17,7 @@ function Sidebar(){
         const faviconLink = document.getElementById('dynamic-favicon');
         if(faviconLink){
             faviconLink.type = "image/png";
-            faviconLink.href = isDarkMode ? "./me-nighttime-circle.png" :"./me-daytime-circle.png";
+            faviconLink.href = isDarkMode ? "/me-nighttime-circle.png" :"/me-daytime-circle.png";
         }
     }, [isDarkMode]);
 
@@ -76,7 +76,7 @@ function Sidebar(){
                         <div className="absolute animate-ping rounded-full h-full w-full bg-[#3FA6F4] opacity-10"></div>
                         <div className="absolute animate-ping rounded-full h-3/4 w-3/4 bg-[#3FA6F4] opacity-20 [animation-delay:0.3s]"></div>
                         <img 
-                        src="./me-daytime.png" 
+                        src="/me-daytime.png" 
                         alt="Avatar Day" 
                         className="relative rounded-full h-25 w-25 border-2 border-[#3FA6F4] shadow-[0_0_30px_10px_#3FA6F4A0]" 
                     />
@@ -94,7 +94,7 @@ function Sidebar(){
                         <div className="absolute animate-ping rounded-full h-3/4 w-3/4 bg-[#3FA6F4] opacity-20 [animation-delay:0.3s]"></div>
 
                         <img 
-                            src="./me-nighttime.png" 
+                            src="/me-nighttime.png" 
                             alt="Avatar Night" 
                             className="relative rounded-full h-25 w-25 border-2 border-[#3FA6F4] shadow-[0_0_30px_10px_#3FA6F4A0]" 
                         />

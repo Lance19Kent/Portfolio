@@ -163,8 +163,8 @@ export const blogsData = [
     title:"Apollo 2026: Blueprint of Insights",
     date:"September 09, 2026",
     thumbnail : "./blog-assets/thumbnails/apollo-2026-thumbnail.png",
-    contentImages : ["./blog-assets/blog-example.jpg","./blog-assets/blog-example2.jpg"],
-    content:"Nigga"
+    contentImages : ["/blog-assets/apollo/me-apollo.jpg","/blog-assets/apollo/apollo-groupie.jpg"],
+    content:"Every great application starts long before the first line of code is written. This was the core message I shared at Apollo 2026: Blueprint of Insights, where I had the incredible opportunity to step up as a resource speaker for the very first time.\nAs an IT student and aspiring full-stack developer, I have come to realize that deeply understanding a system's architecture is just as crucial as the code implementation itself. During my talk, we dove into the foundational elements of Logical Mapping in System Design. We explored the exact definitions, benefits, and practical workflows of essential tools like Flowcharts, Context Diagrams, Data Flow Diagrams (DFD), and Use Case Diagrams.\nBut I didn't want it to be just another theoretical lecture. To make the concepts truly stick, we went back to basics. I gave the attendees specific project scenarios, and we used good old pen and paper to manually draft system designs. Seeing my peers collaborate and translate complex logic into clear visual maps was the absolute highlight of the event. There is a profound kind of learning that happens when you map things out manually before ever touching a keyboard.\nThis milestone wouldn't have been possible without the trust and support of an amazing community. A massive thank you to QCU Batasan for your time and effort in making this event happen. I am deeply grateful to the League of Excellent Students in Information Technology (LESIT) for inviting me and trusting me with this platform. And, of course, a special shoutout to my friends who believed in me from day one. This may have been my first time speaking in front of a crowd, but it definitely will not be my last!"
   },
   {
     id: 2,

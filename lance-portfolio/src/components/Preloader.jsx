@@ -11,14 +11,14 @@ function Preloader() {
 
                 {/* LIGHT MODE AVATAR: Nakatago kapag dark mode */}
                 <img 
-                    src="./me-daytime.png" 
+                    src="/me-daytime.png" 
                     alt="Loading Day Avatar" 
                     className="relative block dark:hidden rounded-full h-full w-full object-cover border-2 border-zinc-400 shadow-[0_0_30px_10px_rgba(161,161,170,0.3)]" 
                 />
 
                 {/* DARK MODE AVATAR: Nakatago kapag light mode */}
                 <img 
-                    src="./me-nighttime.png" 
+                    src="/me-nighttime.png" 
                     alt="Loading Night Avatar" 
                     className="relative hidden dark:block rounded-full h-full w-full object-cover border-2 border-zinc-500 shadow-[0_0_30px_10px_rgba(82,82,91,0.4)]" 
                 />

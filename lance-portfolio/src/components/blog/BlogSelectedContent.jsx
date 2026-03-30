@@ -43,19 +43,15 @@ function BlogSelectedContent(){
                         </div>
                     </div>
                     <div className="w-full pt-10">
-                        <img src="./blog-assets/blog-example.jpg" alt="" className="w-full rounded-[10px]" />
+                        <img src={post.contentImages[0]} alt="" className="w-full rounded-[10px]" />
                     </div>
                     <div>
                         <p className="font-light lg:text-base text-sm leading-6 lg:leading-7 pt-6">
-                            Consistent Honor and Achievements - 90 above grades everyday year, and masters java and sql. Accumulated with High Honor with the average of 96. I learned what is truly my goal, my career path and created mindset that will help me achieve my goals.
-                            
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-
-                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                            {post.content}
                         </p>
                     </div>
                     <div className="pt-6">
-                        <img src="./blog-assets/blog-example2.jpg" alt="" className="rounded-[10px] " />
+                        <img src={post.contentImages[1]} alt="" className="rounded-[10px] " />
                     </div>
                         <div>
                         <p className="font-light lg:text-base text-sm leading-6 lg:leading-7 pt-6">
