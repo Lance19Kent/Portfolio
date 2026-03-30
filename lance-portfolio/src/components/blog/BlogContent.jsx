@@ -15,35 +15,35 @@ function BlogContent(){
         <div className=" w-full overflow-y-auto no-scrollbar overflow-hidden py-3">
             <BentoCard title={"Blogs"} icon={blogIcon}>
                 <div className="w-full grid grid-cols-1 gap-3">
-                    {featuredPost &&(
-                        <Link to={`./blog-selected/${featuredPost.slug}`} className="w-full cursor-pointer group">
-                        <div className="aspect-4/2 bg-[#DEDEDE] w-full rounded-t-[10px] overflow-hidden">
-                        {featuredPost.thumbnail &&(
-                            <img src={featuredPost.thumbnail} alt={featuredPost.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"></img>
-                        )}
-                        </div>
-                        <div className="w-full p-6 bg-secondary rounded-b-[10px]">
-                            <h1 className="font-semibold lg:text-[28px] text-[20px]">{featuredPost.title}</h1>
-                            <div className="flex items-center lg:gap-2 gap-1">
-                                <div className="lg:w-6 w-3">
-                                      <svg  viewBox="0 0 23 23" fill="none" className="stroke-ring" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_125_209)">
-                                        <path d="M11.4129 20.9234C16.6654 20.9234 20.9235 16.6653 20.9235 11.4127C20.9235 6.16016 16.6654 1.9021 11.4129 1.9021C6.16028 1.9021 1.90222 6.16016 1.90222 11.4127C1.90222 16.6653 6.16028 20.9234 11.4129 20.9234Z"  stroke-opacity="0.7" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M11.4127 5.7063V11.4127L9.51062 15.2169"  stroke-opacity="0.7" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </g>
-                                        <defs>
-                                        <clipPath id="clip0_125_209">
-                                        <rect width="22.8255" height="22.8255" fill="white"/>
-                                        </clipPath>
-                                        </defs>
-                                    </svg>
-                                </div>
-                                
-                                <p className="font-light lg:text-[16px] text-[12px] text-ring">{featuredPost.date}</p>
-                            </div>
-                        </div>
-                        </Link>
+                {featuredPost && (
+                    <Link to={`/blog-selected/${featuredPost.slug}`} className="relative w-full flex flex-col justify-end overflow-hidden rounded-2xl aspect-4/2.5 lg:aspect-5/3 cursor-pointer group shadow-sm hover:shadow-md transition-shadow">
+        
+                    {featuredPost.thumbnail ? (
+                        <img src={featuredPost.thumbnail} alt={featuredPost.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110" />
+                    ) : (
+                        <div className="absolute inset-0 w-full h-full bg-[#DEDEDE] dark:bg-zinc-800"></div>
                     )}
+
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#234170] via-black/45 to-transparent   transition-opacity duration-500"></div>
+
+                    <div className="relative z-10 w-full p-6 lg:p-8 flex flex-col gap-2">
+                        
+                        <div className="flex items-center lg:gap-2 gap-1.5 text-zinc-300">
+                            <div className="lg:w-4 w-3.5">
+                                <svg viewBox="0 0 23 23" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.4129 20.9234C16.6654 20.9234 20.9235 16.6653 20.9235 11.4127C20.9235 6.16016 16.6654 1.9021 11.4129 1.9021C6.16028 1.9021 1.90222 6.16016 1.90222 11.4127C1.90222 16.6653 6.16028 20.9234 11.4129 20.9234Z" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round"/>
+                                    <path d="M11.4127 5.7063V11.4127L9.51062 15.2169" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                            </div>
+                            <p className="font-medium lg:text-[14px] text-[12px] tracking-wide">{featuredPost.date}</p>
+                        </div>
+
+                        <h1 className="font-bold text-white lg:text-[32px] text-[24px] leading-tight drop-shadow-md">
+                            {featuredPost.title}
+                        </h1>
+                    </div>
+                </Link>
+            )}
                     
                     <div className="w-full grid grid-cols-2 gap-3">
                         <Link to={"/blog-selected"} className={"w-full cursor-pointer"}>
