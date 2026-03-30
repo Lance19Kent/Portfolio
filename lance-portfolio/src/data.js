@@ -155,3 +155,24 @@ export const skillsData = [
     skillName: "Node"
   },
 ]
+
+export const blogsData = [
+  {
+    id: 1,
+    slug:"apollo-2026-blueprint",
+    title:"Apollo 2026: Blueprint of Insights",
+    date:"September 09, 2026",
+    thumbnail : "./blog-assets/thumbnails/apollo-2026-thumbnail.png",
+    contentImages : ["./blog-assets/blog-example.jpg","./blog-assets/blog-example2.jpg"],
+    content:"Nigga"
+  },
+  {
+    id: 2,
+    slug:"obtained-first-certificate",
+    title:"Obtained First Technical Certificate",
+    date:"September 09, 2026",
+    thumbnail : "./blog-assets/thumbnails/apollo-2026-thumbnail.png",
+    contentImages : ["./blog-assets/blog-example.jpg","./blog-assets/blog-example2.jpg"],
+    content:"Nigga"
+  }
+]
