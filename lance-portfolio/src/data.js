@@ -192,10 +192,10 @@ export const blogsData = [
     slug: "fcc-responsive-certificate",
     title: "Building the Foundation: Earning My First Web Certificate",
     date: "November 24, 2024",
-    thumbnail: "/blog-assets/responsive-fcc/fcc-responsive-thumbnail.png",
+    thumbnail: "/blog-assets/responsive-fcc/fcc-thumbnail.png",
     contentImages: [
-      "/blog-assets/responsive-fcc/fcc-image.png",
-      "/achievements-logo/certificates/fcc-certificate.png"
+      "/blog-assets/responsive-fcc/fcc-image1.png",
+      "/blog-assets/responsive-fcc/fcc-image2.jpg"
     ],
     content: [
       { type: "paragraph", text: "Every developer has an origin story—that pivotal moment when curiosity turns into a structured learning path. For me, that journey officially began with the freeCodeCamp Responsive Web Design Certification. I had always been fascinated by 'A Day in the Life' vlogs of software engineers on YouTube, and a recurring piece of advice from industry professionals kept standing out: if you want to be a web developer, start building with freeCodeCamp." },
@@ -217,6 +217,36 @@ export const blogsData = [
       { type: "paragraph", text: "What makes freeCodeCamp exceptional is its hands-on approach. Instead of just watching tutorials, I was immediately thrust into practical laboratories and workshops, writing actual code to solve real problems. Building projects like the Tribute Page and the Product Landing Page forced me to apply theoretical concepts into tangible, working web structures." },
 
       { type: "paragraph", text: "This certification is more than just a digital credential; it is the bedrock of my web development journey. It gave me the confidence to transition from a consumer of technology to a creator. With my frontend layout skills firmly established, I am now actively pursuing my JavaScript Algorithms and Data Structures certification to bring these static pages to life. The journey continues!" }
+    ]
+  },
+  {
+    id: 3,
+    slug: "little-kowders-volunteer", // TWEAK: Inayos ko yung slug para mag-work yung dynamic routing!
+    title: "Little KOWders: My First Experience as a Volunteer Trainer",
+    date: "November 19, 2025",
+    thumbnail: "/blog-assets/little-kowder/little-kowder-thumbnail.jpg",
+    contentImages: [
+      "/blog-assets/little-kowder/little-kowder-image1.jpg", // UX Note: Make sure to update these filenames!
+      "/blog-assets/little-kowder/little-kowder-image2.jpg"
+    ],
+    content: [
+      { type: "paragraph", text: "Technology is at its best when it is shared. While I spend countless hours staring at IDEs and building system architectures, I recently experienced a different, deeply rewarding side of tech: community building. This realization came during my very first stint as a Volunteer Trainer for 'Little KOWders,' an initiative aimed at teaching early learners in Barangay Sauyo, Quezon City." },
+      
+      { type: "paragraph", text: "This meaningful community engagement was made possible through the Quezon City University (QCU) Extension Management Office. I had the privilege of working alongside Sir Lenard F. Bien, the Acting Director and Head of the Community Engagement Unit, as well as my fellow League of Excellent Students in Information Technology (LESIT) members: Rommel Jose, Abigail Marquez, Meryl Alcantara, and Stefani Vienne Carcer. Together, we formed a solid team with a shared mission." },
+      
+      { type: "subtitle", text: "Empowering the Next Generation:" },
+      { type: "list", items: [
+          { keyword: "The Hour of Code:", text: " We introduced the kids to the fundamentals of programming through interactive, gamified learning to make logic-building fun." },
+          { keyword: "Demystifying AI:", text: " Through engaging videos and discussions, we explained how Artificial Intelligence works and its growing impact on the real world." },
+          { keyword: "Hands-on Mentorship:", text: " We guided the children through practical activities using tablets provided by the barangay, ensuring every kid got to experience the magic of tech firsthand." }
+      ]},
+      
+      { type: "paragraph", text: "Seeing the kids' faces light up as they understood AI concepts and completed their coding challenges was incredibly memorable. It wasn't just about teaching them technology; it was about sparking curiosity and showing them that they, too, can be creators in this digital age. Guiding them through these foundational steps was just as inspiring for me as it was for them." },
+      
+      { type: "paragraph", text: "I am immensely grateful to LESIT and QCU for granting me the opportunity to be part of this initiative. It taught me that being an IT professional isn't just about the software you build, but the community you uplift." },
+      
+      // THE MIC DROP QUOTE:
+      { type: "quote", text: "Code builds applications, but sharing knowledge builds communities." }
     ]
   },
 ]

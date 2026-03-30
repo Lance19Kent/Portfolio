@@ -84,7 +84,7 @@ function BlogSelectedContent(){
 
                     {/* HEADER */}
                     <div className="flex flex-col gap-3">
-                        <h1 className="font-medium lg:text-4xl text-3xl leading-9">{post.title}</h1>
+                        <h1 className="font-semibold lg:text-4xl text-3xl leading-11">{post.title}</h1>
                         <div className="flex items-center gap-2">
                             <div className="lg:w-5 w-4.5">
                                   <svg viewBox="0 0 23 23" fill="none" className="stroke-ring" xmlns="http://www.w3.org/2000/svg">
