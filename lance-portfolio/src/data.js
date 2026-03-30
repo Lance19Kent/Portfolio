@@ -185,4 +185,34 @@ export const blogsData = [
         { type: "quote", text: "First, solve the problem. Then, write the code." }
     ]
   },
+  {
+    id: 2,
+    slug: "fcc-responsive-certificate",
+    title: "Building the Foundation: Earning My First Web Certificate",
+    date: "November 24, 2024",
+    thumbnail: "/blog-assets/responsive-fcc/fcc-responsive-thumbnail.png",
+    contentImages: [
+        "/blog-assets/responsive-fcc/fcc-image.png", // Tandaan: Palitan mo 'to ng actual screenshots ng fCC projects mo mamaya!
+        "/achievements-logo/certificates/fcc-certificate.png"
+    ],
+    content: [
+        { type: "paragraph", text: "Every developer has an origin story—that pivotal moment when curiosity turns into a structured learning path. For me, that journey officially began with the freeCodeCamp Responsive Web Design Certification. I had always been fascinated by 'A Day in the Life' vlogs of software engineers on YouTube, and a recurring piece of advice from industry professionals kept standing out: if you want to be a web developer, start building with freeCodeCamp." },
+        
+        { type: "paragraph", text: "Earning this certification wasn't just a weekend project. I tackled this rigorous curriculum from August to November of 2024, balancing it alongside my heavy academic workload as an IT student. It required late nights, intense focus, and serious time management, but I was determined to solidify my fundamentals." },
+        
+        { type: "quote", text: "Great web development isn't just about making things look good; it's about building structures that adapt seamlessly to any environment." },
+        
+        { type: "subtitle", text: "Core Technologies Mastered:" },
+        { type: "list", items: [
+            { keyword: "Semantic HTML5:", text: " Structuring content for accessibility and modern web standards." },
+            { keyword: "Advanced CSS3:", text: " Styling with precision, including complex animations and transforms." },
+            { keyword: "CSS Flexbox:", text: " Building dynamic, one-dimensional layouts efficiently." },
+            { keyword: "CSS Grid:", text: " Architecting complex, two-dimensional responsive web pages." }
+        ]},
+        
+        { type: "paragraph", text: "What makes freeCodeCamp exceptional is its hands-on approach. Instead of just watching tutorials, I was immediately thrust into practical laboratories and workshops, writing actual code to solve real problems. Building projects like the Tribute Page and the Product Landing Page forced me to apply theoretical concepts into tangible, working web structures." },
+        
+        { type: "paragraph", text: "This certification is more than just a digital credential; it is the bedrock of my web development journey. It gave me the confidence to transition from a consumer of technology to a creator. With my frontend layout skills firmly established, I am now actively pursuing my JavaScript Algorithms and Data Structures certification to bring these static pages to life. The journey continues!" }
+    ]
+  },
 ]
