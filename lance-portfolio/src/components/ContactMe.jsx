@@ -6,7 +6,7 @@ const contactIcon = <svg width="30" height="30" viewBox="0 0 30 30" fill="none" 
 
 function ContactMe(){
     return (
-        <div className="h-full">
+        <div className="">
             <BentoCard title="Contact Me" icon={contactIcon} className="h-full">
                 <div className="flex flex-col justify-between gap-10 h-full">
                     <ul className="flex gap-4 w-full flex-wrap">
