@@ -24,22 +24,54 @@ function AchievementCard({data, list}){
 
         <>
          <Dialog className={"w-full"} onOpenChange={(open) => { if (!open) setCurrentIndex(initialIndex) }}>
-            <DialogTrigger asChild className="flex select-none flex-col gap-1 transition ease-in duration-200 cursor-pointer group">
-                <div className="flex flex-col overflow-hidden">
-                    <div className="w-full aspect-5/3.5 bg-gray-200 dark:bg-[#5252523f]  p-1 rounded-[10px] overflow-hidden border-border">
-                        <img src={data.image} alt={data.title} className="w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-110"/>
-                    </div>
-                    <div className="w-full flex gap-3 p-2">
-                        <div className="w-6 ">
-                            <img src={data.issuerLogo} alt={data.issuer + " Logo"} />
-                        </div>
-                        <div className="flex flex-col w-full overflow-hidden">
-                            <div className="leading-5">
-                                <h1 className="font-semibold whitespace-nowrap overflow-hidden text-ellipsis text-[16px]">{data.title}</h1>
-                                <p className=" text-[14px]">{data.issuer}</p>
-                            </div>
+            <DialogTrigger asChild className="w-full flex select-none flex-col transition-all ease-in duration-300 cursor-pointer group outline-none">
+                {/* THE PREMIUM CARD WRAPPER */}
+                <div className="flex flex-col w-full bg-white dark:bg-zinc-900/40 rounded-[12px]  transition-all duration-300 overflow-hidden relative">
+                    
+                    {/* THE IMAGE CONTAINER (Fixed Aspect Ratio) */}
+                    <div className="w-full aspect-4/3 bg-zinc-50 dark:bg-zinc-800/50 overflow-hidden relative border border-zinc-200 dark:border-zinc-800 rounded-2xl">
+                        <img 
+                            src={data.image} 
+                            alt={data.title} 
+                            className="w-full h-full object-contain p-2 transition-transform duration-500 ease-out "
+                        />
 
-                            <p className="font-light text-[12px] text-ring">Issued on {data.date}</p>
+                        <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out pointer-events-none"></div>
+
+                        {/* "View Credential" Overlay */}
+                        <div className="absolute bottom-3 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-center gap-1.5 text-white z-10">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            <span className="text-[12px] font-medium tracking-wide">View Certificate</span>
+                        </div>
+                    </div>
+
+
+                    <div className="py-4 flex gap-3 items-start bg-card flex-1">
+                        
+                        {/* Issuer Logo Box */}
+                        <div className="w-8 h-8 rounded-md bg-white dark:bg-zinc-800 flex-shrink-0 overflow-hidden border border-zinc-200 dark:border-zinc-700 flex items-center justify-center p-0.5 shadow-sm">
+                            <img src={data.issuerLogo} alt={data.issuer + " Logo"} className="w-full h-full object-contain" />
+                        </div>
+
+                        {/* Text Content */}
+                        <div className="flex flex-col gap-1.5  h-full">
+                            <div className="flex flex-col leading-3">
+                                <h1 className="font-semibold text-[15px] text-zinc-900 dark:text-zinc-100 leading-snug line-clamp-1" title={data.title}>
+                                    {data.title}
+                                </h1>
+                                <p className="text-[13px] text-zinc-600 dark:text-zinc-400 font-medium mt-0.5">
+                                    {data.issuer}
+                                </p>
+                            </div>
+                            
+                            <div className="flex gap-1.5 items-center mt-1 ">
+                                <svg width="12" height="12" className="text-zinc-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                <p className="text-[11px] text-zinc-500 dark:text-zinc-400 line-clamp-1">
+                                    Issued {data.date}
+                                </p>
+                            </div>
                         </div>
 
                     </div>
