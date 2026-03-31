@@ -158,30 +158,27 @@ function AboutContent(){
                 </div>
                 
             </BentoCard>
-            <BentoCard title={"Certificates"} icon={certificateIcon} className="relative">
-                <div className={`absolute right-5 z-9 top-37.5 bg-[#00000040] p-2 rounded-[100px] stroke-black transition duration-75 ease-in ${canCertificatesRight ? "cursor-pointer hover:stroke-white hover:bg-[#3FA6F4]":"cursor-not-allowed opacity-30 "}`} onClick={() => canCertificatesRight && scrollCarousel(certificatesRef, "right")}>
-                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 24L20 16L12 8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-
-                  </div>
-                  <div className={`absolute left-5 rotate-180 top-37.5 bg-[#00000040] p-2 rounded-[100px] stroke-black transition duration-75 z-9 ease-in ${canCertificatesLeft ?"cursor-pointer hover:stroke-white hover:bg-[#3FA6F4]":"cursor-not-allowed opacity-30"}`} onClick={() => canCertificatesLeft && scrollCarousel(certificatesRef, "left")}>
-                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 24L20 16L12 8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                  </div>
-              <div className="flex flex-col gap-4 items-center">
-                <div className="w-full flex gap-3 overflow-x-auto no-scrollbar justify-between" ref={certificatesRef} onScroll={()=> handleScroll(certificatesRef, setcanCertificatesLeft, setcanCertificatesRight)}>
-                  {featuredCertificates.map((cert)=>(
-                    <div key={cert.id} className="w-65 lg:w-55 shrink-0">
-                        <AchievementCard data={cert} list={featuredCertificates}/>
-                    </div>
-                  ))}
+           <BentoCard title={"Certificates"} icon={certificateIcon} >
+            <div className="flex flex-col gap-6">
+                <div className="flex flex-col w-full gap-5 lg:pr-2">
+                    {achievementsData.slice(0, 5).map((cert, index) => (
+                        <div 
+                            key={cert.id} 
+                            className={`flex flex-col w-full ${index !== achievementsData.slice(0,5).length - 1 ? 'border-b border-zinc-100 dark:border-zinc-800/80 pb-5' : ''}`}
+                        >
+                            {/* THE MAGIC SAUCE: Ginamit natin yung component at sinet ang variant="list" */}
+                            <AchievementCard 
+                                data={cert} 
+                                list={achievementsData.slice(0, 5)} 
+                                variant="list"
+                            />
+                        </div>
+                    ))}
                 </div>
-                <Link to={"/achievements"} className="text-center block text-[#3FA6F4] hover:underline lg:text-base text-sm">See More</Link>
-              </div>
-               
-            </BentoCard>
+                <Link to={"/achievements"} className="text-center block text-[#3FA6F4] hover:underline lg:text-[15px] text-sm">See More</Link>
+            </div>
+        </BentoCard>
+        
         </div>
     )
 }
