@@ -66,9 +66,6 @@ function BlogContent(){
 
                             {/* Text Content (Mas maliit na padding at font para sa smaller cards) */}
                             <div className="relative z-10 w-full p-4 flex flex-col gap-1">
-                                <h1 className="font-bold text-white lg:text-[18px] text-[14px] leading-tight drop-shadow-md line-clamp-2">
-                                    {post.title}
-                                </h1>
                                 <div className="flex items-center gap-1.5 text-zinc-300">
                                     <div className="w-3">
                                         <svg viewBox="0 0 23 23" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -78,6 +75,10 @@ function BlogContent(){
                                     </div>
                                     <p className="font-medium text-[10px] tracking-wide">{post.date}</p>
                                 </div>
+                                <h1 className="font-bold text-white lg:text-[18px] text-[14px] leading-tight drop-shadow-md line-clamp-2">
+                                    {post.title}
+                                </h1>
+                                
                             </div>
                         </Link>
                     ))}

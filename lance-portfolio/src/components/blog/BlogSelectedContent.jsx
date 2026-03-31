@@ -1,10 +1,20 @@
 import { Link, useParams, Navigate } from "react-router-dom";
 import BentoCard from "../BentoCard";
 import { blogsData } from "@/data";
+import { useEffect, useRef } from "react";
 
 function BlogSelectedContent(){
     const {slug} = useParams();
     const post = blogsData.find((b) => b.slug === slug);
+
+    const scrollContainerRef = useRef(null);
+    useEffect(() => {
+        window.scrollTo(0, 0); 
+        
+        if (scrollContainerRef.current) {
+            scrollContainerRef.current.scrollTo(0, 0);
+        }
+    }, [slug]);
 
     if(!post) return <Navigate to="/blog" replace/>
 
@@ -84,9 +94,9 @@ function BlogSelectedContent(){
     const secondHalfContent = post.content ? post.content.slice(halfLength) : [];
 
     return(
-        <div className="w-full py-3 overflow-y-auto no-scrollbar">
+        <div className="w-full py-3 overflow-y-auto no-scrollbar" ref={scrollContainerRef}>
             <BentoCard>
-                <div className="flex flex-col gap-5">
+                <div className="flex flex-col gap-5" key={slug}>
                     
                     {/* BACK BUTTON */}
                     <Link to={"/blog"} >

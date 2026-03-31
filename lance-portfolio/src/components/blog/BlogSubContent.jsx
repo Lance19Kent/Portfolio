@@ -53,9 +53,9 @@ function BlogSubContent(){
                                 )}
                         </div>
                         <div className="w-full p-3 bg-secondary rounded-r-[10px] flex flex-col gap-1 justify-center lg:justify-start">
-                            <h1 className="font-semibold lg:text-[16px] text-[14px] line-clamp-3">{post.title}</h1>
+                            <h1 className="font-semibold lg:text-[15px] text-[14px] line-clamp-3">{post.title}</h1>
                             <div className="flex items-center gap-1">
-                                <div className="lg:w-4 w-3">
+                                <div className="lg:w-3 w-3">
                                       <svg  viewBox="0 0 23 23" fill="none" className="stroke-ring" xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_125_209)">
                                         <path d="M11.4129 20.9234C16.6654 20.9234 20.9235 16.6653 20.9235 11.4127C20.9235 6.16016 16.6654 1.9021 11.4129 1.9021C6.16028 1.9021 1.90222 6.16016 1.90222 11.4127C1.90222 16.6653 6.16028 20.9234 11.4129 20.9234Z"  stroke-opacity="0.7" stroke-width="1.90213" stroke-linecap="round" stroke-linejoin="round"/>
