@@ -34,10 +34,10 @@ function AchievementCard({ data, list, variant = "card" }) {
                             <img src={data.image} alt={data.title} className="w-full h-full object-contain p-2 transition-transform duration-500 ease-out " />
                             <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out pointer-events-none"></div>
                             <div className="absolute bottom-3 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-center gap-1.5 text-white z-10">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
                                 </svg>
-                                <span className="text-[12px] font-medium tracking-wide">View Certificate</span>
+                                <span className="text-[13px] font-medium tracking-wide">View Certificate</span>
                             </div>
                         </div>
 
@@ -47,16 +47,15 @@ function AchievementCard({ data, list, variant = "card" }) {
                             </div>
                             <div className="flex flex-col gap-1.5  h-full">
                                 <div className="flex flex-col leading-3">
-                                    <h1 className="font-semibold text-[15px] text-zinc-900 dark:text-zinc-100 leading-snug line-clamp-1" title={data.title}>
+                                    <h1 className="font-semibold text-[16px] text-zinc-900 dark:text-zinc-100 leading-snug line-clamp-1" title={data.title}>
                                         {data.title}
                                     </h1>
-                                    <p className="text-[13px] text-zinc-600 dark:text-zinc-400 font-medium mt-0.5">
+                                    <p className="text-[14px] text-zinc-600 dark:text-zinc-400 font-medium mt-0.5">
                                         {data.issuer}
                                     </p>
                                 </div>
                                 <div className="flex gap-1.5 items-center mt-1 ">
-                                    <svg width="12" height="12" className="text-zinc-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                                    <p className="text-[11px] text-zinc-500 dark:text-zinc-400 line-clamp-1">
+                                    <p className="text-[12px] text-zinc-500 dark:text-zinc-400 line-clamp-1">
                                         Issued {data.date}
                                     </p>
                                 </div>
@@ -65,9 +64,7 @@ function AchievementCard({ data, list, variant = "card" }) {
                     </div>
                 </DialogTrigger>
             ) : (
-                // -------------------------------------------------------------
-                // VARIANT 2: THE ABOUT PAGE LIST (LinkedIn Style)
-                // -------------------------------------------------------------
+
                 <div className="flex flex-col w-full outline-none">
                     <div className="flex gap-4 items-start">
                         <div className="w-12 h-12 bg-white dark:bg-zinc-900 rounded-md  border border-zinc-200 dark:border-zinc-800 p-1.5 shrink-0 flex items-center justify-center">
