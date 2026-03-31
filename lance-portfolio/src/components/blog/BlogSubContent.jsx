@@ -25,12 +25,12 @@ function BlogSubContent(){
                    {recentPosts.length > 0 ? (
                      recentPosts.map((post)=>(
                  <Link key={post.id} to={`/blog-selected/${post.slug}`} className="w-full flex cursor-pointer group">
-                        <div className="lg:aspect-4/2 aspect-square bg-[#DEDEDE] dark:bg-zinc-800 w-1/3 lg:w-75 min-w-20 rounded-l-[10px] overflow-hidden relative">
+                        <div className="lg:aspect-4/2 aspect-square bg-[#DEDEDE] dark:bg-zinc-800 w-3/4 lg:w-75 min-w-20 rounded-l-[10px] overflow-hidden relative">
                                 {post.thumbnail && (
                                     <img src={post.thumbnail} alt={post.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                                 )}
                         </div>
-                        <div className="w-full p-3 bg-secondary rounded-r-[10px] flex flex-col gap-1 ">
+                        <div className="w-full p-3 bg-secondary rounded-r-[10px] flex flex-col gap-1 justify-center lg:justify-start">
                             <h1 className="font-semibold lg:text-[16px] text-[14px] line-clamp-3">{post.title}</h1>
                             <div className="flex items-center gap-1">
                                 <div className="lg:w-4 w-3">

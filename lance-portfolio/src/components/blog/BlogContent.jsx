@@ -42,7 +42,7 @@ function BlogContent(){
                                 </div>
                                 <p className="font-medium lg:text-[14px] text-[12px] tracking-wide">{featuredPost.date}</p>
                             </div>
-                            <h1 className="font-bold text-white lg:text-[28px] text-[22px] leading-tight drop-shadow-md">
+                            <h1 className="font-bold text-white lg:text-[28px] text-[22px] leading-tight drop-shadow-md line-clamp-2">
                                 {featuredPost.title}
                             </h1>
                         </div>
