@@ -44,9 +44,9 @@ function ResumeContent(){
     return (
         <div className="w-full h-full lg:pr-3 px-3 lg:px-0 py-3 overflow-y-auto no-scrollbar overflow-hidden flex flex-col gap-3"> 
             <BentoCard title={"Resume"} icon={resumeIcon} className="w-full relative gap-4 lg:gap-8"> 
-                <Button variant="outline" className={"absolute top-5 right-4.5 cursor-pointer lg:p-6 lg:text-[16px] text-sm text-muted-foreground hover:text-muted-foreground z-10"} asChild>
+                <Button className={"absolute top-5 right-4.5 cursor-pointer lg:p-6 lg:text-[16px] text-sm text-white hover:bg-[#629bf8] z-10 bg-[#468cfc] stroke-white"} asChild>
                     <a href="/Magollado-Lance-Kent-Geoffrey-Resume.pdf" download={"Lance_Kent_Geoffrey_B_Magollado_Resume.pdf"}>
-                        <svg width="24" height="24" viewBox="0 0 24 24" className="stroke-muted-foreground" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="24" height="24" viewBox="0 0 24 24"  fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 15V3"  strokeOpacity="1" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                             <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15"  strokeOpacity="1" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                             <path d="M7 10L12 15L17 10"  strokeOpacity="1" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
