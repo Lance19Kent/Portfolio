@@ -160,7 +160,7 @@ export const blogsData = [
   {
     id: 1,
     slug: "apollo-2026-blueprint",
-    title: "Apollo 2026: Blueprint of Insights",
+    title: "Stepping Up to the Stage: My First Talk on System Architecture at Apollo 2026",
     date: "February 09, 2026",
     thumbnail: "/blog-assets/thumbnails/apollo-2026-thumbnail.png",
     contentImages: [
@@ -284,7 +284,7 @@ export const blogsData = [
       { type: "quote", text: "True design isn't generated; it is engineered through empathy, pressure, and human collaboration." }
     ]
   },
- {
+  {
     id: 5, 
     slug: "first-event-gdg", 
     title: "GDG I/O Extended 2025: Reigniting Myself",
@@ -316,6 +316,64 @@ export const blogsData = [
       { type: "quote", text: "Burnout is cured not by stopping, but by finding a new reason to keep building." }
     ]
   },
-  
-  
+  {
+    id: 6, 
+    slug: "sfd-open-source", 
+    title: "Software Freedom Day: Tara, Mag Open Source Tayo!",
+    date: "September 20, 2025", 
+    thumbnail: "/blog-assets/sfd/sfd-thumbnail.png",
+    contentImages: [
+      "/blog-assets/sfd/sfd-image1.jpg", 
+      "/blog-assets/sfd/sfd-image2.jpg"
+    ],
+    content: [
+      { type: "paragraph", text: "The tech industry isn't just built on proprietary code and closed ecosystems; its true foundation lies in collaboration. I recently had the incredible opportunity to dive deep into this philosophy by attending Software Freedom Day 2025 at Yspaces, BGC. Hosted by the WordPress User Group Philippines, it was an eye-opening experience dedicated to celebrating Free and Open Source Software (FOSS)." },
+      
+      { type: "paragraph", text: "I didn't go alone. I was joined by my fellow tech enthusiasts—Christopher, Ronan, Julius, JV, and John Rey. Experiencing this with a solid group of peers made the insights we gained even more impactful, as we spent the day absorbing knowledge from industry veterans." },
+      
+      { type: "subtitle", text: "Key Insights from the Experts:" },
+      { type: "list", items: [
+          { keyword: "The Open Web:", text: " Sir Robert 'Bob' Reyes (Community Lead, Mozilla Firefox) kicked things off by detailing Mozilla's journey. It was a powerful reminder of how open-source browsers act as the frontline defense for internet freedom and user privacy." },
+          { keyword: "Terminal Velocity:", text: " Sir Cyrus 'Cy' Mante (AI/ML Analyst, Accenture) shifted our perspective on workflows. His hands-on session demonstrated the raw power and efficiency of relying on terminal tools over juggling multiple GUI applications." },
+          { keyword: "Open Source in Governance:", text: " Sir Voj Jeturian (CMD Engineer, Pantheon Systems Inc.) showcased the Open Source Government Web Template (GWT), proving how accessible tech can drastically improve transparency and public service efficiency." }
+      ]},
+      
+      { type: "paragraph", text: "Beyond the main stage, the event featured a 'Happiness Bar' breakout session. Here, we had a localized, deeply inspiring conversation with Ma'am Michelle Chua-Lagare. We discussed the evolving landscape of software quality in the age of AI. Her advice resonated strongly: we must transcend being mere 'coders' to become holistic problem solvers, testers, and security advocates." },
+      
+      { type: "paragraph", text: "The day concluded with passionate developers showcasing their personal FOSS projects. Witnessing how individuals use open tools to build community-driven solutions was the perfect capstone to the event. It reinforced my belief that the best way to grow as an aspiring IT professional is to actively participate in and give back to the tech community." },
+
+      // THE MIC DROP QUOTE:
+      { type: "quote", text: "We are not just coders; we are problem solvers, quality advocates, and architects of the open web." }
+    ]
+  },
+  {
+    id: 7, 
+    slug: "youth-summit-2024", 
+    title: "you",
+    date: "September 20, 2025", 
+    thumbnail: "/blog-assets/sfd/sfd-thumbnail.png",
+    contentImages: [
+      "/blog-assets/sfd/sfd-image1.jpg", 
+      "/blog-assets/sfd/sfd-image2.jpg"
+    ],
+    content: [
+      { type: "paragraph", text: "The tech industry isn't just built on proprietary code and closed ecosystems; its true foundation lies in collaboration. I recently had the incredible opportunity to dive deep into this philosophy by attending Software Freedom Day 2025 at Yspaces, BGC. Hosted by the WordPress User Group Philippines, it was an eye-opening experience dedicated to celebrating Free and Open Source Software (FOSS)." },
+      
+      { type: "paragraph", text: "I didn't go alone. I was joined by my fellow tech enthusiasts—Christopher, Ronan, Julius, JV, and John Rey. Experiencing this with a solid group of peers made the insights we gained even more impactful, as we spent the day absorbing knowledge from industry veterans." },
+      
+      { type: "subtitle", text: "Key Insights from the Experts:" },
+      { type: "list", items: [
+          { keyword: "The Open Web:", text: " Sir Robert 'Bob' Reyes (Community Lead, Mozilla Firefox) kicked things off by detailing Mozilla's journey. It was a powerful reminder of how open-source browsers act as the frontline defense for internet freedom and user privacy." },
+          { keyword: "Terminal Velocity:", text: " Sir Cyrus 'Cy' Mante (AI/ML Analyst, Accenture) shifted our perspective on workflows. His hands-on session demonstrated the raw power and efficiency of relying on terminal tools over juggling multiple GUI applications." },
+          { keyword: "Open Source in Governance:", text: " Sir Voj Jeturian (CMD Engineer, Pantheon Systems Inc.) showcased the Open Source Government Web Template (GWT), proving how accessible tech can drastically improve transparency and public service efficiency." }
+      ]},
+      
+      { type: "paragraph", text: "Beyond the main stage, the event featured a 'Happiness Bar' breakout session. Here, we had a localized, deeply inspiring conversation with Ma'am Michelle Chua-Lagare. We discussed the evolving landscape of software quality in the age of AI. Her advice resonated strongly: we must transcend being mere 'coders' to become holistic problem solvers, testers, and security advocates." },
+      
+      { type: "paragraph", text: "The day concluded with passionate developers showcasing their personal FOSS projects. Witnessing how individuals use open tools to build community-driven solutions was the perfect capstone to the event. It reinforced my belief that the best way to grow as an aspiring IT professional is to actively participate in and give back to the tech community." },
+
+      // THE MIC DROP QUOTE:
+      { type: "quote", text: "We are not just coders; we are problem solvers, quality advocates, and architects of the open web." }
+    ]
+  },
 ]
