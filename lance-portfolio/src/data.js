@@ -248,34 +248,40 @@ export const blogsData = [
       { type: "quote", text: "Code builds applications, but sharing knowledge builds communities." }
     ]
   },
-  {
-    id: 3,
-    slug: "little-kowders-volunteer", 
-    title: "Little KOWders: My First Experience as a Volunteer Trainer",
-    date: "November 19, 2025",
-    thumbnail: "/blog-assets/little-kowder/little-kowder-thumbnail.jpg",
+ {
+    id: 4, 
+    slug: "nyx-figmathon-evante", 
+    title: "Design IT: 2nd Runner-Up with E'vante",
+    date: "November 18, 2026", // Note: Nilagay mo 2026 sa prompt mo, adjust if 2025 talaga
+    thumbnail: "/blog-assets/nyx/nyx-thumbnail.jpg",
     contentImages: [
-      "/blog-assets/little-kowder/little-kowder-image1.jpg",
-      "/blog-assets/little-kowder/little-kowder-image2.jpg"
+      "/blog-assets/nyx/nyx-image1.jpg", // TWEAK: Update with actual screenshots of your design
+      "/blog-assets/nyx/nyx-image2.jpg"
     ],
     content: [
-      { type: "paragraph", text: "Technology is at its best when it is shared. While I spend countless hours staring at IDEs and building system architectures, I recently experienced a different, deeply rewarding side of tech: community building. This realization came during my very first stint as a Volunteer Trainer for 'Little KOWders,' an initiative aimed at teaching early learners in Barangay Sauyo, Quezon City." },
+      { type: "paragraph", text: "As a developer, my comfort zone usually lies within lines of code and IDEs. But on November 18, 2026, I stepped completely out of that zone and into the high-pressure world of competitive UI/UX design. I joined 'Design IT: A Group-Based Web Design Contest Using Figma'—a core event of The Nyx Project 2026: Dreamers of Night, IT Arise." },
       
-      { type: "paragraph", text: "This meaningful community engagement was made possible through the Quezon City University (QCU) Extension Management Office. I had the privilege of working alongside Sir Lenard F. Bien, the Acting Director and Head of the Community Engagement Unit, as well as my fellow League of Excellent Students in Information Technology (LESIT) members: Rommel Jose, Abigail Marquez, Meryl Alcantara, and Stefani Vienne Carcer. Together, we formed a solid team with a shared mission." },
+      { type: "paragraph", text: "This wasn't your typical design jam. The rules were strict: absolutely no AI tools allowed. It was a true test of raw creativity, rapid prototyping, and design thinking under immense time constraints. I teamed up with two incredibly talented individuals, Ronan M. Sanico and Elizar Ayuyang. Together, we faced off against 9 other competitive teams." },
       
-      { type: "subtitle", text: "Empowering the Next Generation:" },
+      { type: "subtitle", text: "The Challenge: E'vante Event Management" },
+      { type: "paragraph", text: "The contest featured a roulette system that dictated our project theme on the spot. Fate handed us the 'Event Management' category. We conceptualized 'E'vante'—an extravagant, classy, and high-end event planning platform designed for luxurious experiences. We had to immediately align on a visual identity: deep, sophisticated color palettes, elegant typography, and a seamless, premium user flow." },
+      
       { type: "list", items: [
-          { keyword: "The Hour of Code:", text: " We introduced the kids to the fundamentals of programming through interactive, gamified learning to make logic-building fun." },
-          { keyword: "Demystifying AI:", text: " Through engaging videos and discussions, we explained how Artificial Intelligence works and its growing impact on the real world." },
-          { keyword: "Hands-on Mentorship:", text: " We guided the children through practical activities using tablets provided by the barangay, ensuring every kid got to experience the magic of tech firsthand." }
+          { keyword: "Rapid Prototyping:", text: " Translating abstract ideas into high-fidelity Figma screens within a tight deadline." },
+          { keyword: "Pure Design Thinking:", text: " Relying solely on our fundamental understanding of layout, contrast, and UX principles without AI generation." },
+          { keyword: "The Pitch:", text: " Presenting and defending our design decisions live in front of a panel of judges from the IT field." }
       ]},
       
-      { type: "paragraph", text: "Seeing the kids' faces light up as they understood AI concepts and completed their coding challenges was incredibly memorable. It wasn't just about teaching them technology; it was about sparking curiosity and showing them that they, too, can be creators in this digital age. Guiding them through these foundational steps was just as inspiring for me as it was for them." },
+      { type: "paragraph", text: "The pressure of simultaneously designing and preparing a pitch was intense, but the synergy within our team made it an amazing experience. We pushed through the challenges and ultimately secured the 2nd Runner-Up (3rd Place) spot! I want to express my deepest gratitude to Ronan and Elizar for their hard work, and to the League of Excellent Students in Information Technology (LESIT) for organizing such a rigorous and rewarding event." },
       
-      { type: "paragraph", text: "I am immensely grateful to LESIT and QCU for granting me the opportunity to be part of this initiative. It taught me that being an IT professional isn't just about the software you build, but the community you uplift." },
-      
-      // THE MIC DROP QUOTE:
-      { type: "quote", text: "Code builds applications, but sharing knowledge builds communities." }
+      { type: "paragraph", text: "This Figmathon taught me invaluable lessons about collaborative design, working under pressure, and trusting my creative instincts. It proved that a great interface starts with human empathy and solid design fundamentals." },
+
+      { type: "button-group", links: [
+          { label: "View Figma File", url: "https://www.figma.com/design/CJEwOsprFDe9QwXQWJqkRH/Group-3-Event-Management-System?node-id=0-1&t=0yabS5cteBKdDuPI-1" },
+          { label: "Watch Live Demo", url: "YOUR_VIDEO_LINK_HERE" }
+      ]},
+
+      { type: "quote", text: "True design isn't generated; it is engineered through empathy, pressure, and human collaboration." }
     ]
   },
   

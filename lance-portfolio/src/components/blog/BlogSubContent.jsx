@@ -46,7 +46,7 @@ function BlogSubContent(){
                                         </defs>
                                     </svg>
                                 </div>
-                                <p className="font-light lg:text-[12px] text-[10px] text-ring">September 09, 2026</p>
+                                <p className="font-light lg:text-[12px] text-[10px] text-ring">{post.date}</p>
                             </div>
                         </div>
                     </Link>

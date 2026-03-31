@@ -47,7 +47,6 @@ function BlogSelectedContent(){
                         </ul>
                     );
                 
-                // NEW: THE APPLE APP STORE QUOTE BLOCK
                 case 'quote':
                     return (
                         <div key={index} className="my-8 p-6 lg:p-8 bg-zinc-50 dark:bg-zinc-800/50 rounded-2xl border-l-4 border-[#468cfc]">
@@ -59,6 +58,22 @@ function BlogSelectedContent(){
 
                 case 'bold':
                      return <p key={index} className="font-medium lg:text-[16px] text-[15px] leading-relaxed pt-5 text-zinc-900 dark:text-white">{block.text}</p>;
+                case 'button-group':
+                return (
+                    <div key={index} className="flex flex-wrap gap-4 pt-6 pb-2">
+                        {block.links.map((link, i) => (
+                            <a 
+                                key={i} 
+                                href={link.url} 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="px-6 py-3 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-medium text-sm rounded-full hover:bg-zinc-900/90 duration-500 ease-out transition shadow-md"
+                            >
+                                {link.label}
+                            </a>
+                        ))}
+                    </div>
+                );
                 default:
                     return null;
             }
