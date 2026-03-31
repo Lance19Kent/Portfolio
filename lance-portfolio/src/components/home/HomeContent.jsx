@@ -1,6 +1,6 @@
 import { Button } from "../ui/button"
 import { TypeAnimation } from "react-type-animation";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import BentoCard from "../BentoCard";
 import { achievementsData, skillsData } from "@/data";
 import { blogsData } from "@/data";
@@ -48,6 +48,26 @@ function Content(){
 
         return () => clearInterval(intervalId);
     })
+
+     // For Highlight Section
+        const highlightsRef = useRef(null);
+        const [canHighlightsLeft, setcanHighlightsLeft] = useState(false);
+        const [canHighlightsRight, setcanHighlightsRight] = useState(true);
+
+    const scrollCarousel = (ref, direction) =>{
+      if(ref.current){
+        const scrollAmount = direction === "left" ? -300 : 300;
+        ref.current.scrollBy({left:scrollAmount, behavior:'smooth'});
+      }
+    }
+
+    const handleScroll = (ref, setLeft, setRight) =>{
+      if(ref.current){
+        const {scrollLeft, scrollWidth, clientWidth} = ref.current;
+        setLeft(scrollLeft >0);
+        setRight(scrollLeft + clientWidth < scrollWidth - 1);
+      }
+    }
 
     return (
     <div className="w-full flex flex-col gap-3 lg:p-0 p-3 lg:overflow-y-auto lg:no-scrollbar lg:py-3 select-none">
@@ -217,14 +237,26 @@ function Content(){
                 </div>
             </div>
         </BentoCard>
-     <BentoCard icon={highlightsIcon} title={"Highlights"}>
-            <div className="grid lg:grid-cols-3 grid-cols-1 w-full gap-3">
+         <BentoCard icon={highlightsIcon} title={"Highlights"} className="relative">
+            <div className={`absolute right-5 z-10 top-37.5 bg-[#00000040] p-2 rounded-[100px] stroke-black transition duration-75 ease-in ${canHighlightsRight ? "cursor-pointer hover:stroke-white hover:bg-[#3FA6F4]":"cursor-not-allowed opacity-30 "}`} onClick={() => canHighlightsRight && scrollCarousel(highlightsRef,"right")}>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 24L20 16L12 8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
+            </div>
+            <div className={`absolute left-5 z-10 rotate-180 top-37.5 bg-[#00000040] p-2 rounded-[100px] stroke-black transition duration-75 ease-in ${canHighlightsLeft ?"cursor-pointer hover:stroke-white hover:bg-[#3FA6F4]":"cursor-not-allowed opacity-30"}`} onClick={() => canHighlightsLeft && scrollCarousel(highlightsRef, "left")}>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 24L20 16L12 8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+
+            </div>
+            <div className=" flex  w-full gap-3 overflow-x-auto no-scrollbar" ref={highlightsRef} onScroll={()=> handleScroll(highlightsRef, setcanHighlightsLeft,setcanHighlightsRight)}>
                 {blogsData.slice(0,3).map((post)=>
                     <Link 
                         key={post.id} 
                         to={`/blog-selected/${post.slug}`} 
    
-                        className="flex flex-col w-full bg-white dark:bg-zinc-900/40 rounded-2xl border border-zinc-200 dark:border-zinc-800  transition-all duration-300 overflow-hidden group cursor-pointer"
+                        className="flex flex-col w-57.5 shrink-0 bg-white dark:bg-zinc-900/40 rounded-2xl border border-zinc-200 dark:border-zinc-800  transition-all duration-300 overflow-hidden group cursor-pointer"
                     >
                         
                         {/* TWEAK 2: The Image Section (Fixed Ratio + Hover Zoom) */}
