@@ -221,7 +221,7 @@ export const blogsData = [
   {
     id: 3,
     slug: "little-kowders-volunteer", 
-    title: "Little KOWders: My First Experience as a Volunteer Trainer",
+    title: "Little KOWders: My Experience as a Volunteer Trainer",
     date: "November 19, 2025",
     thumbnail: "/blog-assets/little-kowder/little-kowder-thumbnail.jpg",
     contentImages: [
@@ -278,13 +278,44 @@ export const blogsData = [
 
       { type: "button-group", links: [
           { label: "View Figma File", url: "https://www.figma.com/design/CJEwOsprFDe9QwXQWJqkRH/Group-3-Event-Management-System?node-id=0-1&t=0yabS5cteBKdDuPI-1" },
-          { label: "Watch Live Demo", url: "YOUR_VIDEO_LINK_HERE" }
+          { label: "Watch Live Demo", url: "https://res.cloudinary.com/dxatb3m2q/video/upload/v1774932618/nyx-video-demo_bqgv4c.mp4" }
       ]},
 
       { type: "quote", text: "True design isn't generated; it is engineered through empathy, pressure, and human collaboration." }
     ]
   },
-  
+ {
+    id: 5, 
+    slug: "first-event-gdg", 
+    title: "GDG I/O Extended 2025: Reigniting Myself",
+    date: "July 26, 2025", 
+    thumbnail: "/blog-assets/gdg/gdg-thumbnail.jpg",
+    contentImages: [
+      "/blog-assets/gdg/gdg-image1.jpg", 
+      "/blog-assets/gdg/gdg-image2.jpg"
+    ],
+    content: [
+      { type: "paragraph", text: "Every developer hits a wall eventually. After months of grinding through rigorous academic coursework and complex personal projects, I found myself facing the all-too-common reality of burnout. I needed a change of pace, a spark to reignite my passion for technology. That spark came when I attended my very first tech conference: Google I/O Extended Manila 2025, held at Uptown Mall, BGC." },
+      
+      { type: "paragraph", text: "Organized by Google Developer Groups (GDG) and supported by Accenture, the event was a massive eye-opener. Stepping into a room filled with professionals and enthusiasts who shared the same career aspirations was an incredible feeling. It was my first time truly experiencing the scale and energy of the local tech community outside of the university setting." },
+      
+      { type: "subtitle", text: "Key Takeaways & Tech Horizons:" },
+      { type: "list", items: [
+          { keyword: "Generative AI:", text: " Exploring the practical applications and future trajectory of LLMs in software development." },
+          { keyword: "Visual Generation Systems:", text: " Understanding how models are bridging the gap between text prompts and complex visual outputs." },
+          { keyword: "Multi-modals & MCP Toolbox:", text: " Learning how to integrate various AI capabilities to create more intelligent and context-aware applications." }
+      ]},
+      
+      { type: "paragraph", text: "The sessions were deeply informative, but the most profound realization I had was how much I still have to learn. Instead of feeling intimidated, I felt energized. The sheer vastness of the tech landscape reminded me why I chose this path in the first place." },
+      
+      { type: "paragraph", text: "I didn't experience this alone. Sharing the excitement with my friends—Jv, Jayson, Julius, and my new Japanese friend, Shugo—made the event even more memorable. We walked away not just with new knowledge, but with new connections and a shared drive to push our boundaries." },
+      
+      { type: "paragraph", text: "To any aspiring developer feeling the weight of burnout: step away from the IDE and step into the community. Attending GDG Manila 2025 reminded me that we are part of something bigger. We will improve, we will thrive, and we will become the best versions of ourselves as developers." },
+
+      // THE MIC DROP QUOTE:
+      { type: "quote", text: "Burnout is cured not by stopping, but by finding a new reason to keep building." }
+    ]
+  },
   
   
 ]
