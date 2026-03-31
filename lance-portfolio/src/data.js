@@ -346,34 +346,5 @@ export const blogsData = [
       { type: "quote", text: "We are not just coders; we are problem solvers, quality advocates, and architects of the open web." }
     ]
   },
- {
-    id: 7, 
-    slug: "youth-summit-2024", 
-    title: "Beyond the Code: Bridging Leadership at the 2024 Youth Summit",
-    date: "September 05, 2024", 
-    thumbnail: "/blog-assets/youth-summit/youth-summit-thumbnail.png",
-    contentImages: [
-      "/blog-assets/youth-summit/ys-image1.jpg", 
-      "/blog-assets/youth-summit/ys-image2.jpg"
-    ],
-    content: [
-      { type: "paragraph", text: "True innovation happens when technology meets civic responsibility. From September 3 to 5, 2024, I stepped away from my IDE to attend the 2024 Youth Summit at the Great Eastern Hotel in Quezon City. Organized by Quezon City University (QCU) and the local government, it was a rigorous three-day gathering designed to empower the next generation of community leaders and innovators." },
-      
-      { type: "paragraph", text: "The summit kicked off with a powerful keynote on 'Bridging Leadership' by QCU President Dr. Theresita V. Atienza. She highlighted that whether we are tackling climate change, digital security, or social divides, isolated efforts aren't enough. Her framework—Ownership, Co-Ownership, and Co-Creation—deeply resonated with my mindset as an aspiring Full-Stack Developer. Building scalable systems is exactly like building communities: the more you involve people, the stronger the architecture becomes." },
-      
-      { type: "subtitle", text: "A Multidisciplinary Perspective:" },
-      { type: "list", items: [
-          { keyword: "Cybersecurity & Digital Peace:", text: " Understanding our ethical responsibility to protect user data and maintain security in the digital realm." },
-          { keyword: "Human Connections:", text: " Learning that empathy, communication, and emotional intelligence are just as critical as technical proficiency." },
-          { keyword: "Urban Farming & Sustainability:", text: " Exploring how innovative, systems-level thinking applies to physical, real-world problems like food security." }
-      ]},
-      
-      { type: "paragraph", text: "Experiences like this are amplified by the people you share them with. I braved the stormy typhoon weather with my classmate, Christopher Jonota, and the event gave us the perfect environment to expand our network. We collaborated and exchanged ideas with amazing new peers like Siena, Albert, and Kate, proving that real leadership thrives on diverse perspectives." },
-      
-      { type: "paragraph", text: "Dr. Atienza left us with a striking reminder: 'Despite the typhoon, nandito kayo. Kayo talaga ang pag-asa ng bayan.' This summit reinforced my ultimate goal: I don't just want to write clean code; I want to engineer solutions that actively serve and uplift society." },
 
-      // THE MIC DROP QUOTE:
-      { type: "quote", text: "In software and in society, true change begins with ownership and scales through co-creation." }
-    ]
-  },
 ]

@@ -2,6 +2,15 @@ import BentoCard from "../BentoCard";
 import ContactMe from "../ContactMe";
 import {Link, useParams} from "react-router-dom";
 import { blogsData } from "@/data";
+import {
+  Pagination,
+  PaginationContent,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from "@/components/ui/pagination"
+import { useEffect, useState } from "react";
 
 const recentPostIcon = <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3.75 15C3.75 17.225 4.4098 19.4001 5.64597 21.2502C6.88213 23.1002 8.63914 24.5422 10.6948 25.3936C12.7505 26.2451 15.0125 26.4679 17.1948 26.0338C19.3771 25.5998 21.3816 24.5283 22.955 22.955C24.5283 21.3816 25.5998 19.3771 26.0338 17.1948C26.4679 15.0125 26.2451 12.7505 25.3936 10.6948C24.5422 8.63914 23.1002 6.88213 21.2502 5.64597C19.4001 4.4098 17.225 3.75 15 3.75C11.8549 3.76183 8.83621 4.98903 6.575 7.175L3.75 10" stroke="black" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
@@ -12,18 +21,31 @@ const recentPostIcon = <svg width="30" height="30" viewBox="0 0 30 30" fill="non
 function BlogSubContent(){
     const {slug} = useParams();
 
-     let recentPosts = [];
+    const [currentPage, setCurrentPage] = useState(1);
+    const postsPerPage = 4;
+
+    useEffect(()=>{
+        setCurrentPage(1);
+    },[slug]);
+
+    let availablePosts = [];
+
     if(slug){
-        recentPosts = blogsData.filter((post)=>post.slug !== slug).slice(0,4)
+        availablePosts = blogsData.filter((post)=>post.slug !== slug);
     }else{
-        recentPosts = blogsData.slice(3,7);
+        availablePosts = blogsData.slice(3);
     }
+
+    const totalPages = Math.ceil(availablePosts.length / postsPerPage);
+    const startIndex = (currentPage - 1) * postsPerPage;
+    const currentPosts = availablePosts.slice(startIndex, startIndex + postsPerPage);
+
     return(
         <div className="w-full overflow-y-auto no-scrollbar overflow-hidden flex flex-col gap-3 lg:pr-3 lg:py-3">
             <BentoCard title={"Recent Posts"} icon={recentPostIcon}>
                 <div className="flex flex-col w-full gap-3">
-                   {recentPosts.length > 0 ? (
-                     recentPosts.map((post)=>(
+                   {currentPosts.length > 0 ? (
+                     currentPosts.map((post)=>(
                  <Link key={post.id} to={`/blog-selected/${post.slug}`} className="w-full flex cursor-pointer group">
                         <div className="lg:aspect-4/2 aspect-square bg-[#DEDEDE] dark:bg-zinc-800 w-3/4 lg:w-75 min-w-20 rounded-l-[10px] overflow-hidden relative">
                                 {post.thumbnail && (
@@ -55,8 +77,43 @@ function BlogSubContent(){
                           More posts coming soon!
                       </div>
                    )}
-                 
+                     {totalPages > 1 && (
+                      <Pagination className="pt-3 pb-1">
+                          <PaginationContent>
+                              
+                              <PaginationItem>
+                                  <PaginationPrevious 
+                                      onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
+                                      className={currentPage === 1 ? 'pointer-events-none opacity-50' : 'cursor-pointer'}
+                                  />
+                              </PaginationItem>
+
+                              {[...Array(totalPages)].map((_, index) => {
+                                  const pageNum = index + 1;
+                                  return (
+                                      <PaginationItem key={pageNum}>
+                                          <PaginationLink 
+                                              onClick={() => setCurrentPage(pageNum)}
+                                              isActive={currentPage === pageNum}
+                                              className="cursor-pointer"
+                                          >
+                                              {pageNum}
+                                          </PaginationLink>
+                                      </PaginationItem>
+                                  );
+                              })}
+
+                              <PaginationItem>
+                                  <PaginationNext 
+                                      onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
+                                      className={currentPage === totalPages ? 'pointer-events-none opacity-50' : 'cursor-pointer'}
+                                  />
+                              </PaginationItem>
+                          </PaginationContent>
+                      </Pagination>
+                  )}
                 </div>
+            
             </BentoCard>
             <ContactMe/>
         </div>
