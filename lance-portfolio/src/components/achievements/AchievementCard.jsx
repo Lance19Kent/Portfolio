@@ -23,13 +23,12 @@ function AchievementCard({ data, list, variant = "card" }) {
     return (
         <Dialog className={"w-full"} onOpenChange={(open) => { if (!open) setCurrentIndex(initialIndex) }}>
             
-            {/* TWEAK 2: Dito tayo mamimili kung anong Trigger/UI ang gagamitin depende sa Variant */}
             {variant === "card" ? (
                 // -------------------------------------------------------------
-                // VARIANT 1: THE HOME PAGE CARD (Yung na-design na natin noon)
+                // VARIANT 1: THE ACHIEVEMENT PAGE CARD
                 // -------------------------------------------------------------
                 <DialogTrigger asChild className="w-full flex select-none flex-col transition-all ease-in duration-300 cursor-pointer group outline-none">
-                    <div className="flex flex-col w-full bg-white dark:bg-zinc-900/40 rounded-[12px] transition-all duration-300 overflow-hidden relative">
+                    <div className="flex flex-col w-full bg-white dark:bg-card rounded-2xl transition-all duration-300 overflow-hidden relative">
                         <div className="w-full aspect-4/3 bg-zinc-50 dark:bg-zinc-800/50 overflow-hidden relative border border-zinc-200 dark:border-zinc-800 rounded-2xl">
                             <img src={data.image} alt={data.title} className="w-full h-full object-contain p-2 transition-transform duration-500 ease-out " />
                             <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out pointer-events-none"></div>
@@ -81,7 +80,6 @@ function AchievementCard({ data, list, variant = "card" }) {
                                 Issued {data.date}
                             </p>
 
-                            {/* DITO NATIN NILAGAY YUNG DIALOG TRIGGER PARA SA ABOUT PAGE! */}
                             <DialogTrigger asChild>
                                 <button className="w-fit flex items-center gap-1.5 px-3.5 py-1.5 rounded-full border border-zinc-300 dark:border-zinc-600 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors text-[14px] font-semibold text-zinc-700 dark:text-zinc-200 cursor-pointer">
                                     <span>View Certificate</span>

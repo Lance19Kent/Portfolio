@@ -54,7 +54,6 @@ function BlogContent(){
                     {otherPosts.map((post) => (
                         <Link key={post.id} to={`/blog-selected/${post.slug}`} className="relative w-full flex flex-col justify-end overflow-hidden rounded-[12px] aspect-square lg:aspect-[4/3] cursor-pointer group shadow-sm hover:shadow-md transition-shadow">
                             
-                            {/* Pansinin na "post" na ang gamit dito, hindi "featuredPost" */}
                             {post.thumbnail ? (
                                 <img src={post.thumbnail} alt={post.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
                             ) : (

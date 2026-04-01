@@ -23,7 +23,7 @@ function AboutSubContent(){
             <BentoCard title={"Education"} icon={educationIcon} className="min-h-70">
                 <div className="flex flex-col gap-5">
                     <div className="flex w-full gap-5">
-                        <img src="/about-png/QCU-Logo.png" className="w-15 h-15"></img>
+                        <img src="/about-png/QCU-Logo.png" className="lg:w-15 lg:h-15 w-11 h-11"></img>
                         <div className="flex flex-col gap-1 w-full overflow-hidden">
                             <div className="w-full ">
                                 <p className="font-medium truncate">BS in Information Technology</p>
@@ -45,7 +45,7 @@ function AboutSubContent(){
                         </div>
                     </div>
                     <div className="flex w-full gap-5">
-                        <img src="/about-png/ROSARIO-INSTITUTE-LOGO.png" className="w-15 h-15"></img>
+                        <img src="/about-png/ROSARIO-INSTITUTE-LOGO.png" className="lg:w-15 lg:h-15 w-11 h-11"></img>
                         <div className="flex flex-col gap-1 w-full overflow-hidden"> 
                             <div className="w-full">
                                 <h1 className="font-medium truncate">Track-Information and Communications Technology with Specialization in Computer Programming</h1>
@@ -70,8 +70,8 @@ function AboutSubContent(){
             </BentoCard>
             <BentoCard title={"Experience"} icon={experienceIcon}>
                 <div className="flex flex-col">
-                    <div className="flex w-full gap-5">
-                        <img src="/about-png/STUDYPOOL-LOGO.png" className="w-15 h-15"></img>
+                    <div className="flex w-full lg:gap-5 gap-4">
+                        <img src="/about-png/STUDYPOOL-LOGO.png" className="lg:w-15 lg:h-15 w-11 h-11"></img>
                         <div className="flex flex-col gap-1">
                             <div>
                                 <span className="font-medium">StudyPool</span>

@@ -85,7 +85,7 @@ function Content(){
 
                     </div>
                 </div>
-                <div className="flex z-20 absolute top-5 right-5 lg:gap-3 gap-2 items-center">
+                <div className="flex z-20 absolute top-5 right-5 lg:gap-3 gap-1.5 items-center">
                     <div className="lg:w-5 w-3">
                         <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.66669 1.66669V5.00002" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
@@ -95,7 +95,7 @@ function Content(){
                         </svg>
                     </div>
                    
-                    <span className="font-medium text-white lg:text-[16px] text-[11px]">{currentDate}</span>
+                    <span className="font-medium text-white lg:text-[16px] text-[12px]">{currentDate}</span>
                 </div>
                  {/* <div className="absolute text-white top-1/2 lg:top-auto font-medium bottom-3 right-4 lg:text-[30px] text-[18px] z-10">
                     <TypeAnimation sequence={[`Welcome to my digital workspace!`, 2500,`I build clean web experiences.`,2500,`Always learning, always building.`, 2500,`Ready for new collaborations.`, 2500]}

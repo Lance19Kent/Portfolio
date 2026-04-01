@@ -41,18 +41,18 @@ function BlogSubContent(){
     const currentPosts = availablePosts.slice(startIndex, startIndex + postsPerPage);
 
     return(
-        <div className="w-full overflow-y-auto no-scrollbar overflow-hidden flex flex-col gap-3 lg:pr-3 lg:py-3">
+        <div className="w-full overflow-y-auto no-scrollbar overflow-hidden flex flex-col gap-3 lg:pr-3 pb-3 lg:py-3 py-0 pb-0">
             <BentoCard title={"Recent Posts"} icon={recentPostIcon}>
                 <div className="flex flex-col w-full gap-3">
                    {currentPosts.length > 0 ? (
                      currentPosts.map((post)=>(
                  <Link key={post.id} to={`/blog-selected/${post.slug}`} className="w-full flex cursor-pointer group border rounded-2xl">
-                        <div className="lg:aspect-4/2 aspect-square bg-[#DEDEDE] dark:bg-zinc-900/40  w-3/4 lg:w-75 min-w-20 overflow-hidden relative rounded-l-2xl">
+                        <div className="lg:aspect-4/2 aspect-square  dark:bg-zinc-900/40  w-3/4 lg:w-75 min-w-20 overflow-hidden relative rounded-l-2xl">
                                 {post.thumbnail && (
                                     <img src={post.thumbnail} alt={post.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                                 )}
                         </div>
-                        <div className="w-full p-3 bg-white rounded-r-2xl flex flex-col gap-1 justify-center lg:justify-start ">
+                        <div className="w-full p-3 bg-white dark:bg-zinc-900/40 rounded-r-2xl flex flex-col gap-1 justify-center lg:justify-start ">
                             <h1 className="font-semibold lg:text-[15px] text-[14px] line-clamp-3">{post.title}</h1>
                             <div className="flex items-center gap-1">
                                 <div className="lg:w-3 w-3">
