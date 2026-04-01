@@ -1,4 +1,4 @@
-import { Link, useParams, Navigate } from "react-router-dom";
+import { Link, useParams, Navigate, useNavigate } from "react-router-dom";
 import BentoCard from "../BentoCard";
 import { blogsData } from "@/data";
 import { useEffect, useRef } from "react";
@@ -6,6 +6,7 @@ import { useEffect, useRef } from "react";
 function BlogSelectedContent(){
     const {slug} = useParams();
     const post = blogsData.find((b) => b.slug === slug);
+    const navigate = useNavigate();
 
     const scrollContainerRef = useRef(null);
     useEffect(() => {
@@ -99,13 +100,13 @@ function BlogSelectedContent(){
                 <div className="flex flex-col gap-5" key={slug}>
                     
                     {/* BACK BUTTON */}
-                    <Link to={"/blog"} >
-                        <div className="p-2 w-fit rounded-[100px] outline-1 outline-zinc-200 dark:outline-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+                    <button onClick={() =>navigate(-1)}>
+                        <div className="p-2 w-fit rounded-[100px] outline-1 outline-zinc-200  cursor-pointer dark:outline-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
                             <svg width="24" height="24" className="dark:invert" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M16.8571 20.7143L10 13.8572L16.8571 7.00006" stroke="black" strokeWidth="1.28571" strokeLinecap="round" strokeLinejoin="round"/>
                             </svg>
                         </div>
-                    </Link>
+                    </button>
 
                     {/* HEADER */}
                     <div className="flex flex-col gap-3">
