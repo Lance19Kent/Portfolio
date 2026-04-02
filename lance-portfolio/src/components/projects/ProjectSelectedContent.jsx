@@ -9,11 +9,11 @@ function ProjectSelectedContent(){
 
      if(!project) return <Navigate to="/projects" replace/>
 
+     const sidebarProjects = projectsData.filter((p) => p.slug !== slug);
     return(
         <div>
             <BentoCard>
                 <div className="flex flex-col gap-5">
-                    
                     <button onClick={() => navigate(-1)}>
                         <div className="p-2 w-fit rounded-[100px] outline-1 outline-zinc-200 cursor-pointer dark:outline-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
                             <svg width="24" height="24" className="dark:invert" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -22,7 +22,6 @@ function ProjectSelectedContent(){
                         </div>
                     </button>
 
-                    {/* HEADER SECTION */}
                     <div className="flex flex-col gap-3">
                         <div className="flex items-center gap-3">
                             <h1 className="font-semibold lg:text-4xl text-3xl text-zinc-900 dark:text-zinc-100">{project.title}</h1>

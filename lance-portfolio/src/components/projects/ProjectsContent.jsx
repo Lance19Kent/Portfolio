@@ -1,5 +1,4 @@
 import BentoCard from "../BentoCard";
-import ContactMe from "../ContactMe";
 import { Link } from "react-router-dom";
 import { projectsData } from "@/data";
 import ProjectSubContent from "./ProjectSubContent";
@@ -12,6 +11,8 @@ const featuredIcon =   <svg width="30" height="30" viewBox="0 0 30 30" fill="non
 
 function ProjectsContent(){
     const featuredProjects = projectsData.slice(0,3);
+
+    const otherProjects = projectsData.slice(3);
     return(
         <div className="w-full h-full lg:pr-3 px-3 lg:px-0 py-3 overflow-y-auto no-scrollbar overflow-hidden flex flex-col gap-3"> 
             <BentoCard title={"Featured"} icon={featuredIcon} className="w-full relative "> 
@@ -63,7 +64,7 @@ function ProjectsContent(){
                 )}
                 </div>
             </BentoCard> 
-            <ProjectSubContent className="w-full grid lg:grid-cols-4"/>
+            <ProjectSubContent className="w-full grid lg:grid-cols-4" projectList={otherProjects}/>
         </div>
     )
 }

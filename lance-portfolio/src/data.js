@@ -478,7 +478,7 @@ export const projectsData = [
         ]
     }
   },
- {
+  {
     id: 3,
     slug: "my-portfolio",
     title: "My Portfolio",
@@ -514,5 +514,72 @@ export const projectsData = [
         ]
     }
   },
-  
+  {
+    id: 4,
+    slug: "color-game",
+    title: "Color Game",
+    date: "January 16, 2025",
+    description: "A fast-paced cognitive game that tests reflexes by tricking the brain with mismatched text and color hues.",
+    thumbnail: "/projects-assets/color-game/color-game-home.png", // Make sure tama path mo
+    status: "Public",
+    
+    role: "Software Developer", // Pinalitan ko ng Software Dev kasi VB.NET desktop app siya, mas bagay pakinggan!
+    type: "Commission",
+    duration: "1 Day",
+    githubLink: "https://github.com/Lance19Kent/Color-Game-in-VB", 
+    liveLink: "",
+    
+    techStack: ["VB.NET", "MYSQL"],
+    
+    content: {
+        images: [
+            "/projects-assets/color-game/color-game-home.png"
+        ],
+        gallery: [
+            "/projects-assets/color-game/color-game-image.png" 
+        ],
+        overview: "Developed as a rapid-turnaround freelance commission, the Color Game is an interactive desktop application built entirely in 1 day using VB.NET and MySQL. The game tests user cognitive reflexes using a psychological phenomenon known as the 'Stroop Effect'—challenging players to identify the correct color hue while being distracted by conflicting text labels. I engineered the core game loop, user interface, and database integration under a strict 24-hour deadline, delivering a fun and fully functional product.",
+        features: [
+            { title: "Cognitive Gameplay Mechanic", desc: "Utilizes the Stroop effect to challenge players by mismatching text colors and names, testing speed and accuracy." },
+            { title: "Score & Time Tracking", desc: "Features a built-in countdown timer and a point system to increase difficulty and player engagement." },
+            { title: "Database Integration", desc: "Connected to a MySQL database backend to securely record, store, and retrieve player high scores." },
+            { title: "Rapid Development Lifecycle", desc: "Successfully designed, coded, tested, and deployed a complete desktop application within a 24-hour commission timeframe." }
+        ]
+    }
+  },
+   {
+    id: 5,
+    slug: "belveth",
+    title: "Belveth",
+    date: "January 16, 2025",
+    description: "A game where you need to choose the the correct hue based on the text, but be careful to the twist!",
+    status: "Public",
+    
+    role: "Full-Stack Developer",
+    type: "Commision",
+    duration: "1 Day",
+    githubLink: "https://github.com/Lance19Kent/Color-Game-in-VB", 
+    liveLink: "",
+    
+    techStack: ["VB.NET", "MYSQL"],
+    
+    content: {
+        images: [
+            "/projects-assets/color-game/color-game-home.png"
+        ],
+        gallery: [
+            "/projects-assets/portfolio/portfolio-resume.png", 
+            "/projects-assets/portfolio/portfolio-about.png",
+            "/projects-assets/portfolio/portfolio-certs.png",
+            "/projects-assets/portfolio/portfolio-blog.png"
+        ],
+        overview: "Designed and engineered as the digital headquarters for my professional identity, this portfolio is a testament to my passion for modern web development and clean UI/UX design. I built this responsive, single-page application from the ground up using React and Vite, focusing heavily on performance and seamless navigation. By leveraging Tailwind CSS and Shadcn UI, I crafted a premium, Vercel-inspired aesthetic. The application features a fully data-driven architecture, allowing for easily scalable case studies and dynamic content rendering while demonstrating my proficiency in complex routing and state management.",
+        features: [
+            { title: "Modern Bento Grid Architecture", desc: "Implemented a highly scannable, Apple-inspired Bento UI layout that organizes content efficiently and scales perfectly across all device screen sizes." },
+            { title: "Dynamic Data Rendering", desc: "Engineered a robust JavaScript data layer to dynamically populate project case studies, achievements, and blogs, adhering to the 'Don't Repeat Yourself' (DRY) principle." },
+            { title: "Intelligent SPA Navigation", desc: "Utilized React Router's advanced hooks (such as useNavigate and useParams) to create a seamless Single Page Application experience with smart browser history tracking." },
+            { title: "Premium UI/UX Polish", desc: "Integrated and heavily customized Shadcn UI components alongside Tailwind CSS to deliver an accessible, interactive, and visually stunning user experience." }
+        ]
+    }
+  },
 ]
