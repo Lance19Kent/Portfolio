@@ -1,4 +1,4 @@
-import { Link, useParams, Navigate, useNavigate } from "react-router-dom";
+import { useParams, Navigate, useNavigate } from "react-router-dom";
 import BentoCard from "../BentoCard";
 import { blogsData } from "@/data";
 import { useEffect, useRef } from "react";

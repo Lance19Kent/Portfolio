@@ -22,8 +22,8 @@ function ProjectsContent(){
             <BentoCard title={"Featured"} icon={featuredIcon} className="w-full relative"> 
                 <div className="grid lg:grid-cols-3 grid-cols-1 gap-5">
                 {featuredProjects.map((post)=>
-                    <Link to={`/projects-selected/${post.slug}`} className="w-full aspect-5/3 flex flex-col border rounded-2xl border-zinc-200 dark:border-zinc-800 group">
-                        <div className="w-full bg-card flex flex-col gap-3 rounded-2xl p-5">
+                    <Link to={`/projects-selected/${post.slug}`} className="w-full aspect-5/3 flex flex-col  group">
+                        <div className="w-full bg-secondary flex flex-col gap-3 rounded-t-2xl p-5">
                             <div>
                                 <h1 className="font-semibold text-[24px]">{post.title}</h1>
                                 <div className="flex items-center gap-1">

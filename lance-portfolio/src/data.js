@@ -416,7 +416,31 @@ export const projectsData = [
     date:"December 13, 2025",
     description:"A comprehensive e-commerce platform dedicated for bakery business management and seamless ordering.",
     thumbnail:"/projects-assets/bakehub/bakehub-thumbnail.png",
-    status:"Public"
+    status:"Public",
+    role: "Full-Stack Developer",
+    type: "Academic Project",
+    duration: "2 Weeks",
+    githubLink: "https://github.com/Lance19Kent/Bakehub",
+    liveLink: "", 
+    techStack: ["VB.NET", "CSS3", "TAILWIND CSS", "HTML5", "JAVASCRIPT", "MYSQL"],
+    content: {
+       images: [
+            "/projects-assets/bakehub/bakehub-image1.png"
+        ],
+        gallery: [
+            "/projects-assets/bakehub/bakehub-dashboard.png", 
+            "/projects-assets/bakehub/bakehub-cart.png",
+            "/projects-assets/bakehub/bakehub-menu.png",
+            "/projects-assets/bakehub/bakehub-mobile.png"
+        ],
+        overview: "BakeHub is a full-featured e-commerce web application developed as a capstone academic project. Tasked with creating a robust online storefront with administrative capabilities, our team chose a bakery business model. As the sole Full-Stack Developer, I spearheaded the entire technical lifecycle—from architecting the MySQL database and engineering the VB.NET backend, to designing an intuitive UI/UX with Tailwind CSS and JavaScript.",
+        features: [
+            { title: "Dynamic Storefront", desc: "Interactive home, about, and contact pages tailored for a bakery business." },
+            { title: "Comprehensive Admin Dashboard", desc: "Secure portal for administrators to manage inventory, track orders, and oversee user accounts." },
+            { title: "Customer Feedback System", desc: "Integrated functionality allowing users to submit reviews and feedback directly to the admin." },
+            { title: "Secure Data Management", desc: "Robust backend utilizing VB.NET and MySQL to ensure data integrity and secure transactions." }
+        ]
+    }
   },
   {
     id:2,
