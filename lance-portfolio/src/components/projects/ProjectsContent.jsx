@@ -17,9 +17,9 @@ const projectsIcon = <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 function ProjectsContent(){
     return(
         <div className="w-full h-full lg:pr-3 px-3 lg:px-0 py-3 overflow-y-auto no-scrollbar overflow-hidden flex flex-col gap-3"> 
-            <BentoCard title={"Featured"} icon={featuredIcon} className="w-full relative gap-8"> 
+            <BentoCard title={"Featured"} icon={featuredIcon} className="w-full relative"> 
                 <div className="grid lg:grid-cols-3 grid-cols-1 gap-5">
-                    <Link to={"/projects-selected"} className="w-full aspect-5/3 flex flex-col border rounded-2xl border-zinc-200 dark:border-zinc-800 ">
+                    <Link to={"/projects-selected"} className="w-full aspect-5/3 flex flex-col border rounded-2xl border-zinc-200 dark:border-zinc-800 group">
                         <div className="w-full bg-card flex flex-col gap-3 rounded-2xl p-5">
                             <div>
                                 <h1 className="font-semibold text-[24px]">Bakehub</h1>
@@ -31,16 +31,16 @@ function ProjectsContent(){
                                     <span className="font-light text-[12px] text-zinc-500 dark:text-zinc-400 ">September 09, 2026</span>
                                 </div>
                             </div>
-                            <p className="text-[14px] font-light text-zinc-600 dark:text-zinc-400">A gentle space where people can check in with themselves without pressure, explanation, or judgment.</p>
+                            <p className="text-[13px] text-zinc-600 dark:text-zinc-400">A gentle space where people can check in with themselves without pressure, explanation, or judgment.</p>
                         </div>
-                        <div className="w-full h-full bg-[#DEDEDE] rounded-b-[10px]">
-
+                        <div className="w-full h-full rounded-b-2xl overflow-hidden ">
+                            <img src="/projects-assets/bakehub/bakehub-thumbnail.png" alt="Bakehub's Image" className="group-hover:scale-105 object-cover transition-transform duration-300 ease-out"/>
                         </div>
                     </Link>
             
                 </div>
             </BentoCard>  
-            <BentoCard title={"Projects"} icon={projectsIcon} className="w-full relative gap-8"> 
+            <BentoCard title={"Other Projects"} icon={projectsIcon} className="w-full relative"> 
                 <div className="grid lg:grid-cols-4 grid-cols-1 w-full gap-5">
                     <Link className="lg:px-3 px-6 w-full rounded-[10px] py-4 flex lg:items-center border-[.50px] border-border cursor-pointer flex-col">
                         <div className="flex gap-2">
