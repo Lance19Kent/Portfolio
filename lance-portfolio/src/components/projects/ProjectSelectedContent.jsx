@@ -44,7 +44,7 @@ function ProjectSelectedContent(){
                         <div className="flex flex-col gap-3 mt-1">
                             <div className="flex lg:gap-3 gap-2 items-center">
                                 <div className="lg:w-6 w-4 text-zinc-800 dark:text-zinc-200">
-                                    <svg viewBox="0 0 24 24" className="dark:invert" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M19 21V19C19 17.9391 18.5786 16.9217 17.8284 16.1716C17.0783 15.4214 16.0609 15 15 15H9C7.93913 15 6.92172 15.4214 6.17157 16.1716C5.42143 16.9217 5 17.9391 5 19V21" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
                                         <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
                                     </svg>
@@ -53,7 +53,7 @@ function ProjectSelectedContent(){
                             </div>
                             <div className="flex lg:gap-3 gap-2 items-center">
                                 <div className="lg:w-6 w-4 text-zinc-800 dark:text-zinc-200">
-                                    <svg viewBox="0 0 24 24" className="dark:invert" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M11 13H7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                                         <path d="M19 9H15" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                                         <path d="M3 3V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H21" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -65,7 +65,7 @@ function ProjectSelectedContent(){
                             </div>
                             <div className="flex lg:gap-3 gap-2 items-center">
                                 <div className="lg:w-6 w-4 text-zinc-800 dark:text-zinc-200">
-                                    <svg viewBox="0 0 24 24" className="dark:invert" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8 2V6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                                         <path d="M16 2V6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                                         <path d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>

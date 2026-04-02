@@ -626,7 +626,7 @@ export const projectsData = [
     role: "Project Manager & Systems Programmer",
     type: "Academic Hardware Project",
     duration: "30 days",
-    githubLink: "https://github.com/Lance19Kent", // Update with the actual Arduino repo if you have one
+    githubLink: "https://github.com/Lance19Kent/1ST-Year/tree/main/PLATFORM%20TECHNOLOGIES/Arduino-Project_1stYear2ndSem-main",
     liveLink: "",
     
     techStack: ["C++", "VB.NET", "ARDUINO IDE", "FIGMA"], 
