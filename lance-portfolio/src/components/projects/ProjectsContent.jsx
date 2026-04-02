@@ -53,8 +53,8 @@ function ProjectsContent(){
                                 {post.description}
                             </p>
 
-                            {/* "Read More" subtle cue */}
-                            <div className="lg:pt-2 flex items-center gap-1 text-[#468cfc] opacity-100 transition-opacity duration-1000 group-hover:text-[#92bcff] ease-out">
+                       
+                            <div className="lg:pt-2 flex items-center gap-1 text-[#468cfc] hover:text-[#92bcff] transition-colors duration-1000 group-hover:text-[#92bcff] ease-out">
                                 <span className="text-[13px] font-medium">View Project</span>
                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                             </div>

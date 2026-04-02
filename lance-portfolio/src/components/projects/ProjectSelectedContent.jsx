@@ -9,7 +9,6 @@ function ProjectSelectedContent(){
 
      if(!project) return <Navigate to="/projects" replace/>
 
-     const sidebarProjects = projectsData.filter((p) => p.slug !== slug);
     return(
         <div>
             <BentoCard>
