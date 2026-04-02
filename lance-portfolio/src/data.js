@@ -443,22 +443,76 @@ export const projectsData = [
     }
   },
   {
-    id:2,
-    slug:"bakehub",
-    title:"BIRIMS",
-    date:"December 13, 2025",
-    description:"A comprehensive e-commerce platform dedicated for bakery business management and seamless ordering.",
-    thumbnail:"/projects-assets/bakehub/bakehub-thumbnail.png",
-    status:"Public"
+    id: 2,
+    slug: "birims",
+    title: "BIRIMS",
+    date: "December 17, 2025", 
+    description: "A barangay management system designed to digitalize local government operations, resident records, and document requests.",
+    thumbnail: "/projects-assets/birims/birims-thumbnail.png", 
+    status: "Public",
+    
+    role: "System Analyst & Front-End Developer",
+    type: "Academic Project (Systems Integration)",
+    duration: "1 Month",
+    githubLink: "https://github.com/Lance19Kent/BIRIMS", 
+    liveLink: "", 
+    
+    techStack: ["LARAVEL", "PHP", "TAILWIND CSS", "JAVASCRIPT", "NODE.JS", "VITE", "HTML5", "CSS3"],
+    
+    content: {
+        images: [
+            "/projects-assets/birims/birims-home.png" 
+        ],
+        gallery: [
+            "/projects-assets/birims/birims-dashboard.png", 
+            "/projects-assets/birims/birims-requests.png",
+            "/projects-assets/birims/birims-incident.png",
+            "/projects-assets/birims/birims-health.png"
+        ],
+        overview: "Developed for our System Integration and Architecture course, BIRIMS is a fully integrated web application designed specifically for Barangay San Bartolome, Quezon City. The system modernizes local government operations by transitioning from manual paper-based processes to a centralized digital platform. As the System Analyst and Front-End Developer, I orchestrated the system's architectural flow and engineered a responsive, accessible user interface using Laravel, Tailwind CSS, and Vite to ensure seamless resident interactions.",
+        features: [
+            { title: "Centralized Resident Records", desc: "A secure and easily accessible database management module for storing, updating, and tracking constituent information." },
+            { title: "Automated Document Requests", desc: "Streamlined digital workflows for requesting and processing Barangay Clearances, Certificates of Indigency, and other essential permits." },
+            { title: "Health Center Appointments", desc: "An integrated scheduling module allowing residents to book appointments with the local health center efficiently." },
+            { title: "Digital Incident Reporting", desc: "A dedicated portal for residents to submit, monitor, and track local incident reports in real-time." }
+        ]
+    }
   },
-  {
-    id:3,
-    slug:"bakehub",
-    title:"BIRIMS",
-    date:"December 13, 2025",
-    description:"A comprehensive e-commerce platform dedicated for bakery business management and seamless ordering.",
-    thumbnail:"/projects-assets/bakehub/bakehub-thumbnail.png",
-    status:"Public"
+ {
+    id: 3,
+    slug: "my-portfolio",
+    title: "My Portfolio",
+    date: "April 5, 2026",
+    description: "A modern, highly interactive personal portfolio designed to showcase my software development projects, technical skills, and academic journey.",
+    thumbnail: "/projects-assets/portfolio/portfolio-thumbnail.png",
+    status: "Public",
+    
+    role: "Front-End Developer & UI/UX Designer",
+    type: "Personal Project",
+    duration: "1 Month",
+    githubLink: "https://github.com/Lance19Kent/Portfolio", 
+    liveLink: "",
+    
+    techStack: ["REACT JS", "VITE", "TAILWIND CSS", "JAVASCRIPT", "SHADCN UI", "HTML5", "CSS3"],
+    
+    content: {
+        images: [
+            "/projects-assets/portfolio/portfolio-home.png"
+        ],
+        gallery: [
+            "/projects-assets/portfolio/portfolio-resume.png", 
+            "/projects-assets/portfolio/portfolio-about.png",
+            "/projects-assets/portfolio/portfolio-certs.png",
+            "/projects-assets/portfolio/portfolio-blog.png"
+        ],
+        overview: "Designed and engineered as the digital headquarters for my professional identity, this portfolio is a testament to my passion for modern web development and clean UI/UX design. I built this responsive, single-page application from the ground up using React and Vite, focusing heavily on performance and seamless navigation. By leveraging Tailwind CSS and Shadcn UI, I crafted a premium, Vercel-inspired aesthetic. The application features a fully data-driven architecture, allowing for easily scalable case studies and dynamic content rendering while demonstrating my proficiency in complex routing and state management.",
+        features: [
+            { title: "Modern Bento Grid Architecture", desc: "Implemented a highly scannable, Apple-inspired Bento UI layout that organizes content efficiently and scales perfectly across all device screen sizes." },
+            { title: "Dynamic Data Rendering", desc: "Engineered a robust JavaScript data layer to dynamically populate project case studies, achievements, and blogs, adhering to the 'Don't Repeat Yourself' (DRY) principle." },
+            { title: "Intelligent SPA Navigation", desc: "Utilized React Router's advanced hooks (such as useNavigate and useParams) to create a seamless Single Page Application experience with smart browser history tracking." },
+            { title: "Premium UI/UX Polish", desc: "Integrated and heavily customized Shadcn UI components alongside Tailwind CSS to deliver an accessible, interactive, and visually stunning user experience." }
+        ]
+    }
   },
   
 ]

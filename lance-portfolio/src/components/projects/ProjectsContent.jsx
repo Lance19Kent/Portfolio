@@ -19,31 +19,55 @@ function ProjectsContent(){
     const featuredProjects = projectsData.slice(0,3);
     return(
         <div className="w-full h-full lg:pr-3 px-3 lg:px-0 py-3 overflow-y-auto no-scrollbar overflow-hidden flex flex-col gap-3"> 
-            <BentoCard title={"Featured"} icon={featuredIcon} className="w-full relative"> 
+          <BentoCard title={"Featured"} icon={featuredIcon} className="w-full relative "> 
                 <div className="grid lg:grid-cols-3 grid-cols-1 gap-5">
                 {featuredProjects.map((post)=>
-                    <Link to={`/projects-selected/${post.slug}`} className="w-full aspect-5/3 flex flex-col  group">
-                        <div className="w-full bg-secondary flex flex-col gap-3 rounded-t-2xl p-5">
-                            <div>
-                                <h1 className="font-semibold text-[24px]">{post.title}</h1>
-                                <div className="flex items-center gap-1">
-                                    <svg width="13" height="13" viewBox="0 0 12 12" className="stroke-zinc-500 dark:stroke-zinc-400" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z"  stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M6 3V6L5 8"  stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    <span className="font-light text-[12px] text-zinc-500 dark:text-zinc-400 ">{post.date}</span>
-                                </div>
-                            </div>
-                            <p className="text-[13px] text-zinc-600 dark:text-zinc-400">{post.description}</p>
+                    <Link 
+                        key={post.id}
+                        to={`/projects-selected/${post.slug}`} 
+                        className="w-full  flex flex-col-reverse bg-white dark:bg-zinc-900/50 rounded-[14px] border border-zinc-200 dark:border-zinc-800 transition-all duration-300 overflow-hidden group cursor-pointer"
+                    >
+                        <div className="w-full aspect-video bg-zinc-100 dark:bg-zinc-800 overflow-hidden relative border-b border-zinc-100 dark:border-zinc-800">
+                            <img 
+                                src={post.thumbnail} 
+                                alt={post.title +"'s Image"}
+                                className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+                            />
                         </div>
-                        <div className="w-full h-full rounded-b-2xl overflow-hidden ">
-                            <img src={post.thumbnail} alt={post.title +"'s Image"}className="group-hover:scale-105 object-cover transition-transform duration-300 ease-out"/>
+
+                        <div className="flex flex-col flex-1 p-5 gap-1.5">
+                            
+                            <h1 className="font-semibold text-zinc-900 dark:text-zinc-100 text-[20px] leading-snug line-clamp-1">
+                                {post.title}
+                            </h1>
+                            
+                            {/* Date Area */}
+                            <div className="flex items-center gap-1.5 mt-0.5">
+                                <svg viewBox="0 0 12 12" className="stroke-zinc-400 w-3.5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z"  strokeOpacity="0.7" strokeLinecap="round" strokeLinejoin="round"/>
+                                    <path d="M6 3V6L5 8"  strokeOpacity="0.7" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                                <span className=" text-[12px] font-light text-ring tracking-wide">
+                                    {post.date}
+                                </span>
+                            </div>
+
+                            {/* Description Area */}
+                            <p className="mt-2 text-[13px] leading-relaxed text-zinc-600 dark:text-zinc-400 font-light line-clamp-3">
+                                {post.description}
+                            </p>
+
+                            {/* "Read More" subtle cue */}
+                            <div className="lg:pt-2 flex items-center gap-1 text-[#468cfc] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span className="text-[13px] font-medium">View Project</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                            </div>
+
                         </div>
                     </Link>
-            
                 )}
                 </div>
-            </BentoCard>  
+            </BentoCard> 
             <BentoCard title={"Other Projects"} icon={projectsIcon} className="w-full relative"> 
                 <div className="grid lg:grid-cols-4 grid-cols-1 w-full gap-5">
                     <Link className="lg:px-3 px-6 w-full rounded-[10px] py-4 flex lg:items-center border-[.50px] border-border cursor-pointer flex-col">

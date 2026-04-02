@@ -41,7 +41,7 @@ function BlogSubContent(){
     const currentPosts = availablePosts.slice(startIndex, startIndex + postsPerPage);
 
     return(
-        <div className="w-full overflow-y-auto no-scrollbar overflow-hidden flex flex-col gap-3 lg:pr-3 pb-3 lg:py-3 py-0 pb-0">
+        <div className="w-full overflow-y-auto no-scrollbar overflow-hidden flex flex-col gap-3 lg:pr-3 lg:pb-3 lg:py-3 py-0 pb-0">
             <BentoCard title={"Recent Posts"} icon={recentPostIcon}>
                 <div className="flex flex-col w-full gap-3">
                    {currentPosts.length > 0 ? (
