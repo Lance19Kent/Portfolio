@@ -2,7 +2,7 @@ import { Button } from "../ui/button"
 import { TypeAnimation } from "react-type-animation";
 import { useState, useEffect, useRef } from "react";
 import BentoCard from "../BentoCard";
-import { achievementsData, skillsData } from "@/data";
+import { achievementsData, skillsData, projectsData } from "@/data";
 import { blogsData } from "@/data";
 import {Link} from "react-router-dom";
 
@@ -192,7 +192,7 @@ function Content(){
                             </defs>
                         </svg>
                         <div className="flex items-center flex-1 justify-between">
-                            <span className="font-semibold text-[30px]">20</span>
+                            <span className="font-semibold text-[30px]">{projectsData.length}</span>
 
                         </div>
                     </div>
