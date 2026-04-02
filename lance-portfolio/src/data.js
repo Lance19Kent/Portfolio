@@ -419,7 +419,7 @@ export const projectsData = [
     status:"Public",
     role: "Full-Stack Developer",
     type: "Academic Project",
-    duration: "2 Weeks",
+    duration: "14 Days",
     githubLink: "https://github.com/Lance19Kent/Bakehub",
     liveLink: "", 
     techStack: ["VB.NET", "CSS3", "TAILWIND CSS", "HTML5", "JAVASCRIPT", "MYSQL"],
@@ -453,7 +453,7 @@ export const projectsData = [
     
     role: "System Analyst & Front-End Developer",
     type: "Academic Project (Systems Integration)",
-    duration: "1 Month",
+    duration: "30 Days",
     githubLink: "https://github.com/Lance19Kent/BIRIMS", 
     liveLink: "", 
     
@@ -464,10 +464,10 @@ export const projectsData = [
             "/projects-assets/birims/birims-home.png" 
         ],
         gallery: [
-            "/projects-assets/birims/birims-dashboard.png", 
-            "/projects-assets/birims/birims-requests.png",
-            "/projects-assets/birims/birims-incident.png",
-            "/projects-assets/birims/birims-health.png"
+            "/projects-assets/birims/birims-admin.png", 
+            "/projects-assets/birims/birims-blotter.png",
+            "/projects-assets/birims/birims-user.png",
+            "/projects-assets/birims/birims-medical.png"
         ],
         overview: "Developed for our System Integration and Architecture course, BIRIMS is a fully integrated web application designed specifically for Barangay San Bartolome, Quezon City. The system modernizes local government operations by transitioning from manual paper-based processes to a centralized digital platform. As the System Analyst and Front-End Developer, I orchestrated the system's architectural flow and engineered a responsive, accessible user interface using Laravel, Tailwind CSS, and Vite to ensure seamless resident interactions.",
         features: [
@@ -489,7 +489,7 @@ export const projectsData = [
     
     role: "Front-End Developer & UI/UX Designer",
     type: "Personal Project",
-    duration: "1 Month",
+    duration: "30 Days",
     githubLink: "https://github.com/Lance19Kent/Portfolio", 
     liveLink: "",
     
@@ -520,11 +520,11 @@ export const projectsData = [
     title: "Color Game",
     date: "January 16, 2025",
     description: "A fast-paced cognitive game that tests reflexes by tricking the brain with mismatched text and color hues.",
-    thumbnail: "/projects-assets/color-game/color-game-home.png", // Make sure tama path mo
+    thumbnail: "/projects-assets/color-game/color-game-home.png",
     status: "Public",
     
-    role: "Software Developer", // Pinalitan ko ng Software Dev kasi VB.NET desktop app siya, mas bagay pakinggan!
-    type: "Commission",
+    role: "Software Developer",
+    type: "Commission Project",
     duration: "1 Day",
     githubLink: "https://github.com/Lance19Kent/Color-Game-in-VB", 
     liveLink: "",
@@ -547,39 +547,106 @@ export const projectsData = [
         ]
     }
   },
-   {
+  {
     id: 5,
     slug: "belveth",
-    title: "Belveth",
-    date: "January 16, 2025",
-    description: "A game where you need to choose the the correct hue based on the text, but be careful to the twist!",
+    title: "Belveth Boutique", // Added "Boutique" para mas descriptive
+    date: "December 15, 2023", // Adjusted date since first-year project 'to (assuming 2023 ka bumalik)
+    description: "A trendy e-commerce front-end interface designed to simplify the shopping experience for modern women's apparel.",
     status: "Public",
     
-    role: "Full-Stack Developer",
-    type: "Commision",
-    duration: "1 Day",
-    githubLink: "https://github.com/Lance19Kent/Color-Game-in-VB", 
+    role: "Project Manager & Front-End Developer", // Changed to Front-End since Walang backend/DB na nabanggit
+    type: "Academic Project",
+    duration: "30 Days",
+    githubLink: "https://github.com/Lance19Kent/Belveth", 
     liveLink: "",
     
-    techStack: ["VB.NET", "MYSQL"],
+    techStack: ["HTML5", "CSS3", "JAVASCRIPT","MYSQL"], // The classic trio
     
     content: {
         images: [
-            "/projects-assets/color-game/color-game-home.png"
+            "/projects-assets/belveth/belveth-home.png" // Hero Image
         ],
         gallery: [
-            "/projects-assets/portfolio/portfolio-resume.png", 
-            "/projects-assets/portfolio/portfolio-about.png",
-            "/projects-assets/portfolio/portfolio-certs.png",
-            "/projects-assets/portfolio/portfolio-blog.png"
+            "/projects-assets/belveth/belveth-image1.png", // e.g., Product Page
+            "/projects-assets/belveth/belveth-image2.png"  // e.g., Checkout/Cart UI
         ],
-        overview: "Designed and engineered as the digital headquarters for my professional identity, this portfolio is a testament to my passion for modern web development and clean UI/UX design. I built this responsive, single-page application from the ground up using React and Vite, focusing heavily on performance and seamless navigation. By leveraging Tailwind CSS and Shadcn UI, I crafted a premium, Vercel-inspired aesthetic. The application features a fully data-driven architecture, allowing for easily scalable case studies and dynamic content rendering while demonstrating my proficiency in complex routing and state management.",
+        overview: "Belveth Boutique holds a special place in my portfolio as my foundational entry into web development. Returning to my academic studies after a two-year financial hiatus, I transitioned my focus from Java to the high-demand world of web technologies. Armed solely with fundamental HTML, CSS, and vanilla JavaScript, I spearheaded this e-commerce project. The objective was to design a highly aesthetic, user-friendly online fashion hub targeting modern millennials. This project solidified my understanding of raw front-end mechanics, responsive layouts, and UI/UX principles before advancing to modern frameworks.",
         features: [
-            { title: "Modern Bento Grid Architecture", desc: "Implemented a highly scannable, Apple-inspired Bento UI layout that organizes content efficiently and scales perfectly across all device screen sizes." },
-            { title: "Dynamic Data Rendering", desc: "Engineered a robust JavaScript data layer to dynamically populate project case studies, achievements, and blogs, adhering to the 'Don't Repeat Yourself' (DRY) principle." },
-            { title: "Intelligent SPA Navigation", desc: "Utilized React Router's advanced hooks (such as useNavigate and useParams) to create a seamless Single Page Application experience with smart browser history tracking." },
-            { title: "Premium UI/UX Polish", desc: "Integrated and heavily customized Shadcn UI components alongside Tailwind CSS to deliver an accessible, interactive, and visually stunning user experience." }
+            { title: "Curated UI/UX Design", desc: "Engineered a visually appealing and trendy interface specifically tailored for a modern women's fashion boutique, prioritizing user-friendliness and product discovery." },
+            { title: "Vanilla JavaScript Interactions", desc: "Implemented core interactive elements, such as image carousels, dynamic product filtering, and cart state logic, entirely without external libraries." },
+            { 
+            title: "Store Management Dashboard", 
+            desc: "Structured an administrative front-end interface featuring dedicated modules to seamlessly manage user accounts, organize product catalogs by category, and review customer feedback." 
+            },
+            { title: "Foundational Web Architecture", desc: "Structured the entire application using semantic HTML5 and clean, maintainable CSS3, establishing strong coding habits and responsive design techniques." }
         ]
     }
   },
+  {
+    id: 6,
+    slug: "book-buddy",
+    title: "Book Buddy", 
+    date: "December 31, 2024", 
+    description: "A robust Java-based application designed to digitalize and streamline library inventory and student borrowing processes.",
+    status: "Public",
+    
+    role: "System Analyst & Java Developer",
+    type: "TESDA Capstone Project (NC III)",
+    duration: "10 Days",
+    githubLink: "https://github.com/Lance19Kent/Book-Buddy-A-Library-Management-System", 
+    liveLink: "",
+    
+    techStack: ["JAVA", "SQL", "GITHUB"], // Core software engineering stack
+    
+    content: {
+        images: [
+            "/projects-assets/book-buddy/bookbuddy-home.png" // Hero Image (e.g., Login or Main Dashboard)
+        ],
+        gallery: [
+            "/projects-assets/book-buddy/bookbuddy-image1.png" // Gameplay/System screenshot
+        ],
+        overview: "Book Buddy is the capstone project that marked the culmination of my intensive TESDA training for the Programming (Java) NC III certification. Developed collaboratively with 'Team Javarian' under the excellent mentorship of our instructor, Sir Michael Ampo, this project applied all our foundational learnings in Object-Oriented Programming and Database Management. Acting as the System Analyst and Developer, I helped architect a system that transitions traditional library record-keeping into a secure, digital platform for managing book inventories, student borrowing, and administrative controls.",
+        features: [
+            { title: "Role-Based Access Control (RBAC)", desc: "Engineered a secure login architecture with distinct permission levels: Admins handle daily book borrowing/updating, while Super Admins possess full privileges to register or deactivate user accounts." },
+            { title: "Booking & Inventory Management", desc: "Developed core functionalities to track book availability, monitor borrowing history, and streamline the return process for students." },
+            { title: "Relational Database Integration", desc: "Designed and integrated a normalized SQL database to ensure data integrity and secure storage of all library transactions and user credentials." },
+            { title: "Collaborative Agile Development", desc: "Utilized GitHub for version control, enabling seamless code integration, task delegation, and effective team collaboration throughout the 10 day development sprint." }
+        ]
+    }
+  },
+   {
+    id: 7,
+    slug: "arduino-integrated-system",
+    title: "5-in-1 Smart Arduino System", 
+    date: "December 31, 2024", 
+    description: "A comprehensive hardware-software integration featuring automated security, disaster risk management, and smart environmental controls.",
+    status: "Public",
+    
+    role: "Project Manager & Systems Programmer",
+    type: "Academic Hardware Project",
+    duration: "30 days",
+    githubLink: "https://github.com/Lance19Kent", // Update with the actual Arduino repo if you have one
+    liveLink: "",
+    
+    techStack: ["C++", "VB.NET", "ARDUINO IDE", "FIGMA"], 
+    
+    content: {
+        images: [
+            "/projects-assets/arduino/arduino.jpg" // Hero Image 
+        ],
+        gallery: [
+            "/projects-assets/arduino/arduino-image1.png",
+            "/projects-assets/arduino/arduino-image2.jpg",
+            "/projects-assets/arduino/arduino-image3.jpg",
+        ],
+        overview: "This 5-in-1 Arduino Integrated System stands as my most memorable and high-pressure academic project. Tasked with bridging hardware components and software interfaces, I served as the Project Manager and co-programmer, C++ for microcontroller logic, and VB.NET for the desktop interface. Developed in a grueling 30 days sprint with an incredibly competitive team, the final product was so advanced that it set a new benchmark for our cohort. This success was a massive collaborative effort, heavily driven by our lead programmer, Christopher, alongside our stellar members: Princess Suzanne, Malyn, Lemuel, Ethan, Rollan, Kirby, Rjay, Tristan, and Dominic. Huge gratitude to our professor, Sir Joel Olayon, and panelist Sir Frederick Liclic for their invaluable guidance.",
+        features: [
+            { title: "Automated Gate Access & Security", desc: "Engineered a smart entry system utilizing an Arduino Uno, ultrasonic sensors, and servo motors to detect approaching vehicles and automate gate operations without human intervention." },
+            { title: "Early-Warning Fire Detection", desc: "Integrated flame sensor modules and IR LEDs to constantly monitor environmental heat intensity. Upon breaching safety thresholds, the system triggers local alarms and dispatches automated SMS alerts for rapid evacuation." },
+            { title: "Disaster Preparedness (Earthquake Alarm)", desc: "Developed a dual-state emergency system for industrial structures, featuring distinct audio-visual alerts (via LCD and buzzers) to differentiate between actual seismic emergencies and routine earthquake drills." },
+            { title: "Smart Automation & Energy Efficiency", desc: "Combined a smart lighting control system using relays and infrared modules to optimize power consumption, alongside a programmable time-based alarm matrix for scheduling critical tasks and medication regimens." }
+        ]
+    }
+  }
 ]
