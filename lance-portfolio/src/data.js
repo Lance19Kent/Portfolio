@@ -71,7 +71,7 @@ export const achievementsData = [
     linkText: null,
     description: "Attended my first Youth Summit Leadership with different schools to promote leadership, security in digital realm, and society."
   },
-];
+]
 
 export const skillsData = [
   {
@@ -405,5 +405,11 @@ export const blogsData = [
       // THE MIC DROP QUOTE:
       { type: "quote", text: "AI isn't here to replace developers; it's here to accelerate those who know how to build with it." }
     ]
+  }
+]
+
+export const projectsData = [
+  {
+    
   }
 ]

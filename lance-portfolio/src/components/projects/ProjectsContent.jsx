@@ -19,59 +19,25 @@ function ProjectsContent(){
         <div className="w-full h-full lg:pr-3 px-3 lg:px-0 py-3 overflow-y-auto no-scrollbar overflow-hidden flex flex-col gap-3"> 
             <BentoCard title={"Featured"} icon={featuredIcon} className="w-full relative gap-8"> 
                 <div className="grid lg:grid-cols-3 grid-cols-1 gap-5">
-                    <Link to={"/projects-selected"} className="w-full aspect-5/3 flex flex-col">
-                        <div className="w-full bg-secondary/40 dark:bg-secondary flex flex-col gap-3 rounded-t-[10px] p-5">
+                    <Link to={"/projects-selected"} className="w-full aspect-5/3 flex flex-col border rounded-2xl border-zinc-200 dark:border-zinc-800 ">
+                        <div className="w-full bg-card flex flex-col gap-3 rounded-2xl p-5">
                             <div>
-                                <h1 className="font-semibold text-[24px]">Okay lang</h1>
+                                <h1 className="font-semibold text-[24px]">Bakehub</h1>
                                 <div className="flex items-center gap-1">
-                                    <svg width="12" height="12" viewBox="0 0 12 12" className="stroke-muted-foreground" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="13" height="13" viewBox="0 0 12 12" className="stroke-zinc-500 dark:stroke-zinc-400" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z"  stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M6 3V6L5 8"  stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
-                                    <span className="font-light text-muted-foreground text-[12px]">September 09, 2026</span>
+                                    <span className="font-light text-[12px] text-zinc-500 dark:text-zinc-400 ">September 09, 2026</span>
                                 </div>
                             </div>
-                            <p className="text-[12px]">A gentle space where people can check in with themselves without pressure, explanation, or judgment.</p>
+                            <p className="text-[14px] font-light text-zinc-600 dark:text-zinc-400">A gentle space where people can check in with themselves without pressure, explanation, or judgment.</p>
                         </div>
                         <div className="w-full h-full bg-[#DEDEDE] rounded-b-[10px]">
 
                         </div>
                     </Link>
-                     <div className="w-full aspect-5/3 flex flex-col">
-                        <div className="w-full bg-secondary/40 dark:bg-secondary flex flex-col gap-3 rounded-t-[10px] p-5">
-                            <div>
-                                <h1 className="font-semibold text-[24px]">Okay lang</h1>
-                                             <div className="flex items-center gap-1">
-                                    <svg width="12" height="12" viewBox="0 0 12 12" className="stroke-muted-foreground" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z"  stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M6 3V6L5 8"  stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    <span className="font-light text-muted-foreground text-[12px]">September 09, 2026</span>
-                                </div>
-                            </div>
-                            <p className="text-[12px]">A gentle space where people can check in with themselves without pressure, explanation, or judgment.</p>
-                        </div>
-                        <div className="w-full h-full bg-[#DEDEDE] rounded-b-[10px]">
-                        </div>
-                    </div>
-                    <div className="w-full aspect-5/3 flex flex-col">
-                        <div className="w-full bg-secondary/40 dark:bg-secondary flex flex-col gap-3 rounded-t-[10px] p-5">
-                            <div>
-                                <h1 className="font-semibold text-[24px]">Okay lang</h1>
-                                <div className="flex items-center gap-1">
-                                    <svg width="12" height="12" viewBox="0 0 12 12" className="stroke-muted-foreground" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z"  stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M6 3V6L5 8"  stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    <span className="font-light text-muted-foreground text-[12px]">September 09, 2026</span>
-                                </div>
-                            </div>
-                            <p className="text-[12px]">A gentle space where people can check in with themselves without pressure, explanation, or judgment.</p>
-                        </div>
-                        <div className="w-full h-full bg-[#DEDEDE] rounded-b-[10px]">
-
-                        </div>
-                    </div>
+            
                 </div>
             </BentoCard>  
             <BentoCard title={"Projects"} icon={projectsIcon} className="w-full relative gap-8"> 
