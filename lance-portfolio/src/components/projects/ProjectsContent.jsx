@@ -1,6 +1,7 @@
 import BentoCard from "../BentoCard";
 import ContactMe from "../ContactMe";
 import { Link } from "react-router-dom";
+import { projectsData } from "@/data";
 
 const featuredIcon =   <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15 21.25V27.5" stroke="black" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
@@ -15,29 +16,32 @@ const projectsIcon = <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
 </svg>;
 
 function ProjectsContent(){
+    const featuredProjects = projectsData.slice(0,3);
     return(
         <div className="w-full h-full lg:pr-3 px-3 lg:px-0 py-3 overflow-y-auto no-scrollbar overflow-hidden flex flex-col gap-3"> 
             <BentoCard title={"Featured"} icon={featuredIcon} className="w-full relative"> 
                 <div className="grid lg:grid-cols-3 grid-cols-1 gap-5">
-                    <Link to={"/projects-selected"} className="w-full aspect-5/3 flex flex-col border rounded-2xl border-zinc-200 dark:border-zinc-800 group">
+                {featuredProjects.map((post)=>
+                    <Link to={`/projects-selected/${post.slug}`} className="w-full aspect-5/3 flex flex-col border rounded-2xl border-zinc-200 dark:border-zinc-800 group">
                         <div className="w-full bg-card flex flex-col gap-3 rounded-2xl p-5">
                             <div>
-                                <h1 className="font-semibold text-[24px]">Bakehub</h1>
+                                <h1 className="font-semibold text-[24px]">{post.title}</h1>
                                 <div className="flex items-center gap-1">
                                     <svg width="13" height="13" viewBox="0 0 12 12" className="stroke-zinc-500 dark:stroke-zinc-400" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z"  stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M6 3V6L5 8"  stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
-                                    <span className="font-light text-[12px] text-zinc-500 dark:text-zinc-400 ">September 09, 2026</span>
+                                    <span className="font-light text-[12px] text-zinc-500 dark:text-zinc-400 ">{post.date}</span>
                                 </div>
                             </div>
-                            <p className="text-[13px] text-zinc-600 dark:text-zinc-400">A gentle space where people can check in with themselves without pressure, explanation, or judgment.</p>
+                            <p className="text-[13px] text-zinc-600 dark:text-zinc-400">{post.description}</p>
                         </div>
                         <div className="w-full h-full rounded-b-2xl overflow-hidden ">
-                            <img src="/projects-assets/bakehub/bakehub-thumbnail.png" alt="Bakehub's Image" className="group-hover:scale-105 object-cover transition-transform duration-300 ease-out"/>
+                            <img src={post.thumbnail} alt={post.title +"'s Image"}className="group-hover:scale-105 object-cover transition-transform duration-300 ease-out"/>
                         </div>
                     </Link>
             
+                )}
                 </div>
             </BentoCard>  
             <BentoCard title={"Other Projects"} icon={projectsIcon} className="w-full relative"> 

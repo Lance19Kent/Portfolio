@@ -410,6 +410,31 @@ export const blogsData = [
 
 export const projectsData = [
   {
-    
-  }
+    id:1,
+    slug:"bakehub",
+    title:"Bakehub",
+    date:"December 13, 2025",
+    description:"A comprehensive e-commerce platform dedicated for bakery business management and seamless ordering.",
+    thumbnail:"/projects-assets/bakehub/bakehub-thumbnail.png",
+    status:"Public"
+  },
+  {
+    id:2,
+    slug:"bakehub",
+    title:"BIRIMS",
+    date:"December 13, 2025",
+    description:"A comprehensive e-commerce platform dedicated for bakery business management and seamless ordering.",
+    thumbnail:"/projects-assets/bakehub/bakehub-thumbnail.png",
+    status:"Public"
+  },
+  {
+    id:3,
+    slug:"bakehub",
+    title:"BIRIMS",
+    date:"December 13, 2025",
+    description:"A comprehensive e-commerce platform dedicated for bakery business management and seamless ordering.",
+    thumbnail:"/projects-assets/bakehub/bakehub-thumbnail.png",
+    status:"Public"
+  },
+  
 ]
