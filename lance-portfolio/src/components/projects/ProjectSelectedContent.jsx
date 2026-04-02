@@ -10,7 +10,7 @@ function ProjectSelectedContent(){
      if(!project) return <Navigate to="/projects" replace/>
 
     return(
-        <div className="lg:py-3 pt-3 overflow-y-auto no-scrollbar">
+        <div>
             <BentoCard>
                 <div className="flex flex-col gap-5">
                     

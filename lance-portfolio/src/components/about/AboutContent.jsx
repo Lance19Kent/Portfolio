@@ -23,17 +23,9 @@ const certificateIcon = <svg width="30" height="30" viewBox="0 0 40 40" fill="no
 </svg>;
 
 function AboutContent(){
-    const featuredCertificates = achievementsData.filter(item => [1, 2, 3, 4].includes(item.id));
-    
-    // For Highlight Section
     const highlightsRef = useRef(null);
     const [canHighlightsLeft, setcanHighlightsLeft] = useState(false);
     const [canHighlightsRight, setcanHighlightsRight] = useState(true);
-
-     // For Certificates Section
-    const certificatesRef = useRef(null);
-    const [canCertificatesLeft, setcanCertificatesLeft] = useState(false);
-    const [canCertificatesRight, setcanCertificatesRight] = useState(true);
 
 
     const scrollCarousel = (ref, direction) =>{
@@ -50,8 +42,6 @@ function AboutContent(){
         setRight(scrollLeft + clientWidth < scrollWidth - 1);
       }
     }
-
-
     return(
         <div className="overflow-y-auto py-3 w-full gap-3 flex flex-col no-scrollbar">
             <div className="w-full select-none flex flex-col overflow-hidden bg-card rounded-[10px] relative shrink-0">
@@ -80,7 +70,7 @@ function AboutContent(){
                             <h1 className="font-semibold leading-6 lg:text-[20px] text-lg">Lance Kent Geoffrey B. Magollado</h1>
                             <span className="lg:text-[14px] text-sm text-semitext-ring">Aspiring Full-Stack Developer</span>
                         </div>
-                        <Button className={"cursor-pointer text-white lg:text-[16px] text-sm font-light w-fit  p-5 stroke-white bg-[#468cfc] hover:bg-[#629bf8] shadow-xs transition duration-200 ease-in"} asChild>
+                        <Button className={"cursor-pointer text-white lg:text-[16px] text-sm font-light w-fit  py-4 stroke-white bg-[#468cfc] hover:bg-[#629bf8] shadow-xs transition duration-200 ease-in"} asChild>
                             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lancemagollado46@gmail.com&su=Hi,%20Let%20us%20connect!" target="_blank" rel="noopener noreferrer">
                              <div className="lg:w-4 w-3">
                                 <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
