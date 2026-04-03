@@ -263,7 +263,7 @@ function Sidebar(){
                     <h3 className="text-center text-zinc-900 dark:text-zinc-100 text-[18px] font-semibold tracking-tight text-nowrap whitespace-nowrap text-ellipsis overflow-hidden w-full pt-3">
                         Lance Kent
                     </h3>
-                    <h2 className="text-zinc-600 dark:text-zinc-400 font-light text-center font-light text-[13px] pb-6 mt-0.5">
+                    <h2 className="text-zinc-600 dark:text-zinc-400 text-center font-light text-[13px] pb-6 mt-0.5">
                         Current 3rd Year IT Student
                     </h2>
                     

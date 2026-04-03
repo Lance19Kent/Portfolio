@@ -1,5 +1,6 @@
 import BentoCard from "../BentoCard";
 import ContactMe from "../ContactMe";
+import { educationData, experienceData } from "@/data";
 
 const educationIcon = <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M16 9.33331V28" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -22,13 +23,16 @@ function AboutSubContent(){
         <div className="w-full lg:py-3 lg:pr-3 pb-3 flex flex-col gap-3 overflow-y-auto no-scrollbar">
             <BentoCard title={"Education"} icon={educationIcon} className="min-h-70">
                 <div className="flex flex-col gap-5">
-                    <div className="flex w-full gap-5">
-                        <img src="/about-png/QCU-Logo.png" className="lg:w-13 lg:h-13 w-11 h-11"></img>
+                    {educationData.map((item) =>(
+                        <div className="flex w-full gap-5">
+                        <img src={item.logo} className="lg:w-13 lg:h-13 w-11 h-11" alt={item.title + "'s Logo"}></img>
                         <div className="flex flex-col gap-1 w-full overflow-hidden">
                             <div className="w-full ">
-                                <p className="font-medium truncate">BS in Information Technology</p>
-                                <p className="font-light text-semitext-ring text-[14px]">Quezon City University</p>
-                                <p className="font-light text-[14px] text-semitext-ring">GWA: <span className="text-[#25B243]">In Progress</span> / 1.0</p>
+                                <p className="font-semibold text-[15px] lg:text-[16px] text-black dark:text-zinc-100 leading-tight">{item.degree}</p>
+                                <p className="font-medium text-zinc-600 dark:text-zinc-400 text-[14px]">{item.institution}</p>
+                               <p className="font-medium text-[13px] text-zinc-500 dark:text-zinc-400">
+                                        GWA: <span className={item.gwaIsProgress ? "text-[#25B243] font-semibold" : "font-semibold text-zinc-700 dark:text-zinc-300"}>{item.gwaText}</span>{item.gwaValue}
+                                </p>
                             </div>
                             <div className="flex items-center gap-2">
                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -37,46 +41,26 @@ function AboutSubContent(){
                                 <path d="M11.0833 2.33331H2.91667C2.27233 2.33331 1.75 2.85565 1.75 3.49998V11.6666C1.75 12.311 2.27233 12.8333 2.91667 12.8333H11.0833C11.7277 12.8333 12.25 12.311 12.25 11.6666V3.49998C12.25 2.85565 11.7277 2.33331 11.0833 2.33331Z" stroke="#9D9D9D" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M1.75 5.83331H12.25" stroke="#9D9D9D" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
-                                <p className="text-[12px] text-[#9D9D9D]">August 2023 - Present</p>
+                                <p className="text-[12px] text-[#9D9D9D]">{item.date}</p>
                             </div>
                             <p className="text-[13px] lg:text-[14px] leading-relaxed text-zinc-600 dark:text-zinc-400 font-light">
-                                Currently taking a Bachelor of Science in Information and Technology in Quezon City University. Focusing in Web Technologies that can create innovative and sustainable solutions not only academically, but for the community. 
+                               {item.description}
                             </p>
                         </div>
                     </div>
-                    <div className="flex w-full gap-5">
-                        <img src="/about-png/ROSARIO-INSTITUTE-LOGO.png" className="lg:w-13 lg:h-13 w-11 h-11"></img>
-                        <div className="flex flex-col gap-1 w-full overflow-hidden"> 
-                            <div className="w-full">
-                                <h1 className="font-medium truncate">Track-Information and Communications Technology with Specialization in Computer Programming</h1>
-                                <p className="font-light text-[14px] text-semitext-ring">Rosario Institute</p>
-                                <p className="font-light text-[14px] text-semitext-ring">GWA: 96 / 100</p>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4.66675 1.16669V3.50002" stroke="#9D9D9D" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M9.33325 1.16669V3.50002" stroke="#9D9D9D" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M11.0833 2.33331H2.91667C2.27233 2.33331 1.75 2.85565 1.75 3.49998V11.6666C1.75 12.311 2.27233 12.8333 2.91667 12.8333H11.0833C11.7277 12.8333 12.25 12.311 12.25 11.6666V3.49998C12.25 2.85565 11.7277 2.33331 11.0833 2.33331Z" stroke="#9D9D9D" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M1.75 5.83331H12.25" stroke="#9D9D9D" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <p className="text-[12px] text-[#9D9D9D]">June 2019 - May 2021</p>
-                            </div>
-                            <p className="text-[13px] lg:text-[14px] leading-relaxed text-zinc-600 dark:text-zinc-400 font-light">
-                                Consistent Honor and Achievements - 90 above grades everyday year, and masters java and sql. Accumulated with High Honor with the average of 96. I learned what is truly my goal, my career path and created mindset that will help me achieve my goals.
-                            </p>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </BentoCard>
             <BentoCard title={"Experience"} icon={experienceIcon}>
                 <div className="flex flex-col">
-                    <div className="flex w-full lg:gap-5 gap-4">
-                        <img src="/about-png/STUDYPOOL-LOGO.png" className="lg:w-13 lg:h-13 w-11 h-11"></img>
+                    {experienceData.map((job) =>(
+                        <div className="flex w-full lg:gap-5 gap-4">
+                        <img src={job.logo} className="lg:w-13 lg:h-13 w-11 h-11" alt={job.title +"'s Logo"}></img>
                         <div className="flex flex-col gap-1">
                             <div>
-                                <span className="font-medium">StudyPool</span>
-                                <p className="font-light text-semitext-ring text-[14px]">StudyPool Inc.</p>
-                                <p className="font-light text-[14px] text-semitext-ring">Online Platform</p>
+                                <span className="font-semibold text-[15px] lg:text-[16px] text-black dark:text-zinc-100 leading-tight">{job.role}</span>
+                                <p className="font-medium text-zinc-600 dark:text-zinc-400 text-[14px]">{job.company}</p>
+                                <p className="font-medium text-[13px] text-zinc-500 dark:text-zinc-400">{job.type}</p>
                             </div>
                             <div className="flex items-center gap-2">
                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -85,13 +69,14 @@ function AboutSubContent(){
                                 <path d="M11.0833 2.33331H2.91667C2.27233 2.33331 1.75 2.85565 1.75 3.49998V11.6666C1.75 12.311 2.27233 12.8333 2.91667 12.8333H11.0833C11.7277 12.8333 12.25 12.311 12.25 11.6666V3.49998C12.25 2.85565 11.7277 2.33331 11.0833 2.33331Z" stroke="#9D9D9D" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M1.75 5.83331H12.25" stroke="#9D9D9D" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
-                                <p className="text-[12px] text-[#9D9D9D]">Jan 2026 - Present</p>
+                                <p className="text-[12px] text-[#9D9D9D]">{job.date}</p>
                             </div>
                             <p className="text-[13px] lg:text-[14px] leading-relaxed text-zinc-600 dark:text-zinc-400 font-light">
-                                Teach and post programming task and activities. Assisting students that having a hard time studying computer programming. 
+                                {job.description}
                             </p>
                         </div>
                     </div>
+                    ))}
                 </div>
             </BentoCard>
             <ContactMe></ContactMe>

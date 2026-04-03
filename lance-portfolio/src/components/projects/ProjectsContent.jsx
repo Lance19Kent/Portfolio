@@ -2,8 +2,6 @@ import BentoCard from "../BentoCard";
 import { Link } from "react-router-dom";
 import { projectsData } from "@/data";
 import ProjectSubContent from "./ProjectSubContent";
-// Import ContactMe if you want it at the bottom of the page!
-import ContactMe from "../ContactMe"; 
 
 const featuredIcon =   <svg width="30" height="30" className="dark:stroke-white stroke-black" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15 21.25V27.5" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>

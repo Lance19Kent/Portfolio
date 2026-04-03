@@ -733,3 +733,42 @@ export const skillsData = [
     )
   }
 ];
+
+// Idagdag mo ito sa loob ng src/data.jsx mo
+
+export const educationData = [
+  {
+    id: 1,
+    logo: "/about-png/QCU-Logo.png",
+    degree: "BS in Information Technology",
+    institution: "Quezon City University",
+    gwaText: "In Progress",
+    gwaValue: " / 1.0",
+    gwaIsProgress: true, 
+    date: "August 2023 - Present",
+    description: "Currently taking a Bachelor of Science in Information and Technology in Quezon City University. Focusing in Web Technologies that can create innovative and sustainable solutions not only academically, but for the community."
+  },
+  {
+    id: 2,
+    logo: "/about-png/ROSARIO-INSTITUTE-LOGO.png",
+    degree: "Track-Information and Communications Technology with Specialization in Computer Programming",
+    institution: "Rosario Institute",
+    gwaText: "96",
+    gwaValue: " / 100",
+    gwaIsProgress: false,
+    date: "June 2019 - May 2021",
+    description: "Consistent Honor and Achievements - 90 above grades everyday year, and masters java and sql. Accumulated with High Honor with the average of 96. I learned what is truly my goal, my career path and created mindset that will help me achieve my goals."
+  }
+];
+
+export const experienceData = [
+  {
+    id: 1,
+    logo: "/about-png/STUDYPOOL-LOGO.png",
+    role: "StudyPool",
+    company: "StudyPool Inc.",
+    type: "Online Platform",
+    date: "Jan 2026 - Present",
+    description: "Teach and post programming task and activities. Assisting students that having a hard time studying computer programming."
+  }
+];

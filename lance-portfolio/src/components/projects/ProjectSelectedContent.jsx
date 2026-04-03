@@ -1,14 +1,9 @@
 import BentoCard from "../BentoCard";
-import { useNavigate, useParams, Navigate } from "react-router-dom";
-import { projectsData } from "@/data";
+import { useNavigate} from "react-router-dom";
 
-function ProjectSelectedContent(){
-    const { slug } = useParams();
-    const project = projectsData.find((b) => b.slug === slug);
+function ProjectSelectedContent({project}){
+
     const navigate = useNavigate();
-
-     if(!project) return <Navigate to="/projects" replace/>
-
     return(
         <div>
             <BentoCard>
@@ -31,7 +26,6 @@ function ProjectSelectedContent(){
                             )}
                         </div>
                         
-                        {/* DYNAMIC TECH STACK */}
                         <div className="flex flex-wrap gap-2">
                             {project.techStack?.map(tech => (
                                 <p key={tech} className="text-zinc-500 dark:text-zinc-400 text-[12px] w-fit px-2 border py-0.5 rounded-[5px] border-zinc-300 dark:border-zinc-800">
@@ -40,7 +34,6 @@ function ProjectSelectedContent(){
                             ))}
                         </div>
 
-                        {/* DYNAMIC QUICK STATS */}
                         <div className="flex flex-col gap-3 mt-1">
                             <div className="flex lg:gap-3 gap-2 items-center">
                                 <div className="lg:w-6 w-4 text-zinc-800 dark:text-zinc-200">
@@ -77,14 +70,12 @@ function ProjectSelectedContent(){
                         </div>
                     </div>
 
-                    {/* DYNAMIC TOP IMAGE */}
                     {project.content?.images?.[0] && (
                         <div className="w-full pt-4">
                             <img src={project.content.images[0]} alt={`${project.title} Preview`} className="w-full rounded-[10px] ring-1 ring-black/5 dark:ring-white/10 " />
                         </div>
                     )}
 
-                    {/* DYNAMIC CTA BUTTONS */}
                     <div className="flex flex-wrap gap-3 pt-2">
                         {project.githubLink && (
                             <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-5 py-2.5 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 text-[14px] font-medium rounded-[100px] hover:bg-zinc-800 dark:hover:bg-zinc-100 transition-colors">
@@ -100,10 +91,8 @@ function ProjectSelectedContent(){
                         )}
                     </div>
 
-                    {/* DYNAMIC CONTENT / CASE STUDY SECTION */}
                     <div className="flex flex-col gap-6 pt-4">
                         
-                        {/* 1. Project Overview */}
                         {project.content?.overview && (
                             <div className="flex flex-col gap-2">
                                 <h2 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 tracking-tight">Project Overview</h2>
@@ -113,17 +102,14 @@ function ProjectSelectedContent(){
                             </div>
                         )}
 
-                        {/* 2. Middle Image Support (Kung meron man sa array) */}
                        {project.content?.gallery && project.content.gallery.length > 0 && (
                             <div className="flex flex-col gap-3 pt-2">
                                 <h2 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 tracking-tight">Project Highlights</h2>
                                 
-                                {/* GRID CONTAINER: 2 columns on Desktop, 1 on Mobile */}
                                 <div className="grid grid-cols-1  gap-4">
                                     {project.content.gallery.map((img, idx) => (
                                         <div 
                                             key={idx} 
-                                            // TWEAK: Same card styling sa buong site mo
                                             className="w-full rounded-[10px] overflow-hidden ring-1 ring-black/5 dark:ring-white/10 aspect-video bg-zinc-100 dark:bg-zinc-800 group"
                                         >
                                             <img 
@@ -136,8 +122,6 @@ function ProjectSelectedContent(){
                                 </div>
                             </div>
                         )}
-
-                        {/* 3. Key Features */}
                         {project.content?.features && project.content.features.length > 0 && (
                             <div className="flex flex-col gap-2 pt-2">
                                 <h2 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 tracking-tight">Key Features</h2>
@@ -151,9 +135,7 @@ function ProjectSelectedContent(){
                                 </ul>
                             </div>
                         )}
-
                     </div>
-
                 </div>
             </BentoCard>
         </div>
