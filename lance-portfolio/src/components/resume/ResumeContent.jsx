@@ -51,20 +51,16 @@ function ResumeContent(){
                     </a>
                 </Button>
 
-                {/* --- MAIN VIEWER WRAPPER (Ito yung bintana) --- */}
                 <div className="relative w-full h-125 lg:h-auto rounded-[10px] border border-gray-200 overflow-hidden bg-[#1a1a1a]">
                     <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-20">
                         <Button variant="secondary" onClick={zoomOut} className="w-10 h-10 p-0 rounded-full text-lg shadow-md cursor-pointer hover:bg-gray-200">-</Button>
                         <Button variant="secondary" onClick={zoomIn} className="w-10 h-10 p-0 rounded-full text-lg shadow-md cursor-pointer hover:bg-gray-200">+</Button>
                     </div>
 
-                    {/* SCROLLABLE AREA (Dito nag-iiscroll yung PDF) */}
                     <div className="w-full h-full overflow-auto no-scrollbar">
                         
-                        {/* INNER WRAPPER (Ito yung pipilit sa browser na laging gitna at may p-10) */}
                         <div className="min-w-full min-h-full w-fit flex justify-center items-center lg:p-10 mx-auto p-2 transition-all duration-300">
-                            
-                            {/* ANG MISMONG PDF */}
+                    
                             <div className="shadow-2xl bg-white">
                                 <Document 
                                     file="/Magollado-Lance-Kent-Geoffrey-Resume.pdf"

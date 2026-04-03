@@ -41,7 +41,7 @@ function AchievementCard({ data, list, variant = "card" }) {
                         </div>
 
                         <div className="py-4 flex gap-3 items-start bg-card flex-1">
-                            <div className="w-8 h-8 rounded-md bg-white dark:bg-zinc-800 flex-shrink-0 overflow-hidden border border-zinc-200 dark:border-zinc-700 flex items-center justify-center p-0.5 shadow-sm">
+                            <div className="w-8 h-8 rounded-md bg-white dark:bg-zinc-800 shrink-0 overflow-hidden border border-zinc-200 dark:border-zinc-700 flex items-center justify-center p-0.5 shadow-sm">
                                 <img src={data.issuerLogo} alt={data.issuer + " Logo"} className="w-full h-full object-contain" />
                             </div>
                             <div className="flex flex-col gap-1.5  h-full">

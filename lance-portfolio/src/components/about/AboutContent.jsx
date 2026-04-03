@@ -13,8 +13,8 @@ const aboutIcon = <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xm
 </svg>;
 
 const highlightsIcon =   <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15 21.25V27.5" stroke="black" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M11.25 13.45C11.2498 13.9151 11.1198 14.3709 10.8747 14.7662C10.6295 15.1615 10.279 15.4805 9.8625 15.6875L7.6375 16.8125C7.22098 17.0195 6.87046 17.3385 6.62535 17.7338C6.38024 18.1291 6.25025 18.5849 6.25 19.05V20C6.25 20.3315 6.3817 20.6495 6.61612 20.8839C6.85054 21.1183 7.16848 21.25 7.5 21.25H22.5C22.8315 21.25 23.1495 21.1183 23.3839 20.8839C23.6183 20.6495 23.75 20.3315 23.75 20V19.05C23.7498 18.5849 23.6198 18.1291 23.3747 17.7338C23.1295 17.3385 22.779 17.0195 22.3625 16.8125L20.1375 15.6875C19.721 15.4805 19.3705 15.1615 19.1253 14.7662C18.8802 14.3709 18.7502 13.9151 18.75 13.45V8.75C18.75 8.41848 18.8817 8.10054 19.1161 7.86612C19.3505 7.6317 19.6685 7.5 20 7.5C20.663 7.5 21.2989 7.23661 21.7678 6.76777C22.2366 6.29893 22.5 5.66304 22.5 5C22.5 4.33696 22.2366 3.70107 21.7678 3.23223C21.2989 2.76339 20.663 2.5 20 2.5H10C9.33696 2.5 8.70107 2.76339 8.23223 3.23223C7.76339 3.70107 7.5 4.33696 7.5 5C7.5 5.66304 7.76339 6.29893 8.23223 6.76777C8.70107 7.23661 9.33696 7.5 10 7.5C10.3315 7.5 10.6495 7.6317 10.8839 7.86612C11.1183 8.10054 11.25 8.41848 11.25 8.75V13.45Z" stroke="black" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 21.25V27.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M11.25 13.45C11.2498 13.9151 11.1198 14.3709 10.8747 14.7662C10.6295 15.1615 10.279 15.4805 9.8625 15.6875L7.6375 16.8125C7.22098 17.0195 6.87046 17.3385 6.62535 17.7338C6.38024 18.1291 6.25025 18.5849 6.25 19.05V20C6.25 20.3315 6.3817 20.6495 6.61612 20.8839C6.85054 21.1183 7.16848 21.25 7.5 21.25H22.5C22.8315 21.25 23.1495 21.1183 23.3839 20.8839C23.6183 20.6495 23.75 20.3315 23.75 20V19.05C23.7498 18.5849 23.6198 18.1291 23.3747 17.7338C23.1295 17.3385 22.779 17.0195 22.3625 16.8125L20.1375 15.6875C19.721 15.4805 19.3705 15.1615 19.1253 14.7662C18.8802 14.3709 18.7502 13.9151 18.75 13.45V8.75C18.75 8.41848 18.8817 8.10054 19.1161 7.86612C19.3505 7.6317 19.6685 7.5 20 7.5C20.663 7.5 21.2989 7.23661 21.7678 6.76777C22.2366 6.29893 22.5 5.66304 22.5 5C22.5 4.33696 22.2366 3.70107 21.7678 3.23223C21.2989 2.76339 20.663 2.5 20 2.5H10C9.33696 2.5 8.70107 2.76339 8.23223 3.23223C7.76339 3.70107 7.5 4.33696 7.5 5C7.5 5.66304 7.76339 6.29893 8.23223 6.76777C8.70107 7.23661 9.33696 7.5 10 7.5C10.3315 7.5 10.6495 7.6317 10.8839 7.86612C11.1183 8.10054 11.25 8.41848 11.25 8.75V13.45Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>;
 
 const certificateIcon = <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,12 +47,12 @@ function AboutContent(){
             <div className="w-full select-none flex flex-col overflow-hidden bg-card rounded-[10px] relative shrink-0">
             <div className="w-full relative">
                 <div className="w-full object-cover h-40 lg:h-aut dark:hidden relative">
-                    <video src="./cover-vids/cover-light-mode.mp4" autoPlay loop muted className="w-full h-full object-cover" />
+                    <video src="./cover-vids/lightmode-cover.mp4" autoPlay loop muted className="w-full h-full object-cover" />
                     <div className="w-full h-full bg-black/20 absolute inset-0">
                     </div>
                 </div>
                 <div className="w-full object-cover h-40 lg:h-aut hidden dark:block">
-                    <video src="./cover-vids/cover-dark-mode.mp4" autoPlay loop muted className="w-full h-full object-cover" />
+                    <video src="./cover-vids/darkmode-cover.mp4" autoPlay loop muted className="w-full h-full object-cover" />
                     <div className="w-full h-full bg-black/20 absolute inset-0">
                     </div>
                 </div>
@@ -60,12 +60,12 @@ function AboutContent(){
             </div>
        
 
-            <div  className="absolute z-20 h-35.5 w-35.5 shrink-0 lg:bottom-15 lg:h-36.5 lg:w-36.5 lg:left-3 left-1/2 -translate-x-1/2 lg:top-auto top-25 lg:translate-x-0 rounded-full overflow-hidden border-3 border-card">
+            <div  className="absolute z-20 h-35.5 w-35.5 shrink-0 lg:bottom-15 lg:h-32.5 lg:w-32.5 lg:left-3 left-1/2 -translate-x-1/2 lg:top-auto top-25 lg:translate-x-0 rounded-full overflow-hidden border-3 border-card">
                 <img src="./profile_githu.jpeg" alt="Lance Profile" className="w-full h-full object-cover" />
             </div>     
 
                 <div className="w-full py-5 gap-5 flex flex-1 items-center justify-end lg:pr-4 mt-20 lg:mt-0">
-                    <div className="flex flex-col w-full justify-between lg:pl-42 gap-3 items-center lg:items-start">
+                    <div className="flex flex-col w-full justify-between lg:pl-38 gap-3 items-center lg:items-start">
                         <div className="leading-5 flex flex-col items-center lg:items-start">
                             <h1 className="font-semibold leading-6 lg:text-[20px] text-lg">Lance Kent Geoffrey B. Magollado</h1>
                             <span className="lg:text-[14px] text-sm text-semitext-ring">Aspiring Full-Stack Developer</span>
@@ -111,9 +111,7 @@ function AboutContent(){
    
                         className="flex flex-col w-57.5 shrink-0 bg-white dark:bg-zinc-900/40 rounded-2xl border border-zinc-200 dark:border-zinc-800  transition-all duration-300 overflow-hidden group cursor-pointer"
                     >
-                        
-                        {/* TWEAK 2: The Image Section (Fixed Ratio + Hover Zoom) */}
-                        <div className="w-full aspect-[14/10] bg-zinc-100 dark:bg-zinc-800 overflow-hidden relative">
+                        <div className="w-full aspect-14/10 bg-zinc-100 dark:bg-zinc-800 overflow-hidden relative">
                             <img 
                                 src={post.thumbnail} 
                                 alt={post.title} 

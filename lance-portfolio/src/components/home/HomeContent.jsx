@@ -7,17 +7,17 @@ import { blogsData } from "@/data";
 import {Link} from "react-router-dom";
 
 const highlightsIcon =  <svg width="30" height="30" className="stroke-black" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15 21.25V27.5" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M11.25 13.45C11.2498 13.9151 11.1198 14.3709 10.8747 14.7662C10.6295 15.1615 10.279 15.4805 9.8625 15.6875L7.6375 16.8125C7.22098 17.0195 6.87046 17.3385 6.62535 17.7338C6.38024 18.1291 6.25025 18.5849 6.25 19.05V20C6.25 20.3315 6.3817 20.6495 6.61612 20.8839C6.85054 21.1183 7.16848 21.25 7.5 21.25H22.5C22.8315 21.25 23.1495 21.1183 23.3839 20.8839C23.6183 20.6495 23.75 20.3315 23.75 20V19.05C23.7498 18.5849 23.6198 18.1291 23.3747 17.7338C23.1295 17.3385 22.779 17.0195 22.3625 16.8125L20.1375 15.6875C19.721 15.4805 19.3705 15.1615 19.1253 14.7662C18.8802 14.3709 18.7502 13.9151 18.75 13.45V8.75C18.75 8.41848 18.8817 8.10054 19.1161 7.86612C19.3505 7.6317 19.6685 7.5 20 7.5C20.663 7.5 21.2989 7.23661 21.7678 6.76777C22.2366 6.29893 22.5 5.66304 22.5 5C22.5 4.33696 22.2366 3.70107 21.7678 3.23223C21.2989 2.76339 20.663 2.5 20 2.5H10C9.33696 2.5 8.70107 2.76339 8.23223 3.23223C7.76339 3.70107 7.5 4.33696 7.5 5C7.5 5.66304 7.76339 6.29893 8.23223 6.76777C8.70107 7.23661 9.33696 7.5 10 7.5C10.3315 7.5 10.6495 7.6317 10.8839 7.86612C11.1183 8.10054 11.25 8.41848 11.25 8.75V13.45Z"  stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 21.25V27.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M11.25 13.45C11.2498 13.9151 11.1198 14.3709 10.8747 14.7662C10.6295 15.1615 10.279 15.4805 9.8625 15.6875L7.6375 16.8125C7.22098 17.0195 6.87046 17.3385 6.62535 17.7338C6.38024 18.1291 6.25025 18.5849 6.25 19.05V20C6.25 20.3315 6.3817 20.6495 6.61612 20.8839C6.85054 21.1183 7.16848 21.25 7.5 21.25H22.5C22.8315 21.25 23.1495 21.1183 23.3839 20.8839C23.6183 20.6495 23.75 20.3315 23.75 20V19.05C23.7498 18.5849 23.6198 18.1291 23.3747 17.7338C23.1295 17.3385 22.779 17.0195 22.3625 16.8125L20.1375 15.6875C19.721 15.4805 19.3705 15.1615 19.1253 14.7662C18.8802 14.3709 18.7502 13.9151 18.75 13.45V8.75C18.75 8.41848 18.8817 8.10054 19.1161 7.86612C19.3505 7.6317 19.6685 7.5 20 7.5C20.663 7.5 21.2989 7.23661 21.7678 6.76777C22.2366 6.29893 22.5 5.66304 22.5 5C22.5 4.33696 22.2366 3.70107 21.7678 3.23223C21.2989 2.76339 20.663 2.5 20 2.5H10C9.33696 2.5 8.70107 2.76339 8.23223 3.23223C7.76339 3.70107 7.5 4.33696 7.5 5C7.5 5.66304 7.76339 6.29893 8.23223 6.76777C8.70107 7.23661 9.33696 7.5 10 7.5C10.3315 7.5 10.6495 7.6317 10.8839 7.86612C11.1183 8.10054 11.25 8.41848 11.25 8.75V13.45Z"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>;
 
 const statsIcon = <svg width="30" height="30" className="stroke-black" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15 20V26.25"  stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M20 17.5V26.25"  stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M25 12.5V26.25"  stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M27.5 3.75L16.6925 14.5575C16.6344 14.6157 16.5655 14.6619 16.4895 14.6934C16.4136 14.7249 16.3322 14.7411 16.25 14.7411C16.1678 14.7411 16.0864 14.7249 16.0105 14.6934C15.9345 14.6619 15.8656 14.6157 15.8075 14.5575L11.6925 10.4425C11.5753 10.3253 11.4164 10.2595 11.2506 10.2595C11.0849 10.2595 10.926 10.3253 10.8088 10.4425L2.5 18.75" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M5 22.5V26.25"  stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M10 17.5V26.25"  stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 20V26.25"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 17.5V26.25"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25 12.5V26.25"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M27.5 3.75L16.6925 14.5575C16.6344 14.6157 16.5655 14.6619 16.4895 14.6934C16.4136 14.7249 16.3322 14.7411 16.25 14.7411C16.1678 14.7411 16.0864 14.7249 16.0105 14.6934C15.9345 14.6619 15.8656 14.6157 15.8075 14.5575L11.6925 10.4425C11.5753 10.3253 11.4164 10.2595 11.2506 10.2595C11.0849 10.2595 10.926 10.3253 10.8088 10.4425L2.5 18.75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M5 22.5V26.25"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 17.5V26.25"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>;
 
 function Content(){
@@ -49,7 +49,6 @@ function Content(){
         return () => clearInterval(intervalId);
     })
 
-     // For Highlight Section
         const highlightsRef = useRef(null);
         const [canHighlightsLeft, setcanHighlightsLeft] = useState(false);
         const [canHighlightsRight, setcanHighlightsRight] = useState(true);
@@ -72,64 +71,75 @@ function Content(){
     return (
     <div className="w-full flex flex-col gap-3 lg:p-0 p-3 lg:overflow-y-auto lg:no-scrollbar lg:py-3 select-none">
         <div className="w-full flex flex-col overflow-hidden bg-card rounded-[10px] relative shrink-0">
-            <div className="w-full relative ">
-                <div className="w-full object-cover lg:h-55 h-48.5 dark:hidden relative">
-                    <video src="./cover-vids/lightmode-cover.mp4" autoPlay loop muted className="w-full h-full object-cover" />
-                    <div className="w-full h-full bg-black/20 absolute inset-0">
-
-                    </div>
-                </div>
-                <div className="w-full object-cover lg:h-55 h-48.5 hidden dark:block">
-                    <video src="./cover-vids/darkmode-cover.mp4" autoPlay loop muted className="w-full h-full object-cover" />
-                    <div className="w-full h-full bg-black/20 absolute inset-0">
-
-                    </div>
-                </div>
-                <div className="flex z-20 absolute top-5 right-5 lg:gap-3 gap-1.5 items-center">
-                    <div className="lg:w-5 w-3">
-                        <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6.66669 1.66669V5.00002" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M13.3333 1.66669V5.00002" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M15.8333 3.33331H4.16667C3.24619 3.33331 2.5 4.07951 2.5 4.99998V16.6666C2.5 17.5871 3.24619 18.3333 4.16667 18.3333H15.8333C16.7538 18.3333 17.5 17.5871 17.5 16.6666V4.99998C17.5 4.07951 16.7538 3.33331 15.8333 3.33331Z" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M2.5 8.33331H17.5" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                   
-                    <span className="font-medium text-white lg:text-[16px] text-[12px]">{currentDate}</span>
-                </div>
-                 {/* <div className="absolute text-white top-1/2 lg:top-auto font-medium bottom-3 right-4 lg:text-[30px] text-[18px] z-10">
-                    <TypeAnimation sequence={[`Welcome to my digital workspace!`, 2500,`I build clean web experiences.`,2500,`Always learning, always building.`, 2500,`Ready for new collaborations.`, 2500]}
-                    
-                    wrapper="span"
-                    speed={20}
-                    repeat={Infinity}
-                    />
-
-                </div> */}
-            </div>
-            <div  className="absolute z-20 h-40 w-40 bottom-3 lg:h-38.5 lg:w-38.5 lg:left-3 left-1/2 -translate-x-1/2 lg:top-auto top-35.5 lg:translate-x-0 rounded-full overflow-hidden border-3 border-card">
-                <img src="./profile_githu.jpeg" alt="Lance Profile" className="w-full h-full object-cover" />
-            </div>               
+      {/* THE UNIQUE "COMMAND CENTER" HERO BANNER (MOBILE RESPONSIVE) */}
+        <div className="w-full flex flex-col rounded-[14px] border border-zinc-200 dark:border-zinc-800 shadow-sm shrink-0 overflow-hidden relative group">
             
-                <div className="w-full py-5 gap-5 flex items-center lg:mt-0 justify-end lg:pr-4 mt-25">
-                    <div className="flex w-full lg:flex-row flex-col gap-4  justify-between lg:pl-45 items-center">
-                        <div className="flex flex-col items-center lg:items-start">
-                            <h1 className="font-semibold leading-6 lg:text-[21px] text-lg">Lance Kent Geoffrey B. Magollado</h1>
-                            <span className="lg:text-[14px] text-sm text-semitext-ring">Aspiring Full-Stack Developer</span>
-                        </div>
-                        <Button className={"cursor-pointer text-white lg:text-[16px] text-sm font-light p-5 stroke-white bg-[#468cfc] hover:bg-[#629bf8] shadow-xs transition duration-200 ease-in"} asChild>
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lancemagollado46@gmail.com&su=Hi,%20Let%20us%20connect!" target="_blank" rel="noopener noreferrer">
-                            <div className="lg:w-4 w-3">
-                                <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M15.1417 22.5896C15.1812 22.6882 15.25 22.7724 15.3388 22.8308C15.4276 22.8892 15.5321 22.919 15.6384 22.9163C15.7446 22.9136 15.8475 22.8784 15.9331 22.8156C16.0188 22.7527 16.0832 22.6651 16.1177 22.5646L22.8885 2.77293C22.9219 2.68064 22.9282 2.58075 22.9069 2.48497C22.8855 2.38919 22.8373 2.30147 22.7679 2.23208C22.6985 2.16269 22.6108 2.11449 22.515 2.09313C22.4193 2.07178 22.3194 2.07814 22.2271 2.11148L2.43541 8.88231C2.33488 8.91678 2.24731 8.98118 2.18444 9.06686C2.12157 9.15254 2.08642 9.2554 2.0837 9.36164C2.08098 9.46788 2.11082 9.5724 2.16922 9.66119C2.22762 9.74998 2.31178 9.81878 2.41041 9.85835L10.6708 13.1709C10.932 13.2754 11.1692 13.4317 11.3683 13.6305C11.5674 13.8292 11.7241 14.0662 11.8292 14.3271L15.1417 22.5896Z" stroke-opacity="0.7" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M22.7646 2.23645L11.3687 13.6312" stroke-opacity="07.7" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            </div>
-                            Message
+            {/* 1. COVER VIDEO BACKGROUND */}
+            {/* TWEAK: Tumaas ang mobile height (h-[340px]) para may space mag-wrap ang text at buttons */}
+            <div className="w-full relative h-87.5 sm:h-80 lg:h-72">
+                
+                {/* Light Mode Video */}
+                <video src="./cover-vids/lightmode-cover.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover dark:hidden" />
+                {/* Dark Mode Video */}
+                <video src="./cover-vids/darkmode-cover.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover hidden dark:block" />
+                
+                {/* TWEAK: Smart Gradient! 
+                    Sa Mobile: Dark sa ibaba pataas (to-t) para mabasa ang text na naka-stack sa bottom.
+                    Sa Desktop: Dark sa kaliwa pakanan (to-r). 
+                */}
+                <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/50 to-black/20 lg:bg-linear-to-r lg:from-black/90 lg:via-black/40 lg:to-transparent"></div>
+
+                {/* The Clock (Top Right) */}
+                <div className="absolute top-4 right-4 z-20 flex items-center gap-2 bg-black/30 backdrop-blur-md border border-white/10 rounded-full px-3 py-1.5 shadow-sm">
+                    <svg viewBox="0 0 20 20" className="w-3.5 h-3.5 lg:w-4 lg:h-4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.66669 1.66669V5.00002" stroke="white" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
+                        <path d="M13.3333 1.66669V5.00002" stroke="white" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
+                        <path d="M15.8333 3.33331H4.16667C3.24619 3.33331 2.5 4.07951 2.5 4.99998V16.6666C2.5 17.5871 3.24619 18.3333 4.16667 18.3333H15.8333C16.7538 18.3333 17.5 17.5871 17.5 16.6666V4.99998C17.5 4.07951 16.7538 3.33331 15.8333 3.33331Z" stroke="white" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
+                        <path d="M2.5 8.33331H17.5" stroke="white" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    <span className="font-medium text-white text-[11px] lg:text-[12px] tracking-wide">{currentDate}</span>
+                </div>
+
+                {/* 2. THE OVERLAY CONTENT (Bottom Left) */}
+                {/* TWEAK: Dinagdagan ng right-5 para hindi sumagad sa kanang edge kapag nasa maliit na phone */}
+                <div className="absolute bottom-5 left-5 right-5 lg:bottom-8 lg:left-8 lg:right-auto z-20 flex flex-col gap-3 lg:gap-4 max-w-lg">
+                    
+                    <div className="flex flex-col gap-1">
+                        <h1 className="text-white font-bold text-[26px] leading-[1.1] sm:text-3xl lg:text-4xl tracking-tight">
+                            Crafting clean & <br className="hidden sm:block" /> dynamic digital systems.
+                        </h1>
+                        <p className="text-zinc-300 font-light text-[13px] sm:text-[14px] lg:text-[15px] mt-1 lg:mt-2 leading-relaxed max-w-[90%] lg:max-w-md">
+                            Bridging the gap between sleek front-end designs and robust back-end architecture. Let's build something impactful.
+                        </p>
+                    </div>
+
+                    {/* Interactive Buttons */}
+                    {/* TWEAK: flex-col on very small screens, row on sm and above */}
+                    <div className="flex lg:flex-row flex-col items-start gap-3 mt-1 lg:mt-2">
+                        
+                        <Button className="w-full sm:w-auto cursor-pointer rounded-full bg-white text-zinc-900 hover:bg-zinc-200 shadow-sm transition-all duration-200 px-6 py-5 lg:py-4 font-medium text-[14px] flex justify-center" asChild>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lancemagollado46@gmail.com&su=Hi,%20Let%20us%20connect!" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                                <svg viewBox="0 0 25 25" fill="none" className="w-4 h-4 lg:w-5 lg:h-5" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.1417 22.5896C15.1812 22.6882 15.25 22.7724 15.3388 22.8308C15.4276 22.8892 15.5321 22.919 15.6384 22.9163C15.7446 22.9136 15.8475 22.8784 15.9331 22.8156C16.0188 22.7527 16.0832 22.6651 16.1177 22.5646L22.8885 2.77293C22.9219 2.68064 22.9282 2.58075 22.9069 2.48497C22.8855 2.38919 22.8373 2.30147 22.7679 2.23208C22.6985 2.16269 22.6108 2.11449 22.515 2.09313C22.4193 2.07178 22.3194 2.07814 22.2271 2.11148L2.43541 8.88231C2.33488 8.91678 2.24731 8.98118 2.18444 9.06686C2.12157 9.15254 2.08642 9.2554 2.0837 9.36164C2.08098 9.46788 2.11082 9.5724 2.16922 9.66119C2.22762 9.74998 2.31178 9.81878 2.41041 9.85835L10.6708 13.1709C10.932 13.2754 11.1692 13.4317 11.3683 13.6305C11.5674 13.8292 11.7241 14.0662 11.8292 14.3271L15.1417 22.5896Z" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
+                                    <path d="M22.7646 2.23645L11.3687 13.6312" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                                Message Me
                             </a>
                         </Button>
+
+                        {/* Status Badge */}
+                        <div className="flex w-full sm:w-auto justify-center sm:justify-start items-center gap-2 text-white/90 text-[12px] px-4 py-2.5 lg:py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20">
+                            <span className="relative flex h-2.5 w-2.5">
+                              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
+                            </span>
+                            Open to Collaborate
+                        </div>
+                        
                     </div>
                 </div>
+            </div>
+        </div>
 
         </div>
         <BentoCard title={"Stats"} icon={statsIcon} >
@@ -258,9 +268,7 @@ function Content(){
    
                         className="flex flex-col w-57.5 shrink-0 bg-white dark:bg-zinc-900/40 rounded-2xl border border-zinc-200 dark:border-zinc-800  transition-all duration-300 overflow-hidden group cursor-pointer"
                     >
-                        
-                        {/* TWEAK 2: The Image Section (Fixed Ratio + Hover Zoom) */}
-                        <div className="w-full aspect-[14/10] bg-zinc-100 dark:bg-zinc-800 overflow-hidden relative">
+                        <div className="w-full aspect-14/10 bg-zinc-100 dark:bg-zinc-800 overflow-hidden relative">
                             <img 
                                 src={post.thumbnail} 
                                 alt={post.title} 
@@ -268,14 +276,13 @@ function Content(){
                             />
                         </div>
                         
-                        {/* TWEAK 3: The Text Section (Clean padding & flex alignment) */}
+
                         <div className="w-full flex flex-col justify-between flex-1 p-4 gap-2">
                             
                             <h1 className="font-semibold text-zinc-900 dark:text-zinc-100 lg:text-[16px] text-[14px] leading-snug line-clamp-2">
                                 {post.title}
                             </h1>
                             
-                            {/* TWEAK 4: The Date (Forced to the bottom with mt-auto) */}
                             <div className="flex items-center gap-1.5 mt-auto">
                                 <div className="w-3.5 text-ring">
                                     <svg viewBox="0 0 23 23" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">

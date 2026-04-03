@@ -6,7 +6,7 @@ function BentoCard({title, icon, children, className=""}){
             <div className="flex items-center gap-2 stroke-foreground ">
                 <span className="dark:invert">{icon}</span>
                 
-                <span className="font-medium text-[20px]">{title}</span>
+                <span className="font-semibold text-[20px]">{title}</span>
             </div>
 
             {/* Card Body (Dito papasok yung specific content ng bawat card) */}

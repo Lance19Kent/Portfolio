@@ -3,6 +3,7 @@ import ProjectSubContent from "@/components/projects/ProjectSubContent";
 import { useParams, Navigate } from "react-router-dom";
 import { projectsData } from "@/data";
 import { useRef, useEffect } from "react";
+
 function ProjectSelected(){
     const { slug } = useParams();
     const project = projectsData.find((b) => b.slug === slug);
