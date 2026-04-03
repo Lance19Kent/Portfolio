@@ -15,8 +15,8 @@ function ProjectSubContent({className="", projectList =[] , showViewAll = false 
 
     return(
         <div className="grid gap-3">
-            <BentoCard title={"Other Projects"} icon={projectIcon}>
-            <div className="flex flex-col gap-4">
+            <BentoCard title={"Other Projects"} icon={projectIcon} className="w-full">
+            <div className="flex flex-col gap-4 w-full">
                 <div className={`flex-col w-full gap-3 ${className}`}>
                     {projectList.map((project)=> (
                         <Link key={project.id} to={`/projects-selected/${project.slug}`} className="lg:px-3 px-6 w-full rounded-[10px] py-4 flex border-[.50px] border-border cursor-pointer flex-col">
@@ -24,7 +24,7 @@ function ProjectSubContent({className="", projectList =[] , showViewAll = false 
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-marked-icon lucide-book-marked"><path d="M10 2v8l3-3 3 3V2"/><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></svg>
                             <div className="flex flex-col gap-0.5 flex-1 w-full overflow-hidden">
                                 <div className="flex gap-2 items-center justify-between w-full">
-                                    <span className="font-medium text-[16px] truncate ">{project.title}</span>
+                                    <span className="font-semibold text-[16px] line-clamp-1 ">{project.title}</span>
                                     {project.status === 'Public' ? (
                                             <p className="text-[#35BF46] text-[11px] px-2 border py-0.5 rounded-[10px] border-[#C2F49E] bg-[#F6FFDD] shrink-0">Public</p>
                                         ) : (

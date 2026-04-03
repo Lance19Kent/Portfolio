@@ -46,7 +46,7 @@ function ContactMe(){
                             </a>
                         </li>
                     </ul>
-                    <span className="text-muted-foreground text-[14px]">If you have any concerns, just contact me in with these social medias.</span>
+                    <span className="text-muted-foreground lg:text-[14px] text-[13px]">If you have any concerns, just contact me in with these social medias.</span>
                 </div>
 
             </BentoCard>

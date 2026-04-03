@@ -95,8 +95,7 @@ function AchievementCard({ data, list, variant = "card" }) {
             )}
 
             <DialogContent className={"w-full lg:max-w-5xl max-h-[85vh] select-none border-none bg-card p-8 shadow-2xl rounded-3xl grid lg:grid-cols-[2fr_1fr] overflow-hidden overflow-y-auto no-scrollbar"}>
-                
-                {/* ... (WALA AKONG BINAGO DITO SA DIALOG CONTENT MO. IT'S EXACTLY THE SAME CODE) ... */}
+            
                 
                 <div className="flex flex-col overflow-hidden pt-4 lg:pt-0">
                     <div className=" w-full h-full overflow-y-auto border border-zinc-200/50  dark:border-zinc-800/50 rounded-xl overflow-hidden bg-zinc-50/80 dark:bg-zinc-900/50 no-scrollbar relative">

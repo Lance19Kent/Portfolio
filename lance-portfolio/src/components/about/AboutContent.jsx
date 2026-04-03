@@ -44,46 +44,39 @@ function AboutContent(){
     }
     return(
         <div className="overflow-y-auto py-3 w-full gap-3 flex flex-col no-scrollbar">
-            <div className="w-full select-none flex flex-col overflow-hidden bg-card rounded-[10px] relative shrink-0">
-            <div className="w-full relative">
-                <div className="w-full object-cover h-40 lg:h-aut dark:hidden relative">
-                    <video src="./cover-vids/lightmode-cover.mp4" autoPlay loop muted className="w-full h-full object-cover" />
-                    <div className="w-full h-full bg-black/20 absolute inset-0">
-                    </div>
-                </div>
-                <div className="w-full object-cover h-40 lg:h-aut hidden dark:block">
-                    <video src="./cover-vids/darkmode-cover.mp4" autoPlay loop muted className="w-full h-full object-cover" />
-                    <div className="w-full h-full bg-black/20 absolute inset-0">
-                    </div>
-                </div>
+            <div className="w-full flex flex-col rounded-[14px] border border-zinc-200 dark:border-zinc-800 shadow-sm shrink-0 overflow-hidden relative group select-none">
+                
+                <div className="w-full relative h-70 sm:h-75 lg:h-64">
+                    
+                    <video src="./cover-vids/lightmode-cover.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover dark:hidden" />
+                    <video src="./cover-vids/darkmode-cover.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover hidden dark:block" />
+                    
 
-            </div>
-       
-
-            <div  className="absolute z-20 h-35.5 w-35.5 shrink-0 lg:bottom-15 lg:h-32.5 lg:w-32.5 lg:left-3 left-1/2 -translate-x-1/2 lg:top-auto top-25 lg:translate-x-0 rounded-full overflow-hidden border-3 border-card">
-                <img src="./profile_githu.jpeg" alt="Lance Profile" className="w-full h-full object-cover" />
-            </div>     
-
-                <div className="w-full py-5 gap-5 flex flex-1 items-center justify-end lg:pr-4 mt-20 lg:mt-0">
-                    <div className="flex flex-col w-full justify-between lg:pl-38 gap-3 items-center lg:items-start">
-                        <div className="leading-5 flex flex-col items-center lg:items-start">
-                            <h1 className="font-semibold leading-6 lg:text-[20px] text-lg">Lance Kent Geoffrey B. Magollado</h1>
-                            <span className="lg:text-[14px] text-sm text-semitext-ring">Aspiring Full-Stack Developer</span>
+                    <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/50 to-black/20 lg:bg-linear-to-r lg:from-black/90 lg:via-black/50 lg:to-transparent"></div>
+                    <div className="absolute bottom-5 left-5 right-5 lg:bottom-8 lg:left-8 lg:right-auto z-20 flex flex-col gap-3 lg:gap-4 max-w-2xl">
+                        
+                        <div className="flex flex-col gap-1">
+                            <h1 className="text-white font-bold text-[28px] leading-[1.1] sm:text-3xl lg:text-4xl tracking-tight">
+                                Behind the code.
+                            </h1>
+                            <p className="text-zinc-300 font-light text-[14px] sm:text-[15px] lg:text-[16px] mt-1 lg:mt-2 leading-relaxed max-w-[95%] lg:max-w-lg">
+                                I'm an IT student from Quezon City, passionate about transforming complex problems into elegant, user-centric web solutions.
+                            </p>
                         </div>
-                        <Button className={"cursor-pointer text-white lg:text-[16px] text-sm font-light w-fit py-4 px-5 stroke-white bg-[#468cfc] hover:bg-[#629bf8] shadow-xs transition duration-200 ease-in"} asChild>
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lancemagollado46@gmail.com&su=Hi,%20Let%20us%20connect!" target="_blank" rel="noopener noreferrer">
-                             <div className="lg:w-4 w-3">
-                                <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M15.1417 22.5896C15.1812 22.6882 15.25 22.7724 15.3388 22.8308C15.4276 22.8892 15.5321 22.919 15.6384 22.9163C15.7446 22.9136 15.8475 22.8784 15.9331 22.8156C16.0188 22.7527 16.0832 22.6651 16.1177 22.5646L22.8885 2.77293C22.9219 2.68064 22.9282 2.58075 22.9069 2.48497C22.8855 2.38919 22.8373 2.30147 22.7679 2.23208C22.6985 2.16269 22.6108 2.11449 22.515 2.09313C22.4193 2.07178 22.3194 2.07814 22.2271 2.11148L2.43541 8.88231C2.33488 8.91678 2.24731 8.98118 2.18444 9.06686C2.12157 9.15254 2.08642 9.2554 2.0837 9.36164C2.08098 9.46788 2.11082 9.5724 2.16922 9.66119C2.22762 9.74998 2.31178 9.81878 2.41041 9.85835L10.6708 13.1709C10.932 13.2754 11.1692 13.4317 11.3683 13.6305C11.5674 13.8292 11.7241 14.0662 11.8292 14.3271L15.1417 22.5896Z" stroke-opacity="0.7" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M22.7646 2.23645L11.3687 13.6312" stroke-opacity="0.7" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            </div>
-                            Message
-                            </a>
-                        </Button>
+
+                        <div className="flex lg:flex-row flex-col items-start gap-3 mt-1 lg:mt-2">
+                            <Button className="w-full sm:w-auto cursor-pointer rounded-full bg-white text-zinc-900 hover:bg-zinc-200 shadow-sm transition-all duration-200 px-6 lg:px-8 py-5 lg:py-4 font-medium text-[14px] flex justify-center" asChild>
+                                <a href="https://www.linkedin.com/in/lancemagollado/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                                    <svg viewBox="0 0 25 25" fill="none" className="w-4 h-4 lg:w-5 lg:h-5" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.1417 22.5896C15.1812 22.6882 15.25 22.7724 15.3388 22.8308C15.4276 22.8892 15.5321 22.919 15.6384 22.9163C15.7446 22.9136 15.8475 22.8784 15.9331 22.8156C16.0188 22.7527 16.0832 22.6651 16.1177 22.5646L22.8885 2.77293C22.9219 2.68064 22.9282 2.58075 22.9069 2.48497C22.8855 2.38919 22.8373 2.30147 22.7679 2.23208C22.6985 2.16269 22.6108 2.11449 22.515 2.09313C22.4193 2.07178 22.3194 2.07814 22.2271 2.11148L2.43541 8.88231C2.33488 8.91678 2.24731 8.98118 2.18444 9.06686C2.12157 9.15254 2.08642 9.2554 2.0837 9.36164C2.08098 9.46788 2.11082 9.5724 2.16922 9.66119C2.22762 9.74998 2.31178 9.81878 2.41041 9.85835L10.6708 13.1709C10.932 13.2754 11.1692 13.4317 11.3683 13.6305C11.5674 13.8292 11.7241 14.0662 11.8292 14.3271L15.1417 22.5896Z" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
+                                        <path d="M22.7646 2.23645L11.3687 13.6312" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
+                                    </svg>
+                                    Let's Connect
+                                </a>
+                            </Button>
+                        </div>
                     </div>
                 </div>
-
             </div>
             <BentoCard title={"About"} icon={aboutIcon} className="leading-5">
                 <span className="text-sm  text-zinc-600 dark:text-zinc-400 leading-relaxed">

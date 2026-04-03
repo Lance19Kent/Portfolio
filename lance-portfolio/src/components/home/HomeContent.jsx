@@ -76,7 +76,7 @@ function Content(){
             
             {/* 1. COVER VIDEO BACKGROUND */}
             {/* TWEAK: Tumaas ang mobile height (h-[340px]) para may space mag-wrap ang text at buttons */}
-            <div className="w-full relative h-87.5 sm:h-80 lg:h-72">
+            <div className="w-full relative h-90 sm:h-80 lg:h-72">
                 
                 {/* Light Mode Video */}
                 <video src="./cover-vids/lightmode-cover.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover dark:hidden" />
@@ -113,11 +113,9 @@ function Content(){
                         </p>
                     </div>
 
-                    {/* Interactive Buttons */}
-                    {/* TWEAK: flex-col on very small screens, row on sm and above */}
                     <div className="flex lg:flex-row flex-col items-start gap-3 mt-1 lg:mt-2">
                         
-                        <Button className="w-full sm:w-auto cursor-pointer rounded-full bg-white text-zinc-900 hover:bg-zinc-200 shadow-sm transition-all duration-200 px-6 py-5 lg:py-4 font-medium text-[14px] flex justify-center" asChild>
+                        <button className="w-full sm:w-auto cursor-pointer rounded-full bg-white text-zinc-900 hover:bg-zinc-200 transition-all duration-200 px-6 py-3 lg:py-2 lg:px-4 font-medium text-[14px] flex justify-center" asChild>
                             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lancemagollado46@gmail.com&su=Hi,%20Let%20us%20connect!" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                                 <svg viewBox="0 0 25 25" fill="none" className="w-4 h-4 lg:w-5 lg:h-5" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M15.1417 22.5896C15.1812 22.6882 15.25 22.7724 15.3388 22.8308C15.4276 22.8892 15.5321 22.919 15.6384 22.9163C15.7446 22.9136 15.8475 22.8784 15.9331 22.8156C16.0188 22.7527 16.0832 22.6651 16.1177 22.5646L22.8885 2.77293C22.9219 2.68064 22.9282 2.58075 22.9069 2.48497C22.8855 2.38919 22.8373 2.30147 22.7679 2.23208C22.6985 2.16269 22.6108 2.11449 22.515 2.09313C22.4193 2.07178 22.3194 2.07814 22.2271 2.11148L2.43541 8.88231C2.33488 8.91678 2.24731 8.98118 2.18444 9.06686C2.12157 9.15254 2.08642 9.2554 2.0837 9.36164C2.08098 9.46788 2.11082 9.5724 2.16922 9.66119C2.22762 9.74998 2.31178 9.81878 2.41041 9.85835L10.6708 13.1709C10.932 13.2754 11.1692 13.4317 11.3683 13.6305C11.5674 13.8292 11.7241 14.0662 11.8292 14.3271L15.1417 22.5896Z" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
@@ -125,10 +123,10 @@ function Content(){
                                 </svg>
                                 Message Me
                             </a>
-                        </Button>
+                        </button>
 
                         {/* Status Badge */}
-                        <div className="flex w-full sm:w-auto justify-center sm:justify-start items-center gap-2 text-white/90 text-[12px] px-4 py-2.5 lg:py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20">
+                        <div className="flex w-full sm:w-auto justify-center sm:justify-start items-center gap-2 text-white/90 text-[14px] px-4 py-2.5 lg:py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20">
                             <span className="relative flex h-2.5 w-2.5">
                               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>

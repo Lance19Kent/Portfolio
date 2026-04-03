@@ -39,19 +39,19 @@ function ResumeContent(){
 
     return (
         <div className="w-full h-full lg:pr-3 px-3 lg:px-0 py-3 overflow-y-auto no-scrollbar overflow-hidden flex flex-col gap-3"> 
-            <BentoCard title={"Resume"} icon={resumeIcon} className="w-full relative gap-4 lg:gap-8"> 
-                <Button className={"absolute top-5 right-4.5 cursor-pointer lg:p-6 lg:text-[16px] text-sm text-white hover:bg-[#629bf8] z-10 bg-[#468cfc] stroke-white"} asChild>
-                    <a href="/Magollado-Lance-Kent-Geoffrey-Resume.pdf" download={"Lance_Kent_Geoffrey_B_Magollado_Resume.pdf"}>
-                        <svg width="24" height="24" viewBox="0 0 24 24"  fill="none" xmlns="http://www.w3.org/2000/svg">
+            <BentoCard title={"Resume"} icon={resumeIcon} className="w-full relative gap-4 "> 
+                <button className={"absolute lg:top-5 top-4 right-4.5 cursor-pointer lg:text-[16px] text-sm  text-zinc-900 z-10 stroke-black "} asChild>
+                        <a href="/Magollado-Lance-Kent-Geoffrey-Resume.pdf" download={"Lance_Kent_Geoffrey_B_Magollado_Resume.pdf"} className="flex gap-2 items-center py-3 px-3 rounded-sm lg:py-3 lg:px-4 border hover:bg-zinc-200 dark:bg-white transition duration-300 ease-out">
+                        <svg className="w-4" viewBox="0 0 24 24"  fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 15V3"  strokeOpacity="1" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                             <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15"  strokeOpacity="1" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                             <path d="M7 10L12 15L17 10"  strokeOpacity="1" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
                         <span>Download</span>
                     </a>
-                </Button>
+                </button>
 
-                <div className="relative w-full h-125 lg:h-auto rounded-[10px] border border-gray-200 overflow-hidden bg-[#1a1a1a]">
+                <div className="relative w-full h-125 mt-3 lg:h-auto rounded-[10px] border border-gray-200 overflow-hidden bg-[#1a1a1a]">
                     <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-20">
                         <Button variant="secondary" onClick={zoomOut} className="w-10 h-10 p-0 rounded-full text-lg shadow-md cursor-pointer hover:bg-gray-200">-</Button>
                         <Button variant="secondary" onClick={zoomIn} className="w-10 h-10 p-0 rounded-full text-lg shadow-md cursor-pointer hover:bg-gray-200">+</Button>

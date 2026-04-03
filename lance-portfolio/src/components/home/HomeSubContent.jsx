@@ -57,7 +57,7 @@ function SubContent() {
                                     </linearGradient>
                                     </defs>
                                 </svg>
-                                <span className="font-medium text-[16px]">
+                                <span className="font-medium lg:text-[16px] text-[15px]">
                                 Web Development
                             </span>
                             </div>                

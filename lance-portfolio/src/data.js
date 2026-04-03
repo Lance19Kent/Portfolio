@@ -650,3 +650,7 @@ export const projectsData = [
     }
   }
 ]
+
+export const aboutData = [
+  
+]

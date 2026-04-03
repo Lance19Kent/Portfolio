@@ -254,21 +254,28 @@ function Sidebar(){
                             <img src={isDarkMode ? "/me-nighttime.png":"/me-daytime.png"} className="w-full object-cover"></img>
                         </div>
                     </div>
-                    <h3 className="text-center text-black dark:text-foreground text-[18px] font-semibold text-nowrap whitespace-nowrap text-ellipsis overflow-hidden w-full pt-2">Lance Kent</h3>
-                    <h2 className="text-semitext-ring text-center text-[14px] pb-6.25">Current 3rd Year IT Student</h2>
+                    <h3 className="text-center text-zinc-900 dark:text-zinc-100 text-[18px] font-semibold tracking-tight text-nowrap whitespace-nowrap text-ellipsis overflow-hidden w-full pt-3">
+                        Lance Kent
+                    </h3>
+                    <h2 className="text-semitext-ring text-center font-light text-[13px] pb-6 mt-0.5">
+                        Current 3rd Year IT Student
+                    </h2>
                     
-                    <NavLink to={"/resume"} className={({isActive}) =>cn(buttonVariants({variant:"outline"}),
-                        "py-5 font-light rounded-[10px] flex gap-2.5 justify-center cursor-pointer text-[16px] ease-in transition-all duration-75 dark:text-white",
+                    <NavLink to={"/resume"} className={({isActive}) =>cn(
+                        "py-2 rounded-[10px] flex gap-2.5 justify-center cursor-pointer text-[15px] ease-in transition-all duration-75 dark:text-white border",
                         isActive
                                 ? "text-[#3FA6F4] hover:text-[#3FA6F4] dark:border-[#3FA6F4] border-[#3FA6F4] stroke-[#3FA6F4] hover:bg-white dark:text-[#3FA6F4]" 
-                                : "text-[#00000080] bg-card border-gray-200 stroke-[#00000060] hover:text-[#7abdf0] hover:border-[#7abdf0] dark:stroke-white  hover:bg-white hover:stroke-[#7abdf0]" 
+                                : "text-[#00000080] bg-card border-border stroke-[#00000060] hover:text-[#7abdf0] hover:border-[#7abdf0] dark:stroke-white  hover:stroke-[#7abdf0] " 
                         )}>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 15V3"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M7 10L12 15L17 10"   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        Resume
+                            <div className="flex items-center gap-2">
+                                <div className="w-4">
+                                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download-icon lucide-download"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg>
+                                </div>
+                                <span>Resume</span>
+                                
+                            </div>
+                            
+
                         </NavLink>
                    
                 </div>
@@ -285,7 +292,7 @@ function Sidebar(){
                                 <path d="M15 20.5V12.5C15 12.2348 14.8946 11.9804 14.7071 11.7929C14.5196 11.6054 14.2652 11.5 14 11.5H10C9.73478 11.5 9.48043 11.6054 9.29289 11.7929C9.10536 11.9804 9 12.2348 9 12.5V20.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M3 9.49999C2.99993 9.20906 3.06333 8.92161 3.18579 8.65771C3.30824 8.3938 3.4868 8.15979 3.709 7.97199L10.709 1.97199C11.07 1.6669 11.5274 1.49951 12 1.49951C12.4726 1.49951 12.93 1.6669 13.291 1.97199L20.291 7.97199C20.5132 8.15979 20.6918 8.3938 20.8142 8.65771C20.9367 8.92161 21.0001 9.20906 21 9.49999V18.5C21 19.0304 20.7893 19.5391 20.4142 19.9142C20.0391 20.2893 19.5304 20.5 19 20.5H5C4.46957 20.5 3.96086 20.2893 3.58579 19.9142C3.21071 19.5391 3 19.0304 3 18.5V9.49999Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
-                                <p className="font-medium">Home</p>
+                                <p>Home</p>
                     </NavLink>
                     <NavLink to="/about" className={({isActive}) =>` 
                         ${isActive 
