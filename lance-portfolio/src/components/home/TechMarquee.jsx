@@ -1,14 +1,14 @@
 import { cn } from "@/lib/utils"
 import { Marquee } from "@/components/ui/marquee"
-import { skillsData } from "@/data"
+import { techStackData } from "@/data"
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 
-const firstRow = skillsData.slice(0, skillsData.length / 2)
-const secondRow = skillsData.slice(skillsData.length / 2)
+const firstRow = techStackData.slice(0, techStackData.length / 2)
+const secondRow = techStackData.slice(techStackData.length / 2)
 
 const SkillsCards = ({
   img,
@@ -39,13 +39,13 @@ function TechMarquee() {
   return (
     <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
       <Marquee pauseOnHover className="[--duration:20s]">
-        {firstRow.map((skillsData) => (
-          <SkillsCards key={skillsData.username} {...skillsData} />
+        {firstRow.map((techStackData) => (
+          <SkillsCards key={techStackData.username} {...techStackData} />
         ))}
       </Marquee>
       <Marquee reverse pauseOnHover className="[--duration:20s]">
-        {secondRow.map((skillsData) => (
-          <SkillsCards key={skillsData.username} {...skillsData} />
+        {secondRow.map((techStackData) => (
+          <SkillsCards key={techStackData.username} {...techStackData} />
         ))}
       </Marquee>
       <div className="from-card pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-linear-to-r"></div>

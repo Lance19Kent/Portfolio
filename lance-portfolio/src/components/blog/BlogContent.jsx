@@ -20,7 +20,7 @@ function BlogContent(){
                 
                 {/* 1. FEATURED POST (Main/Malaki) */}
                 {featuredPost && (
-                    <Link to={`/blog-selected/${featuredPost.slug}`} className="relative w-full flex flex-col justify-end overflow-hidden rounded-[14px] aspect-4/2.5 lg:aspect-5/ 3 cursor-pointer group shadow-sm hover:shadow-md transition-shadow">
+                    <Link to={`/blog-selected/${featuredPost.slug}`} className="relative w-full flex flex-col justify-end overflow-hidden rounded-[14px] aspect-4/2.5 lg:aspect-5/3 cursor-pointer group shadow-sm hover:shadow-md transition-shadow">
                         
                         {featuredPost.thumbnail ? (
                             <img src={featuredPost.thumbnail} alt={featuredPost.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
@@ -34,13 +34,13 @@ function BlogContent(){
                         {/* Text Content */}
                         <div className="relative z-10 w-full p-5 lg:p-8 flex flex-col gap-1.5">
                             <div className="flex items-center lg:gap-2 gap-1.5 text-zinc-300">
-                                <div className="lg:w-4 w-3.5">
+                                <div className="lg:w-5 w-3.5">
                                     <svg viewBox="0 0 23 23" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M11.4129 20.9234C16.6654 20.9234 20.9235 16.6653 20.9235 11.4127C20.9235 6.16016 16.6654 1.9021 11.4129 1.9021C6.16028 1.9021 1.90222 6.16016 1.90222 11.4127C1.90222 16.6653 6.16028 20.9234 11.4129 20.9234Z" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round"/>
                                         <path d="M11.4127 5.7063V11.4127L9.51062 15.2169" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round"/>
                                     </svg>
                                 </div>
-                                <p className="font-medium lg:text-[14px] text-[12px] tracking-wide">{featuredPost.date}</p>
+                                <p className="font-medium lg:text-[16px] text-[12px] tracking-wide">{featuredPost.date}</p>
                             </div>
                             <h1 className="font-bold text-white lg:text-[28px] text-[22px] leading-tight drop-shadow-md line-clamp-2">
                                 {featuredPost.title}
@@ -50,9 +50,9 @@ function BlogContent(){
                 )}
 
                 {/* 2. OTHER POSTS GRID (Yung dalawa sa ilalim) */}
-                <div className="w-full grid grid-cols-2 gap-3">
+                <div className="w-full grid lg:grid-cols-2 gap-3">
                     {otherPosts.map((post) => (
-                        <Link key={post.id} to={`/blog-selected/${post.slug}`} className="relative w-full flex flex-col justify-end overflow-hidden rounded-2xl aspect-square lg:aspect-4/3 cursor-pointer group shadow-sm hover:shadow-md transition-shadow">
+                        <Link key={post.id} to={`/blog-selected/${post.slug}`} className="relative w-full flex flex-col justify-end overflow-hidden rounded-2xl aspect-4/2.5 lg:aspect-4/3 cursor-pointer group shadow-sm hover:shadow-md transition-shadow">
                             
                             {post.thumbnail ? (
                                 <img src={post.thumbnail} alt={post.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
@@ -60,21 +60,19 @@ function BlogContent(){
                                 <div className="absolute inset-0 w-full h-full bg-[#DEDEDE] dark:bg-zinc-800"></div>
                             )}
 
-                            {/* Same Gradient Fade */}
-                            <div className="absolute inset-0 bg-linear-to-t from-[#234170] via-black/45 to-transparent   transition-opacity duration-500"></div>
+                            <div className="absolute inset-0 bg-linear-to-t from-[#234170] via-black/45 to-transparent transition-opacity duration-500"></div>
 
-                            {/* Text Content (Mas maliit na padding at font para sa smaller cards) */}
                             <div className="relative z-10 w-full p-4 flex flex-col gap-1">
                                 <div className="flex items-center gap-1.5 text-zinc-300">
-                                    <div className="w-3">
+                                    <div className="lg:w-4 w-3.5">
                                         <svg viewBox="0 0 23 23" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M11.4129 20.9234C16.6654 20.9234 20.9235 16.6653 20.9235 11.4127C20.9235 6.16016 16.6654 1.9021 11.4129 1.9021C6.16028 1.9021 1.90222 6.16016 1.90222 11.4127C1.90222 16.6653 6.16028 20.9234 11.4129 20.9234Z" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
                                             <path d="M11.4127 5.7063V11.4127L9.51062 15.2169" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
                                         </svg>
                                     </div>
-                                    <p className="font-medium text-[10px] tracking-wide">{post.date}</p>
+                                    <p className="font-medium text-[12px] lg:text-[13px] tracking-wide shrink-0">{post.date}</p>
                                 </div>
-                                <h1 className="font-bold text-white lg:text-[18px] text-[14px] leading-tight drop-shadow-md line-clamp-2">
+                                <h1 className="font-bold text-white lg:text-[18px] text-[22px] leading-tight drop-shadow-md line-clamp-2">
                                     {post.title}
                                 </h1>
                                 

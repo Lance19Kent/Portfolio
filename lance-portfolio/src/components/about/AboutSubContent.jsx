@@ -39,7 +39,7 @@ function AboutSubContent(){
                                 </svg>
                                 <p className="text-[12px] text-[#9D9D9D]">August 2023 - Present</p>
                             </div>
-                            <p className="text-[14px] text-zinc-600 dark:text-zinc-400 leading-relaxed ">
+                            <p className="lg:text-[14px] text-[13px] text-zinc-600 dark:text-zinc-400 leading-relaxed ">
                                 Currently taking a Bachelor of Science in Information and Technology in Quezon City University. Focusing in Web Technologies that can create innovative and sustainable solutions not only academically, but for the community. 
                             </p>
                         </div>
@@ -61,7 +61,7 @@ function AboutSubContent(){
                                 </svg>
                                 <p className="text-[12px] text-[#9D9D9D]">June 2019 - May 2021</p>
                             </div>
-                            <p className="text-[14px] text-zinc-600 dark:text-zinc-400 leading-relaxed ">
+                            <p className="lg:text-[14px] text-[13px] text-zinc-600 dark:text-zinc-400 leading-relaxed ">
                                 Consistent Honor and Achievements - 90 above grades everyday year, and masters java and sql. Accumulated with High Honor with the average of 96. I learned what is truly my goal, my career path and created mindset that will help me achieve my goals.
                             </p>
                         </div>
@@ -87,7 +87,7 @@ function AboutSubContent(){
                                 </svg>
                                 <p className="text-[12px] text-[#9D9D9D]">Jan 2026 - Present</p>
                             </div>
-                            <p className="text-[14px] text-zinc-600 dark:text-zinc-400 leading-relaxed ">
+                            <p className="lg:text-[14px] text-[13px] text-zinc-600 dark:text-zinc-400 leading-relaxed ">
                                 Teach and post programming task and activities. Assisting students that having a hard time studying computer programming. 
                             </p>
                         </div>

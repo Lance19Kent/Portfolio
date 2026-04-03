@@ -234,7 +234,7 @@ function Sidebar(){
             <div className="w-full flex flex-col">
                 <div className="border border-border my-3"></div>
                     <div className="flex flex-row gap-2.5 items-center pl-3 my-3">
-                        <Switch className={"cursor-pointer"} checked={isDarkMode} onCheckedChange={handleThemeToggle}/>
+                        <Switch className={"cursor-pointer"} checked={isDarkMode} onCheckedChange={handleThemeToggle} onClick={()=> setIsMenuOpen(false)}/>
                         <span className=" text-sm text-foreground">Dark Mode</span>
                     </div>
                     <div className="mt-4">
