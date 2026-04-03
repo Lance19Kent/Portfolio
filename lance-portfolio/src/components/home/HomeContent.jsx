@@ -74,11 +74,9 @@ function Content(){
       {/* THE UNIQUE "COMMAND CENTER" HERO BANNER (MOBILE RESPONSIVE) */}
         <div className="w-full flex flex-col rounded-[14px] border border-zinc-200 dark:border-zinc-800 shadow-sm shrink-0 overflow-hidden relative group">
             
-            {/* 1. COVER VIDEO BACKGROUND */}
-            {/* TWEAK: Tumaas ang mobile height (h-[340px]) para may space mag-wrap ang text at buttons */}
             <div className="w-full relative h-90 sm:h-80 lg:h-72">
                 
-                {/* Light Mode Video */}
+            
                 <video src="./cover-vids/lightmode-cover.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover dark:hidden" />
                 {/* Dark Mode Video */}
                 <video src="./cover-vids/darkmode-cover.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover hidden dark:block" />

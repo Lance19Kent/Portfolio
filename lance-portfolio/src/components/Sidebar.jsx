@@ -112,7 +112,7 @@ function Sidebar(){
                     
                     <div className="flex flex-col">
                         <h3 className=" text-foreground text-[16px] font-semibold">Lance Kent</h3>
-                        <h2 className="text-muted-foreground text-center text-[10px]">Current 3rd Year IT Student</h2>
+                        <h2 className="text-zinc-600 dark:text-zinc-400 font-light text-center text-[10px]">Current 3rd Year IT Student</h2>
                     </div>
                   
                 </Link>
@@ -141,14 +141,20 @@ function Sidebar(){
                         </div>
                     </div>
 
-                    <h3 className="text-center text-foreground text-base font-semibold text-nowrap whitespace-nowrap text-ellipsis overflow-hidden w-full pt-2">Lance Kent</h3>
-                    <h2 className="text-muted-foreground text-center text-[14px] pb-6.25">Current 3rd Year IT Student</h2>
+                 
+
+                      <h3 className="text-center text-zinc-900 dark:text-zinc-100 text-[17px] font-semibold tracking-tight text-nowrap whitespace-nowrap text-ellipsis overflow-hidden w-full pt-3">
+                        Lance Kent
+                    </h3>
+                    <h2 className="text-zinc-600 dark:text-zinc-400 text-center font-light text-[12px] pb-6 mt-0.5">
+                        Current 3rd Year IT Student
+                    </h2>
                     
-                    <NavLink to={"/resume"} className={({isActive}) =>cn(buttonVariants({variant:"outline"}),
-                        "py-5 font-light rounded-[10px] flex gap-2.5 justify-center cursor-pointer text-[16px] ease-in transition-all duration-75 dark:text-white dark:stroke-white",
+                    <NavLink to={"/resume"} className={({isActive}) =>cn(
+                        "py-3 rounded-[10px] flex gap-2 justify-center cursor-pointer text-[15px] ease-in transition-all duration-75 dark:text-white border",
                         isActive
-                                ? "text-[#3FA6F4] hover:text-[#3FA6F4] border-[#3FA6F4] stroke-[#3FA6F4] hover:bg-white " 
-                                : "text-[#00000080] bg-card border-gray-200 stroke-[#00000060] hover:text-[#7abdf0] hover:border-[#7abdf0] hover:bg-white hover:stroke-[#7abdf0]" 
+                                ? "text-[#3FA6F4] hover:text-[#3FA6F4] dark:border-[#3FA6F4] border-[#3FA6F4] stroke-[#3FA6F4] hover:bg-white dark:text-[#3FA6F4]" 
+                                : "text-[#00000080] bg-card border-border stroke-[#00000060] hover:text-[#7abdf0] hover:border-[#7abdf0] dark:stroke-white  hover:stroke-[#7abdf0] " 
                         )} onClick={()=> setIsMenuOpen(false)}>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 15V3"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -234,12 +240,12 @@ function Sidebar(){
             <div className="w-full flex flex-col">
                 <div className="border border-border my-3"></div>
                     <div className="flex flex-row gap-2.5 items-center pl-3 my-3">
-                        <Switch className={"cursor-pointer"} checked={isDarkMode} onCheckedChange={handleThemeToggle} onClick={()=> setIsMenuOpen(false)}/>
+                        <Switch className={"cursor-pointer"} checked={isDarkMode} onCheckedChange={handleThemeToggle}/>
                         <span className=" text-sm text-foreground">Dark Mode</span>
                     </div>
                     <div className="mt-4">
-                        <p className="text-muted-foreground text-xs text-nowrap overflow-hidden text-ellipsis">Designed and Built By Lance Kent Geoffrey B. Magollado</p>
-                        <p className="text-muted-foreground text-xs text-nowrap overflow-hidden text-ellipsis">@2025 All Rights Reserved.</p>
+                        <p className="text-[11px] lg:text-[14px] leading-relaxed text-zinc-600 dark:text-zinc-400 font-light text-nowrap overflow-hidden text-ellipsis">Designed and Built By Lance Kent Geoffrey B. Magollado</p>
+                        <p className="text-[11px] lg:text-[14px] leading-relaxed text-zinc-600 dark:text-zinc-400 font-light text-nowrap overflow-hidden text-ellipsis">@2025 All Rights Reserved.</p>
                     </div>  
             </div>
             </div>
@@ -257,7 +263,7 @@ function Sidebar(){
                     <h3 className="text-center text-zinc-900 dark:text-zinc-100 text-[18px] font-semibold tracking-tight text-nowrap whitespace-nowrap text-ellipsis overflow-hidden w-full pt-3">
                         Lance Kent
                     </h3>
-                    <h2 className="text-semitext-ring text-center font-light text-[13px] pb-6 mt-0.5">
+                    <h2 className="text-zinc-600 dark:text-zinc-400 font-light text-center font-light text-[13px] pb-6 mt-0.5">
                         Current 3rd Year IT Student
                     </h2>
                     
@@ -356,8 +362,8 @@ function Sidebar(){
                         <span className="text-black dark:text-white text-[16px]">Dark Mode</span>
                     </div>
                     <div className="mt-4">
-                        <p className="text-muted-foreground text-xs text-nowrap overflow-hidden text-ellipsis">Designed and Built By Lance Kent Geoffrey B. Magollado</p>
-                        <p className="text-muted-foreground text-xs text-nowrap overflow-hidden text-ellipsis">@2025 All Rights Reserved.</p>
+                        <p className="text-zinc-600 dark:text-zinc-400 font-light text-xs text-nowrap overflow-hidden text-ellipsis">Designed and Built By Lance Kent Geoffrey B. Magollado</p>
+                        <p className="text-zinc-600 dark:text-zinc-400 font-light text-xs text-nowrap overflow-hidden text-ellipsis">@2025 All Rights Reserved.</p>
                     </div>
                 </div>
             </div>

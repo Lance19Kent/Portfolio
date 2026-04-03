@@ -45,7 +45,7 @@ function SubContent() {
                 <Accordion type="single" collapsible defaultValue="item-1">      
                     {skillsData.map((skill) => (
                     <AccordionItem key={skill.id} value={skill.id}>
-                    <AccordionTrigger className="w-full flex items-center hover:no-underline hover:bg-zinc-50 dark:hover:bg-zinc-800/40 rounded-lg px-2 transition-colors">
+                    <AccordionTrigger className="w-full flex items-center hover:no-underline rounded-lg px-2 transition-colors">
                         <div className="w-full flex items-center gap-3">
 
                             <div className="shrink-0">
@@ -57,7 +57,7 @@ function SubContent() {
                         </div>
                     </AccordionTrigger>
 
-                    <AccordionContent className="text-zinc-600 dark:text-zinc-400 leading-relaxed px-2 pb-4 pt-1 lg:text-[14px] text-[13px]">
+                    <AccordionContent className="text-zinc-600 dark:text-zinc-400 font-light leading-relaxed px-2 pb-4 pt-1 lg:text-[14px] text-[13px]">
                         {skill.description}
                     </AccordionContent>
                     </AccordionItem>
