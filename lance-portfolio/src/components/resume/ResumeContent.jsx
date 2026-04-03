@@ -2,6 +2,7 @@ import BentoCard from "../BentoCard";
 import ContactMe from "../ContactMe";
 import { Button } from "../ui/button";
 import { useState, useEffect } from "react";
+import { Skeleton } from "../ui/skeleton";
 
 import { Document, Page, pdfjs } from "react-pdf";
 import 'react-pdf/dist/Page/AnnotationLayer.css';
@@ -15,6 +16,8 @@ const resumeIcon = <svg width="40" height="40" viewBox="0 0 40 40" fill="none" x
     <path d="M26.6667 36.6667C26.6667 34.8986 25.9643 33.2029 24.7141 31.9526C23.4638 30.7024 21.7681 30 20 30C18.2319 30 16.5362 30.7024 15.286 31.9526C14.0358 33.2029 13.3334 34.8986 13.3334 36.6667" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
     <path d="M20 30C22.7614 30 25 27.7614 25 25C25 22.2386 22.7614 20 20 20C17.2386 20 15 22.2386 15 25C15 27.7614 17.2386 30 20 30Z" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 </svg>;
+
+let isLoaded = false;
 
 function ResumeContent(){
 
@@ -37,10 +40,57 @@ function ResumeContent(){
     const zoomIn = () => setScale(prev => Math.min(prev + 0.2, 2.5));
     const zoomOut = () => setScale(prev => Math.max(prev - 0.2, 0.4));
 
+    const contactIcon = <svg width="30" height="30" viewBox="0 0 30 30" fill="none" className="stroke-black" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.29 20.71C17.5482 20.8286 17.839 20.8556 18.1146 20.7868C18.3902 20.718 18.6342 20.5573 18.8063 20.3312L19.25 19.75C19.4829 19.4395 19.7848 19.1875 20.132 19.0139C20.4791 18.8404 20.8619 18.75 21.25 18.75H25C25.663 18.75 26.2989 19.0134 26.7678 19.4822C27.2366 19.9511 27.5 20.587 27.5 21.25V25C27.5 25.663 27.2366 26.2989 26.7678 26.7678C26.2989 27.2366 25.663 27.5 25 27.5C19.0326 27.5 13.3097 25.1295 9.0901 20.9099C4.87053 16.6903 2.5 10.9674 2.5 5C2.5 4.33696 2.76339 3.70107 3.23223 3.23223C3.70107 2.76339 4.33696 2.5 5 2.5H8.75C9.41304 2.5 10.0489 2.76339 10.5178 3.23223C10.9866 3.70107 11.25 4.33696 11.25 5V8.75C11.25 9.13811 11.1596 9.5209 10.9861 9.86803C10.8125 10.2152 10.5605 10.5171 10.25 10.75L9.665 11.1888C9.43552 11.364 9.27377 11.6132 9.20724 11.8942C9.1407 12.1751 9.17348 12.4705 9.3 12.73C11.0084 16.1998 13.818 19.006 17.29 20.71Z"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>;
+
+    const [isLoading, setIsLoading] = useState(!isLoaded);
+
+    useEffect(() => {
+        if (!isLoaded) {
+            const timer = setTimeout(() => {
+                isLoaded = true;
+                setIsLoading(false);
+            }, 1000);
+            return () => clearTimeout(timer);
+        }
+    }, []);
+
+    if(isLoading){
+        return (
+            <div className="w-full h-full lg:pr-3 px-3 lg:px-0 py-3 overflow-y-auto no-scrollbar overflow-hidden flex flex-col gap-3"> 
+                <BentoCard title={"Resume"} icon={resumeIcon} className="w-full relative gap-4 "> 
+                    <div className="absolute lg:top-5 top-4 right-4.5 z-10 hidden sm:block">
+                        <Skeleton className="w-[124px] h-[46px] rounded-sm" />
+                    </div>
+                    <div className="relative w-full h-125 mt-3 lg:h-auto rounded-[10px] border border-gray-200 overflow-hidden bg-[#1a1a1a] flex justify-center py-10 px-5">
+                       <Skeleton className="w-[80%] h-full min-h-[500px]" />
+                    </div>
+                </BentoCard>
+               
+                <BentoCard title="Contact Me" icon={contactIcon} className="h-full">
+                    <div className="flex flex-col justify-between gap-10 h-full">
+                        <ul className="flex gap-4 w-full flex-wrap">
+                            {[1, 2, 3, 4, 5, 6, 7].map((i) => (
+                                <li key={i} className="w-9 h-9">
+                                    <Skeleton className="w-full h-full rounded-full" />
+                                </li>
+                            ))}
+                        </ul>
+                        <div className="flex flex-col gap-1.5 mt-2">
+                            <Skeleton className="h-4 w-full" />
+                            <Skeleton className="h-4 w-5/6" />
+                        </div>
+                    </div>
+                </BentoCard>
+            </div>
+        )
+    }
+
     return (
         <div className="w-full h-full lg:pr-3 px-3 lg:px-0 py-3 overflow-y-auto no-scrollbar overflow-hidden flex flex-col gap-3"> 
             <BentoCard title={"Resume"} icon={resumeIcon} className="w-full relative gap-4 "> 
-                <button className={"absolute lg:top-5 top-4 right-4.5 cursor-pointer lg:text-[16px] text-sm  text-zinc-900 z-10 stroke-black "} asChild>
+                <button className={"animate-in fade-in duration-700 delay-300 fill-mode-backwards absolute lg:top-5 top-4 right-4.5 cursor-pointer lg:text-[16px] text-sm  text-zinc-900 z-10 stroke-black "} asChild>
                         <a href="/Magollado-Lance-Kent-Geoffrey-Resume.pdf" download={"Lance_Kent_Geoffrey_B_Magollado_Resume.pdf"} className="flex gap-2 items-center py-3 px-3 rounded-sm lg:py-3 lg:px-4 border hover:bg-zinc-200 dark:bg-white transition duration-300 ease-out">
                         <svg className="w-4" viewBox="0 0 24 24"  fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 15V3"  strokeOpacity="1" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -51,7 +101,7 @@ function ResumeContent(){
                     </a>
                 </button>
 
-                <div className="relative w-full h-125 mt-3 lg:h-auto rounded-[10px] border border-gray-200 overflow-hidden bg-[#1a1a1a]">
+                <div className="animate-in fade-in duration-700 delay-300 fill-mode-backwards relative w-full h-125 mt-3 lg:h-auto rounded-[10px] border border-gray-200 overflow-hidden bg-[#1a1a1a]">
                     <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-20">
                         <Button variant="secondary" onClick={zoomOut} className="w-10 h-10 p-0 rounded-full text-lg shadow-md cursor-pointer hover:bg-gray-200">-</Button>
                         <Button variant="secondary" onClick={zoomIn} className="w-10 h-10 p-0 rounded-full text-lg shadow-md cursor-pointer hover:bg-gray-200">+</Button>
@@ -77,7 +127,7 @@ function ResumeContent(){
                 </div>
             </BentoCard>
            
-           <ContactMe />
+           <ContactMe animKey="rc-cm-m" wrapperClass="animate-in fade-in duration-700 delay-500 fill-mode-backwards" />
         </div>
     )
 }

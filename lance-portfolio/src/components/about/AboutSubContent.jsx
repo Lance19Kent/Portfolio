@@ -1,6 +1,8 @@
 import BentoCard from "../BentoCard";
 import ContactMe from "../ContactMe";
 import { educationData, experienceData } from "@/data";
+import { useState, useEffect } from "react";
+import { Skeleton } from "../ui/skeleton";
 
 const educationIcon = <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M16 9.33331V28" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -18,11 +20,81 @@ const experienceIcon = <svg width="32" height="32" viewBox="0 0 32 32" fill="non
 <path d="M26.6667 8H5.33341C3.86066 8 2.66675 9.19391 2.66675 10.6667V24C2.66675 25.4728 3.86066 26.6667 5.33341 26.6667H26.6667C28.1395 26.6667 29.3334 25.4728 29.3334 24V10.6667C29.3334 9.19391 28.1395 8 26.6667 8Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>;
 
+const contactIcon = <svg width="30" height="30" viewBox="0 0 30 30" fill="none" className="stroke-black" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.29 20.71C17.5482 20.8286 17.839 20.8556 18.1146 20.7868C18.3902 20.718 18.6342 20.5573 18.8063 20.3312L19.25 19.75C19.4829 19.4395 19.7848 19.1875 20.132 19.0139C20.4791 18.8404 20.8619 18.75 21.25 18.75H25C25.663 18.75 26.2989 19.0134 26.7678 19.4822C27.2366 19.9511 27.5 20.587 27.5 21.25V25C27.5 25.663 27.2366 26.2989 26.7678 26.7678C26.2989 27.2366 25.663 27.5 25 27.5C19.0326 27.5 13.3097 25.1295 9.0901 20.9099C4.87053 16.6903 2.5 10.9674 2.5 5C2.5 4.33696 2.76339 3.70107 3.23223 3.23223C3.70107 2.76339 4.33696 2.5 5 2.5H8.75C9.41304 2.5 10.0489 2.76339 10.5178 3.23223C10.9866 3.70107 11.25 4.33696 11.25 5V8.75C11.25 9.13811 11.1596 9.5209 10.9861 9.86803C10.8125 10.2152 10.5605 10.5171 10.25 10.75L9.665 11.1888C9.43552 11.364 9.27377 11.6132 9.20724 11.8942C9.1407 12.1751 9.17348 12.4705 9.3 12.73C11.0084 16.1998 13.818 19.006 17.29 20.71Z"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>;
+
+let isLoaded = false;
+
 function AboutSubContent(){
-    return(
+    const [isLoading, setIsLoading] = useState(!isLoaded);
+
+    useEffect(() => {
+        if (!isLoaded) {
+            const timer = setTimeout(() => {
+                isLoaded = true;
+                setIsLoading(false);
+            }, 1000);
+            return () => clearTimeout(timer);
+        }
+    }, []);
+
+    if (isLoading) {
+        return (
         <div className="w-full lg:py-3 lg:pr-3 pb-3 flex flex-col gap-3 overflow-y-auto no-scrollbar">
             <BentoCard title={"Education"} icon={educationIcon} className="min-h-70">
                 <div className="flex flex-col gap-5">
+                    {[1, 2].map((i) => (
+                        <div key={i} className="flex w-full gap-5">
+                            <Skeleton className="lg:w-13 lg:h-13 w-11 h-11 rounded-full shrink-0" />
+                            <div className="flex flex-col gap-2 w-full mt-1">
+                                <Skeleton className="h-5 w-3/4" />
+                                <Skeleton className="h-4 w-1/2" />
+                                <Skeleton className="h-3 w-1/3 mt-1" />
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </BentoCard>
+
+            <BentoCard title={"Experience"} icon={experienceIcon}>
+                <div className="flex flex-col gap-5">
+                    {[1, 2].map((i) => (
+                        <div key={i} className="flex w-full lg:gap-5 gap-4">
+                            <Skeleton className="lg:w-13 lg:h-13 w-11 h-11 rounded-full shrink-0" />
+                            <div className="flex flex-col gap-2 w-full mt-1">
+                                <Skeleton className="h-5 w-3/4" />
+                                <Skeleton className="h-4 w-1/2" />
+                                <Skeleton className="h-3 w-1/3 mt-1" />
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </BentoCard>
+
+            <BentoCard title="Contact Me" icon={contactIcon} className="h-full">
+                <div className="flex flex-col justify-between gap-10 h-full">
+                    <ul className="flex gap-4 w-full flex-wrap">
+                        {[1, 2, 3, 4, 5, 6, 7].map((i) => (
+                            <li key={i} className="w-9 h-9">
+                                <Skeleton className="w-full h-full rounded-full" />
+                            </li>
+                        ))}
+                    </ul>
+                    <div className="flex flex-col gap-1.5 mt-2">
+                        <Skeleton className="h-4 w-full" />
+                        <Skeleton className="h-4 w-5/6" />
+                    </div>
+                </div>
+            </BentoCard>
+        </div>
+        );
+    }
+
+    return(
+        <div className="w-full lg:py-3 lg:pr-3 pb-3 flex flex-col gap-3 overflow-y-auto no-scrollbar">
+            <BentoCard title={"Education"} icon={educationIcon} className="min-h-70">
+                <div key="ed-m" className="animate-in fade-in duration-700 delay-150 fill-mode-backwards flex flex-col gap-5">
                     {educationData.map((item) =>(
                         <div className="flex w-full gap-5">
                         <img src={item.logo} className="lg:w-13 lg:h-13 w-11 h-11" alt={item.title + "'s Logo"}></img>
@@ -52,7 +124,7 @@ function AboutSubContent(){
                 </div>
             </BentoCard>
             <BentoCard title={"Experience"} icon={experienceIcon}>
-                <div className="flex flex-col">
+                <div key="ex-m" className="animate-in fade-in duration-700 delay-300 fill-mode-backwards flex flex-col">
                     {experienceData.map((job) =>(
                         <div className="flex w-full lg:gap-5 gap-4">
                         <img src={job.logo} className="lg:w-13 lg:h-13 w-11 h-11" alt={job.title +"'s Logo"}></img>
@@ -79,7 +151,7 @@ function AboutSubContent(){
                     ))}
                 </div>
             </BentoCard>
-            <ContactMe></ContactMe>
+            <ContactMe animKey="asc-cm-m" wrapperClass="animate-in fade-in duration-700 delay-500 fill-mode-backwards" />
         </div>
 
     )

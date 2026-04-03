@@ -1,13 +1,86 @@
 import BentoCard from "../BentoCard";
 import { useNavigate} from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Skeleton } from "../ui/skeleton";
+
+const loadedProjects = new Set();
 
 function ProjectSelectedContent({project}){
 
     const navigate = useNavigate();
+
+    const [isLoading, setIsLoading] = useState(!loadedProjects.has(project.id));
+
+    useEffect(() => {
+        if (!loadedProjects.has(project.id)) {
+            setIsLoading(true); // Force skeleton state sync
+            const timer = setTimeout(() => {
+                loadedProjects.add(project.id);
+                setIsLoading(false);
+            }, 1000);
+            return () => clearTimeout(timer);
+        } else {
+            setIsLoading(false);
+        }
+    }, [project.id]);
+
+    if (isLoading) {
+        return (
+            <div>
+                <BentoCard>
+                    <div className="flex flex-col gap-5">
+                        <Skeleton className="w-10 h-10 rounded-full" />
+                        
+                        <div className="flex flex-col gap-3">
+                            <div className="flex items-center gap-3">
+                                <Skeleton className="h-8 w-3/4 lg:w-1/2" />
+                                <Skeleton className="h-6 w-20 rounded-4xl" />
+                            </div>
+                            <div className="flex flex-wrap gap-2">
+                                <Skeleton className="h-5 w-16" />
+                                <Skeleton className="h-5 w-20" />
+                                <Skeleton className="h-5 w-14" />
+                            </div>
+                            <div className="flex flex-col gap-3 mt-1">
+                                {[1, 2, 3].map((i) => (
+                                    <div key={i} className="flex lg:gap-3 gap-2 items-center">
+                                        <Skeleton className="lg:w-6 lg:h-6 w-4 h-4 rounded-full" />
+                                        <Skeleton className="h-5 w-32" />
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        <div className="w-full pt-4">
+                            <Skeleton className="w-full aspect-video rounded-[10px]" />
+                        </div>
+                        
+                        <div className="flex flex-wrap gap-3 pt-2">
+                            <Skeleton className="h-10 w-40 rounded-[100px]" />
+                            <Skeleton className="h-10 w-32 rounded-[100px]" />
+                        </div>
+
+                        <div className="flex flex-col gap-6 pt-4">
+                            <div className="flex flex-col gap-2">
+                                <Skeleton className="h-6 w-48" />
+                                <div className="flex flex-col gap-1.5 mt-2">
+                                    <Skeleton className="h-4 w-full" />
+                                    <Skeleton className="h-4 w-11/12" />
+                                    <Skeleton className="h-4 w-full" />
+                                    <Skeleton className="h-4 w-4/5" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </BentoCard>
+            </div>
+        );
+    }
+
     return(
         <div>
             <BentoCard>
-                <div className="flex flex-col gap-5">
+                <div className="animate-in fade-in duration-700 delay-150 fill-mode-backwards flex flex-col gap-5">
                     <button onClick={() => navigate(-1)}>
                         <div className="p-2 w-fit rounded-[100px] outline-1 outline-zinc-200 cursor-pointer dark:outline-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
                             <svg width="24" height="24" className="dark:invert" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -1,7 +1,10 @@
 import { useParams, Navigate, useNavigate } from "react-router-dom";
 import BentoCard from "../BentoCard";
 import { blogsData } from "@/data";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { Skeleton } from "../ui/skeleton";
+
+const loadedBlogs = new Set();
 
 function BlogSelectedContent(){
     const {slug} = useParams();
@@ -16,6 +19,51 @@ function BlogSelectedContent(){
             scrollContainerRef.current.scrollTo(0, 0);
         }
     }, [slug]);
+
+    const [isLoading, setIsLoading] = useState(!loadedBlogs.has(slug));
+
+    useEffect(() => {
+        if (!loadedBlogs.has(slug)) {
+            setIsLoading(true); // Force skeleton state sync on cross-slug navigation
+            const timer = setTimeout(() => {
+                loadedBlogs.add(slug);
+                setIsLoading(false);
+            }, 1000);
+            return () => clearTimeout(timer);
+        } else {
+            setIsLoading(false);
+        }
+    }, [slug]);
+
+    if (isLoading) {
+        return (
+            <div className="w-full py-3 overflow-y-auto no-scrollbar">
+                <BentoCard>
+                    <div className="flex flex-col gap-5">
+                        <Skeleton className="w-10 h-10 rounded-full" />
+                        <div className="flex flex-col gap-3">
+                            <Skeleton className="h-10 w-3/4 lg:w-1/2" />
+                            <div className="flex items-center gap-2 mt-2">
+                                <Skeleton className="w-5 h-5 rounded-full" />
+                                <Skeleton className="h-4 w-32" />
+                            </div>
+                        </div>
+                        <div className="w-full pt-6">
+                            <Skeleton className="w-full rounded-[10px] aspect-[16/9]" />
+                        </div>
+                        <div className="flex flex-col w-full gap-4 pt-6">
+                            <Skeleton className="h-4 w-full" />
+                            <Skeleton className="h-4 w-full" />
+                            <Skeleton className="h-4 w-11/12" />
+                            <Skeleton className="h-4 w-10/12" />
+                            <Skeleton className="h-4 w-full" />
+                            <Skeleton className="h-4 w-4/5" />
+                        </div>
+                    </div>
+                </BentoCard>
+            </div>
+        )
+    }
 
     if(!post) return <Navigate to="/blog" replace/>
 
@@ -97,7 +145,7 @@ function BlogSelectedContent(){
     return(
         <div className="w-full py-3 overflow-y-auto no-scrollbar" ref={scrollContainerRef}>
             <BentoCard>
-                <div className="flex flex-col gap-5" key={slug}>
+                <div className="animate-in fade-in duration-700 flex flex-col gap-5" key={slug}>
                     
                     {/* BACK BUTTON */}
                     <button onClick={() =>navigate(-1)}>
