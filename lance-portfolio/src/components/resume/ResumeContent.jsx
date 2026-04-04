@@ -58,7 +58,7 @@ function ResumeContent(){
 
     if(isLoading){
         return (
-            <div className="w-full h-full lg:pr-3 px-3 lg:px-0 py-3 overflow-y-auto no-scrollbar overflow-hidden flex flex-col gap-3"> 
+            <div className="w-full h-full lg:pr-3 px-3 lg:px-0 py-3 overflow-y-auto no-scrollbar overflow-hidden flex flex-col gap-3 min-h-[101vh]"> 
                 <BentoCard title={"Resume"} icon={resumeIcon} className="w-full relative gap-4 "> 
                     <div className="absolute lg:top-5 top-4 right-4.5 z-10 hidden sm:block">
                         <Skeleton className="w-[124px] h-[46px] rounded-sm" />

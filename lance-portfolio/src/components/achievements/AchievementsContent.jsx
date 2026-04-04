@@ -44,7 +44,7 @@ function AchievementsContent(){
 
     if (isLoading) {
         return (
-            <div className="py-3 px-3 lg:px-0 lg:pr-3 overflow-y-auto flex-col gap-3 no-scrollbar overflow-hidden w-full flex ">
+            <div className="w-full flex flex-col gap-3 lg:p-0 p-3 lg:overflow-y-auto lg:no-scrollbar lg:py-3 select-none min-h-[101vh]">
                 <BentoCard title={"Technical Certifications"} icon={certificationIcon}>
                     <div className="grid lg:grid-cols-4 grid-cols-1 gap-6">
                         {[1, 2, 3, 4].map((i) =>(

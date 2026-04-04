@@ -60,14 +60,14 @@ function AboutContent() {
 
     if (isLoading) {
         return (
-            <div className="overflow-y-auto py-3 w-full gap-3 flex flex-col no-scrollbar select-none">
+            <div className="overflow-y-auto py-3 w-full gap-3 flex flex-col no-scrollbar select-none min-h-[101vh]">
                 {/* Hero Banner Skeleton */}
                 <div className="w-full flex flex-col rounded-[14px] border border-zinc-200 dark:border-zinc-800 shadow-sm shrink-0 overflow-hidden relative group select-none">
                     <Skeleton className="w-full absolute inset-0 z-0 rounded-none " />
                     <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/50 to-black/20 lg:bg-linear-to-r lg:from-black/90 lg:via-black/50 lg:to-transparent z-10 pointer-events-none"></div>
 
                     <div className="w-full relative h-70 sm:h-75 lg:h-64 z-20">
-                        <div className="absolute bottom-5 left-5 right-5 lg:bottom-8 lg:left-8 lg:right-auto z-20 flex flex-col gap-3 lg:gap-4 max-w-2xl w-full">
+                        <div className="absolute bottom-5 left-5 right-5 lg:bottom-8 lg:left-8 lg:right-auto z-20 flex flex-col gap-3 lg:gap-4 max-w-2xl">
                             <div className="flex flex-col gap-2 w-full">
                                 <Skeleton className="h-8 lg:h-10 w-[250px] bg-white/20" />
                                 <div className="mt-1 lg:mt-3 flex flex-col gap-2 w-[95%] lg:w-[450px]">
@@ -144,8 +144,8 @@ function AboutContent() {
                             <h1 className="text-white font-bold text-[28px] leading-[1.1] sm:text-3xl lg:text-4xl tracking-tight">
                                 Behind the code.
                             </h1>
-                            <p className="text-zinc-300 font-light text-[14px] sm:text-[15px] lg:text-[15px] mt-1 lg:mt-2 leading-relaxed max-w-[95%] lg:max-w-lg">
-                                I'm a 3rd Year IT student from Quezon City, passionate about transforming complex problems into elegant, user-centric web solutions.
+                            <p className="text-zinc-300 font-light text-[14px] sm:text-[15px] lg:text-[16px] mt-1 lg:mt-2 leading-relaxed max-w-[95%] lg:max-w-lg">
+                                I'm an IT student from Quezon City, passionate about transforming complex problems into elegant, user-centric web solutions.
                             </p>
                         </div>
 

@@ -1,11 +1,11 @@
-function BentoCard({title, icon, children, className=""}){
+function BentoCard({ title, icon, children, className = "" }) {
     return (
-       <div className={`w-full flex flex-col overflow-hidden select-none bg-card rounded-[10px] p-4 gap-4 shrink-0 ${className}`}>
-            
+        <div className={`w-full flex flex-col overflow-hidden select-none bg-card rounded-[10px] p-4 gap-4 shrink-0 ${className}`}>
+
             {/* Card Header (Icon + Title) */}
             <div className="flex items-center gap-2 stroke-foreground ">
                 <span className="dark:invert">{icon}</span>
-                
+
                 <span className="font-semibold text-[20px]">{title}</span>
             </div>
 
