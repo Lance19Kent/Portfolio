@@ -4,24 +4,7 @@ import { projectsData } from "@/data";
 import ProjectSubContent from "./ProjectSubContent";
 import { useState, useEffect } from "react";
 import { Skeleton } from "../ui/skeleton";
-
-const featuredIcon = (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="black"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    class="lucide lucide-pin-icon lucide-pin"
-  >
-    <path d="M12 17v5" />
-    <path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z" />
-  </svg>
-);
+import { Pin, ArrowRight, Clock } from "lucide-react";
 
 let isLoaded = false;
 
@@ -46,7 +29,7 @@ function ProjectsContent() {
       <div className="w-full h-full lg:pr-3 px-3 lg:px-0 py-3 overflow-y-auto no-scrollbar overflow-hidden flex flex-col gap-3 min-h-[101vh]">
         <BentoCard
           title={"Featured"}
-          icon={featuredIcon}
+          icon={<Pin className="stroke-black" />}
           className="w-full relative "
         >
           <div className="grid lg:grid-cols-3 grid-cols-1 gap-5">
@@ -91,7 +74,7 @@ function ProjectsContent() {
     <div className="w-full h-full lg:pr-3 px-3 lg:px-0 py-3 overflow-y-auto no-scrollbar overflow-hidden flex flex-col gap-3">
       <BentoCard
         title={"Featured"}
-        icon={featuredIcon}
+        icon={<Pin className="stroke-black" />}
         className="w-full relative "
       >
         <div
@@ -120,32 +103,11 @@ function ProjectsContent() {
 
                   {/* Date Area */}
                   <div className="flex items-center gap-1.5 mt-0.5">
-                    <svg
-                      viewBox="0 0 12 12"
-                      className="stroke-zinc-400 w-3.5"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z"
-                        strokeOpacity="0.7"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M6 3V6L5 8"
-                        strokeOpacity="0.7"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
+                    <Clock className="stroke-zinc-400 w-3.5" />
                     <span className=" text-[12px]  text-zinc-500 dark:text-zinc-400 tracking-wide ">
                       {post.date}
                     </span>
                   </div>
-
-                  {/* Description Area */}
-                  {/* TWEAK: Binabaan ang text size para elegant, inayos ang font-light */}
                   <p className="mt-2 text-[13px] leading-relaxed text-zinc-600 dark:text-zinc-400 font-light line-clamp-3">
                     {post.description}
                   </p>
@@ -154,19 +116,7 @@ function ProjectsContent() {
                 {/* "Read More" subtle cue */}
                 <div className="mt-4 flex items-center gap-1 text-[#468cfc] transition-colors duration-300 group-hover:text-[#92bcff] ease-out">
                   <span className="text-[13px] font-medium">View Project</span>
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M5 12h14"></path>
-                    <path d="m12 5 7 7-7 7"></path>
-                  </svg>
+                  <ArrowRight className="w-[14px] h-[14px]" />
                 </div>
               </div>
             </Link>
