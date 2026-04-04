@@ -1,28 +1,56 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      id="dynamic-favicon"
+      type="image/png"
+      href="./me-daytime-circle.png"
+    />
+    <link rel="stylesheet" href="/src/style/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Lance Kent - Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Lance Kent, an aspiring Front-end and Full-Stack Developer. Crafting clean, dynamic, and robust digital systems."
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" id="dynamic-favicon" type="image/png" href="./me-daytime-circle.png" />
-  <link rel="stylesheet" href="/src/style/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <title>Lance Kent - Portfolio</title>
-  <script>
-    if (localStorage.getItem("theme") === "dark") {
-      document.documentElement.classList.add("dark");
-    }
-  </script>
-</head>
+    <meta
+      name="keywords"
+      content="Lance Kent, Web Developer, Front-end Developer, Full-Stack Developer, React Developer, Portfolio, IT Student, Tech"
+    />
 
-<body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
-</body>
+    <meta name="author" content="Lance Kent" />
 
+    <meta property="og:title" content="Lance Kent | Web Developer Portfolio" />
+    <meta
+      property="og:description"
+      content="Check out my projects, skills, and digital systems architecture."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lancekent.dev" />
 
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/dxatb3m2q/image/upload/q_auto,f_auto/v1775296257/me-daytime_c7zkax.png"
+    />
+
+    <script>
+      if (localStorage.getItem("theme") === "dark") {
+        document.documentElement.classList.add("dark");
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
