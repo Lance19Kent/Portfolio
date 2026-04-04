@@ -99,7 +99,10 @@ function ProjectSubContent({
                 className="lg:px-3 px-6 w-full rounded-[10px] py-4 flex border-[.50px] border-border cursor-pointer flex-col"
               >
                 <div className="flex gap-2 w-full items-start ">
-                  <BookMarked strokeWidth={1.5} className="stroke-black" />
+                  <BookMarked
+                    strokeWidth={1.5}
+                    className="stroke-black dark:invert"
+                  />
                   <div className="flex flex-col gap-0.5 flex-1 w-full overflow-hidden">
                     <div className="flex gap-2 items-center justify-between w-full">
                       <span className="font-semibold text-[16px] line-clamp-1 ">
