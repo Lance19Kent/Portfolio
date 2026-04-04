@@ -156,77 +156,75 @@ function Content() {
 
   return (
     <div className="w-full flex flex-col gap-3 lg:p-0 p-3 lg:overflow-y-auto lg:no-scrollbar lg:py-3 select-none">
-      <div
-        key="hero-m"
-        className="animate-in fade-in duration-700 delay-150 fill-mode-both transform-gpu will-change-transform w-full flex flex-col overflow-hidden bg-card rounded-[10px] relative shrink-0"
-      >
-        {/* THE UNIQUE "COMMAND CENTER" HERO BANNER (MOBILE RESPONSIVE) */}
-        <div className="w-full flex flex-col rounded-[14px] border border-zinc-200 dark:border-zinc-800 shadow-sm shrink-0 overflow-hidden relative group">
-          <div className="w-full relative h-90 sm:h-80 lg:h-72">
-            <video
-              src="./cover-vids/lightmode-cover.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-full object-cover dark:hidden"
-            />
-            {/* Dark Mode Video */}
-            <video
-              src="./cover-vids/darkmode-cover.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-full object-cover hidden dark:block"
-            />
+      {/* THE UNIQUE "COMMAND CENTER" HERO BANNER (MOBILE RESPONSIVE) */}
+      <div className="w-full flex flex-col bg-linear-to-t from-black/90 via-black/50 to-black/20 lg:bg-linear-to-r lg:from-black/90 lg:via-black/40 lg:to-transparent rounded-[14px] border border-zinc-200 dark:border-zinc-800 shadow-sm shrink-0 overflow-hidden relative group">
+        <div
+          key="hero-m"
+          className="animate-in fade-in duration-700 delay-150 fill-mode-both transform-gpu will-change-transform w-full relative h-90 sm:h-80 lg:h-72"
+        >
+          <video
+            src="https://res.cloudinary.com/dxatb3m2q/video/upload/q_auto,f_auto/v1775295681/lightmode-cover_lmrfig.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover dark:hidden"
+          />
+          {/* Dark Mode Video */}
+          <video
+            src="https://res.cloudinary.com/dxatb3m2q/video/upload/q_auto,f_auto/v1775295646/darkmode-cover_bmgsuh.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover hidden dark:block"
+          />
 
-            <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/50 to-black/20 lg:bg-linear-to-r lg:from-black/90 lg:via-black/40 lg:to-transparent"></div>
+          <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/50 to-black/20 lg:bg-linear-to-r lg:from-black/90 lg:via-black/40 lg:to-transparent"></div>
 
-            {/* The Clock (Top Right) */}
-            <div className="absolute top-4 right-4 z-20 flex items-center gap-2 bg-black/30 backdrop-blur-md border border-white/10 rounded-full px-3 py-1.5 shadow-sm">
-              <Calendar className="w-3.5 h-3.5 lg:w-4 lg:h-4 stroke-white" />
-              <span className="font-medium text-white text-[11px] lg:text-[12px] tracking-wide">
-                {currentDate}
-              </span>
+          {/* The Clock (Top Right) */}
+          <div className="absolute top-4 right-4 z-20 flex items-center gap-2 bg-black/30 backdrop-blur-md border border-white/10 rounded-full px-3 py-1.5 shadow-sm">
+            <Calendar className="w-3.5 h-3.5 lg:w-4 lg:h-4 stroke-white" />
+            <span className="font-medium text-white text-[11px] lg:text-[12px] tracking-wide">
+              {currentDate}
+            </span>
+          </div>
+
+          <div className="absolute bottom-5 left-5 right-5 lg:bottom-8 lg:left-8 lg:right-auto z-20 flex flex-col gap-3 lg:gap-4 max-w-lg">
+            <div className="flex flex-col gap-1">
+              <h1 className="text-white font-bold text-[26px] leading-[1.1] sm:text-3xl lg:text-4xl tracking-tight">
+                Crafting clean & <br className="hidden sm:block" /> dynamic
+                digital systems.
+              </h1>
+              <p className="text-zinc-300 font-light text-[13px] sm:text-[14px] lg:text-[15px] mt-1 lg:mt-2 leading-relaxed max-w-[90%] lg:max-w-md">
+                Bridging the gap between sleek front-end designs and robust
+                back-end architecture. Let's build something impactful.
+              </p>
             </div>
 
-            <div className="absolute bottom-5 left-5 right-5 lg:bottom-8 lg:left-8 lg:right-auto z-20 flex flex-col gap-3 lg:gap-4 max-w-lg">
-              <div className="flex flex-col gap-1">
-                <h1 className="text-white font-bold text-[26px] leading-[1.1] sm:text-3xl lg:text-4xl tracking-tight">
-                  Crafting clean & <br className="hidden sm:block" /> dynamic
-                  digital systems.
-                </h1>
-                <p className="text-zinc-300 font-light text-[13px] sm:text-[14px] lg:text-[15px] mt-1 lg:mt-2 leading-relaxed max-w-[90%] lg:max-w-md">
-                  Bridging the gap between sleek front-end designs and robust
-                  back-end architecture. Let's build something impactful.
-                </p>
-              </div>
-
-              <div className="flex lg:flex-row flex-col items-start gap-3 mt-1 lg:mt-2">
-                <button
-                  className="w-full sm:w-auto cursor-pointer rounded-[10px] bg-white text-zinc-900 hover:bg-zinc-200 transition-all duration-200 px-6 py-3 lg:py-2 lg:px-4 font-medium text-[14px] flex justify-center"
-                  asChild
+            <div className="flex lg:flex-row flex-col items-start gap-3 mt-1 lg:mt-2">
+              <button
+                className="w-full sm:w-auto cursor-pointer rounded-[10px] bg-white text-zinc-900 hover:bg-zinc-200 transition-all duration-200 px-6 py-3 lg:py-2 lg:px-4 font-medium text-[14px] flex justify-center"
+                asChild
+              >
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=lancemagollado46@gmail.com&su=Hi,%20Let%20us%20connect!"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2"
                 >
-                  <a
-                    href="https://mail.google.com/mail/?view=cm&fs=1&to=lancemagollado46@gmail.com&su=Hi,%20Let%20us%20connect!"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2"
-                  >
-                    <Send className="w-3.5 h-3.5 lg:w-4 lg:h-4 stroke-black" />
-                    Message Me
-                  </a>
-                </button>
+                  <Send className="w-3.5 h-3.5 lg:w-4 lg:h-4 stroke-black" />
+                  Message Me
+                </a>
+              </button>
 
-                {/* Status Badge */}
-                <div className="flex w-full sm:w-auto justify-center sm:justify-start items-center gap-2 text-white/90 text-[14px] px-4 py-2.5 lg:py-2 rounded-[10px] bg-white/10 backdrop-blur-md border border-white/20">
-                  <span className="relative flex h-2.5 w-2.5">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
-                  </span>
-                  Open to Collaborate
-                </div>
+              {/* Status Badge */}
+              <div className="flex w-full sm:w-auto justify-center sm:justify-start items-center gap-2 text-white/90 text-[14px] px-4 py-2.5 lg:py-2 rounded-[10px] bg-white/10 backdrop-blur-md border border-white/20">
+                <span className="relative flex h-2.5 w-2.5">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
+                </span>
+                Open to Collaborate
               </div>
             </div>
           </div>

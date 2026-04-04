@@ -14,6 +14,7 @@ import {
   Send,
   ChevronLeft,
   ChevronRight,
+  Clock,
 } from "lucide-react";
 
 let isLoaded = false;
@@ -69,7 +70,7 @@ function AboutContent() {
                 </div>
               </div>
               <div className="flex lg:flex-row flex-col items-start gap-3 mt-1 lg:mt-2 w-full lg:w-auto">
-                <Skeleton className="w-[90%] sm:w-[10px] h-14 lg:h-[56px] rounded-[10px] bg-white/20" />
+                <Skeleton className="w-[90%] sm:w-[150px] h-14 lg:h-[26px] rounded-[10px] bg-white/20" />
               </div>
             </div>
           </div>
@@ -135,10 +136,10 @@ function AboutContent() {
 
   return (
     <div className="overflow-y-auto py-3 w-full gap-3 flex flex-col no-scrollbar">
-      <div className="animate-in fade-in duration-700 delay-150 fill-mode-both transform-gpu will-change-transform w-full flex flex-col rounded-[14px] border border-zinc-200 dark:border-zinc-800 shadow-sm shrink-0 overflow-hidden relative group select-none">
-        <div className="w-full relative h-70 sm:h-75 lg:h-64">
+      <div className="w-full flex flex-col bg-linear-to-t from-black/90 via-black/50 to-black/20 lg:bg-linear-to-r lg:from-black/90 lg:via-black/40 lg:to-transparent rounded-[14px] border border-zinc-200 dark:border-zinc-800 shadow-sm shrink-0 overflow-hidden relative group select-none">
+        <div className="animate-in fade-in duration-700 delay-150 fill-mode-both transform-gpu will-change-transform w-full relative h-70 sm:h-75 lg:h-64">
           <video
-            src="./cover-vids/lightmode-cover.mp4"
+            src="https://res.cloudinary.com/dxatb3m2q/video/upload/q_auto,f_auto/v1775295681/lightmode-cover_lmrfig.mp4"
             autoPlay
             loop
             muted
@@ -146,7 +147,7 @@ function AboutContent() {
             className="w-full h-full object-cover dark:hidden"
           />
           <video
-            src="./cover-vids/darkmode-cover.mp4"
+            src="https://res.cloudinary.com/dxatb3m2q/video/upload/q_auto,f_auto/v1775295646/darkmode-cover_bmgsuh.mp4"
             autoPlay
             loop
             muted
@@ -263,27 +264,7 @@ function AboutContent() {
 
                 {/* TWEAK 4: The Date (Forced to the bottom with mt-auto) */}
                 <div className="flex items-center gap-1.5 mt-auto">
-                  <div className="w-3.5 text-ring">
-                    <svg
-                      viewBox="0 0 23 23"
-                      fill="none"
-                      stroke="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M11.4129 20.9234C16.6654 20.9234 20.9235 16.6653 20.9235 11.4127C20.9235 6.16016 16.6654 1.9021 11.4129 1.9021C6.16028 1.9021 1.90222 6.16016 1.90222 11.4127C1.90222 16.6653 6.16028 20.9234 11.4129 20.9234Z"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M11.4127 5.7063V11.4127L9.51062 15.2169"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </div>
+                    <Clock className="w-3.5 text-ring" />
                   <p className="font-light text-[12px] text-ring">
                     {post.date}
                   </p>

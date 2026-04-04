@@ -26,8 +26,8 @@ function Sidebar() {
     if (faviconLink) {
       faviconLink.type = "image/png";
       faviconLink.href = isDarkMode
-        ? "/me-nighttime-circle.png"
-        : "/me-daytime-circle.png";
+        ? "https://res.cloudinary.com/dxatb3m2q/image/upload/q_auto,f_auto/v1775296385/me-nighttime-circle_sljnbt.png"
+        : "https://res.cloudinary.com/dxatb3m2q/image/upload/q_auto,f_auto/v1775296384/me-daytime-circle_gxlz25.png";
     }
   }, [isDarkMode]);
 
@@ -86,7 +86,7 @@ function Sidebar() {
                 <div className="absolute animate-ping rounded-full h-full w-full bg-[#3FA6F4] opacity-10"></div>
                 <div className="absolute animate-ping rounded-full h-3/4 w-3/4 bg-[#3FA6F4] opacity-20 [animation-delay:0.3s]"></div>
                 <img
-                  src="/me-daytime.png"
+                  src="https://res.cloudinary.com/dxatb3m2q/image/upload/q_auto,f_auto/v1775296257/me-daytime_c7zkax.png"
                   alt="Avatar Day"
                   className="relative rounded-full h-25 w-25 border-2 border-[#3FA6F4] shadow-[0_0_30px_10px_#3FA6F4A0]"
                 />
@@ -105,7 +105,7 @@ function Sidebar() {
                 <div className="absolute animate-ping rounded-full h-3/4 w-3/4 bg-[#3FA6F4] opacity-20 [animation-delay:0.3s]"></div>
 
                 <img
-                  src="/me-nighttime.png"
+                  src="https://res.cloudinary.com/dxatb3m2q/image/upload/q_auto,f_auto/v1775296258/me-nighttime_le7sxn.png"
                   alt="Avatar Night"
                   className="relative rounded-full h-25 w-25 border-2 border-[#3FA6F4] shadow-[0_0_30px_10px_#3FA6F4A0]"
                 />
@@ -119,7 +119,11 @@ function Sidebar() {
           <Link to={"/"} className="w-fit h-full items-center flex gap-2">
             <div className="h-8 w-8 rounded-full overflow-hidden">
               <img
-                src={isDarkMode ? "/me-nighttime.png" : "/me-daytime.png"}
+                src={
+                  isDarkMode
+                    ? "https://res.cloudinary.com/dxatb3m2q/image/upload/q_auto,f_auto/v1775296258/me-nighttime_le7sxn.png"
+                    : "https://res.cloudinary.com/dxatb3m2q/image/upload/q_auto,f_auto/v1775296257/me-daytime_c7zkax.png"
+                }
                 alt=""
                 className="w-full object-cover"
               />
@@ -167,7 +171,9 @@ function Sidebar() {
                   <div className="rounded-full overflow-hidden h-15 w-15 z-30 relative">
                     <img
                       src={
-                        isDarkMode ? "./me-nighttime.png" : "/me-daytime.png"
+                        isDarkMode
+                          ? "https://res.cloudinary.com/dxatb3m2q/image/upload/q_auto,f_auto/v1775296258/me-nighttime_le7sxn.png"
+                          : "https://res.cloudinary.com/dxatb3m2q/image/upload/q_auto,f_auto/v1775296257/me-daytime_c7zkax.png"
                       }
                       className=" "
                       alt="Lance's Avatar"
@@ -311,7 +317,11 @@ function Sidebar() {
             <div className="w-full flex justify-center">
               <div className="flex h-15 w-15 rounded-full overflow-hidden">
                 <img
-                  src={isDarkMode ? "/me-nighttime.png" : "/me-daytime.png"}
+                  src={
+                    isDarkMode
+                      ? "https://res.cloudinary.com/dxatb3m2q/image/upload/q_auto,f_auto/v1775296258/me-nighttime_le7sxn.png"
+                      : "https://res.cloudinary.com/dxatb3m2q/image/upload/q_auto,f_auto/v1775296257/me-daytime_c7zkax.png"
+                  }
                   className="w-full object-cover"
                 ></img>
               </div>
