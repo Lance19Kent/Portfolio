@@ -24,7 +24,7 @@ function BlogContent() {
 
   if (isLoading) {
     return (
-      <div className="w-full gap-3 h-full flex flex-col lg:pr-3 px-3 lg:px-0 py-3 lg:py-0 overflow-y-auto no-scrollbar min-h-[101vh]">
+      <div className="w-full gap-3 h-full flex flex-col lg:pr-3 lg:px-0 py-3 lg:py-0 overflow-y-auto no-scrollbar min-h-[101vh]">
         <BentoCard title={"Blogs"} icon={<BookOpen className="stroke-black" />}>
           <div className="w-full flex flex-col gap-3">
             <Skeleton className="w-full rounded-[14px] aspect-4/2.5 lg:aspect-5/3" />
