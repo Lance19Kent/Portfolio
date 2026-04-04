@@ -96,7 +96,7 @@ function AchievementsContent() {
       >
         <div
           key="ac-grid-1"
-          className="animate-in fade-in duration-700 delay-150 fill-mode-backwards grid lg:grid-cols-4 grid-cols-1 gap-6"
+          className="animate-in fade-in duration-700 delay-150 fill-mode-both transform-gpu will-change-transform grid lg:grid-cols-4 grid-cols-1 gap-6"
         >
           {certifications.map((cert) => (
             <AchievementCard key={cert.id} data={cert} list={certifications} />
@@ -110,7 +110,7 @@ function AchievementsContent() {
       >
         <div
           key="ac-grid-2"
-          className="animate-in fade-in duration-700 delay-300 fill-mode-backwards grid lg:grid-cols-4 grid-cols-1 gap-6"
+          className="animate-in fade-in duration-700 delay-200 fill-mode-both transform-gpu will-change-transform grid lg:grid-cols-4 grid-cols-1 gap-6"
         >
           {education.map((edu) => (
             <AchievementCard key={edu.id} data={edu} list={education} />
@@ -119,7 +119,7 @@ function AchievementsContent() {
       </BentoCard>
       <ContactMe
         animKey="ac-btn"
-        wrapperClass="animate-in fade-in duration-700 delay-500 fill-mode-backwards"
+        wrapperClass="animate-in fade-in duration-700 delay-300 fill-mode-both transform-gpu will-change-transform"
       />
     </div>
   );

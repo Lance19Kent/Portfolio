@@ -92,7 +92,7 @@ function AboutSubContent() {
       >
         <div
           key="ed-m"
-          className="animate-in fade-in duration-700 delay-150 fill-mode-backwards flex flex-col gap-5"
+          className="animate-in fade-in duration-700 delay-350 fill-mode-both transform-gpu will-change-transform flex flex-col gap-5"
         >
           {educationData.map((item) => (
             <div className="flex w-full gap-5">
@@ -141,7 +141,7 @@ function AboutSubContent() {
       >
         <div
           key="ex-m"
-          className="animate-in fade-in duration-700 delay-300 fill-mode-backwards flex flex-col"
+          className="animate-in fade-in duration-700 delay-400 fill-mode-both transform-gpu will-change-transform flex flex-col"
         >
           {experienceData.map((job) => (
             <div className="flex w-full lg:gap-5 gap-4">
@@ -176,7 +176,7 @@ function AboutSubContent() {
       </BentoCard>
       <ContactMe
         animKey="asc-cm-m"
-        wrapperClass="animate-in fade-in duration-700 delay-500 fill-mode-backwards"
+        wrapperClass="animate-in fade-in duration-700 delay-450 fill-mode-both transform-gpu will-change-transform"
       />
     </div>
   );

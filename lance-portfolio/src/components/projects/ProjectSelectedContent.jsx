@@ -87,7 +87,7 @@ function ProjectSelectedContent({ project }) {
   return (
     <div>
       <BentoCard>
-        <div className="animate-in fade-in duration-700 delay-150 fill-mode-backwards flex flex-col gap-5">
+        <div className="animate-in fade-in duration-700 delay-300 fill-mode-both transform-gpu will-change-transform flex flex-col gap-5">
           <button onClick={() => navigate(-1)}>
             <div className="p-2 w-fit rounded-[100px] outline-1 outline-zinc-200 cursor-pointer dark:outline-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
               <ChevronLeft

@@ -180,7 +180,7 @@ function BlogSelectedContent() {
     >
       <BentoCard>
         <div
-          className="animate-in fade-in duration-700 flex flex-col gap-5"
+          className="animate-in fade-in duration-700 delay-300 fill-mode-both transform-gpu will-change-transform flex flex-col gap-5"
           key={slug}
         >
           {/* BACK BUTTON */}

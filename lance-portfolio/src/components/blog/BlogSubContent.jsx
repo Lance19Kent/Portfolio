@@ -112,7 +112,7 @@ function BlogSubContent() {
       >
         <div
           key="bp-m"
-          className="animate-in fade-in duration-700 delay-150 fill-mode-backwards flex flex-col w-full gap-3"
+          className="animate-in fade-in duration-700 delay-250 fill-mode-both transform-gpu will-change-transform flex flex-col w-full gap-3"
         >
           {currentPosts.length > 0 ? (
             currentPosts.map((post) => (
@@ -135,7 +135,7 @@ function BlogSubContent() {
                     {post.title}
                   </h1>
                   <div className="flex items-center gap-1">
-                      <Clock className="lg:w-3 w-3 stroke-ring" />
+                    <Clock className="lg:w-3 w-3 stroke-ring" />
                     <p className="font-light lg:text-[12px] text-[10px] text-ring">
                       {post.date}
                     </p>
@@ -198,7 +198,7 @@ function BlogSubContent() {
       </BentoCard>
       <ContactMe
         animKey="cm-m"
-        wrapperClass="animate-in fade-in duration-700 delay-300 fill-mode-backwards"
+        wrapperClass="animate-in fade-in duration-700 delay-300 fill-mode-both transform-gpu will-change-transform"
       />
     </div>
   );

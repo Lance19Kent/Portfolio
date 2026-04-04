@@ -89,7 +89,7 @@ function ProjectSubContent({
       >
         <div
           key="psc-opts"
-          className="animate-in fade-in duration-700 delay-300 fill-mode-backwards flex flex-col gap-4 w-full"
+          className="animate-in fade-in duration-700 delay-200 fill-mode-both transform-gpu will-change-transform flex flex-col gap-4 w-full"
         >
           <div className={`flex-col w-full gap-3 ${className}`}>
             {projectList.map((project) => (
@@ -138,7 +138,7 @@ function ProjectSubContent({
       </BentoCard>
       <ContactMe
         animKey="psc-btn"
-        wrapperClass="animate-in fade-in duration-700 delay-500 fill-mode-backwards"
+        wrapperClass="animate-in fade-in duration-700 delay-300 fill-mode-both transform-gpu will-change-transform"
       />
     </div>
   );

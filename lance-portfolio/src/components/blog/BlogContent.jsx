@@ -51,7 +51,7 @@ function BlogContent() {
             <Link
               key="feat-post-m"
               to={`/blog-selected/${featuredPost.slug}`}
-              className="animate-in fade-in duration-700 delay-150 fill-mode-backwards relative w-full flex flex-col justify-end overflow-hidden rounded-[14px] aspect-4/2.5 lg:aspect-5/3 cursor-pointer group shadow-sm hover:shadow-md transition-shadow"
+              className="animate-in fade-in duration-700 delay-150 fill-mode-both transform-gpu will-change-transform relative w-full flex flex-col justify-end overflow-hidden rounded-[14px] aspect-4/2.5 lg:aspect-5/3 cursor-pointer group shadow-sm hover:shadow-md transition-shadow"
             >
               {featuredPost.thumbnail ? (
                 <img
@@ -69,7 +69,7 @@ function BlogContent() {
               {/* Text Content */}
               <div className="relative z-10 w-full p-5 lg:p-8 flex flex-col gap-1.5">
                 <div className="flex items-center lg:gap-3 gap-1.5 text-zinc-300">
-                    <Clock className="stroke-current lg:w-5 w-3.5" />
+                  <Clock className="stroke-current lg:w-5 w-3.5" />
                   <p className="font-medium lg:text-[16px] text-[12px] tracking-wide">
                     {featuredPost.date}
                   </p>
@@ -84,7 +84,7 @@ function BlogContent() {
           {/* 2. OTHER POSTS GRID (Yung dalawa sa ilalim) */}
           <div
             key="other-posts-m"
-            className="animate-in fade-in duration-700 delay-300 fill-mode-backwards w-full grid lg:grid-cols-2 gap-3"
+            className="animate-in fade-in duration-700 delay-200 fill-mode-both transform-gpu will-change-transform w-full grid lg:grid-cols-2 gap-3"
           >
             {otherPosts.map((post) => (
               <Link

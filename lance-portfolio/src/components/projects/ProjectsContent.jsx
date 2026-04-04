@@ -79,7 +79,7 @@ function ProjectsContent() {
       >
         <div
           key="feat-grid-m"
-          className="animate-in fade-in duration-700 delay-150 fill-mode-backwards grid lg:grid-cols-3 grid-cols-1 gap-5"
+          className="animate-in fade-in duration-700 delay-150 fill-mode-both transform-gpu will-change-transform grid lg:grid-cols-3 grid-cols-1 gap-5"
         >
           {featuredProjects.map((post) => (
             <Link

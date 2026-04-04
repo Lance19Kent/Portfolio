@@ -78,7 +78,7 @@ function SubContent() {
       <BentoCard title="Technologies" icon={<Cpu className="stroke-black" />}>
         <div
           key="tech-m"
-          className="animate-in fade-in duration-700 delay-150 fill-mode-backwards"
+          className="animate-in fade-in duration-700 delay-300 fill-mode-both transform-gpu will-change-transform"
         >
           <TechMarquee />
         </div>
@@ -90,7 +90,7 @@ function SubContent() {
       >
         <div
           key="skills-m"
-          className="animate-in fade-in duration-700 delay-300 fill-mode-backwards"
+          className="animate-in fade-in duration-700 delay-350 fill-mode-both transform-gpu will-change-transform"
         >
           <Accordion type="single" collapsible defaultValue="item-1">
             {skillsData.map((skill) => (
@@ -114,7 +114,7 @@ function SubContent() {
       </BentoCard>
       <ContactMe
         animKey="contact-m"
-        wrapperClass="animate-in fade-in duration-700 delay-500 fill-mode-backwards"
+        wrapperClass="animate-in fade-in duration-700 delay-400 fill-mode-both transform-gpu will-change-transform"
       />
     </div>
   );

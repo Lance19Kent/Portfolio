@@ -238,7 +238,7 @@ function Content() {
       >
         <div
           key="stats-m"
-          className="animate-in fade-in duration-700 delay-300 fill-mode-backwards grid lg:grid-cols-4 gap-3 grid-cols-2"
+          className="animate-in fade-in duration-700 delay-200 fill-mode-both transform-gpu will-change-transform grid lg:grid-cols-4 gap-3 grid-cols-2"
         >
           <div className="w-full gap-1 bg-secondary rounded-[10px] p-4 flex justify-evenly flex-col">
             <div className="flex items-center gap-3">
@@ -296,7 +296,7 @@ function Content() {
         className="relative"
       >
         <div
-          className={`group absolute right-5 z-10 top-37.5 bg-[#00000040] p-2 rounded-[100px] transition duration-75 ease-in ${canHighlightsRight ? "cursor-pointer hover:bg-[#3FA6F4]" : "cursor-not-allowed opacity-30 "}`}
+          className={`group animate-in fade-in fill-mode-both transform-gpu will-change-transform absolute right-5 z-10 top-37.5 bg-[#00000040] p-2 rounded-[100px] transition duration-75 ease-in ${canHighlightsRight ? "cursor-pointer hover:bg-[#3FA6F4]" : "cursor-not-allowed opacity-30 "}`}
           onClick={() =>
             canHighlightsRight && scrollCarousel(highlightsRef, "right")
           }
@@ -307,7 +307,7 @@ function Content() {
           />
         </div>
         <div
-          className={`group absolute left-5 z-10 top-37.5 bg-[#00000040] p-2 rounded-[100px] transition duration-75 ease-in ${canHighlightsLeft ? "cursor-pointer hover:bg-[#3FA6F4]" : "cursor-not-allowed opacity-30 "}`}
+          className={`group absolute animate-in fade-in fill-mode-both transform-gpu will-change-transform left-5 z-10 top-37.5 bg-[#00000040] p-2 rounded-[100px] transition duration-75 ease-in ${canHighlightsLeft ? "cursor-pointer hover:bg-[#3FA6F4]" : "cursor-not-allowed opacity-30 "}`}
           onClick={() =>
             canHighlightsLeft && scrollCarousel(highlightsRef, "left")
           }
@@ -319,7 +319,7 @@ function Content() {
         </div>
         <div
           key="highlights-m"
-          className="animate-in fade-in duration-700 delay-500 fill-mode-backwards flex  w-full gap-3 overflow-x-auto no-scrollbar"
+          className="animate-in fade-in duration-700 delay-250 fill-mode-both transform-gpu will-change-transform flex w-full gap-3 overflow-x-auto no-scrollbar"
           ref={highlightsRef}
           onScroll={() =>
             handleScroll(

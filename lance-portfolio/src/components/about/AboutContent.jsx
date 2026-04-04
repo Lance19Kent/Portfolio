@@ -135,7 +135,7 @@ function AboutContent() {
 
   return (
     <div className="overflow-y-auto py-3 w-full gap-3 flex flex-col no-scrollbar">
-      <div className="animate-in fade-in duration-700 delay-150 fill-mode-backwards w-full flex flex-col rounded-[14px] border border-zinc-200 dark:border-zinc-800 shadow-sm shrink-0 overflow-hidden relative group select-none">
+      <div className="animate-in fade-in duration-700 delay-150 fill-mode-both transform-gpu will-change-transform w-full flex flex-col rounded-[14px] border border-zinc-200 dark:border-zinc-800 shadow-sm shrink-0 overflow-hidden relative group select-none">
         <div className="w-full relative h-70 sm:h-75 lg:h-64">
           <video
             src="./cover-vids/lightmode-cover.mp4"
@@ -193,7 +193,7 @@ function AboutContent() {
       >
         <div
           key="about-txt-m"
-          className="animate-in fade-in duration-700 delay-250 fill-mode-backwards"
+          className="animate-in fade-in duration-700 delay-200 fill-mode-both transform-gpu will-change-transform"
         >
           <span className="text-[13px] lg:text-[14px] leading-relaxed text-zinc-600 dark:text-zinc-400 font-light">
             Front-End Development is my current playground where logic meets
@@ -209,7 +209,7 @@ function AboutContent() {
         className=" relative"
       >
         <div
-          className={`group absolute right-5 z-10 top-37.5 bg-[#00000040] p-2 rounded-[100px] transition duration-75 ease-in ${canHighlightsRight ? "cursor-pointer hover:bg-[#3FA6F4]" : "cursor-not-allowed opacity-30 "}`}
+          className={`group absolute animate-in fade-in fill-mode-both transform-gpu will-change-transform right-5 z-10 top-37.5 bg-[#00000040] p-2 rounded-[100px] transition duration-75 ease-in ${canHighlightsRight ? "cursor-pointer hover:bg-[#3FA6F4]" : "cursor-not-allowed opacity-30 "}`}
           onClick={() =>
             canHighlightsRight && scrollCarousel(highlightsRef, "right")
           }
@@ -220,7 +220,7 @@ function AboutContent() {
           />
         </div>
         <div
-          className={`group absolute left-5 z-10 top-37.5 bg-[#00000040] p-2 rounded-[100px] transition duration-75 ease-in ${canHighlightsLeft ? "cursor-pointer hover:bg-[#3FA6F4]" : "cursor-not-allowed opacity-30 "}`}
+          className={`group absolute animate-in fade-in fill-mode-both transform-gpu will-change-transform left-5 z-10 top-37.5 bg-[#00000040] p-2 rounded-[100px] transition duration-75 ease-in ${canHighlightsLeft ? "cursor-pointer hover:bg-[#3FA6F4]" : "cursor-not-allowed opacity-30 "}`}
           onClick={() =>
             canHighlightsLeft && scrollCarousel(highlightsRef, "left")
           }
@@ -231,7 +231,7 @@ function AboutContent() {
           />
         </div>
         <div
-          className="animate-in fade-in duration-700 delay-150 fill-mode-backwards flex gap-3 overflow-x-auto no-scrollbar w-full justify-between"
+          className="animate-in fade-in duration-700 delay-250 fill-mode-both transform-gpu will-change-transform flex gap-3 overflow-x-auto no-scrollbar w-full justify-between"
           ref={highlightsRef}
           onScroll={() =>
             handleScroll(
@@ -297,7 +297,7 @@ function AboutContent() {
         title={"Certificates"}
         icon={<Award className="stroke-black" />}
       >
-        <div className="animate-in fade-in duration-700 delay-300 fill-mode-backwards flex flex-col gap-6">
+        <div className="animate-in fade-in duration-700 delay-300 fill-mode-both transform-gpu will-change-transform flex flex-col gap-6">
           <div className="flex flex-col w-full gap-5 lg:pr-2">
             {achievementsData.slice(0, 5).map((cert, index) => (
               <div
