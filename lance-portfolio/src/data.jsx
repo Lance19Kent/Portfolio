@@ -1,8 +1,10 @@
+import { TvMinimalPlay } from "lucide-react";
+
 export const achievementsData = [
   {
     id: 1,
     category: "certification",
-    title: "Responsive Web Design",
+    title: "Legacy Responsive Web Design V8",
     issuer: "freeCodeCamp",
     issuerLogo:
       "https://res.cloudinary.com/dxatb3m2q/image/upload/q_auto,f_auto/v1775297473/ffc-logo_rg7l4m.png",
@@ -405,11 +407,41 @@ export const blogsData = [
         type: "button-group",
         links: [
           {
-            label: "View Figma File",
+            label: (
+              <span className="flex gap-1 w-fit items-center">
+                <svg
+                  className="shrink-0 w-6 h-6 stroke-current"
+                  viewBox="0 0 24.00 24.00"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M12 3H9C7.34315 3 6 4.34315 6 6C6 7.65685 7.34315 9 9 9M12 3V9M12 3H15C16.6569 3 18 4.34315 18 6C18 7.65685 16.6569 9 15 9M12 9H9M12 9H15M12 9V15M9 9C7.34315 9 6 10.3431 6 12C6 13.6569 7.34315 15 9 15M15 9C16.6569 9 18 10.3431 18 12C18 13.6569 16.6569 15 15 15C13.3431 15 12 13.6569 12 12C12 10.3431 13.3431 9 15 9ZM12 15H9M12 15V18C12 19.6569 10.6569 21 9 21C7.34315 21 6 19.6569 6 18C6 16.3431 7.34315 15 9 15"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    ></path>
+                  </g>
+                </svg>
+                <span className="whitespace-nowrap">View Figma File</span>
+              </span>
+            ),
             url: "https://www.figma.com/design/CJEwOsprFDe9QwXQWJqkRH/Group-3-Event-Management-System?node-id=0-1&t=0yabS5cteBKdDuPI-1",
           },
           {
-            label: "Watch Live Demo",
+            label: (
+              <span className="flex gap-2 w-fit items-center">
+                <TvMinimalPlay className="stroke-current" strokeWidth={1.5} />
+                <span className="whitespace-nowrap">Watch Live Demo</span>
+              </span>
+            ),
             url: "https://res.cloudinary.com/dxatb3m2q/video/upload/v1774932618/nyx-video-demo_bqgv4c.mp4",
           },
         ],
@@ -1291,11 +1323,21 @@ export const experienceData = [
   {
     id: 1,
     logo: "https://res.cloudinary.com/dxatb3m2q/image/upload/q_auto,f_auto/v1775297493/STUDYPOOL-LOGO_wkyfik.png",
-    role: "StudyPool",
+    role: "Programming Content Contributor",
     company: "StudyPool Inc.",
     type: "Online Platform",
     date: "Jan 2026 - Present",
     description:
-      "Teach and post programming task and activities. Assisting students that having a hard time studying computer programming.",
+      "Created and published comprehensive technical content and programming solutions to assist students globally with complex programming concepts.",
+  },
+  {
+    id: 2,
+    logo: "https://res.cloudinary.com/dxatb3m2q/image/upload/q_auto,f_auto/v1775358149/lesit-logo_rcpxg0.png",
+    role: "Board of Governors",
+    company: "League of Excellent Students in IT (LESIT)",
+    type: "Academic Organization",
+    date: "September 2025 - Present",
+    description:
+      "Spearheaded the planning and execution of IT-centric activities and managed internal affairs. Served as a primary liaison officer to facilitate communication, resolve conflicts, and drive student engagement.",
   },
 ];

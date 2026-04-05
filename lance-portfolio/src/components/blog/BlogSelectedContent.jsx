@@ -68,12 +68,9 @@ function BlogSelectedContent() {
 
   if (!post) return <Navigate to="/blog" replace />;
 
-  // Safely check images
   const hasFirstImage = post.contentImages && post.contentImages.length > 0;
   const hasSecondImage = post.contentImages && post.contentImages.length > 1;
 
-  // A helper function to render the rich content blocks
-  // A helper function to render the rich content blocks
   const renderContentBlocks = (blocks) => {
     if (!blocks || !Array.isArray(blocks))
       return <p className="text-zinc-500 italic">No content available.</p>;
@@ -155,7 +152,7 @@ function BlogSelectedContent() {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-3 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-medium text-sm rounded-full hover:bg-zinc-900/90 duration-500 ease-out transition shadow-md"
+                  className="px-6 py-3 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-medium text-sm rounded-full hover:bg-zinc-900/90 dark:hover:bg-white/90 duration-500 ease-in-out transition shadow-md"
                 >
                   {link.label}
                 </a>
@@ -185,7 +182,7 @@ function BlogSelectedContent() {
         >
           {/* BACK BUTTON */}
           <button onClick={() => navigate(-1)}>
-            <div className="p-2 w-fit rounded-[100px] outline-1 outline-zinc-200  cursor-pointer dark:outline-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+            <div className="p-2 w-fit rounded-[100px] outline-1 outline-zinc-200  cursor-pointer dark:outline-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800 dark:bg-zinc-900/50 transition-colors">
               <ChevronLeft strokeWidth={1.5} className="stroke-current" />
             </div>
           </button>

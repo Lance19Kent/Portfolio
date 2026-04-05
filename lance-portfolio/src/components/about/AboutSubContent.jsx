@@ -141,7 +141,7 @@ function AboutSubContent() {
       >
         <div
           key="ex-m"
-          className="animate-in fade-in duration-700 delay-400 fill-mode-both transform-gpu will-change-transform flex flex-col"
+          className="animate-in fade-in duration-700 delay-400 fill-mode-both transform-gpu will-change-transform flex flex-col gap-5"
         >
           {experienceData.map((job) => (
             <div className="flex w-full lg:gap-5 gap-4">

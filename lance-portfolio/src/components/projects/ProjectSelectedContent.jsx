@@ -89,7 +89,7 @@ function ProjectSelectedContent({ project }) {
       <BentoCard>
         <div className="animate-in fade-in duration-700 delay-300 fill-mode-both transform-gpu will-change-transform flex flex-col gap-5">
           <button onClick={() => navigate(-1)}>
-            <div className="p-2 w-fit rounded-[100px] outline-1 outline-zinc-200 cursor-pointer dark:outline-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+            <div className="p-2 w-fit rounded-[100px] outline-1 outline-zinc-200 cursor-pointer dark:outline-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors  dark:bg-zinc-900/50">
               <ChevronLeft
                 strokeWidth={1.5}
                 className="stroke-black dark:stroke-white"
@@ -125,7 +125,7 @@ function ProjectSelectedContent({ project }) {
             </div>
 
             <div className="flex flex-col gap-3 mt-1">
-              <div className="flex lg:gap-3 gap-2 items-center">
+              <div className="flex lg:gap-3 gap-4 items-center">
                 <div className="lg:w-6 w-4 text-zinc-800 dark:text-zinc-200">
                   <User strokeWidth={1.5} />
                 </div>
@@ -133,7 +133,7 @@ function ProjectSelectedContent({ project }) {
                   {project.role}
                 </p>
               </div>
-              <div className="flex lg:gap-3 gap-2 items-center">
+              <div className="flex lg:gap-3 gap-4 items-center">
                 <div className="lg:w-6 w-4 text-zinc-800 dark:text-zinc-200">
                   <ChartColumnStacked strokeWidth={1.5} />
                 </div>
@@ -141,7 +141,7 @@ function ProjectSelectedContent({ project }) {
                   {project.type}
                 </p>
               </div>
-              <div className="flex lg:gap-3 gap-2 items-center">
+              <div className="flex lg:gap-3 gap-4  items-center">
                 <div className="lg:w-6 w-4 text-zinc-800 dark:text-zinc-200">
                   <Calendar strokeWidth={1.5} />
                 </div>

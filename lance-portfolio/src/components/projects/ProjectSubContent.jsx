@@ -96,7 +96,7 @@ function ProjectSubContent({
               <Link
                 key={project.id}
                 to={`/projects-selected/${project.slug}`}
-                className="lg:px-3 px-6 w-full rounded-[10px] py-4 flex border-[.50px] border-border cursor-pointer flex-col"
+                className="lg:px-3 px-6 w-full rounded-[10px] py-4 flex border-[.50px] border-border cursor-pointer bg-white dark:bg-zinc-900/50 flex-col"
               >
                 <div className="flex gap-2 w-full items-start ">
                   <BookMarked
