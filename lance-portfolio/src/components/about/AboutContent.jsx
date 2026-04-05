@@ -1,7 +1,6 @@
 import BentoCard from "../BentoCard";
 import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
-
 import React, { useRef, useState, useEffect } from "react";
 import AchievementCard from "../achievements/AchievementCard";
 import { Skeleton } from "../ui/skeleton";
@@ -23,6 +22,8 @@ function AboutContent() {
   const highlightsRef = useRef(null);
   const [canHighlightsLeft, setcanHighlightsLeft] = useState(false);
   const [canHighlightsRight, setcanHighlightsRight] = useState(true);
+
+  const [isExpanded, setIsExpanded] = useState();
 
   const scrollCarousel = (ref, direction) => {
     if (ref.current) {
@@ -194,16 +195,28 @@ function AboutContent() {
       >
         <div
           key="about-txt-m"
-          className="animate-in fade-in duration-700 delay-200 fill-mode-both transform-gpu will-change-transform"
+          className="animate-in fade-in duration-700 delay-200 fill-mode-both transform-gpu will-change-transform gap-3 "
         >
           <span className="text-[13px] lg:text-[14px] leading-relaxed text-zinc-600 dark:text-zinc-400 font-light">
-            Front-End Development is my current domain—a space where precise
-            logic meets creative design. I specialize in architecting intuitive
-            user interfaces and delivering seamless digital experiences. My
-            ultimate trajectory is to evolve into a Full-Stack Developer,
-            equipping me to engineer scalable, end-to-end web applications of my
-            own.
+            For over two years, I have been actively architecting digital
+            solutions. My journey began with intensive full-stack projects—like
+            BakeHub—which laid the foundation for my formal technical and
+            leadership roles at StudyPool and LESIT.
           </span>
+          {isExpanded && (
+            <span className="text-[13px] lg:text-[14px] leading-relaxed text-zinc-600 dark:text-zinc-400 ml-0.5 font-light">
+              Today, Front-End Development is my primary domain—a space where
+              precise logic meets creative design. My ultimate trajectory is to
+              evolve into a Full-Stack Developer, equipping me to engineer
+              scalable, end-to-end web applications of my own.
+            </span>
+          )}
+          <button
+            onClick={() => setIsExpanded(!isExpanded)}
+            className="text-[13px] lg:text-[14px] leading-relaxed text-[#3FA6F4] hover:underline cursor-pointer transition duration-200 ease-in-out font-medium ml-1"
+          >
+            {isExpanded ? "Read Less." : "Read More..."}
+          </button>
         </div>
       </BentoCard>
       <BentoCard

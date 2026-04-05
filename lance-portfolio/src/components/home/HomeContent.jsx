@@ -82,6 +82,10 @@ function Content() {
     }
   }, []);
 
+  const startYear = 2024;
+  const currentYear = new Date().getFullYear();
+  const experience = currentYear - startYear;
+
   //   Loader Skeleton
   if (isLoading) {
     return (
@@ -156,7 +160,6 @@ function Content() {
 
   return (
     <div className="w-full flex flex-col gap-3 lg:p-0 p-3 lg:overflow-y-auto lg:no-scrollbar lg:py-3 select-none">
-      {/* THE UNIQUE "COMMAND CENTER" HERO BANNER (MOBILE RESPONSIVE) */}
       <div className="w-full flex flex-col bg-linear-to-t from-black/90 via-black/50 to-black/20 lg:bg-linear-to-r lg:from-black/90 lg:via-black/40 lg:to-transparent rounded-[14px] border border-zinc-200 dark:border-zinc-800 shadow-sm shrink-0 overflow-hidden relative group">
         <div
           key="hero-m"
@@ -170,7 +173,6 @@ function Content() {
             playsInline
             className="w-full h-full object-cover dark:hidden"
           />
-          {/* Dark Mode Video */}
           <video
             src="https://res.cloudinary.com/dxatb3m2q/video/upload/q_auto,f_auto/v1775295646/darkmode-cover_bmgsuh.mp4"
             autoPlay
@@ -242,7 +244,7 @@ function Content() {
             <div className="flex items-center gap-3">
               <ExperienceIcon />
               <div className="flex items-center flex-1 justify-between">
-                <span className="font-semibold text-[30px]">2</span>
+                <span className="font-semibold text-[30px]">{experience}</span>
                 <span className="font-light text-sm lg:text-base">Years</span>
               </div>
             </div>
