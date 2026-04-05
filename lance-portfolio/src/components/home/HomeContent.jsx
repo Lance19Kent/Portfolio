@@ -48,7 +48,7 @@ function Content() {
     const intervalId = setInterval(getDate, 1000);
 
     return () => clearInterval(intervalId);
-  });
+  }, []);
 
   const highlightsRef = useRef(null);
   const [canHighlightsLeft, setcanHighlightsLeft] = useState(false);
