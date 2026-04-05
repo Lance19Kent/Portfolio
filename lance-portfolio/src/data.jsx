@@ -1295,27 +1295,26 @@ export const educationData = [
   {
     id: 1,
     logo: "https://res.cloudinary.com/dxatb3m2q/image/upload/q_auto,f_auto/v1775297487/QCU-Logo_mbjxmz.png",
-    degree: "BS in Information Technology",
+    degree: "Bachelor of Science in Information Technology",
     institution: "Quezon City University",
     gwaText: "In Progress",
     gwaValue: " / 1.0",
     gwaIsProgress: true,
     date: "August 2023 - Present",
     description:
-      "Currently taking a Bachelor of Science in Information and Technology in Quezon City University. Focusing in Web Technologies that can create innovative and sustainable solutions not only academically, but for the community.",
+      "Pursuing a degree with a specialized focus on modern web technologies and full-stack development. Dedicated to architecting innovative, scalable, and sustainable digital solutions that drive meaningful impact for both academic institutions and local communities.",
   },
   {
     id: 2,
     logo: "https://res.cloudinary.com/dxatb3m2q/image/upload/q_auto,f_auto/v1775297490/ROSARIO-INSTITUTE-LOGO_ioprgv.png",
-    degree:
-      "Track-Information and Communications Technology with Specialization in Computer Programming",
+    degree: "ICT Track: Specialization in Computer Programming",
     institution: "Rosario Institute",
     gwaText: "96",
     gwaValue: " / 100",
     gwaIsProgress: false,
     date: "June 2019 - May 2021",
     description:
-      "Consistent Honor and Achievements - 90 above grades everyday year, and masters java and sql. Accumulated with High Honor with the average of 96. I learned what is truly my goal, my career path and created mindset that will help me achieve my goals.",
+      "Graduated with High Honors. Built a robust technical foundation by mastering Object-Oriented Programming (Java) and Relational Database Management (SQL). Cultivated a highly disciplined mindset and strong work ethic that solidified my career trajectory in software engineering.",
   },
 ];
 

@@ -197,10 +197,12 @@ function AboutContent() {
           className="animate-in fade-in duration-700 delay-200 fill-mode-both transform-gpu will-change-transform"
         >
           <span className="text-[13px] lg:text-[14px] leading-relaxed text-zinc-600 dark:text-zinc-400 font-light">
-            Front-End Development is my current playground where logic meets
-            creativity. I love building intuitive user interfaces and crafting
-            smooth digital experiences. Being a Full-Stack Developer is my goal
-            so that I can create an innovative web app of my own.
+            Front-End Development is my current domain—a space where precise
+            logic meets creative design. I specialize in architecting intuitive
+            user interfaces and delivering seamless digital experiences. My
+            ultimate trajectory is to evolve into a Full-Stack Developer,
+            equipping me to engineer scalable, end-to-end web applications of my
+            own.
           </span>
         </div>
       </BentoCard>
@@ -264,7 +266,7 @@ function AboutContent() {
 
                 {/* TWEAK 4: The Date (Forced to the bottom with mt-auto) */}
                 <div className="flex items-center gap-1.5 mt-auto">
-                    <Clock className="w-3.5 text-ring" />
+                  <Clock className="w-3.5 text-ring" />
                   <p className="font-light text-[12px] text-ring">
                     {post.date}
                   </p>
