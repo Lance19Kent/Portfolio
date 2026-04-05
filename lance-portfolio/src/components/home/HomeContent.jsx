@@ -69,7 +69,6 @@ function Content() {
     }
   };
 
-  // For Skeleton
   const [isLoading, setIsLoading] = useState(!isLoaded);
 
   useEffect(() => {
@@ -86,10 +85,9 @@ function Content() {
   const currentYear = new Date().getFullYear();
   const experience = currentYear - startYear;
 
-  //   Loader Skeleton
   if (isLoading) {
     return (
-      <div className="w-full flex flex-col gap-3 lg:p-0 p-3 lg:overflow-y-auto lg:no-scrollbar lg:py-3 select-none min-h-[101vh]">
+      <div className="w-full flex flex-col gap-3 lg:p-0 p-3 lg:overflow-y-auto no-scrollbar lg:py-3 select-none ">
         {/* Hero Banner Skeleton */}
         <div className="w-full flex flex-col rounded-[14px] border border-zinc-200 dark:border-zinc-800 shadow-sm shrink-0 overflow-hidden relative group select-none">
           <Skeleton className="w-full absolute inset-0 z-0 rounded-none " />
