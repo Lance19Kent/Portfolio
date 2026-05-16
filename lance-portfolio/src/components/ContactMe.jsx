@@ -29,7 +29,7 @@ function ContactMe({ wrapperClass = "", animKey = "contact-m" }) {
             </li>
             <li className="w-9">
               <a
-                href="https://www.facebook.com/Lance19Kent/"
+                href="https://www.facebook.com/lncekent/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -68,7 +68,7 @@ function ContactMe({ wrapperClass = "", animKey = "contact-m" }) {
             </li>
             <li className="w-9">
               <a
-                href="https://www.instagram.com/ikent_lance/"
+                href="https://www.instagram.com/lncekent/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
