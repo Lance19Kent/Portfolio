@@ -317,7 +317,7 @@ function Content() {
         </div>
         <div
           key="highlights-m"
-          className="animate-in fade-in duration-700 delay-250 fill-mode-both transform-gpu will-change-transform flex w-full gap-3 overflow-x-auto no-scrollbar"
+          className="animate-in fade-in duration-700 delay-250 fill-mode-both transform-gpu will-change-transform flex w-full gap-3 overflow-x-auto no-scrollbar justify-between"
           ref={highlightsRef}
           onScroll={() =>
             handleScroll(
@@ -327,7 +327,7 @@ function Content() {
             )
           }
         >
-          {blogsData.slice(0, 3).map((post) => (
+          {blogsData.slice(0,5).map((post) => (
             <Link
               key={post.id}
               to={`/blog-selected/${post.slug}`}

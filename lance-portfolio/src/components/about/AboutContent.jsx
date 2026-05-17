@@ -201,19 +201,19 @@ function AboutContent() {
             For over two years, I have been actively architecting digital
             solutions. My journey began with intensive full-stack projects—like
             BakeHub—which laid the foundation for my formal technical and
-            leadership roles at StudyPool and LESIT.
+            leadership roles at StudyPool and LESIT.&nbsp;
           </span>
           {isExpanded && (
-            <span className="text-[13px] lg:text-[14px] leading-relaxed text-zinc-600 dark:text-zinc-400 ml-0.5 font-light">
+            <span className="text-[13px] lg:text-[14px] leading-relaxed text-zinc-600 dark:text-zinc-400 font-light">
               Today, Front-End Development is my primary domain—a space where
               precise logic meets creative design. My ultimate trajectory is to
               evolve into a Full-Stack Developer, equipping me to engineer
-              scalable, end-to-end web applications of my own.
+              scalable, end-to-end web applications of my own.&nbsp;
             </span>
           )}
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="text-[13px] lg:text-[14px] leading-relaxed text-[#3FA6F4] hover:underline cursor-pointer transition duration-200 ease-in-out font-medium ml-1"
+            className="text-[13px] lg:text-[14px] leading-relaxed text-[#3FA6F4] hover:underline cursor-pointer transition duration-200 ease-in-out font-medium"
           >
             {isExpanded ? "Read Less." : "Read More..."}
           </button>
@@ -257,7 +257,7 @@ function AboutContent() {
             )
           }
         >
-          {blogsData.slice(0, 3).map((post) => (
+          {blogsData.slice(0, 5).map((post) => (
             <Link
               key={post.id}
               to={`/blog-selected/${post.slug}`}
